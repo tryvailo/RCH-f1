@@ -1,0 +1,622 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Brand Core - 2025 British Editorial Palette */
+  --sage-green: #4F6F52;
+  /* Primary Brand: Trust, Health, Nature */
+  --sage-dark: #3A5140;
+  /* Primary Hover */
+  --terracotta: #C88D79;
+  /* Secondary/Accent: Warmth, Care */
+  --cream: #F9F7F2;
+  /* Background: Subtle warm off-white (lighter than before) */
+  --stone: #EFECE5;
+  /* Borders/UI: Distinct warm gray */
+  --stone-dark: #E0DBD4;
+  /* Darker Stone for inputs/borders */
+  --charcoal: #1A231E;
+  /* Text: Almost black */
+
+  /* Spacing Scale */
+  --space-xs: 0.25rem;
+  /* 4px */
+  --space-sm: 0.5rem;
+  /* 8px */
+  --space-md: 1rem;
+  /* 16px */
+  --space-lg: 1.5rem;
+  /* 24px */
+  --space-xl: 2rem;
+  /* 32px */
+  --space-2xl: 3rem;
+  /* 48px */
+  --space-3xl: 4rem;
+  /* 64px */
+
+  /* Typography Scale */
+  --text-xs: 0.75rem;
+  /* 12px */
+  --text-sm: 0.875rem;
+  /* 14px */
+  --text-base: 1rem;
+  /* 16px */
+  --text-lg: 1.125rem;
+  /* 18px */
+  --text-xl: 1.25rem;
+  /* 20px */
+  --text-2xl: 1.5rem;
+  /* 24px */
+  --text-3xl: 1.875rem;
+  /* 30px */
+  --text-4xl: 2.25rem;
+  /* 36px */
+  --text-5xl: 3rem;
+  /* 48px */
+
+  /* Category Colors */
+  --category-safety: #3b82f6;
+  /* Blue */
+  --category-medical: #ec4899;
+  /* Pink */
+  --category-staff: #8b5cf6;
+  /* Purple */
+  --category-financial: #10b981;
+  /* Emerald */
+  --category-comfort: #f59e0b;
+  /* Amber */
+  --category-community: #06b6d4;
+  /* Cyan */
+
+  /* Semantic Tokens */
+  --background: #ffffff;
+  /* Reset to White for crisp contrast */
+  --foreground: var(--charcoal);
+
+  --card: #ffffff;
+  --card-foreground: var(--charcoal);
+
+  --popover: #ffffff;
+  --popover-foreground: var(--charcoal);
+
+  --primary: var(--sage-green);
+  --primary-foreground: #ffffff;
+
+  --secondary: var(--terracotta);
+  --secondary-foreground: #ffffff;
+
+  --muted: var(--cream);
+  /* Use Cream for subtle backgrounds */
+  --muted-foreground: #6B7280;
+
+  --accent: var(--stone);
+  /* Use Stone for stronger accents */
+  --accent-foreground: var(--sage-green);
+
+  --destructive: #D17A6F;
+  --destructive-foreground: #ffffff;
+
+  --success: #4F6F52;
+  --success-foreground: #ffffff;
+
+  --border: var(--stone-dark);
+  /* Darker border for visibility */
+  --input: var(--stone-dark);
+  --ring: var(--sage-green);
+
+  --radius: 1rem;
+
+  --sidebar: #ffffff;
+  --sidebar-foreground: var(--charcoal);
+  --sidebar-primary: var(--sage-green);
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: var(--cream);
+  --sidebar-accent-foreground: var(--charcoal);
+  --sidebar-border: var(--stone);
+  --sidebar-ring: var(--sage-green);
+}
+
+.dark {
+  /* Dark Mode - Luxurious, Deep Forestry */
+  --background: #0F1612;
+  /* Darker key background */
+  --foreground: #F9F7F2;
+  /* Off-white text */
+
+  --card: #1A231E;
+  /* Dark charcoal card */
+  --card-foreground: #F9F7F2;
+
+  --popover: #1A231E;
+  --popover-foreground: #F9F7F2;
+
+  --primary: #7FAD7E;
+  /* Lighter Sage for dark mode */
+  --primary-foreground: #0F1612;
+
+  --secondary: #D4A696;
+  /* Muted Terracotta */
+  --secondary-foreground: #0F1612;
+
+  --muted: #1E2824;
+  /* Subtle dark background */
+  --muted-foreground: #A0A0A0;
+
+  --accent: #2A3630;
+  --accent-foreground: #7FAD7E;
+
+  --destructive: #E57373;
+  --destructive-foreground: #ffffff;
+
+  --border: #2A3630;
+  --input: #2A3630;
+  --ring: #7FAD7E;
+
+  --sidebar: #0F1612;
+  --sidebar-foreground: #F9F7F2;
+  --sidebar-primary: #7FAD7E;
+  --sidebar-primary-foreground: #0F1612;
+  --sidebar-accent: #1E2824;
+  --sidebar-accent-foreground: #F9F7F2;
+  --sidebar-border: #2A3630;
+  --sidebar-ring: #7FAD7E;
+}
+
+/* Fix for Next.js portals */
+nextjs-portal {
+  position: relative;
+  z-index: 9999;
+}
+
+/* Ensure portals are properly positioned */
+[data-radix-portal] {
+  position: fixed;
+  z-index: 9999;
+}
+
+@theme inline {
+  --font-sans: "Inter", "Inter Fallback", system-ui, -apple-system, sans-serif;
+  --font-serif: "Merriweather", "Merriweather Fallback", Georgia, serif;
+  --font-mono: "Geist Mono", "Geist Mono Fallback", monospace;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  /* Unified Typography Scale */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-serif font-bold text-balance;
+  }
+
+  h1 {
+    font-size: var(--text-5xl);
+    line-height: 1.1;
+  }
+
+  h2 {
+    font-size: var(--text-4xl);
+    line-height: 1.2;
+  }
+
+  h3 {
+    font-size: var(--text-3xl);
+    line-height: 1.3;
+  }
+
+  h4 {
+    font-size: var(--text-2xl);
+    line-height: 1.4;
+  }
+
+  p {
+    font-size: var(--text-lg);
+    line-height: 1.6;
+  }
+
+  /* Responsive Typography */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: var(--text-4xl);
+    }
+
+    h2 {
+      font-size: var(--text-3xl);
+    }
+
+    h3 {
+      font-size: var(--text-2xl);
+    }
+
+    h4 {
+      font-size: var(--text-xl);
+    }
+
+    p {
+      font-size: var(--text-base);
+    }
+  }
+}
+
+@layer utilities {
+  .shadow-soft-sm {
+    box-shadow: 0 2px 8px rgba(26, 35, 30, 0.04), 0 1px 4px rgba(26, 35, 30, 0.02);
+  }
+
+  .shadow-soft-md {
+    box-shadow: 0 4px 16px rgba(26, 35, 30, 0.06), 0 2px 8px rgba(26, 35, 30, 0.04);
+  }
+
+  .shadow-soft-lg {
+    box-shadow: 0 8px 24px rgba(26, 35, 30, 0.08), 0 4px 12px rgba(26, 35, 30, 0.06);
+  }
+
+  .shadow-soft-xl {
+    box-shadow: 0 16px 48px rgba(26, 35, 30, 0.12), 0 8px 24px rgba(26, 35, 30, 0.08);
+  }
+
+  .glass {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  .glass-dark {
+    background: rgba(79, 111, 82, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  .gradient-overlay-left {
+    background: linear-gradient(to right, #fdfbf7 0%, #fdfbf7 40%, transparent 100%);
+  }
+
+  .gradient-overlay-bottom {
+    background: linear-gradient(to top, rgba(26, 35, 30, 0.8) 0%, transparent 100%);
+  }
+
+  .animate-pulse-slow {
+    animation: pulse-slow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  @keyframes pulse-slow {
+
+    0%,
+    100% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0.7;
+    }
+  }
+
+  .animate-fade-in-up {
+    animation: fade-in-up 0.8s ease-out forwards;
+    opacity: 0;
+  }
+
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in-up-delay-1 {
+    animation: fade-in-up 0.8s ease-out 0.15s forwards;
+    opacity: 0;
+  }
+
+  .animate-fade-in-up-delay-2 {
+    animation: fade-in-up 0.8s ease-out 0.3s forwards;
+    opacity: 0;
+  }
+
+  .animate-fade-in-up-delay-3 {
+    animation: fade-in-up 0.8s ease-out 0.45s forwards;
+    opacity: 0;
+  }
+
+  .animate-slide-in-right {
+    animation: slide-in-right 0.5s ease-out forwards;
+  }
+
+  @keyframes slide-in-right {
+    from {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-4px);
+  }
+
+  .hover-scale {
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .hover-scale:hover {
+    transform: scale(1.02);
+  }
+
+  .hover-rotate {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .hover-rotate:hover {
+    transform: rotate(3deg) scale(1.05);
+  }
+
+  /* Spacing utilities */
+  .section-padding {
+    padding-top: var(--space-2xl);
+    padding-bottom: var(--space-2xl);
+  }
+
+  .section-padding-sm {
+    padding-top: var(--space-lg);
+    padding-bottom: var(--space-lg);
+  }
+
+  .card-padding {
+    padding: var(--space-lg);
+  }
+
+  .card-padding-sm {
+    padding: var(--space-md);
+  }
+
+  .stack-sm {
+    gap: var(--space-sm);
+  }
+
+  .stack-md {
+    gap: var(--space-md);
+  }
+
+  .stack-lg {
+    gap: var(--space-lg);
+  }
+
+  .stack-xl {
+    gap: var(--space-xl);
+  }
+}
+
+/* Print Stylesheet */
+@media print {
+  /* Enhanced print styles for Professional Report */
+
+  /* Hide non-essential elements */
+  .no-print,
+  .report-progress-bar,
+  button,
+  .sticky,
+  nav,
+  .fixed {
+    display: none !important;
+  }
+
+  /* Reset backgrounds for print */
+  body {
+    background: white !important;
+    color: black !important;
+    font-size: 11pt;
+    line-height: 1.4;
+  }
+
+  /* Page breaks */
+  .break-after-page {
+    break-after: page;
+    page-break-after: always;
+  }
+
+  .break-before-page {
+    break-before: page;
+    page-break-before: always;
+  }
+
+  .avoid-break {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  /* Force expand all details/collapsible for print */
+  details {
+    display: block !important;
+  }
+
+  details summary {
+    display: none !important;
+  }
+
+  details[open] {
+    display: block !important;
+  }
+
+  /* Card styling for print */
+  .print-card {
+    border: 1px solid #e5e7eb !important;
+    box-shadow: none !important;
+    background: white !important;
+    margin-bottom: 1rem;
+    padding: 1rem;
+  }
+
+  /* Score bars and colored elements for print */
+  .print-score-bar,
+  .bg-primary,
+  .bg-emerald-50,
+  .bg-amber-50,
+  .bg-red-50,
+  .text-primary,
+  .text-emerald-600,
+  .text-amber-600,
+  .text-red-600 {
+    print-color-adjust: exact !important;
+    -webkit-print-color-adjust: exact !important;
+  }
+
+  /* Ensure colors print */
+  * {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  /* Headers for print */
+  h1 {
+    font-size: 24pt;
+    margin-bottom: 12pt;
+  }
+
+  h2 {
+    font-size: 18pt;
+    margin-bottom: 10pt;
+  }
+
+  h3 {
+    font-size: 14pt;
+    margin-bottom: 8pt;
+  }
+
+  h4 {
+    font-size: 12pt;
+    margin-bottom: 6pt;
+  }
+
+  /* Optimized page margins for A4 */
+  @page {
+    margin: 2cm;
+    size: A4 portrait;
+  }
+
+  @page :first {
+    margin-top: 2.5cm;
+  }
+
+  /* Links for print */
+  a {
+    color: inherit !important;
+    text-decoration: none !important;
+  }
+
+  a[href]::after {
+    content: none !important;
+  }
+
+  /* Tables for print */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  th,
+  td {
+    border: 1px solid #d1d5db;
+    padding: 0.5rem;
+    text-align: left;
+    font-size: 10pt;
+  }
+
+  /* Charts and visualizations */
+  canvas,
+  svg {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  /* Images */
+  img {
+    max-width: 100% !important;
+    break-inside: avoid;
+  }
+
+  /* Ensure badges and badges are visible */
+  .badge,
+  [class*="badge"] {
+    border: 1px solid currentColor !important;
+    background-color: white !important;
+    padding: 2px 6px !important;
+  }
+
+  /* Progress bars for print */
+  [class*="progress"] {
+    border: 1px solid #d1d5db !important;
+    background: white !important;
+  }
+
+  /* Cards maintain structure */
+  [class*="card"],
+  [class*="Card"] {
+    border: 1px solid #e5e7eb !important;
+    box-shadow: none !important;
+    margin-bottom: 1rem !important;
+    break-inside: avoid;
+  }
+}
