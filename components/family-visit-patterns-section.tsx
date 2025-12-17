@@ -4,7 +4,7 @@ import { Users, TrendingUp, TrendingDown, AlertTriangle, CheckCircle2, Eye } fro
 
 export function FamilyVisitPatternsSection() {
   return (
-    <section className="py-16 lg:py-32 bg-gradient-to-b from-[#F5F3EF] to-[#FDFBF7]">
+    <section className="py-16 lg:py-32 bg-[#FDFBF7]">
       <div className="container mx-auto px-3 sm:px-4 overflow-x-hidden">
         <div className="text-center max-w-4xl mx-auto mb-12 lg:mb-16 space-y-4 sm:space-y-6">
           <Badge className="px-3 sm:px-6 py-2 sm:py-3 text-xs sm:text-base bg-[#C88D79] text-white border-0 shadow-soft-md whitespace-normal max-w-[90%] mx-auto">

@@ -42,7 +42,7 @@ export function IntelligentMatchingSection() {
   ]
 
   return (
-    <section className="py-12 sm:py-20 lg:py-32 bg-white overflow-x-hidden">
+    <section className="py-12 sm:py-20 lg:py-32 bg-[#FDFBF7] overflow-x-hidden">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center max-w-4xl mx-auto mb-8 sm:mb-16 space-y-3 sm:space-y-4">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-[#1A231E] text-balance">
@@ -56,7 +56,7 @@ export function IntelligentMatchingSection() {
         {/* Comparison Grid */}
         <div className="grid lg:grid-cols-2 gap-4 sm:gap-8 max-w-6xl mx-auto mb-12 sm:mb-20">
           {/* Directories */}
-          <Card className="p-4 sm:p-6 lg:p-8 bg-[#F5F3EF] border-2 border-[#E8E5DF] rounded-2xl sm:rounded-3xl">
+          <Card className="p-4 sm:p-6 lg:p-8 bg-white border-2 border-[#E8E5DF] rounded-2xl sm:rounded-3xl shadow-soft-md">
             <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
               <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-[#D17A6F]/20 flex items-center justify-center">
                 <X className="w-5 h-5 sm:w-6 sm:h-6 text-[#D17A6F]" strokeWidth={2.5} />
@@ -75,8 +75,8 @@ export function IntelligentMatchingSection() {
               ))}
             </ul>
 
-            <div className="mt-4 sm:mt-6 p-3 sm:p-4 bg-white/60 rounded-xl border border-[#E8E5DF]">
-              <p className="text-xs sm:text-sm text-[#1A231E]/60 italic">
+            <div className="mt-4 sm:mt-6 p-3 sm:p-4 bg-[#FDFBF7] rounded-xl border border-[#E8E5DF]">
+              <p className="text-xs sm:text-sm text-[#1A231E]/70 italic">
                 Result: You're left Googling each home individually, cross-referencing CQC reports, and hoping the
                 reviews are honest.
               </p>
@@ -121,7 +121,7 @@ export function IntelligentMatchingSection() {
               return (
                 <Card
                   key={index}
-                  className="p-4 sm:p-6 lg:p-8 bg-gradient-to-r from-[#F5F3EF] to-white border-2 border-[#E8E5DF] rounded-xl sm:rounded-2xl shadow-soft-md hover:shadow-soft-lg transition-all"
+                  className="p-4 sm:p-6 lg:p-8 bg-white border-2 border-[#E8E5DF] rounded-xl sm:rounded-2xl shadow-soft-md hover:shadow-soft-lg transition-all"
                 >
                   <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 items-start">
                     <div className="flex-shrink-0">

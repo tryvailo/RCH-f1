@@ -70,7 +70,7 @@ export function SocialProofSection() {
         {/* Testimonials Grid - Updated to 6 testimonials */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-7xl mx-auto mb-10 sm:mb-16">
           {testimonials.map((testimonial, i) => (
-            <Card key={i} className="p-6 sm:p-8 rounded-2xl shadow-sm bg-white border border-[#E8E5DF]">
+            <Card key={i} className="p-6 sm:p-8 rounded-2xl shadow-soft-md bg-white border-2 border-[#E8E5DF]">
               <div className="space-y-4 sm:space-y-5">
                 <Quote className="w-8 h-8 sm:w-10 sm:h-10 text-[#4F6F52]/20" />
 
@@ -107,7 +107,7 @@ export function SocialProofSection() {
             { number: "£5,000+", label: "Avg. Savings Found" },
             { number: "97%", label: "Would Recommend" },
           ].map((stat, i) => (
-            <div key={i} className="text-center p-4 sm:p-6 lg:p-8 bg-white border border-[#E8E5DF] rounded-2xl">
+            <div key={i} className="text-center p-4 sm:p-6 lg:p-8 bg-white border-2 border-[#E8E5DF] rounded-2xl shadow-soft-sm">
               <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#4F6F52] mb-2">{stat.number}</div>
               <div className="text-xs sm:text-sm lg:text-base font-medium text-[#1A231E]/70">{stat.label}</div>
             </div>

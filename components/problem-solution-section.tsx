@@ -24,7 +24,7 @@ export function ProblemSolutionSection() {
   return (
     <section
       id="comparison"
-      className="py-16 sm:py-24 lg:py-32 bg-gradient-to-b from-[#FDFBF7] to-[#F5F3EF] overflow-x-hidden"
+      className="py-16 sm:py-24 lg:py-32 bg-[#FDFBF7] overflow-x-hidden"
     >
       <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-16 space-y-4">
@@ -35,7 +35,7 @@ export function ProblemSolutionSection() {
 
         {/* Two Column Comparison */}
         <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 max-w-6xl mx-auto">
-          <Card className="p-5 sm:p-8 lg:p-10 bg-[#E8E5DF]/40 border-2 border-[#E8E5DF] rounded-2xl sm:rounded-3xl shadow-sm">
+          <Card className="p-5 sm:p-8 lg:p-10 bg-white border-2 border-[#E8E5DF] rounded-2xl sm:rounded-3xl shadow-soft-md">
             <div className="space-y-5 sm:space-y-6">
               <div className="inline-flex items-center gap-3 mb-2 sm:mb-4">
                 <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-[#D17A6F]/20 flex items-center justify-center">

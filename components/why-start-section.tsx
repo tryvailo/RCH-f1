@@ -49,10 +49,10 @@ const included = [
 
 export function WhyStartSection() {
   return (
-    <section className="py-12 sm:py-20 lg:py-32 bg-gradient-to-b from-[#F5F3EF] to-[#FDFBF7]">
+    <section className="py-12 sm:py-20 lg:py-32 bg-[#FDFBF7]">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="relative rounded-xl sm:rounded-2xl lg:rounded-[2.5rem] bg-[#FDFBF7] border border-gray-100 overflow-hidden shadow-soft-lg p-4 sm:p-6 md:p-10 lg:p-16">
+          <div className="relative rounded-xl sm:rounded-2xl lg:rounded-[2.5rem] bg-white border-2 border-[#E8E5DF] overflow-hidden shadow-soft-lg p-4 sm:p-6 md:p-10 lg:p-16">
             <div className="absolute -top-24 -right-24 w-96 h-96 bg-[#4F6F52]/5 rounded-full blur-3xl pointer-events-none" />
 
             <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-16 relative z-10 items-center">

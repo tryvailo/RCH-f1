@@ -50,7 +50,7 @@ const comparisonRows = [
 
 export function IndependenceComparisonSection() {
   return (
-    <section className="relative py-20 md:py-28 lg:py-32 bg-gradient-to-br from-[#FAFAF9] via-white to-[#F5F3EF]/40 overflow-hidden">
+    <section className="relative py-20 md:py-28 lg:py-32 bg-[#FDFBF7] overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-[#D17A6F]/5 via-transparent to-transparent opacity-60" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-[#4F6F52]/5 via-transparent to-transparent opacity-40" />

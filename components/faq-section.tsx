@@ -58,7 +58,7 @@ function FaqSection() {
   return (
     <section
       id="faq"
-      className="relative py-20 md:py-28 lg:py-32 bg-muted overflow-hidden"
+      className="relative py-20 md:py-28 lg:py-32 bg-[#FDFBF7] overflow-hidden"
     >
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-primary/5 via-transparent to-transparent opacity-60" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-border/30 via-transparent to-transparent opacity-40" />

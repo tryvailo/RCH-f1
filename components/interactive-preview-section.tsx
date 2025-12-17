@@ -27,7 +27,7 @@ export function InteractivePreviewSection() {
   ]
 
   return (
-    <section className="py-16 sm:py-24 lg:py-32 bg-primary/5 border-b border-primary/10 overflow-x-hidden">
+    <section className="py-16 sm:py-24 lg:py-32 bg-[#FDFBF7] overflow-x-hidden">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center max-w-7xl mx-auto">
           {/* Left Column: Text & Benefits */}

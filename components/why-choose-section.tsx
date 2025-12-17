@@ -30,7 +30,7 @@ const benefits = [
 
 export function WhyChooseSection() {
   return (
-    <section className="py-20 lg:py-32 bg-gradient-to-b from-[#F5F3EF] to-[#FDFBF7]">
+    <section className="py-20 lg:py-32 bg-[#FDFBF7]">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#1A231E]">
