@@ -50,6 +50,7 @@ import {
 } from "lucide-react"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { PrioritiesStep } from "@/components/professional-assessment/priorities-step"
 
 export type ProfessionalAssessmentData = {
   // Contact
@@ -78,6 +79,10 @@ export type ProfessionalAssessmentData = {
 
   // Budget
   monthly_budget: string
+
+  // Priorities
+  priority_order?: string[]
+  priority_weights?: number[]
 }
 
 const STEPS = [
@@ -188,9 +193,10 @@ const STEPS = [
     reinforcement: "Nearly there — just one more question.",
   },
   { id: "budget", label: "Budget", icon: PoundSterling, category: "Budget", reinforcement: "" },
+  { id: "priorities", label: "Priorities", icon: Target, category: "Priorities", reinforcement: "" },
 ]
 
-const CATEGORIES = ["Contact", "Location", "Medical", "Safety", "Budget"]
+const CATEGORIES = ["Contact", "Location", "Medical", "Safety", "Budget", "Priorities"]
 
 const TOTAL_STEPS = STEPS.length
 
@@ -793,6 +799,9 @@ export default function ProfessionalAssessmentStepsPage() {
       case "budget":
         if (!formData.monthly_budget) newErrors.monthly_budget = "Please select a budget range"
         break
+      case "priorities":
+        // Priorities step is always valid - has defaults
+        break
     }
 
     setErrors(newErrors)
@@ -899,6 +908,24 @@ export default function ProfessionalAssessmentStepsPage() {
   }
 
   // Render step content
+  const handlePrioritiesComplete = (priorities: string[], weights: number[]) => {
+    setFormData((prev) => ({
+      ...prev,
+      priority_order: priorities,
+      priority_weights: weights,
+    }))
+    setErrors({})
+    // Auto-advance after priorities are confirmed
+    setTimeout(() => {
+      if (currentStep < TOTAL_STEPS - 1) {
+        setCurrentStep((prev) => prev + 1)
+        window.scrollTo({ top: 0, behavior: "smooth" })
+      } else {
+        handleSubmit()
+      }
+    }, 1000)
+  }
+
   const renderStepContent = () => {
     const stepId = STEPS[currentStep].id
 
@@ -1283,20 +1310,24 @@ export default function ProfessionalAssessmentStepsPage() {
               ))}
             </div>
             {errors.monthly_budget && <p className="text-sm text-destructive">{errors.monthly_budget}</p>}
-          </div>
-        )
+            </div>
+            )
 
-      default:
-        return null
-    }
-  }
+            case "priorities":
+            return <PrioritiesStep onComplete={handlePrioritiesComplete} />
+
+            default:
+            return null
+            }
+            }
 
   // Check if current step has multi-select (needs Continue button)
   const isMultiSelectStep = ["care_type", "conditions", "equipment", "allergies", "dietary", "behavioral"].includes(
     STEPS[currentStep].id,
   )
   const isTextInputStep = ["name", "email", "phone", "emergency", "location"].includes(STEPS[currentStep].id)
-  const needsContinueButton = isMultiSelectStep || isTextInputStep || currentStep === TOTAL_STEPS - 1
+  const isPrioritiesStep = STEPS[currentStep].id === "priorities"
+  const needsContinueButton = (isMultiSelectStep || isTextInputStep || currentStep === TOTAL_STEPS - 1) && !isPrioritiesStep
 
   return (
     <>
@@ -1321,13 +1352,14 @@ export default function ProfessionalAssessmentStepsPage() {
                 const isFuture = categoryStepIndices.every((i) => i > currentStep)
 
                 const categoryIcons: { [key: string]: React.ElementType } = {
-                  Contact: User,
-                  Location: MapPin,
-                  Medical: Heart,
-                  Safety: Shield,
-                  Budget: PoundSterling,
-                }
-                const Icon = categoryIcons[category]
+                   Contact: User,
+                   Location: MapPin,
+                   Medical: Heart,
+                   Safety: Shield,
+                   Budget: PoundSterling,
+                   Priorities: Target,
+                 }
+                 const Icon = categoryIcons[category]
 
                 return (
                   <div key={category} className="flex-1 flex flex-col items-center">
