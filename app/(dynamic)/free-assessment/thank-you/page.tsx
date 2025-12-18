@@ -6,7 +6,7 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { ReportHeader } from "@/components/report-header"
 import { ReportEmpathySection } from "@/components/report-empathy-section"
-import { ReportPriorityScore } from "@/components/report-priority-score"
+
 import { ReportFairCostGap } from "@/components/report-fair-cost-gap"
 import { ReportHomeRecommendations } from "@/components/report-home-recommendations"
 import { ReportFundingEligibility } from "@/components/report-funding-eligibility"
@@ -28,10 +28,14 @@ function ThankYouContent() {
   const name = searchParams.get("name") || "Valued Customer"
   const location = searchParams.get("location") || "Birmingham"
   const email = searchParams.get("email") || "your email"
+  
+  // Parse priorities and weights from URL params
+  const prioritiesParam = searchParams.get("priorities") || "quality,cost,proximity"
+  const weightsParam = searchParams.get("weights") || "50,30,20"
+  const priorityOrder = prioritiesParam.split(",")
+  const priorityWeights = weightsParam.split(",").map((w) => parseInt(w, 10))
 
   const [showReport, setShowReport] = useState(false)
-  const [priorityOrder, setPriorityOrder] = useState<string[]>(["quality", "cost", "proximity"])
-  const [priorityWeights, setPriorityWeights] = useState<number[]>([50, 30, 20])
   const [showSaveDialog, setShowSaveDialog] = useState(false)
 
   const generatedAt = new Date().toLocaleDateString("en-GB", {
@@ -41,11 +45,6 @@ function ThankYouContent() {
     hour: "2-digit",
     minute: "2-digit",
   })
-
-  const handlePriorityComplete = (priorities: string[], weights: number[]) => {
-    setPriorityOrder(priorities)
-    setPriorityWeights(weights)
-  }
 
   if (!showReport) {
     return <ReportLoadingAnimation onComplete={() => setShowReport(true)} />
@@ -73,8 +72,6 @@ function ThankYouContent() {
         <ReportValueSummary matchesCount={3} location={location} />
 
         <ReportEmpathySection />
-
-        <ReportPriorityScore onComplete={handlePriorityComplete} />
 
         <ReportHomeRecommendations priorityOrder={priorityOrder} />
 

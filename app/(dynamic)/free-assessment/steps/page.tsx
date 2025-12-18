@@ -25,6 +25,11 @@ import {
   Calendar,
   ClipboardCheck,
   Info,
+  BarChart3,
+  GripVertical,
+  ChevronUp,
+  ChevronDown,
+  ArrowRight,
 } from "lucide-react"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
@@ -38,6 +43,8 @@ export type AssessmentData = {
   contact_name: string
   contact_email: string
   marketing_opt_in: boolean
+  priority_order?: string[]
+  priority_weights?: number[]
 }
 
 const STEPS = [
@@ -73,8 +80,14 @@ const STEPS = [
   },
   {
     id: "contact",
-    label: "Results",
+    label: "Contact",
     icon: User,
+    reinforcement: "Almost done — let's personalise your report.",
+  },
+  {
+    id: "priorities",
+    label: "Priorities",
+    icon: BarChart3,
     reinforcement: "",
   },
 ]
@@ -237,10 +250,41 @@ const durationOptions = [
   },
 ]
 
+interface Priority {
+  id: string
+  title: string
+  description: string
+  icon: React.ReactNode
+  weight?: number
+}
+
+const defaultPriorities: Priority[] = [
+  {
+    id: "quality",
+    title: "Quality of Care",
+    description: "CQC ratings, staff stability, activities, specialisations",
+    icon: <BarChart3 className="w-8 h-8 text-[#4F6F52]" />,
+  },
+  {
+    id: "cost",
+    title: "Cost & Budget",
+    description: "Price, value for money, hidden fees, negotiation potential",
+    icon: <Coins className="w-8 h-8 text-[#4F6F52]" />,
+  },
+  {
+    id: "proximity",
+    title: "Proximity to Family",
+    description: "Distance, visiting ease, location accessibility",
+    icon: <MapPin className="w-8 h-8 text-[#4F6F52]" />,
+  },
+]
+
+const priorityWeights = [50, 30, 20]
+
 export default function FreeAssessmentSteps() {
-  const searchParams = useSearchParams()
   const router = useRouter()
   const [currentStep, setCurrentStep] = useState(1)
+  const [mounted, setMounted] = useState(false)
   const [showReinforcement, setShowReinforcement] = useState(false)
   const [formData, setFormData] = useState<AssessmentData>({
     location_postcode: "",
@@ -251,17 +295,32 @@ export default function FreeAssessmentSteps() {
     contact_name: "",
     contact_email: "",
     marketing_opt_in: false,
+    priority_order: ["quality", "cost", "proximity"],
+    priority_weights: [50, 30, 20],
   })
   const [errors, setErrors] = useState<Record<string, string>>({})
   const [isSubmitting, setIsSubmitting] = useState(false)
+  const [priorities, setPriorities] = useState<Priority[]>(defaultPriorities)
+  const [draggedIndex, setDraggedIndex] = useState<number | null>(null)
+  const [dragOverIndex, setDragOverIndex] = useState<number | null>(null)
+  const [isTouchDevice, setIsTouchDevice] = useState(false)
 
   useEffect(() => {
+    setMounted(true)
+    if (typeof window !== "undefined") {
+      setIsTouchDevice("ontouchstart" in window || navigator.maxTouchPoints > 0)
+    }
     const saved = localStorage.getItem("free-assessment-draft")
     if (saved) {
       try {
         const parsed = JSON.parse(saved)
         setFormData(parsed.data)
         setCurrentStep(parsed.step)
+        if (parsed.data.priority_order) {
+          const reorderedPriorities = defaultPriorities.slice()
+            .sort((a, b) => (parsed.data.priority_order?.indexOf(a.id) ?? 0) - (parsed.data.priority_order?.indexOf(b.id) ?? 0))
+          setPriorities(reorderedPriorities)
+        }
       } catch (e) {
         console.error("Failed to restore draft", e)
       }
@@ -321,14 +380,124 @@ export default function FreeAssessmentSteps() {
           newErrors.contact_email = "Please check your email address is correct"
         }
         break
+      case 7:
+        // Priorities step - always valid since defaults are set
+        break
+      }
+
+      return Object.keys(newErrors).length === 0
+      }
+
+  const validateAndSetErrors = (step: number): boolean => {
+    const newErrors: Record<string, string> = {}
+
+    switch (step) {
+      case 1:
+        if (!formData.location_postcode.trim()) {
+          newErrors.location_postcode = "We need a valid UK postcode to find homes near you"
+        } else if (!/^[A-Z]{1,2}\d{1,2}[A-Z]?\s?\d[A-Z]{2}$/i.test(formData.location_postcode)) {
+          newErrors.location_postcode = "Please check your postcode format (e.g. B15 2TT)"
+        }
+        break
+      case 2:
+        if (!formData.care_type) {
+          newErrors.care_type = "Please select the type of care you're looking for"
+        }
+        break
+      case 3:
+        if (!formData.budget_range) {
+          newErrors.budget_range = "This helps us show you the most suitable options"
+        }
+        break
+      case 4:
+        if (!formData.funding_type) {
+          newErrors.funding_type = "We'll check what funding support may be available"
+        }
+        break
+      case 5:
+        if (!formData.duration_type) {
+          newErrors.duration_type = "Please let us know your timeframe"
+        }
+        break
+      case 6:
+        if (!formData.contact_name.trim() || formData.contact_name.length < 2) {
+          newErrors.contact_name = "This helps us personalise your report"
+        }
+        if (!formData.contact_email.trim()) {
+          newErrors.contact_email = "We'll send your report here - please check it's correct"
+        } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.contact_email)) {
+          newErrors.contact_email = "Please check your email address is correct"
+        }
+        break
+      case 7:
+        // Priorities step - always valid since defaults are set
+        break
+      }
+
+      setErrors(newErrors)
+      return Object.keys(newErrors).length === 0
+  }
+
+  // Priority dragging handlers
+  const handleDragStart = (e: React.DragEvent, index: number) => {
+    setDraggedIndex(index)
+    e.dataTransfer.effectAllowed = "move"
+  }
+
+  const handleDragOver = (e: React.DragEvent, index: number) => {
+    e.preventDefault()
+    e.dataTransfer.dropEffect = "move"
+    setDragOverIndex(index)
+  }
+
+  const handleDragLeave = () => {
+    setDragOverIndex(null)
+  }
+
+  const handleDrop = (e: React.DragEvent, dropIndex: number) => {
+    e.preventDefault()
+    const dragIndex = draggedIndex
+
+    if (dragIndex === null || dragIndex === dropIndex) {
+      setDraggedIndex(null)
+      setDragOverIndex(null)
+      return
     }
 
-    setErrors(newErrors)
-    return Object.keys(newErrors).length === 0
+    const newPriorities = [...priorities]
+    const [draggedItem] = newPriorities.splice(dragIndex, 1)
+    newPriorities.splice(dropIndex, 0, draggedItem)
+
+    setPriorities(newPriorities)
+    updateFormData({
+      priority_order: newPriorities.map((p) => p.id),
+      priority_weights: priorityWeights,
+    })
+    setDraggedIndex(null)
+    setDragOverIndex(null)
+  }
+
+  const handleDragEnd = () => {
+    setDraggedIndex(null)
+    setDragOverIndex(null)
+  }
+
+  const movePriorityItem = (index: number, direction: "up" | "down") => {
+    const newIndex = direction === "up" ? index - 1 : index + 1
+    if (newIndex < 0 || newIndex >= priorities.length) return
+
+    const newPriorities = [...priorities]
+    const [movedItem] = newPriorities.splice(index, 1)
+    newPriorities.splice(newIndex, 0, movedItem)
+    setPriorities(newPriorities)
+    updateFormData({
+      priority_order: newPriorities.map((p) => p.id),
+      priority_weights: priorityWeights,
+    })
   }
 
   const handleNext = () => {
-    if (validateStep(currentStep)) {
+    if (validateAndSetErrors(currentStep)) {
       if (currentStep < TOTAL_STEPS) {
         const currentStepData = STEPS[currentStep - 1]
         if (currentStepData.reinforcement) {
@@ -358,7 +527,7 @@ export default function FreeAssessmentSteps() {
   const handleOptionSelect = (field: keyof AssessmentData, value: string) => {
     updateFormData({ [field]: value })
     setTimeout(() => {
-      if (validateStep(currentStep)) {
+      if (validateStep(currentStep)) {  // Use validateStep (without setState) here for render
         const currentStepData = STEPS[currentStep - 1]
         if (currentStepData.reinforcement && currentStep < TOTAL_STEPS) {
           setShowReinforcement(true)
@@ -376,7 +545,7 @@ export default function FreeAssessmentSteps() {
   }
 
   const handleSubmit = async () => {
-    if (!validateStep(TOTAL_STEPS)) return
+    if (!validateAndSetErrors(TOTAL_STEPS)) return
 
     setIsSubmitting(true)
 
@@ -399,6 +568,9 @@ export default function FreeAssessmentSteps() {
         ref: result.reference,
         name: formData.contact_name,
         location: formData.location_postcode,
+        email: formData.contact_email,
+        priorities: formData.priority_order?.join(",") || "quality,cost,proximity",
+        weights: formData.priority_weights?.join(",") || "50,30,20",
       })
 
       router.push(`/free-assessment/thank-you?${queryParams.toString()}`)
@@ -484,7 +656,11 @@ export default function FreeAssessmentSteps() {
   }
 
   const stepCompletionPercentage = getStepCompletionPercentage()
-  const isStepValid = validateStep(currentStep)
+  const isStepValid = validateStep(currentStep) // Safe - no setState
+
+  if (!mounted) {
+    return <div className="min-h-screen flex items-center justify-center">Loading...</div>
+  }
 
   return (
     <>
@@ -780,14 +956,131 @@ export default function FreeAssessmentSteps() {
                 </div>
 
                 {errors.submit && (
-                  <div className="flex items-start gap-2 p-4 bg-amber-50 border border-amber-200 rounded-lg">
-                    <Info className="w-5 h-5 text-amber-600 mt-0.5 flex-shrink-0" />
-                    <p className="text-sm text-amber-800">{errors.submit}</p>
-                  </div>
+                   <div className="flex items-start gap-2 p-4 bg-amber-50 border border-amber-200 rounded-lg">
+                     <Info className="w-5 h-5 text-amber-600 mt-0.5 flex-shrink-0" />
+                     <p className="text-sm text-amber-800">{errors.submit}</p>
+                   </div>
+                 )}
+                </div>
                 )}
-              </div>
-            )}
-          </Card>
+
+                {currentStep === 7 && (
+                <div className="space-y-6">
+                <div className="text-center mb-8">
+                  <h2 className="font-serif text-2xl sm:text-3xl lg:text-[32px] font-bold text-[#1A231E] mb-3">
+                    Let's Personalise This Report
+                  </h2>
+                  <p className="text-lg sm:text-xl text-[#1A231E] mb-4">What matters most to your family?</p>
+                  <p className="text-base text-[#1A231E]/70 max-w-xl mx-auto">
+                    {isTouchDevice
+                      ? "Use the arrows to order these three priorities. We'll use this to rank your homes specifically for you."
+                      : "Drag these three priorities in order of importance. We'll use this to rank your homes specifically for you."}
+                  </p>
+                </div>
+
+                <div className="space-y-3 sm:space-y-4 mb-8" role="list" aria-label="Priority order list">
+                  {priorities.map((priority, index) => (
+                    <div
+                      key={priority.id}
+                      draggable={!isTouchDevice}
+                      onDragStart={(e) => handleDragStart(e, index)}
+                      onDragOver={(e) => handleDragOver(e, index)}
+                      onDragLeave={handleDragLeave}
+                      onDrop={(e) => handleDrop(e, index)}
+                      onDragEnd={handleDragEnd}
+                      tabIndex={0}
+                      role="listitem"
+                      aria-label={`Draggable card: ${priority.title}, position ${index + 1} of ${priorities.length}`}
+                      className={`
+                        relative flex items-center gap-4 p-4 sm:p-5
+                        bg-white border rounded-lg
+                        transition-all duration-200 ease-out
+                        focus:outline-none focus:ring-2 focus:ring-[#4F6F52] focus:ring-offset-2
+                        ${draggedIndex === index ? "opacity-50 scale-[0.98]" : ""}
+                        ${dragOverIndex === index ? "border-[#4F6F52] border-2 shadow-md" : "border-[#E5E7EB]"}
+                        ${!isTouchDevice ? "cursor-grab active:cursor-grabbing hover:shadow-lg hover:border-[#4F6F52]/50" : ""}
+                      `}
+                    >
+                      <div className="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#4F6F52]/10 flex items-center justify-center">
+                        <span className="text-lg sm:text-xl font-bold text-[#4F6F52]">{index + 1}</span>
+                      </div>
+
+                      {!isTouchDevice && (
+                        <div className="flex-shrink-0 text-[#1A231E]/30 hover:text-[#1A231E]/60">
+                          <GripVertical className="w-5 h-5" />
+                        </div>
+                      )}
+
+                      <div className="flex-shrink-0 w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-[#4F6F52]/5 flex items-center justify-center">
+                        {priority.icon}
+                      </div>
+
+                      <div className="flex-grow min-w-0">
+                        <h3 className="text-base sm:text-lg font-semibold text-[#1A231E] mb-0.5">{priority.title}</h3>
+                        <p className="text-sm text-[#1A231E]/60 line-clamp-2">{priority.description}</p>
+                      </div>
+
+                      <div className="flex-shrink-0 hidden sm:block">
+                        <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-[#4F6F52]/10 text-[#4F6F52]">
+                          {priorityWeights[index]}%
+                        </span>
+                      </div>
+
+                      {isTouchDevice && (
+                        <div className="flex-shrink-0 flex flex-col gap-1">
+                          <button
+                            onClick={() => movePriorityItem(index, "up")}
+                            disabled={index === 0}
+                            aria-label={`Move ${priority.title} up`}
+                            className={`
+                              p-2 rounded-lg transition-colors
+                              ${
+                                index === 0
+                                  ? "text-[#1A231E]/20 cursor-not-allowed"
+                                  : "text-[#1A231E]/60 hover:bg-[#4F6F52]/10 hover:text-[#4F6F52] active:bg-[#4F6F52]/20"
+                              }
+                            `}
+                          >
+                            <ChevronUp className="w-5 h-5" />
+                          </button>
+                          <button
+                            onClick={() => movePriorityItem(index, "down")}
+                            disabled={index === priorities.length - 1}
+                            aria-label={`Move ${priority.title} down`}
+                            className={`
+                              p-2 rounded-lg transition-colors
+                              ${
+                                index === priorities.length - 1
+                                  ? "text-[#1A231E]/20 cursor-not-allowed"
+                                  : "text-[#1A231E]/60 hover:bg-[#4F6F52]/10 hover:text-[#4F6F52] active:bg-[#4F6F52]/20"
+                              }
+                            `}
+                          >
+                            <ChevronDown className="w-5 h-5" />
+                          </button>
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
+
+                <div className="bg-[#4F6F52]/5 rounded-xl p-5 sm:p-6 mb-6 sm:mb-8" aria-live="polite">
+                  <p className="text-base sm:text-lg text-[#1A231E] mb-3">Your priorities are set to:</p>
+                  <ol className="space-y-2">
+                    {priorities.map((priority, index) => (
+                      <li key={priority.id} className="flex items-center gap-3">
+                        <span className="w-6 h-6 rounded-full bg-[#4F6F52] text-white text-sm font-medium flex items-center justify-center">
+                          {index + 1}
+                        </span>
+                        <span className="text-base font-medium text-[#1A231E]">{priority.title}</span>
+                        <span className="text-base font-semibold text-[#4F6F52]">({priorityWeights[index]}% weight)</span>
+                      </li>
+                    ))}
+                  </ol>
+                </div>
+                </div>
+                )}
+                </Card>
 
           <div className="flex items-center justify-between gap-4 mt-6">
             {currentStep > 1 ? (
