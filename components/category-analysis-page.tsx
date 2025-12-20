@@ -232,11 +232,11 @@ const getScoreWidth = (score: number) => `${(score / 10) * 100}%`
 const getStatusBadge = (status: "excellent" | "good" | "concern") => {
   switch (status) {
     case "excellent":
-      return { text: "Excellent", color: "bg-[#22c55e] text-white" }
+      return { text: "Excellent", colour: "bg-[#22c55e] text-white" }
     case "good":
-      return { text: "Good", color: "bg-[#eab308] text-white" }
+      return { text: "Good", colour: "bg-[#eab308] text-white" }
     case "concern":
-      return { text: "Concern", color: "bg-[#ef4444] text-white" }
+      return { text: "Concern", colour: "bg-[#ef4444] text-white" }
   }
 }
 
@@ -260,7 +260,7 @@ export function CategoryAnalysisPage({
     cta: "Ring to enquire",
   }
 
-  const colors = CATEGORY_COLORS[category] || CATEGORY_COLORS.Safety
+  const colours = CATEGORY_COLORS[category] || CATEGORY_COLORS.Safety
 
   const formatScore = (score: number | undefined | null): string => {
     if (score === undefined || score === null || isNaN(score)) return "0.0"
@@ -272,11 +272,11 @@ export function CategoryAnalysisPage({
       <div className="max-w-6xl mx-auto">
         <div className="mb-6 sm:mb-8">
           {/* Category Color Bar - Strong Visual Accent */}
-          <div className="h-2 w-full rounded-full mb-6" style={{ backgroundColor: colors.hex }} />
+          <div className="h-2 w-full rounded-full mb-6" style={{ backgroundColor: colours.hex }} />
 
           <div className="flex items-center gap-4 mb-3">
             <div
-              className={`w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-gradient-to-br ${colors.gradient} flex items-center justify-center shadow-lg print:shadow-none`}
+              className={`w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-gradient-to-br ${colours.gradient} flex items-center justify-centre shadow-lg print:shadow-none`}
             >
               <IconComponent className="w-8 h-8 sm:w-10 sm:h-10 text-white" strokeWidth={2.5} />
             </div>
@@ -284,7 +284,7 @@ export function CategoryAnalysisPage({
               {/* Category Badge */}
               <div
                 className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold text-white mb-2"
-                style={{ backgroundColor: colors.hex }}
+                style={{ backgroundColor: colours.hex }}
               >
                 <IconComponent className="w-3 h-3" />
                 {category}
@@ -297,20 +297,20 @@ export function CategoryAnalysisPage({
           </div>
         </div>
 
-        {/* Winner Callout - With category color border */}
+        {/* Winner Callout - With category colour border */}
         <Card
           className="bg-gradient-to-br from-[#FEF9C3] to-[#FEF08A] card-padding mb-6 shadow-lg rounded-2xl avoid-break print-card"
-          style={{ borderWidth: "2px", borderColor: colors.hex }}
+          style={{ borderWidth: "2px", borderColor: colours.hex }}
         >
           <div className="flex items-center gap-4">
             <div
-              className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl flex items-center justify-center shadow-md flex-shrink-0"
-              style={{ backgroundColor: colors.hex }}
+              className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl flex items-center justify-centre shadow-md flex-shrink-0"
+              style={{ backgroundColor: colours.hex }}
             >
               <Trophy className="w-6 h-6 sm:w-7 sm:h-7 text-white" strokeWidth={2.5} />
             </div>
             <div className="min-w-0 flex-1">
-              <div className="text-xs font-semibold uppercase tracking-wide mb-0.5" style={{ color: colors.hex }}>
+              <div className="text-xs font-semibold uppercase tracking-wide mb-0.5" style={{ colour: colours.hex }}>
                 Category Leader
               </div>
               <div className="text-xl sm:text-2xl font-bold text-[#1A231E] font-serif">
@@ -325,10 +325,10 @@ export function CategoryAnalysisPage({
           {/* Score Comparison - With category accent */}
           <Card
             className="bg-white card-padding shadow-md rounded-2xl avoid-break print-card"
-            style={{ borderWidth: "2px", borderColor: `${colors.hex}30` }}
+            style={{ borderWidth: "2px", borderColor: `${colours.hex}30` }}
           >
             <div className="flex items-center gap-2 mb-4">
-              <TrendingUp className="w-5 h-5" style={{ color: colors.hex }} strokeWidth={2.5} />
+              <TrendingUp className="w-5 h-5" style={{ colour: colours.hex }} strokeWidth={2.5} />
               <h2 className="text-xl font-bold text-[#1A231E] font-serif">Score Comparison</h2>
             </div>
 
@@ -338,8 +338,8 @@ export function CategoryAnalysisPage({
                   <div className="flex items-center justify-between mb-1.5 gap-2">
                     <div className="flex items-center gap-2 flex-1 min-w-0">
                       <div
-                        className="w-6 h-6 rounded-lg flex items-center justify-center text-xs font-bold text-white flex-shrink-0"
-                        style={{ backgroundColor: colors.hex }}
+                        className="w-6 h-6 rounded-lg flex items-center justify-centre text-xs font-bold text-white flex-shrink-0"
+                        style={{ backgroundColor: colours.hex }}
                       >
                         {index + 1}
                       </div>
@@ -373,10 +373,10 @@ export function CategoryAnalysisPage({
 
           {/* Key Finding - Already uses category gradient */}
           <Card
-            className={`bg-gradient-to-br ${colors.gradient} border-none card-padding shadow-lg rounded-2xl avoid-break print-card`}
+            className={`bg-gradient-to-br ${colours.gradient} border-none card-padding shadow-lg rounded-2xl avoid-break print-card`}
           >
             <div className="flex items-start gap-3 mb-3">
-              <div className="w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center flex-shrink-0">
+              <div className="w-10 h-10 rounded-xl bg-white/20 flex items-center justify-centre flex-shrink-0">
                 <Info className="w-5 h-5 text-white" strokeWidth={2.5} />
               </div>
               <h2 className="text-xl font-bold text-white font-serif">Key Finding</h2>
@@ -398,10 +398,10 @@ export function CategoryAnalysisPage({
         {/* Detailed Metrics for Top Home - With category accent */}
         <Card
           className="bg-white card-padding mb-6 shadow-md rounded-2xl avoid-break print-card"
-          style={{ borderWidth: "2px", borderColor: `${colors.hex}30` }}
+          style={{ borderWidth: "2px", borderColor: `${colours.hex}30` }}
         >
           <div className="flex items-center gap-2 mb-4">
-            <FileText className="w-5 h-5" style={{ color: colors.hex }} strokeWidth={2.5} />
+            <FileText className="w-5 h-5" style={{ colour: colours.hex }} strokeWidth={2.5} />
             <h2 className="text-xl font-bold text-[#1A231E] font-serif">{leader.name}: Detailed Metrics</h2>
           </div>
 
@@ -421,7 +421,7 @@ export function CategoryAnalysisPage({
                 >
                   <div className="flex items-start justify-between gap-2 mb-2">
                     <h3 className="text-sm font-semibold text-[#1A231E] leading-tight">{metric.name}</h3>
-                    <span className={`px-2 py-0.5 rounded-full text-xs font-semibold ${badge.color} whitespace-nowrap`}>
+                    <span className={`px-2 py-0.5 rounded-full text-xs font-semibold ${badge.colour} whitespace-nowrap`}>
                       {badge.text}
                     </span>
                   </div>
@@ -436,10 +436,10 @@ export function CategoryAnalysisPage({
         {/* Verification Questions - With category accent */}
         <Card
           className="bg-[#FEF9E7] card-padding mb-6 shadow-md rounded-2xl avoid-break print-card"
-          style={{ borderWidth: "2px", borderColor: `${colors.hex}40` }}
+          style={{ borderWidth: "2px", borderColor: `${colours.hex}40` }}
         >
           <div className="flex items-center gap-2 mb-4">
-            <AlertTriangle className="w-5 h-5" style={{ color: colors.hex }} strokeWidth={2.5} />
+            <AlertTriangle className="w-5 h-5" style={{ colour: colours.hex }} strokeWidth={2.5} />
             <h2 className="text-xl font-bold text-[#1A231E] font-serif">Questions to Ask During Visit</h2>
           </div>
 
@@ -448,8 +448,8 @@ export function CategoryAnalysisPage({
               <div key={index} className="bg-white/80 rounded-xl p-4 border border-[#E8E5DF]">
                 <div className="flex items-start gap-2 mb-2">
                   <div
-                    className="w-6 h-6 rounded-full flex items-center justify-center text-white font-bold text-xs flex-shrink-0"
-                    style={{ backgroundColor: colors.hex }}
+                    className="w-6 h-6 rounded-full flex items-center justify-centre text-white font-bold text-xs flex-shrink-0"
+                    style={{ backgroundColor: colours.hex }}
                   >
                     {index + 1}
                   </div>
@@ -471,13 +471,13 @@ export function CategoryAnalysisPage({
         <Card
           className="card-padding shadow-lg rounded-2xl avoid-break print-card"
           style={{
-            backgroundColor: colors.hex,
+            backgroundColor: colours.hex,
             border: "none",
           }}
         >
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center flex-shrink-0">
+              <div className="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-centre flex-shrink-0">
                 <ArrowRight className="w-6 h-6 text-white" strokeWidth={2.5} />
               </div>
               <div>

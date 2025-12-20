@@ -97,7 +97,7 @@ export function ProSocialProof({ testimonials = DEFAULT_TESTIMONIALS, stats = DE
     <div className="bg-[#FDFBF7] py-8 sm:py-12 md:py-16 lg:py-20 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-12 sm:mb-16">
+        <div className="text-centre mb-12 sm:mb-16">
           <Badge variant="secondary" className="mb-4 text-base px-5 py-2 bg-[#4F6F52]/10 text-[#4F6F52] border-0">
             Trusted by {formatNumber(safeStats.totalFamilies)}+ Families
           </Badge>
@@ -112,29 +112,29 @@ export function ProSocialProof({ testimonials = DEFAULT_TESTIMONIALS, stats = DE
         {/* Stats Bar */}
         <div className="bg-gradient-to-br from-[#4F6F52] to-[#3d5741] rounded-3xl p-6 sm:p-8 md:p-10 mb-12 shadow-soft-xl">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 text-white">
-            <div className="text-center">
-              <div className="flex items-center justify-center gap-2 mb-2">
+            <div className="text-centre">
+              <div className="flex items-center justify-centre gap-2 mb-2">
                 <TrendingUp className="w-6 h-6 text-white/80" />
               </div>
               <div className="text-3xl sm:text-4xl font-bold mb-1">{formatCurrency(safeStats.avgSavings)}</div>
               <div className="text-sm text-white/80">Average Savings Identified</div>
             </div>
-            <div className="text-center">
-              <div className="flex items-center justify-center gap-2 mb-2">
+            <div className="text-centre">
+              <div className="flex items-center justify-centre gap-2 mb-2">
                 <Clock className="w-6 h-6 text-white/80" />
               </div>
               <div className="text-3xl sm:text-4xl font-bold mb-1">{safeStats.avgTimeSaved}</div>
               <div className="text-sm text-white/80">Research Time Saved</div>
             </div>
-            <div className="text-center">
-              <div className="flex items-center justify-center gap-2 mb-2">
+            <div className="text-centre">
+              <div className="flex items-center justify-centre gap-2 mb-2">
                 <Star className="w-6 h-6 text-white/80" />
               </div>
               <div className="text-3xl sm:text-4xl font-bold mb-1">{safeStats.satisfactionRate}/5</div>
               <div className="text-sm text-white/80">Client Satisfaction</div>
             </div>
-            <div className="text-center">
-              <div className="flex items-center justify-center gap-2 mb-2">
+            <div className="text-centre">
+              <div className="flex items-center justify-centre gap-2 mb-2">
                 <Users className="w-6 h-6 text-white/80" />
               </div>
               <div className="text-3xl sm:text-4xl font-bold mb-1">{safeStats.recommendRate}%</div>
@@ -181,7 +181,7 @@ export function ProSocialProof({ testimonials = DEFAULT_TESTIMONIALS, stats = DE
               {/* Author */}
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#4F6F52] to-[#3d5741] flex items-center justify-center text-white font-serif font-bold">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#4F6F52] to-[#3d5741] flex items-center justify-centre text-white font-serif font-bold">
                     {testimonial.initials}
                   </div>
                   <div>
@@ -203,19 +203,19 @@ export function ProSocialProof({ testimonials = DEFAULT_TESTIMONIALS, stats = DE
 
         {/* Trust Indicators */}
         <div className="bg-white border-2 border-[#E8E5DF] rounded-3xl p-6 sm:p-8 shadow-soft-lg">
-          <h3 className="text-xl font-bold text-[#1A231E] text-center mb-8 font-serif">
+          <h3 className="text-xl font-bold text-[#1A231E] text-centre mb-8 font-serif">
             Why Families Trust Our Analysis
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-            <div className="text-center p-4">
-              <div className="w-16 h-16 rounded-2xl bg-[#4F6F52]/10 flex items-center justify-center mx-auto mb-4">
+            <div className="text-centre p-4">
+              <div className="w-16 h-16 rounded-2xl bg-[#4F6F52]/10 flex items-center justify-centre mx-auto mb-4">
                 <Award className="w-8 h-8 text-[#4F6F52]" />
               </div>
               <h4 className="font-semibold text-[#1A231E] mb-2">100% Independent</h4>
               <p className="text-sm text-[#1A231E]/60">Zero commissions from care homes. Our only client is you.</p>
             </div>
-            <div className="text-center p-4">
-              <div className="w-16 h-16 rounded-2xl bg-[#4F6F52]/10 flex items-center justify-center mx-auto mb-4">
+            <div className="text-centre p-4">
+              <div className="w-16 h-16 rounded-2xl bg-[#4F6F52]/10 flex items-center justify-centre mx-auto mb-4">
                 <TrendingUp className="w-8 h-8 text-[#4F6F52]" />
               </div>
               <h4 className="font-semibold text-[#1A231E] mb-2">206 Data Points</h4>
@@ -223,8 +223,8 @@ export function ProSocialProof({ testimonials = DEFAULT_TESTIMONIALS, stats = DE
                 Comprehensive analysis from official regulatory, financial, and community sources.
               </p>
             </div>
-            <div className="text-center p-4">
-              <div className="w-16 h-16 rounded-2xl bg-[#4F6F52]/10 flex items-center justify-center mx-auto mb-4">
+            <div className="text-centre p-4">
+              <div className="w-16 h-16 rounded-2xl bg-[#4F6F52]/10 flex items-center justify-centre mx-auto mb-4">
                 <Users className="w-8 h-8 text-[#4F6F52]" />
               </div>
               <h4 className="font-semibold text-[#1A231E] mb-2">Expert-Verified</h4>

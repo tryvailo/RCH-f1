@@ -96,7 +96,7 @@ export default function PricingPage() {
 
       {/* Hero Section */}
       <section className="pt-32 pb-16 px-4">
-        <div className="container mx-auto max-w-5xl text-center">
+        <div className="container mx-auto max-w-5xl text-centre">
           <h1 className="text-5xl md:text-6xl font-serif font-bold text-[#1A231E] mb-6 text-balance">
             Simple, Transparent Pricing
           </h1>
@@ -217,7 +217,7 @@ export default function PricingPage() {
               <Button asChild className="w-full bg-white text-[#4F6F52] hover:bg-white/90" size="lg">
                 <Link href="/professional-assessment">Request Professional Report</Link>
               </Button>
-              <p className="text-white/80 text-sm text-center mt-4">30-day money-back guarantee</p>
+              <p className="text-white/80 text-sm text-centre mt-4">30-day money-back guarantee</p>
             </div>
           </div>
         </div>
@@ -226,7 +226,7 @@ export default function PricingPage() {
       {/* Detailed Comparison Table */}
       <section className="py-16 px-4 bg-white">
         <div className="container mx-auto max-w-5xl">
-          <h2 className="text-4xl font-serif font-bold text-[#1A231E] mb-12 text-center">
+          <h2 className="text-4xl font-serif font-bold text-[#1A231E] mb-12 text-centre">
             Detailed Feature Comparison
           </h2>
           <div className="overflow-x-auto">
@@ -234,15 +234,15 @@ export default function PricingPage() {
               <thead>
                 <tr className="border-b-2 border-[#E8E3DB]">
                   <th className="text-left py-4 px-4 font-bold text-[#1A231E]">Feature</th>
-                  <th className="text-center py-4 px-4 font-bold text-[#1A231E]">Free</th>
-                  <th className="text-center py-4 px-4 font-bold text-[#1A231E]">Professional</th>
+                  <th className="text-centre py-4 px-4 font-bold text-[#1A231E]">Free</th>
+                  <th className="text-centre py-4 px-4 font-bold text-[#1A231E]">Professional</th>
                 </tr>
               </thead>
               <tbody>
                 {comparisonData.map((item, index) => (
                   <tr key={index} className="border-b border-[#E8E3DB]">
                     <td className="py-4 px-4 font-medium text-[#1A231E]">{item.category}</td>
-                    <td className="py-4 px-4 text-center">
+                    <td className="py-4 px-4 text-centre">
                       {typeof item.free === "boolean" ? (
                         item.free ? (
                           <Check className="w-5 h-5 text-[#7FAD7E] mx-auto" />
@@ -253,8 +253,8 @@ export default function PricingPage() {
                         <span className="text-[#5C6B5E]">{item.free}</span>
                       )}
                     </td>
-                    <td className="py-4 px-4 text-center">
-                      <div className="flex items-center justify-center gap-2">
+                    <td className="py-4 px-4 text-centre">
+                      <div className="flex items-center justify-centre gap-2">
                         {typeof item.pro === "boolean" ? (
                           item.pro ? (
                             <Check className="w-5 h-5 text-[#7FAD7E]" />
@@ -292,7 +292,7 @@ export default function PricingPage() {
       {/* FAQ Section */}
       <section className="py-16 px-4 bg-[#F5F1EB]">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-4xl font-serif font-bold text-[#1A231E] mb-12 text-center">Pricing FAQ</h2>
+          <h2 className="text-4xl font-serif font-bold text-[#1A231E] mb-12 text-centre">Pricing FAQ</h2>
           <div className="space-y-6">
             <div className="bg-white p-6 rounded-xl">
               <h3 className="text-xl font-bold text-[#1A231E] mb-3">Why is the Professional Report £119?</h3>
@@ -330,7 +330,7 @@ export default function PricingPage() {
 
       {/* CTA Section */}
       <section className="py-20 px-4">
-        <div className="container mx-auto max-w-4xl text-center">
+        <div className="container mx-auto max-w-4xl text-centre">
           <h2 className="text-4xl font-serif font-bold text-[#1A231E] mb-6">Start with Our Free Assessment</h2>
           <p className="text-xl text-[#5C6B5E] mb-8">
             Get 3 personalised care home matches in 10 minutes. No payment required.

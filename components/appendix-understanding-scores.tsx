@@ -169,22 +169,22 @@ export function AppendixUnderstandingScores({ pageNumber = 2 }: AppendixUndersta
           </h3>
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-            <div className="text-center p-4 bg-[#4F6F52]/10 rounded-lg border border-[#4F6F52]/20">
+            <div className="text-centre p-4 bg-[#4F6F52]/10 rounded-lg border border-[#4F6F52]/20">
               <div className="text-2xl font-black text-[#4F6F52]">9-10</div>
               <div className="text-sm font-semibold text-[#4F6F52]">Excellent</div>
               <div className="text-xs text-[#5A6D7A] mt-1">Top tier, exceptional quality</div>
             </div>
-            <div className="text-center p-4 bg-[#2C5F8D]/10 rounded-lg border border-[#2C5F8D]/20">
+            <div className="text-centre p-4 bg-[#2C5F8D]/10 rounded-lg border border-[#2C5F8D]/20">
               <div className="text-2xl font-black text-[#2C5F8D]">7-8</div>
               <div className="text-sm font-semibold text-[#2C5F8D]">Good</div>
               <div className="text-xs text-[#5A6D7A] mt-1">Above average, reliable choice</div>
             </div>
-            <div className="text-center p-4 bg-[#C88D79]/10 rounded-lg border border-[#C88D79]/20">
+            <div className="text-centre p-4 bg-[#C88D79]/10 rounded-lg border border-[#C88D79]/20">
               <div className="text-2xl font-black text-[#C88D79]">5-6</div>
               <div className="text-sm font-semibold text-[#C88D79]">Fair</div>
               <div className="text-xs text-[#5A6D7A] mt-1">Average, some concerns</div>
             </div>
-            <div className="text-center p-4 bg-[#E63946]/10 rounded-lg border border-[#E63946]/20">
+            <div className="text-centre p-4 bg-[#E63946]/10 rounded-lg border border-[#E63946]/20">
               <div className="text-2xl font-black text-[#E63946]">Below 5</div>
               <div className="text-sm font-semibold text-[#E63946]">Poor</div>
               <div className="text-xs text-[#5A6D7A] mt-1">Significant concerns</div>
@@ -223,7 +223,7 @@ export function AppendixUnderstandingScores({ pageNumber = 2 }: AppendixUndersta
             <div key={idx} className="bg-[#F8F9FA] rounded-xl p-6 border border-[#E8E5DF]">
               <div className="flex items-start justify-between mb-4">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-[#4F6F52]/10 flex items-center justify-center text-[#4F6F52]">
+                  <div className="w-10 h-10 rounded-full bg-[#4F6F52]/10 flex items-center justify-centre text-[#4F6F52]">
                     {category.icon}
                   </div>
                   <div>

@@ -69,7 +69,7 @@ export function MonitoringRiskCalculator() {
   return (
     <section className="py-16 sm:py-20 lg:py-24 bg-gradient-to-br from-[#FDFBF7] via-white to-[#F5F3EF]">
       <div className="container mx-auto px-4 sm:px-6">
-        <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+        <div className="text-centre max-w-3xl mx-auto mb-12 sm:mb-16">
           <Badge className="mb-4 px-4 py-2 bg-[#4F6F52]/10 text-[#4F6F52] border-[#4F6F52]/20">
             RISK ASSESSMENT
           </Badge>

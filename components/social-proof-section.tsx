@@ -53,8 +53,8 @@ export function SocialProofSection() {
     <section id="reviews" className="py-16 sm:py-24 lg:py-32 bg-[#FDFBF7] relative overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-16 space-y-3 sm:space-y-4">
-          <div className="flex items-center justify-center gap-1 sm:gap-2 mb-3 sm:mb-4">
+        <div className="text-centre max-w-3xl mx-auto mb-10 sm:mb-16 space-y-3 sm:space-y-4">
+          <div className="flex items-center justify-centre gap-1 sm:gap-2 mb-3 sm:mb-4">
             {[...Array(5)].map((_, i) => (
               <Star key={i} className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 fill-[#C88D79] text-[#C88D79]" />
             ))}
@@ -83,7 +83,7 @@ export function SocialProofSection() {
                 <p className="text-base sm:text-lg text-[#1A231E]/80 leading-relaxed">"{testimonial.text}"</p>
 
                 <div className="flex items-center gap-3 pt-4 border-t border-[#E8E5DF]">
-                  <div className="w-12 h-12 rounded-full bg-[#4F6F52] flex items-center justify-center text-white font-semibold text-base">
+                  <div className="w-12 h-12 rounded-full bg-[#4F6F52] flex items-center justify-centre text-white font-semibold text-base">
                     {testimonial.avatar}
                   </div>
                   <div>
@@ -107,7 +107,7 @@ export function SocialProofSection() {
             { number: "£5,000+", label: "Avg. Savings Found" },
             { number: "97%", label: "Would Recommend" },
           ].map((stat, i) => (
-            <div key={i} className="text-center p-4 sm:p-6 lg:p-8 bg-white border-2 border-[#E8E5DF] rounded-2xl shadow-soft-sm">
+            <div key={i} className="text-centre p-4 sm:p-6 lg:p-8 bg-white border-2 border-[#E8E5DF] rounded-2xl shadow-soft-sm">
               <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#4F6F52] mb-2">{stat.number}</div>
               <div className="text-xs sm:text-sm lg:text-base font-medium text-[#1A231E]/70">{stat.label}</div>
             </div>

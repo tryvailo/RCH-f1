@@ -142,7 +142,7 @@ export function GooglePlacesInsights({ homes = SAMPLE_HOMES, topChoice }: Google
       <div className="max-w-6xl mx-auto space-y-6">
         {/* Header */}
         <div className="flex items-start gap-4">
-          <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center flex-shrink-0 shadow-lg">
+          <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-centre flex-shrink-0 shadow-lg">
             <BarChart3 className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
           </div>
           <div className="min-w-0">
@@ -197,30 +197,30 @@ export function GooglePlacesInsights({ homes = SAMPLE_HOMES, topChoice }: Google
                 <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                   <div className="flex items-center gap-3 flex-1 min-w-0">
                     {index === 0 && (
-                      <span className="w-8 h-8 rounded-full bg-amber-100 flex items-center justify-center text-sm font-bold text-amber-700 flex-shrink-0">
+                      <span className="w-8 h-8 rounded-full bg-amber-100 flex items-center justify-centre text-sm font-bold text-amber-700 flex-shrink-0">
                         1
                       </span>
                     )}
                     <span className="font-semibold text-[#1A231E] text-base sm:text-lg truncate">{home.name}</span>
                   </div>
                   <div className="grid grid-cols-3 gap-4 sm:gap-6">
-                    <div className="text-center p-3 bg-[#F8F9FA] rounded-xl">
+                    <div className="text-centre p-3 bg-[#F8F9FA] rounded-xl">
                       <Clock className="w-5 h-5 text-[#4F6F52] mx-auto mb-1" />
                       <p className={`font-bold text-lg ${getDwellTimeColor(home.avgDwellTime)}`}>
                         {home.avgDwellTime}m
                       </p>
                       <p className="text-xs text-[#1A231E]/60">Visit</p>
                     </div>
-                    <div className="text-center p-3 bg-[#F8F9FA] rounded-xl">
+                    <div className="text-centre p-3 bg-[#F8F9FA] rounded-xl">
                       <Users className="w-5 h-5 text-[#4F6F52] mx-auto mb-1" />
                       <p className={`font-bold text-lg ${getRepeatRateColor(home.repeatVisitorRate)}`}>
                         {home.repeatVisitorRate}%
                       </p>
                       <p className="text-xs text-[#1A231E]/60">Repeat</p>
                     </div>
-                    <div className="text-center p-3 bg-[#F8F9FA] rounded-xl">
+                    <div className="text-centre p-3 bg-[#F8F9FA] rounded-xl">
                       <TrendingUp className="w-5 h-5 text-[#4F6F52] mx-auto mb-1" />
-                      <div className="flex items-center justify-center gap-1">
+                      <div className="flex items-center justify-centre gap-1">
                         {getTrendIcon(home.footfallTrend)}
                         <span
                           className={`font-bold text-lg ${
@@ -350,7 +350,7 @@ export function GooglePlacesInsights({ homes = SAMPLE_HOMES, topChoice }: Google
         </Card>
 
         {/* Data Source Note */}
-        <p className="text-sm text-[#1A231E]/60 text-center">
+        <p className="text-sm text-[#1A231E]/60 text-centre">
           Engagement data derived from anonymised, aggregated visitor patterns. Updated monthly.
         </p>
       </div>

@@ -28,7 +28,7 @@ export function HowItWorksSection() {
   return (
     <section id="how-it-works" className="py-16 sm:py-24 lg:py-32 bg-[#FDFBF7] overflow-x-hidden">
       <div className="container mx-auto px-4 sm:px-6">
-        <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-16 space-y-3 sm:space-y-4">
+        <div className="text-centre max-w-3xl mx-auto mb-10 sm:mb-16 space-y-3 sm:space-y-4">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-[#1A231E]">
             How Our Service Works
           </h2>
@@ -49,12 +49,12 @@ export function HowItWorksSection() {
               const Icon = step.icon
               return (
                 <div key={step.number} className="relative z-10">
-                  <div className="flex flex-col items-center text-center space-y-5 sm:space-y-6">
+                  <div className="flex flex-col items-center text-centre space-y-5 sm:space-y-6">
                     <div className="relative">
-                      <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-white shadow-soft-md border border-[#E8E5DF] flex items-center justify-center">
+                      <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-white shadow-soft-md border border-[#E8E5DF] flex items-center justify-centre">
                         <Icon className="w-10 h-10 sm:w-12 sm:h-12 text-[#4F6F52]" />
                       </div>
-                      <div className="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-[#C88D79] text-white font-bold text-sm flex items-center justify-center shadow-md">
+                      <div className="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-[#C88D79] text-white font-bold text-sm flex items-center justify-centre shadow-md">
                         {step.number}
                       </div>
                     </div>

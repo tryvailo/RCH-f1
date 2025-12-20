@@ -44,7 +44,7 @@ export function IntelligentMatchingSection() {
   return (
     <section className="py-12 sm:py-20 lg:py-32 bg-[#FDFBF7] overflow-x-hidden">
       <div className="container mx-auto px-4 sm:px-6">
-        <div className="text-center max-w-4xl mx-auto mb-8 sm:mb-16 space-y-3 sm:space-y-4">
+        <div className="text-centre max-w-4xl mx-auto mb-8 sm:mb-16 space-y-3 sm:space-y-4">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-[#1A231E] text-balance">
             This Isn't a Directory Search. It's an Intelligent Matching System.
           </h2>
@@ -58,7 +58,7 @@ export function IntelligentMatchingSection() {
           {/* Directories */}
           <Card className="p-4 sm:p-6 lg:p-8 bg-white border-2 border-[#E8E5DF] rounded-2xl sm:rounded-3xl shadow-soft-md">
             <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
-              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-[#D17A6F]/20 flex items-center justify-center">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-[#D17A6F]/20 flex items-center justify-centre">
                 <X className="w-5 h-5 sm:w-6 sm:h-6 text-[#D17A6F]" strokeWidth={2.5} />
               </div>
               <h3 className="text-lg sm:text-xl lg:text-2xl font-serif font-bold text-[#1A231E]">
@@ -86,7 +86,7 @@ export function IntelligentMatchingSection() {
           {/* RightCareHome */}
           <Card className="p-4 sm:p-6 lg:p-8 bg-[#4F6F52] border-0 rounded-2xl sm:rounded-3xl text-white">
             <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
-              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-white/20 flex items-center justify-center">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-white/20 flex items-center justify-centre">
                 <Check className="w-5 h-5 sm:w-6 sm:h-6 text-white" strokeWidth={2.5} />
               </div>
               <h3 className="text-lg sm:text-xl lg:text-2xl font-serif font-bold">RightCareHome Intelligence</h3>
@@ -111,7 +111,7 @@ export function IntelligentMatchingSection() {
 
         {/* How It Works - 3 Steps */}
         <div className="max-w-5xl mx-auto">
-          <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-[#1A231E] text-center mb-6 sm:mb-12">
+          <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-[#1A231E] text-centre mb-6 sm:mb-12">
             Our 3-Step Matching Process
           </h3>
 
@@ -125,9 +125,9 @@ export function IntelligentMatchingSection() {
                 >
                   <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 items-start">
                     <div className="flex-shrink-0">
-                      <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-xl sm:rounded-2xl bg-[#4F6F52]/10 flex items-center justify-center relative">
+                      <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-xl sm:rounded-2xl bg-[#4F6F52]/10 flex items-center justify-centre relative">
                         <Icon className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 text-[#4F6F52]" />
-                        <Badge className="absolute -top-1.5 -right-1.5 sm:-top-2 sm:-right-2 w-5 h-5 sm:w-6 sm:h-6 lg:w-7 lg:h-7 rounded-full bg-[#C88D79] text-white border-0 flex items-center justify-center text-xs sm:text-sm font-bold p-0">
+                        <Badge className="absolute -top-1.5 -right-1.5 sm:-top-2 sm:-right-2 w-5 h-5 sm:w-6 sm:h-6 lg:w-7 lg:h-7 rounded-full bg-[#C88D79] text-white border-0 flex items-center justify-centre text-xs sm:text-sm font-bold p-0">
                           {index + 1}
                         </Badge>
                       </div>

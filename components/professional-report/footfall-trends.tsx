@@ -189,7 +189,7 @@ export function FootfallTrends({ homes }: FootfallTrendsProps) {
               </p>
             </div>
             <div className="flex items-center gap-4">
-              <div className="text-center">
+              <div className="text-centre">
                 <div className={`text-3xl font-bold ${getEngagementColor(home.family_engagement_score)}`}>
                   {home.family_engagement_score}/10
                 </div>
@@ -210,7 +210,7 @@ export function FootfallTrends({ homes }: FootfallTrendsProps) {
               <div className="min-w-[600px]">
                 <div className="flex items-center gap-2 mb-2 pl-16">
                   {timeLabels.map((hour) => (
-                    <div key={hour} className="flex-1 text-center text-sm text-muted-foreground">
+                    <div key={hour} className="flex-1 text-centre text-sm text-muted-foreground">
                       {formatHour(hour)}
                     </div>
                   ))}
@@ -223,7 +223,7 @@ export function FootfallTrends({ homes }: FootfallTrendsProps) {
                       {day.popularTimes.map((time, timeIdx) => (
                         <div
                           key={timeIdx}
-                          className={`flex-1 h-10 rounded ${getIntensityColor(time.intensity)} transition-colors`}
+                          className={`flex-1 h-10 rounded ${getIntensityColor(time.intensity)} transition-colours`}
                           title={`${formatHour(time.hour)}: ${getIntensityLabel(time.intensity)} (${time.intensity}%)`}
                         />
                       ))}

@@ -53,7 +53,7 @@ export function ReportVisualTeaser() {
     <section className="py-18 sm:py-22 lg:py-28 bg-gradient-to-b from-white to-[#FDFBF7]">
       <div className="container mx-auto px-4 sm:px-6 max-w-5xl">
         {/* Header */}
-        <div className="text-center mb-14 md:mb-16">
+        <div className="text-centre mb-14 md:mb-16">
           <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#1A231E] mb-5 md:mb-6">
             What's Inside Your Professional Report?
           </h2>
@@ -181,12 +181,12 @@ export function ReportVisualTeaser() {
                 </div>
 
                 {/* Overlay with text */}
-                <div className="absolute inset-0 bg-gradient-to-t from-white/90 via-white/50 to-transparent flex items-end justify-center pb-5">
+                <div className="absolute inset-0 bg-gradient-to-t from-white/90 via-white/50 to-transparent flex items-end justify-centre pb-5">
                   <span className="text-base md:text-lg text-[#1A231E]/50 italic">{mockup.overlayText}</span>
                 </div>
 
                 {/* Lock icon indicator */}
-                <div className="absolute top-4 right-4 w-10 h-10 rounded-full bg-[#4F6F52]/10 flex items-center justify-center">
+                <div className="absolute top-4 right-4 w-10 h-10 rounded-full bg-[#4F6F52]/10 flex items-center justify-centre">
                   <svg className="w-5 h-5 text-[#4F6F52]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path
                       strokeLinecap="round"
@@ -246,7 +246,7 @@ export function ReportVisualTeaser() {
         </div>
 
         {/* CTA Button */}
-        <div className="text-center">
+        <div className="text-centre">
           <Link href="/professional-assessment">
             <Button
               size="lg"

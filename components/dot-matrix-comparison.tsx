@@ -117,10 +117,10 @@ function NumericScore({ score }: { score: number }) {
 
   return (
     <div
-      className="px-3 py-2 rounded-lg font-bold text-base md:text-lg min-w-[64px] min-h-[44px] text-center flex flex-col items-center justify-center"
+      className="px-3 py-2 rounded-lg font-bold text-base md:text-lg min-w-[64px] min-h-[44px] text-centre flex flex-col items-center justify-centre"
       style={{
         backgroundColor: getBgColor(score),
-        color: getColor(score),
+        colour: getColor(score),
       }}
       aria-label={`Score: ${score.toFixed(1)} - ${getLabel(score)}`}
     >
@@ -200,10 +200,10 @@ export function DotMatrixComparison({
             <tr className="border-b-2 border-[#E8E5DF]">
               <th className="text-left py-4 pr-4 text-sm font-semibold text-[#1A231E]/60 w-44">Care Home</th>
               {CATEGORIES.map((cat) => (
-                <th key={cat.key} className="text-center py-4 px-2">
+                <th key={cat.key} className="text-centre py-4 px-2">
                   <TooltipProvider>
                     <Tooltip>
-                      <TooltipTrigger className="text-sm font-semibold text-[#1A231E] flex items-center justify-center gap-1">
+                      <TooltipTrigger className="text-sm font-semibold text-[#1A231E] flex items-center justify-centre gap-1">
                         {cat.label}
                         <Info className="w-3 h-3 text-[#1A231E]/40" />
                       </TooltipTrigger>
@@ -214,7 +214,7 @@ export function DotMatrixComparison({
                   </TooltipProvider>
                 </th>
               ))}
-              <th className="text-center py-4 pl-4 text-sm font-semibold text-[#1A231E]">Overall</th>
+              <th className="text-centre py-4 pl-4 text-sm font-semibold text-[#1A231E]">Overall</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-[#E8E5DF]">
@@ -224,12 +224,12 @@ export function DotMatrixComparison({
               return (
                 <tr
                   key={home.name}
-                  className={`hover:bg-[#FDFBF7] transition-colors ${isBest ? "bg-[#22c55e]/5" : ""}`}
+                  className={`hover:bg-[#FDFBF7] transition-colours ${isBest ? "bg-[#22c55e]/5" : ""}`}
                 >
                   <td className="py-4 pr-4">
                     <div className="flex items-center gap-3">
                       <span
-                        className="w-7 h-7 rounded-lg flex items-center justify-center text-sm font-bold text-white flex-shrink-0"
+                        className="w-7 h-7 rounded-lg flex items-center justify-centre text-sm font-bold text-white flex-shrink-0"
                         style={{ backgroundColor: getOverallColor(home.overall) }}
                       >
                         {index + 1}
@@ -242,13 +242,13 @@ export function DotMatrixComparison({
                   </td>
                   {CATEGORIES.map((cat) => (
                     <td key={cat.key} className="py-4 px-2">
-                      <div className="flex justify-center">
+                      <div className="flex justify-centre">
                         <NumericScore score={home.scores[cat.key as keyof typeof home.scores]} />
                       </div>
                     </td>
                   ))}
-                  <td className="py-4 pl-4 text-center">
-                    <span className="text-xl md:text-2xl font-bold" style={{ color: getOverallColor(home.overall) }}>
+                  <td className="py-4 pl-4 text-centre">
+                    <span className="text-xl md:text-2xl font-bold" style={{ colour: getOverallColor(home.overall) }}>
                       {home.overall}
                     </span>
                     <span className="text-sm text-[#1A231E]/50 block">/100</span>

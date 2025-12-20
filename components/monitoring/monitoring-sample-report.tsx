@@ -24,7 +24,7 @@ export function MonitoringSampleReport() {
     <section className="py-16 sm:py-20 lg:py-24 bg-gradient-to-br from-white via-[#FDFBF7] to-white">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-12 sm:mb-16">
+          <div className="text-centre mb-12 sm:mb-16">
             <Badge className="mb-4 px-4 py-2 bg-[#4F6F52]/10 text-[#4F6F52] border-[#4F6F52]/20">
               SAMPLE REPORT
             </Badge>
@@ -40,7 +40,7 @@ export function MonitoringSampleReport() {
             <div className="grid lg:grid-cols-2 gap-8 items-center">
               <div>
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#4F6F52] to-[#3A5140] flex items-center justify-center">
+                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#4F6F52] to-[#3A5140] flex items-center justify-centre">
                     <FileText className="w-8 h-8 text-white" />
                   </div>
                   <div>
@@ -112,7 +112,7 @@ export function MonitoringSampleReport() {
                   )}
                 </div>
 
-                <div className="text-center">
+                <div className="text-centre">
                   <p className="text-sm text-[#1A231E]/60 mb-4">
                     Want to receive reports like this every month?
                   </p>
@@ -130,19 +130,19 @@ export function MonitoringSampleReport() {
                   <div className="space-y-4">
                     <div className="bg-white rounded-lg p-4 border border-[#E8E5DF]">
                       <div className="text-xs text-[#1A231E]/60 mb-2">Report Preview</div>
-                      <div className="h-48 bg-gradient-to-br from-[#4F6F52]/5 to-[#7FAD7E]/5 rounded-lg flex items-center justify-center border-2 border-dashed border-[#4F6F52]/20">
-                        <div className="text-center">
+                      <div className="h-48 bg-gradient-to-br from-[#4F6F52]/5 to-[#7FAD7E]/5 rounded-lg flex items-center justify-centre border-2 border-dashed border-[#4F6F52]/20">
+                        <div className="text-centre">
                           <FileText className="w-12 h-12 text-[#4F6F52]/40 mx-auto mb-2" />
                           <p className="text-sm text-[#1A231E]/50">24-page PDF report</p>
                         </div>
                       </div>
                     </div>
                     <div className="grid grid-cols-2 gap-3">
-                      <div className="bg-white rounded-lg p-3 border border-[#E8E5DF] text-center">
+                      <div className="bg-white rounded-lg p-3 border border-[#E8E5DF] text-centre">
                         <div className="text-2xl font-bold text-[#4F6F52]">156</div>
                         <div className="text-xs text-[#1A231E]/60">Data Points</div>
                       </div>
-                      <div className="bg-white rounded-lg p-3 border border-[#E8E5DF] text-center">
+                      <div className="bg-white rounded-lg p-3 border border-[#E8E5DF] text-centre">
                         <div className="text-2xl font-bold text-[#4F6F52]">12</div>
                         <div className="text-xs text-[#1A231E]/60">Risk Categories</div>
                       </div>

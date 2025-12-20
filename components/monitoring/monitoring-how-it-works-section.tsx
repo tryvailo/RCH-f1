@@ -41,7 +41,7 @@ export function MonitoringHowItWorksSection() {
     <section className="py-20 lg:py-32 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-centre mb-16">
             <Badge className="mb-6 px-4 py-2 bg-primary/10 text-primary border-primary/20">Your Journey</Badge>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-foreground mb-6 text-balance">
               From Anxiety to Confidence. Your Transformation Timeline.
@@ -63,7 +63,7 @@ export function MonitoringHowItWorksSection() {
                 </Badge>
 
                 <div className="flex items-start gap-6 mb-4">
-                  <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-centre flex-shrink-0">
                     <stage.icon className="w-7 h-7 text-primary" strokeWidth={2} />
                   </div>
 
@@ -80,22 +80,22 @@ export function MonitoringHowItWorksSection() {
           <div className="mt-16 grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {/* Before Card */}
             <div className="bg-gradient-to-br from-destructive/5 to-destructive/10 border-2 border-destructive/20 rounded-2xl p-8 hover:shadow-soft-lg transition-all">
-              <div className="flex items-center justify-center w-16 h-16 rounded-2xl bg-destructive/10 mx-auto mb-6">
+              <div className="flex items-center justify-centre w-16 h-16 rounded-2xl bg-destructive/10 mx-auto mb-6">
                 <CloudRain className="w-8 h-8 text-destructive" strokeWidth={2} />
               </div>
-              <h3 className="text-2xl font-serif font-bold text-foreground mb-4 text-center">Before</h3>
-              <p className="text-muted-foreground text-center leading-relaxed">
+              <h3 className="text-2xl font-serif font-bold text-foreground mb-4 text-centre">Before</h3>
+              <p className="text-muted-foreground text-centre leading-relaxed">
                 Constant worry, sleepless nights, feeling helpless and uncertain about your loved one's care quality.
               </p>
             </div>
 
             {/* After Card */}
             <div className="bg-gradient-to-br from-primary/5 to-primary/10 border-2 border-primary/20 rounded-2xl p-8 hover:shadow-soft-lg transition-all">
-              <div className="flex items-center justify-center w-16 h-16 rounded-2xl bg-primary/10 mx-auto mb-6">
+              <div className="flex items-center justify-centre w-16 h-16 rounded-2xl bg-primary/10 mx-auto mb-6">
                 <Smile className="w-8 h-8 text-primary" strokeWidth={2} />
               </div>
-              <h3 className="text-2xl font-serif font-bold text-foreground mb-4 text-center">After</h3>
-              <p className="text-muted-foreground text-center leading-relaxed">
+              <h3 className="text-2xl font-serif font-bold text-foreground mb-4 text-centre">After</h3>
+              <p className="text-muted-foreground text-centre leading-relaxed">
                 Complete confidence, peaceful sleep, empowered with data to ensure your loved one receives excellent
                 care.
               </p>

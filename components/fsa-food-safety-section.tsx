@@ -137,7 +137,7 @@ export function FSAFoodSafetySection({
       <div className="max-w-6xl mx-auto space-y-6">
         {/* Header */}
         <div className="flex items-start gap-4">
-          <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-gradient-to-br from-orange-500 to-amber-600 flex items-center justify-center flex-shrink-0 shadow-lg">
+          <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-gradient-to-br from-orange-500 to-amber-600 flex items-center justify-centre flex-shrink-0 shadow-lg">
             <UtensilsCrossed className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
           </div>
           <div className="min-w-0">
@@ -195,7 +195,7 @@ export function FSAFoodSafetySection({
                 <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                   <div className="flex items-center gap-3 flex-1 min-w-0">
                     {index === 0 && (
-                      <div className="w-8 h-8 rounded-full bg-amber-100 flex items-center justify-center flex-shrink-0">
+                      <div className="w-8 h-8 rounded-full bg-amber-100 flex items-center justify-centre flex-shrink-0">
                         <span className="text-amber-700 text-sm font-bold">1</span>
                       </div>
                     )}
@@ -233,21 +233,21 @@ export function FSAFoodSafetySection({
                 {index === 0 && (
                   <div className="mt-5 pt-5 border-t border-gray-100">
                     <div className="grid grid-cols-3 gap-4">
-                      <div className="text-center p-4 bg-[#F8F9FA] rounded-xl">
+                      <div className="text-centre p-4 bg-[#F8F9FA] rounded-xl">
                         <ClipboardCheck className="w-5 h-5 text-[#4F6F52] mx-auto mb-2" />
                         <p className="text-sm text-[#1A231E]/70">Hygiene</p>
                         <p className={`text-xl font-bold ${getRatingColor(home.scores.hygiene)}`}>
                           {home.scores.hygiene}/5
                         </p>
                       </div>
-                      <div className="text-center p-4 bg-[#F8F9FA] rounded-xl">
+                      <div className="text-centre p-4 bg-[#F8F9FA] rounded-xl">
                         <Building2 className="w-5 h-5 text-[#4F6F52] mx-auto mb-2" />
                         <p className="text-sm text-[#1A231E]/70">Structure</p>
                         <p className={`text-xl font-bold ${getRatingColor(home.scores.structural)}`}>
                           {home.scores.structural}/5
                         </p>
                       </div>
-                      <div className="text-center p-4 bg-[#F8F9FA] rounded-xl">
+                      <div className="text-centre p-4 bg-[#F8F9FA] rounded-xl">
                         <Users className="w-5 h-5 text-[#4F6F52] mx-auto mb-2" />
                         <p className="text-sm text-[#1A231E]/70">Management</p>
                         <p className={`text-xl font-bold ${getRatingColor(home.scores.management)}`}>
@@ -295,19 +295,19 @@ export function FSAFoodSafetySection({
               <p className="font-medium text-[#1A231E] mb-3">Rating scale:</p>
               <div className="grid grid-cols-2 gap-x-6 gap-y-2 text-[#1A231E]/70">
                 <div className="flex items-center gap-2">
-                  <span className="w-6 text-center font-bold text-emerald-600">5</span>
+                  <span className="w-6 text-centre font-bold text-emerald-600">5</span>
                   <span>Very Good</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="w-6 text-center font-bold text-green-600">4</span>
+                  <span className="w-6 text-centre font-bold text-green-600">4</span>
                   <span>Good</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="w-6 text-center font-bold text-amber-600">3</span>
+                  <span className="w-6 text-centre font-bold text-amber-600">3</span>
                   <span>Satisfactory</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="w-6 text-center font-bold text-orange-500">2</span>
+                  <span className="w-6 text-centre font-bold text-orange-500">2</span>
                   <span>Needs Improvement</span>
                 </div>
               </div>

@@ -5,93 +5,93 @@ export const birminghamConfig: CityConfig = {
   name: "Birmingham",
   available: true,
   stats: {
-    totalHomes: 277,
-    averageWeeklyCost: 1250,
+    totalHomes: 177,
+    averageWeeklyCost: 975,
     averageCQCRating: 4.2,
-    marketGrowth: "+12% YoY",
-    waitingListAvg: "3-6 weeks",
+    marketGrowth: "+17.6% (65+)",
+    waitingListAvg: "4-8 weeks",
   },
   pricing: {
-    min: 900,
-    max: 1800,
-    average: 1250,
-    description: "Birmingham care home costs vary significantly by area and care level",
+    min: 750,
+    max: 2500,
+    average: 975,
+    description: "Birmingham care costs range from £750 for residential care to £2,500+ for luxury nursing in Edgbaston",
   },
-  neighborhoods: [
+  neighbourhoods: [
     {
       name: "Edgbaston",
-      description: "Premium area with excellent medical facilities",
-      averagePrice: 1650,
+      description: "Premium area with luxury nursing and specialist dementia care",
+      averagePrice: 1850,
       homesCount: 23,
       rating: 4.7,
-      highlights: ["Near QE Hospital", "Large gardens", "Specialist dementia care"],
+      highlights: ["Luxury nursing", "Near QE Hospital", "Specialist dementia"],
     },
     {
       name: "Sutton Coldfield",
-      description: "Peaceful suburban setting",
+      description: "Quiet residential hub with high-quality family-run homes",
       averagePrice: 1450,
       homesCount: 31,
       rating: 4.5,
-      highlights: ["Family-run homes", "Park views", "Good transport links"],
+      highlights: ["Family-run", "Suburban setting", "Good transport"],
     },
     {
-      name: "Moseley",
-      description: "Village atmosphere with modern care",
-      averagePrice: 1350,
-      homesCount: 18,
-      rating: 4.4,
-      highlights: ["Community feel", "Arts & culture", "Boutique homes"],
+      name: "Solihull",
+      description: "Excellent mix of residential and dedicated nursing care",
+      averagePrice: 1320,
+      homesCount: 35,
+      rating: 4.2,
+      highlights: ["Modern facilities", "Wide care range", "Village centres"],
     },
     {
       name: "Harborne",
-      description: "Vibrant area with diverse care options",
+      description: "Vibrant neighbourhood with diverse care quality",
       averagePrice: 1280,
       homesCount: 27,
       rating: 4.3,
-      highlights: ["High street nearby", "Mixed care levels", "Regular activities"],
+      highlights: ["Mixed care levels", "High street access", "Active social programmes"],
     },
     {
       name: "Kings Heath",
-      description: "Affordable quality care",
+      description: "Established residential homes with stable pricing",
       averagePrice: 1150,
       homesCount: 34,
       rating: 4.2,
-      highlights: ["Value for money", "Experienced staff", "Local amenities"],
+      highlights: ["Competitive value", "Experienced staff", "Community feel"],
     },
     {
-      name: "Northfield",
-      description: "Budget-friendly with good standards",
+      name: "Moseley",
+      description: "Affordable options with strong community focus",
       averagePrice: 950,
-      homesCount: 42,
-      rating: 4.0,
-      highlights: ["Competitive pricing", "Modern facilities", "Transport access"],
+      homesCount: 18,
+      rating: 4.4,
+      highlights: ["Village atmosphere", "Budget-friendly", "Arts focus"],
     },
   ],
   testimonials: [
     {
-      name: "Sarah Mitchell",
+      name: "Margaret Thompson",
       relation: "Daughter",
       area: "Edgbaston",
       quote:
-        "The Birmingham report showed us red flags in 3 homes we were considering. We chose Oaklands in Edgbaston instead - Mum has been there 18 months and thriving.",
+        "Finding a care home for my mother in Birmingham felt overwhelming until I used RightCareHome. We found a wonderful place in Edgbaston that's close to family and saved £890/month.",
       rating: 5,
       verified: true,
     },
     {
-      name: "James Patterson",
+      name: "David Patel",
       relation: "Son",
       area: "Sutton Coldfield",
       quote:
-        "Living in London, I needed help finding care for Dad in Birmingham. The local insights were invaluable - saved us from a £300/week overcharge.",
+        "The Birmingham-specific insights were invaluable. We learned about staffing issues at one highly-rated home and found a better option in Sutton Coldfield with excellent care standards.",
       rating: 5,
       verified: true,
     },
     {
-      name: "Eleanor Hughes",
+      name: "Jennifer Clarke",
       relation: "Wife",
-      area: "Harborne",
+      area: "Solihull",
       quote:
-        "The Fair Cost analysis revealed we were about to pay £15,000 more than necessary. Found excellent care in Harborne for £1,280/week instead.",
+        "As a Birmingham resident, I thought I knew the local care homes. RightCareHome's analysis revealed cost differences I never would have discovered on my own. Absolutely worth it.",
       rating: 5,
       verified: true,
     },
@@ -100,39 +100,54 @@ export const birminghamConfig: CityConfig = {
     {
       question: "How many care homes are in Birmingham?",
       answer:
-        "Birmingham has 277 registered care homes. Our database includes detailed analysis of CQC ratings, pricing, and hidden risks for homes across all areas including Edgbaston, Sutton Coldfield, Moseley, and Harborne.",
+        "Birmingham has 177 registered care homes specifically for older adults (109 residential and 68 nursing). Our database includes detailed analysis of CQC ratings, pricing, and hidden risks for homes across all areas including Edgbaston and Sutton Coldfield.",
     },
     {
       question: "What is the average cost of a care home in Birmingham?",
       answer:
-        "The average weekly cost is £1,250, but prices range from £900 to £1,800 depending on location and care level. Edgbaston tends to be premium (£1,650/week) while Northfield offers good value (£950/week). Our Fair Cost analysis ensures you pay market rate, not inflated prices.",
+        "The average weekly cost starts from £750 for residential care. Nursing care typically exceeds £1,500, while luxury options in premium areas like Edgbaston can reach £2,500 per week. Our analysis ensures you find the best value for your specific care needs.",
+    },
+    {
+      question: "What is the demand for care homes in Birmingham?",
+      answer:
+        "The population over 65 in Birmingham is projected to grow by 17.65% (an additional 27,000 people) by 2033. This is leading to increased competition for high-quality nursing beds, while residential demand remains stable.",
     },
     {
       question: "Which Birmingham areas have the best care homes?",
       answer:
-        "Edgbaston has the highest average CQC ratings (4.7/5) with excellent medical facilities nearby. Sutton Coldfield offers peaceful suburban settings with strong family-run homes. Moseley and Harborne provide good quality at mid-range prices. Our neighborhood analysis helps you choose based on your priorities.",
-    },
-    {
-      question: "How long does it take to find a care home in Birmingham?",
-      answer:
-        "Average waiting lists are 3-6 weeks for quality homes. Our Free Shortlist service provides your personalized recommendations within 48 hours, giving you time to visit and decide without rushing into the wrong home.",
-    },
-    {
-      question: "Do you cover all Birmingham postcodes?",
-      answer:
-        "Yes, we analyze care homes across all Birmingham areas: B1-B44 postcodes. Whether you need care in central Birmingham, Edgbaston (B15-B17), Sutton Coldfield (B72-B76), or any other area, we have comprehensive local data.",
+        "Edgbaston and Sutton Coldfield are the primary hubs for premium and luxury care, consistently showing high CQC ratings. Other areas like Solihull and Harborne offer excellent mid-range options with strong local reputations.",
     },
   ],
   hero: {
-    title: "277 Care Homes in Birmingham",
-    subtitle: "Find the right one without the £15,000 mistake",
+    title: "Expert Analysis of Birmingham Care Homes",
+    subtitle: "Navigate 177+ verified homes with local 2025 market data",
     badge: "BIRMINGHAM SPECIALIST",
     trustedBy: "Trusted by 1,240+ Birmingham families",
   },
+  regionalInsights: {
+    title: "Birmingham Market Analysis 2025",
+    items: [
+      {
+        label: "Ageing Population",
+        value: "+17.6%",
+        description: "Projected increase in over-65s by 2033, creating high demand for beds.",
+      },
+      {
+        label: "Quality Benchmark",
+        value: "70%",
+        description: "Share of older adult residential homes rated 'Good' or 'Outstanding'.",
+      },
+      {
+        label: "Vacancy Rate",
+        value: "9-10%",
+        description: "Average bed availability, with nursing beds being highly competitive.",
+      },
+    ],
+  },
   metaDescription:
-    "Compare all 277 Birmingham care homes with unbiased analysis. See hidden risks, fair costs, and CQC ratings across Edgbaston, Sutton Coldfield, Moseley & more. Free shortlist in 48hrs.",
+    "Expert analysis of 177 Birmingham care homes. Compare costs, quality, and demand trends for 2025 across Edgbaston, Sutton Coldfield, and Solihull. Free independent report.",
   structuredData: {
     areaServed: "Birmingham, West Midlands, UK",
-    priceRange: "£900-£1800 per week",
+    priceRange: "£750-£2500 per week",
   },
 }

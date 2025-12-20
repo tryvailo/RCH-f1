@@ -14,7 +14,7 @@ export function MonitoringDashboardPreview() {
   return (
     <section className="py-16 sm:py-20 lg:py-32 bg-gradient-to-br from-white via-[#FDFBF7] to-white">
       <div className="container mx-auto px-4 sm:px-6">
-        <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+        <div className="text-centre max-w-3xl mx-auto mb-12 sm:mb-16">
           <Badge className="mb-4 px-4 py-2 bg-[#4F6F52]/10 text-[#4F6F52] border-[#4F6F52]/20">
             LIVE PREVIEW
           </Badge>
@@ -146,7 +146,7 @@ export function MonitoringDashboardPreview() {
                 <div className="space-y-4">
                   <div className="bg-white rounded-xl p-5 border-l-4 border-[#D17A6F] shadow-sm">
                     <div className="flex items-start gap-3">
-                      <div className="w-10 h-10 rounded-full bg-[#D17A6F]/10 flex items-center justify-center flex-shrink-0">
+                      <div className="w-10 h-10 rounded-full bg-[#D17A6F]/10 flex items-center justify-centre flex-shrink-0">
                         <Users className="w-5 h-5 text-[#D17A6F]" />
                       </div>
                       <div className="flex-1">
@@ -164,7 +164,7 @@ export function MonitoringDashboardPreview() {
 
                   <div className="bg-white rounded-xl p-5 border-l-4 border-[#4F6F52] shadow-sm">
                     <div className="flex items-start gap-3">
-                      <div className="w-10 h-10 rounded-full bg-[#4F6F52]/10 flex items-center justify-center flex-shrink-0">
+                      <div className="w-10 h-10 rounded-full bg-[#4F6F52]/10 flex items-center justify-centre flex-shrink-0">
                         <Shield className="w-5 h-5 text-[#4F6F52]" />
                       </div>
                       <div className="flex-1">
@@ -182,7 +182,7 @@ export function MonitoringDashboardPreview() {
 
                   <div className="bg-white rounded-xl p-5 border-l-4 border-[#7FAD7E] shadow-sm">
                     <div className="flex items-start gap-3">
-                      <div className="w-10 h-10 rounded-full bg-[#7FAD7E]/10 flex items-center justify-center flex-shrink-0">
+                      <div className="w-10 h-10 rounded-full bg-[#7FAD7E]/10 flex items-center justify-centre flex-shrink-0">
                         <CheckCircle className="w-5 h-5 text-[#7FAD7E]" />
                       </div>
                       <div className="flex-1">
@@ -201,7 +201,7 @@ export function MonitoringDashboardPreview() {
               </TabsContent>
             </Tabs>
 
-            <div className="mt-8 pt-8 border-t border-[#E8E5DF] text-center">
+            <div className="mt-8 pt-8 border-t border-[#E8E5DF] text-centre">
               <p className="text-sm text-[#1A231E]/60 mb-4">
                 This is a sample of what you'll receive in your monthly monitoring report
               </p>

@@ -19,27 +19,27 @@ export function ProValueSummary({
     {
       icon: Home,
       title: `${homesCount} Care Homes Compared`,
-      color: "#4F6F52",
+      colour: "#4F6F52",
     },
     {
       icon: Shield,
       title: `${dataPoints} Data Points Per Home`,
-      color: "#22c55e",
+      colour: "#22c55e",
     },
     {
       icon: PoundSterling,
       title: "Fair Cost Gap Calculator",
-      color: "#f59e0b",
+      colour: "#f59e0b",
     },
     {
       icon: MessageSquare,
       title: "Negotiation Scripts",
-      color: "#3b82f6",
+      colour: "#3b82f6",
     },
     {
       icon: Award,
       title: "14-Day Action Plan",
-      color: "#C88D79",
+      colour: "#C88D79",
     },
   ]
 
@@ -47,7 +47,7 @@ export function ProValueSummary({
     <section className="py-10 sm:py-14 bg-gradient-to-b from-[#FDFBF7] to-white print:py-6">
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
         {/* Header */}
-        <div className="text-center mb-8 sm:mb-10">
+        <div className="text-centre mb-8 sm:mb-10">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#4F6F52]/10 rounded-full mb-4">
             <Award className="w-5 h-5 text-[#4F6F52]" />
             <span className="text-sm sm:text-base font-semibold text-[#4F6F52]">Professional Report</span>
@@ -61,17 +61,17 @@ export function ProValueSummary({
           </p>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-4 sm:gap-5 mb-8 sm:mb-10">
+        <div className="flex flex-wrap justify-centre gap-4 sm:gap-5 mb-8 sm:mb-10">
           {valueItems.map((item, index) => (
             <div
               key={index}
               className="flex items-center gap-3 px-5 py-4 bg-white rounded-2xl border-2 border-[#E8E5DF] shadow-soft-md hover:shadow-soft-lg transition-shadow"
             >
               <div
-                className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
-                style={{ backgroundColor: `${item.color}15` }}
+                className="w-10 h-10 rounded-xl flex items-center justify-centre flex-shrink-0"
+                style={{ backgroundColor: `${item.colour}15` }}
               >
-                <item.icon className="w-5 h-5" style={{ color: item.color }} />
+                <item.icon className="w-5 h-5" style={{ colour: item.colour }} />
               </div>
               <span className="text-base sm:text-lg font-semibold text-[#1A231E]">{item.title}</span>
             </div>
@@ -81,7 +81,7 @@ export function ProValueSummary({
         <div className="p-6 sm:p-8 bg-white rounded-2xl border-2 border-[#E8E5DF] shadow-soft-lg">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
             <div className="flex items-center gap-4">
-              <div className="w-14 h-14 rounded-2xl bg-[#4F6F52]/10 flex items-center justify-center">
+              <div className="w-14 h-14 rounded-2xl bg-[#4F6F52]/10 flex items-center justify-centre">
                 <FileText className="w-7 h-7 text-[#4F6F52]" />
               </div>
               <div>
@@ -104,7 +104,7 @@ export function ProValueSummary({
             </div>
           </div>
 
-          <div className="mt-5 pt-5 border-t border-[#E8E5DF] text-center">
+          <div className="mt-5 pt-5 border-t border-[#E8E5DF] text-centre">
             <p className="text-base text-[#1A231E]/70">
               Families using our analysis discover average savings of{" "}
               <span className="font-bold text-[#4F6F52]">£10,000+/year</span> on care fees

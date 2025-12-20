@@ -156,7 +156,7 @@ export function AppendixVerificationGuide({
                   href={home.cqcUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 px-3 py-2 bg-[#4F6F52] text-white text-sm font-medium rounded-lg hover:bg-[#4F6F52]/90 transition-colors"
+                  className="inline-flex items-center gap-1.5 px-3 py-2 bg-[#4F6F52] text-white text-sm font-medium rounded-lg hover:bg-[#4F6F52]/90 transition-colours"
                 >
                   <ExternalLink className="w-4 h-4" />
                   CQC Report
@@ -165,7 +165,7 @@ export function AppendixVerificationGuide({
                   href={home.companiesHouseUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 px-3 py-2 bg-[#2C5F8D] text-white text-sm font-medium rounded-lg hover:bg-[#2C5F8D]/90 transition-colors"
+                  className="inline-flex items-center gap-1.5 px-3 py-2 bg-[#2C5F8D] text-white text-sm font-medium rounded-lg hover:bg-[#2C5F8D]/90 transition-colours"
                 >
                   <ExternalLink className="w-4 h-4" />
                   Companies House
@@ -174,7 +174,7 @@ export function AppendixVerificationGuide({
                   href={home.googleMapsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 px-3 py-2 bg-[#C88D79] text-white text-sm font-medium rounded-lg hover:bg-[#C88D79]/90 transition-colors"
+                  className="inline-flex items-center gap-1.5 px-3 py-2 bg-[#C88D79] text-white text-sm font-medium rounded-lg hover:bg-[#C88D79]/90 transition-colours"
                 >
                   <ExternalLink className="w-4 h-4" />
                   Google Maps & Reviews
@@ -219,9 +219,9 @@ export function AppendixVerificationGuide({
             href="https://www.cqc.org.uk/about-us/how-we-do-our-job/judgement-framework"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#F8F9FA] rounded-xl p-5 border border-[#E8E5DF] hover:border-[#4F6F52]/50 transition-colors group"
+            className="bg-[#F8F9FA] rounded-xl p-5 border border-[#E8E5DF] hover:border-[#4F6F52]/50 transition-colours group"
           >
-            <h4 className="text-base font-bold text-[#1A231E] mb-1 group-hover:text-[#4F6F52] transition-colors">
+            <h4 className="text-base font-bold text-[#1A231E] mb-1 group-hover:text-[#4F6F52] transition-colours">
               CQC Judgement Framework
             </h4>
             <p className="text-sm text-[#5A6D7A]">Understand how CQC rates care homes and what each rating means</p>
@@ -234,9 +234,9 @@ export function AppendixVerificationGuide({
             href="https://www.ageuk.org.uk/information-advice/care/choosing-care-home/"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#F8F9FA] rounded-xl p-5 border border-[#E8E5DF] hover:border-[#4F6F52]/50 transition-colors group"
+            className="bg-[#F8F9FA] rounded-xl p-5 border border-[#E8E5DF] hover:border-[#4F6F52]/50 transition-colours group"
           >
-            <h4 className="text-base font-bold text-[#1A231E] mb-1 group-hover:text-[#4F6F52] transition-colors">
+            <h4 className="text-base font-bold text-[#1A231E] mb-1 group-hover:text-[#4F6F52] transition-colours">
               Age UK Care Home Guide
             </h4>
             <p className="text-sm text-[#5A6D7A]">Independent advice on choosing and paying for a care home</p>
@@ -249,9 +249,9 @@ export function AppendixVerificationGuide({
             href="https://www.nhs.uk/conditions/social-care-and-support-guide/care-services-equipment-and-care-homes/care-homes/"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#F8F9FA] rounded-xl p-5 border border-[#E8E5DF] hover:border-[#4F6F52]/50 transition-colors group"
+            className="bg-[#F8F9FA] rounded-xl p-5 border border-[#E8E5DF] hover:border-[#4F6F52]/50 transition-colours group"
           >
-            <h4 className="text-base font-bold text-[#1A231E] mb-1 group-hover:text-[#4F6F52] transition-colors">
+            <h4 className="text-base font-bold text-[#1A231E] mb-1 group-hover:text-[#4F6F52] transition-colours">
               NHS Care Home Information
             </h4>
             <p className="text-sm text-[#5A6D7A]">Official NHS guidance on care homes and what to expect</p>
@@ -264,9 +264,9 @@ export function AppendixVerificationGuide({
             href="https://www.which.co.uk/later-life-care/care-homes"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#F8F9FA] rounded-xl p-5 border border-[#E8E5DF] hover:border-[#4F6F52]/50 transition-colors group"
+            className="bg-[#F8F9FA] rounded-xl p-5 border border-[#E8E5DF] hover:border-[#4F6F52]/50 transition-colours group"
           >
-            <h4 className="text-base font-bold text-[#1A231E] mb-1 group-hover:text-[#4F6F52] transition-colors">
+            <h4 className="text-base font-bold text-[#1A231E] mb-1 group-hover:text-[#4F6F52] transition-colours">
               Which? Care Home Reviews
             </h4>
             <p className="text-sm text-[#5A6D7A]">Independent consumer reviews and ratings of care homes</p>

@@ -64,7 +64,7 @@ function FaqSection() {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-border/30 via-transparent to-transparent opacity-40" />
 
       <div className="container relative mx-auto px-4 max-w-5xl">
-        <div className="text-center mb-16 md:mb-20 space-y-5">
+        <div className="text-centre mb-16 md:mb-20 space-y-5">
           <Badge
             variant="outline"
             className="mx-auto text-xs font-semibold tracking-wide border-primary/20 text-primary bg-card/60 backdrop-blur-sm px-4 py-1.5 shadow-sm"
@@ -89,7 +89,7 @@ function FaqSection() {
                 value={`item-${index}`}
                 className="group bg-card border border-border/60 hover:border-primary/40 rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 ease-out"
               >
-                <AccordionTrigger className="text-lg md:text-xl font-semibold text-foreground px-6 md:px-8 py-6 md:py-7 text-left hover:no-underline group-hover:text-primary transition-colors duration-300 [&[data-state=open]]:text-primary">
+                <AccordionTrigger className="text-lg md:text-xl font-semibold text-foreground px-6 md:px-8 py-6 md:py-7 text-left hover:no-underline group-hover:text-primary transition-colours duration-300 [&[data-state=open]]:text-primary">
                   {faq.question}
                 </AccordionTrigger>
                 <AccordionContent className="text-base md:text-lg text-muted-foreground px-6 md:px-8 pb-6 md:pb-7 leading-relaxed font-light">
@@ -100,7 +100,7 @@ function FaqSection() {
           </Accordion>
         </div>
 
-        <div className="text-center mt-16 md:mt-20 p-8 md:p-10 bg-card/50 backdrop-blur-sm rounded-3xl border border-border/40 shadow-sm max-w-2xl mx-auto">
+        <div className="text-centre mt-16 md:mt-20 p-8 md:p-10 bg-card/50 backdrop-blur-sm rounded-3xl border border-border/40 shadow-sm max-w-2xl mx-auto">
           <p className="text-base md:text-lg text-muted-foreground font-light mb-3">Still have questions?</p>
           <a
             href="mailto:support@rightcarehome.co.uk"

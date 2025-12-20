@@ -36,7 +36,7 @@ export function FundingTestimonialsSection() {
   return (
     <section className="py-16 sm:py-20 lg:py-24 bg-gradient-to-br from-[#F5F3EE] to-[#FDFBF7]">
       <div className="container mx-auto px-4 sm:px-6">
-        <div className="max-w-4xl mx-auto text-center space-y-4 mb-12">
+        <div className="max-w-4xl mx-auto text-centre space-y-4 mb-12">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#F59E0B]/10 text-[#D97706] text-sm font-semibold">
             <Star className="w-4 h-4 fill-current" />
             <span>REAL RESULTS</span>

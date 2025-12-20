@@ -143,7 +143,7 @@ export function ProActionPlan() {
     <section className="w-full p-6 sm:p-8 md:p-12 bg-gradient-to-b from-[#FDFBF7] to-[#F8F9FA] font-sans print:py-8">
       <div className="max-w-6xl mx-auto">
         {/* Section Title */}
-        <div className="text-center mb-10">
+        <div className="text-centre mb-10">
           <div className="inline-flex items-center gap-2 bg-[#4F6F52]/10 text-[#4F6F52] px-4 py-2 rounded-full text-sm font-semibold mb-4">
             <Clock className="w-4 h-4" />
             Your 14-Day Action Plan
@@ -191,7 +191,7 @@ export function ProActionPlan() {
         <Card className="p-6 md:p-8 mb-6 bg-white border-[#E8E5DF]">
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-xl">
+              <div className="w-12 h-12 rounded-full bg-blue-600 text-white flex items-center justify-centre font-bold text-xl">
                 1
               </div>
               <div>
@@ -209,12 +209,12 @@ export function ProActionPlan() {
               <button
                 key={item.id}
                 onClick={() => toggleItem(item.id)}
-                className="flex items-start gap-4 w-full text-left group hover:bg-[#F8F9FA] p-4 rounded-xl transition-colors min-h-[56px]"
+                className="flex items-start gap-4 w-full text-left group hover:bg-[#F8F9FA] p-4 rounded-xl transition-colours min-h-[56px]"
               >
                 <div
                   className={`flex-shrink-0 w-8 h-8 rounded-lg border-2 transition-all ${
                     item.checked ? "bg-[#4F6F52] border-[#4F6F52]" : "border-[#E8E5DF] group-hover:border-[#4F6F52]/50"
-                  } flex items-center justify-center`}
+                  } flex items-center justify-centre`}
                   aria-hidden="true"
                 >
                   {item.checked && <Check className="w-5 h-5 text-white" />}
@@ -242,7 +242,7 @@ export function ProActionPlan() {
         <Card className="p-6 md:p-8 mb-8 bg-white border-[#E8E5DF]">
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-full bg-emerald-600 text-white flex items-center justify-center font-bold text-xl">
+              <div className="w-12 h-12 rounded-full bg-emerald-600 text-white flex items-center justify-centre font-bold text-xl">
                 2
               </div>
               <div>
@@ -260,12 +260,12 @@ export function ProActionPlan() {
               <button
                 key={item.id}
                 onClick={() => toggleItem(item.id)}
-                className="flex items-start gap-4 w-full text-left group hover:bg-[#F8F9FA] p-4 rounded-xl transition-colors min-h-[56px]"
+                className="flex items-start gap-4 w-full text-left group hover:bg-[#F8F9FA] p-4 rounded-xl transition-colours min-h-[56px]"
               >
                 <div
                   className={`flex-shrink-0 w-8 h-8 rounded-lg border-2 transition-all ${
                     item.checked ? "bg-[#4F6F52] border-[#4F6F52]" : "border-[#E8E5DF] group-hover:border-[#4F6F52]/50"
-                  } flex items-center justify-center`}
+                  } flex items-center justify-centre`}
                   aria-hidden="true"
                 >
                   {item.checked && <Check className="w-5 h-5 text-white" />}
@@ -314,7 +314,7 @@ export function ProActionPlan() {
         </Card>
 
         {/* Encouragement */}
-        <div className="text-center px-4">
+        <div className="text-centre px-4">
           <p className="text-lg md:text-xl text-[#1A231E]/70 leading-relaxed">
             <strong className="text-[#1A231E]">You have everything you need.</strong> This report, combined with your
             visits, will give you the confidence to make the right choice for your family.

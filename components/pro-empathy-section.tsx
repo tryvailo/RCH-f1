@@ -9,8 +9,8 @@ export function ProEmpathySection() {
   return (
     <section className="py-8 md:py-12 px-4 sm:px-6 bg-gradient-to-br from-[#FDFBF7] via-[#FDFBF7]/50 to-[#4F6F52]/5 print:py-6">
       <div className="max-w-4xl mx-auto">
-        <div className="text-center mb-8 md:mb-10">
-          <div className="inline-flex items-center justify-center w-16 h-16 md:w-20 md:h-20 rounded-full bg-[#4F6F52]/10 mb-6">
+        <div className="text-centre mb-8 md:mb-10">
+          <div className="inline-flex items-center justify-centre w-16 h-16 md:w-20 md:h-20 rounded-full bg-[#4F6F52]/10 mb-6">
             <Sparkles className="w-8 h-8 md:w-10 md:h-10 text-[#4F6F52]" />
           </div>
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-[#1A231E] mb-5 leading-tight">
@@ -23,7 +23,7 @@ export function ProEmpathySection() {
         </div>
 
         <div className="bg-white rounded-2xl p-6 md:p-8 border border-[#E8E5DF] shadow-soft-lg mb-8">
-          <h3 className="text-xl md:text-2xl font-bold text-[#1A231E] mb-6 text-center">What This Report Gives You</h3>
+          <h3 className="text-xl md:text-2xl font-bold text-[#1A231E] mb-6 text-centre">What This Report Gives You</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {[
               {
@@ -48,7 +48,7 @@ export function ProEmpathySection() {
               },
             ].map((item, index) => (
               <div key={index} className="flex items-start gap-4 p-4 bg-[#FDFBF7] rounded-xl">
-                <div className="w-10 h-10 rounded-lg bg-[#4F6F52]/10 flex items-center justify-center flex-shrink-0">
+                <div className="w-10 h-10 rounded-lg bg-[#4F6F52]/10 flex items-center justify-centre flex-shrink-0">
                   <item.icon className="w-5 h-5 text-[#4F6F52]" />
                 </div>
                 <div>
@@ -64,7 +64,7 @@ export function ProEmpathySection() {
         <div className="mb-8">
           <button
             onClick={() => setIsExpanded(!isExpanded)}
-            className="w-full flex items-center justify-between bg-white rounded-xl p-5 md:p-6 border border-[#E8E5DF] hover:bg-[#FDFBF7] transition-colors min-h-[56px]"
+            className="w-full flex items-center justify-between bg-white rounded-xl p-5 md:p-6 border border-[#E8E5DF] hover:bg-[#FDFBF7] transition-colours min-h-[56px]"
             aria-expanded={isExpanded}
           >
             <span className="text-lg md:text-xl font-semibold text-[#1A231E]">The Difference This Makes</span>
@@ -109,7 +109,7 @@ export function ProEmpathySection() {
           )}
         </div>
 
-        <div className="bg-gradient-to-br from-[#4F6F52]/10 to-[#4F6F52]/5 rounded-2xl p-6 md:p-8 border border-[#4F6F52]/20 text-center">
+        <div className="bg-gradient-to-br from-[#4F6F52]/10 to-[#4F6F52]/5 rounded-2xl p-6 md:p-8 border border-[#4F6F52]/20 text-centre">
           <p className="text-xl sm:text-2xl md:text-[1.5rem] text-[#1A231E]/80 leading-relaxed mb-4">
             <span className="font-semibold text-[#4F6F52]">Take your time with this report.</span>
           </p>

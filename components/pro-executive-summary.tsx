@@ -137,7 +137,7 @@ export function ProExecutiveSummary({
       <div className="max-w-6xl mx-auto">
         <div className="bg-gradient-to-r from-[#4F6F52]/10 via-[#4F6F52]/5 to-[#4F6F52]/10 rounded-2xl p-5 sm:p-6 mb-8 border border-[#4F6F52]/20">
           <div className="flex items-center gap-4">
-            <div className="w-12 h-12 rounded-full bg-[#4F6F52]/20 flex items-center justify-center flex-shrink-0">
+            <div className="w-12 h-12 rounded-full bg-[#4F6F52]/20 flex items-center justify-centre flex-shrink-0">
               <Shield className="w-6 h-6 text-[#4F6F52]" />
             </div>
             <div>
@@ -151,7 +151,7 @@ export function ProExecutiveSummary({
         </div>
 
         {/* Header */}
-        <div className="text-center mb-8 md:mb-12">
+        <div className="text-centre mb-8 md:mb-12">
           <div className="inline-flex items-center gap-2 bg-[#4F6F52]/10 text-[#4F6F52] px-4 py-2 rounded-full text-sm font-semibold mb-4">
             <CheckCircle className="w-4 h-4" />
             Analysis Complete
@@ -169,7 +169,7 @@ export function ProExecutiveSummary({
         <div className="bg-[#4F6F52] rounded-2xl p-5 sm:p-6 md:p-8 mb-8 md:mb-10 shadow-lg">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
+              <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-centre flex-shrink-0">
                 <Phone className="w-6 h-6 text-white" />
               </div>
               <div>
@@ -218,7 +218,7 @@ export function ProExecutiveSummary({
                   {/* Score Circle */}
                   <div className="flex items-center gap-4 lg:gap-6">
                     <div
-                      className={`w-16 h-16 sm:w-20 sm:h-20 rounded-full ${getScoreBgColor(home.overallScore)} flex items-center justify-center flex-shrink-0`}
+                      className={`w-16 h-16 sm:w-20 sm:h-20 rounded-full ${getScoreBgColor(home.overallScore)} flex items-center justify-centre flex-shrink-0`}
                     >
                       <span className="text-white text-2xl sm:text-3xl font-bold">{home.overallScore}</span>
                     </div>
@@ -236,13 +236,13 @@ export function ProExecutiveSummary({
 
                   {/* Details */}
                   <div className="flex flex-wrap items-center gap-4 lg:gap-6 lg:ml-auto">
-                    <div className="text-center">
+                    <div className="text-centre">
                       <div className="text-sm text-[#5A6D7A] uppercase tracking-wider mb-1">Weekly Fee</div>
                       <div className="text-lg font-bold text-[#1A231E]">{formatCurrency(home.weeklyFee)}</div>
                     </div>
 
                     {home.waitingList && (
-                      <div className="text-center">
+                      <div className="text-centre">
                         <div className="text-sm text-[#5A6D7A] uppercase tracking-wider mb-1">Availability</div>
                         <div className="text-sm font-semibold text-[#4F6F52]">{home.waitingList}</div>
                       </div>
@@ -251,7 +251,7 @@ export function ProExecutiveSummary({
                     {home.phoneNumber && (
                       <a
                         href={`tel:${home.phoneNumber.replace(/\s/g, "")}`}
-                        className="flex items-center gap-2 bg-[#4F6F52] text-white px-4 py-2 rounded-lg font-semibold hover:bg-[#3d5741] transition-colors min-h-[44px]"
+                        className="flex items-center gap-2 bg-[#4F6F52] text-white px-4 py-2 rounded-lg font-semibold hover:bg-[#3d5741] transition-colours min-h-[44px]"
                       >
                         <Phone className="w-4 h-4" />
                         <span className="hidden sm:inline">Call</span>
@@ -286,16 +286,16 @@ export function ProExecutiveSummary({
                   <th className="text-left py-3 text-sm font-semibold text-[#5A6D7A] uppercase tracking-wider">
                     Care Home
                   </th>
-                  <th className="text-center py-3 text-sm font-semibold text-[#5A6D7A] uppercase tracking-wider">
+                  <th className="text-centre py-3 text-sm font-semibold text-[#5A6D7A] uppercase tracking-wider">
                     Score
                   </th>
-                  <th className="text-center py-3 text-sm font-semibold text-[#5A6D7A] uppercase tracking-wider">
+                  <th className="text-centre py-3 text-sm font-semibold text-[#5A6D7A] uppercase tracking-wider">
                     Weekly Fee
                   </th>
-                  <th className="text-center py-3 text-sm font-semibold text-[#5A6D7A] uppercase tracking-wider">
+                  <th className="text-centre py-3 text-sm font-semibold text-[#5A6D7A] uppercase tracking-wider">
                     Best For
                   </th>
-                  <th className="text-center py-3 text-sm font-semibold text-[#5A6D7A] uppercase tracking-wider">
+                  <th className="text-centre py-3 text-sm font-semibold text-[#5A6D7A] uppercase tracking-wider">
                     Availability
                   </th>
                 </tr>
@@ -304,12 +304,12 @@ export function ProExecutiveSummary({
                 {safeRecommendations.slice(0, 3).map((home) => (
                   <tr key={home.name} className="border-b border-[#E8E5DF] last:border-b-0">
                     <td className="py-4 font-semibold text-[#1A231E]">{home.name}</td>
-                    <td className={`py-4 text-center font-bold ${getScoreColor(home.overallScore)}`}>
+                    <td className={`py-4 text-centre font-bold ${getScoreColor(home.overallScore)}`}>
                       {home.overallScore}/100
                     </td>
-                    <td className="py-4 text-center text-[#1A231E]">{formatCurrency(home.weeklyFee)}</td>
-                    <td className="py-4 text-center text-[#5A6D7A] text-sm">{home.topStrength}</td>
-                    <td className="py-4 text-center text-[#4F6F52] font-medium text-sm">{home.waitingList || "-"}</td>
+                    <td className="py-4 text-centre text-[#1A231E]">{formatCurrency(home.weeklyFee)}</td>
+                    <td className="py-4 text-centre text-[#5A6D7A] text-sm">{home.topStrength}</td>
+                    <td className="py-4 text-centre text-[#4F6F52] font-medium text-sm">{home.waitingList || "-"}</td>
                   </tr>
                 ))}
               </tbody>
@@ -321,7 +321,7 @@ export function ProExecutiveSummary({
           <h3 className="text-sm font-bold text-[#5A6D7A] uppercase tracking-wider mb-4">What's In This Report</h3>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
             {valueSummaryItems.map((item, index) => (
-              <div key={index} className="flex flex-col items-center text-center p-3 rounded-xl bg-[#F8F9FA]">
+              <div key={index} className="flex flex-col items-center text-centre p-3 rounded-xl bg-[#F8F9FA]">
                 <item.icon className="w-5 h-5 text-[#4F6F52] mb-2" />
                 <div className="text-sm font-bold text-[#1A231E]">{item.label}</div>
                 <div className="text-sm text-[#5A6D7A]">{item.value}</div>
@@ -331,7 +331,7 @@ export function ProExecutiveSummary({
         </div>
 
         {/* Continue Reading */}
-        <div className="text-center">
+        <div className="text-centre">
           <a
             href="#full-analysis"
             className="inline-flex items-center gap-2 text-lg font-semibold text-[#4F6F52] hover:text-[#3d5741] hover:underline transition-all group min-h-[44px]"

@@ -39,7 +39,7 @@ const strategyConfig = {
   "safe-bet": {
     label: "SAFE BET",
     tagline: "Peace of Mind Choice",
-    color: "text-[#4F6F52]",
+    colour: "text-[#4F6F52]",
     bgGradient: "bg-gradient-to-br from-[#4F6F52]/15 via-[#4F6F52]/10 to-[#4F6F52]/5",
     iconBg: "bg-[#4F6F52]",
     borderColor: "border-l-[#4F6F52]",
@@ -50,7 +50,7 @@ const strategyConfig = {
   "best-reputation": {
     label: "BEST REPUTATION",
     tagline: "Community Favourite",
-    color: "text-[#2D5A4A]",
+    colour: "text-[#2D5A4A]",
     bgGradient: "bg-gradient-to-br from-[#7FAD7E]/15 via-[#7FAD7E]/10 to-[#7FAD7E]/5",
     iconBg: "bg-[#2D5A4A]",
     borderColor: "border-l-[#2D5A4A]",
@@ -61,7 +61,7 @@ const strategyConfig = {
   "smart-value": {
     label: "SMART VALUE",
     tagline: "Quality Without Premium",
-    color: "text-[#C88D79]",
+    colour: "text-[#C88D79]",
     bgGradient: "bg-gradient-to-br from-[#C88D79]/15 via-[#C88D79]/10 to-[#C88D79]/5",
     iconBg: "bg-[#C88D79]",
     borderColor: "border-l-[#C88D79]",
@@ -116,25 +116,25 @@ function HomeCard({ home, rank, priorityText }: { home: HomeRecommendation; rank
 
         {/* Key Metrics - 2x2 Grid */}
         <div className="grid grid-cols-2 gap-3 mb-5">
-          <div className="bg-muted/40 rounded-xl p-4 text-center">
+          <div className="bg-muted/40 rounded-xl p-4 text-centre">
             <PoundSterling className="w-5 h-5 mx-auto mb-1 text-muted-foreground" />
             <p className="text-xl font-bold">£{home.weeklyPrice.toLocaleString()}</p>
             <p className="text-sm text-muted-foreground">per week</p>
           </div>
 
-          <div className="bg-muted/40 rounded-xl p-4 text-center">
+          <div className="bg-muted/40 rounded-xl p-4 text-centre">
             <Star className="w-5 h-5 mx-auto mb-1 text-muted-foreground" />
             <p className="text-xl font-bold">{home.cqcRating}</p>
             <p className="text-sm text-muted-foreground">CQC Rating</p>
           </div>
 
-          <div className="bg-muted/40 rounded-xl p-4 text-center">
+          <div className="bg-muted/40 rounded-xl p-4 text-centre">
             <Shield className="w-5 h-5 mx-auto mb-1 text-muted-foreground" />
             <p className="text-base font-bold">{home.safetyRating}</p>
             <p className="text-sm text-muted-foreground">Safety</p>
           </div>
 
-          <div className="bg-muted/40 rounded-xl p-4 text-center">
+          <div className="bg-muted/40 rounded-xl p-4 text-centre">
             <Award className="w-5 h-5 mx-auto mb-1 text-muted-foreground" />
             <p className="text-base font-bold">{home.careTypes[0]}</p>
             <p className="text-sm text-muted-foreground">Care Type</p>
@@ -144,7 +144,7 @@ function HomeCard({ home, rank, priorityText }: { home: HomeRecommendation; rank
         <div className="bg-muted/30 rounded-xl p-4 mb-5">
           <div className="flex items-center justify-between mb-3">
             <span className="text-base font-semibold">Your Match Score</span>
-            <span className={`text-2xl font-bold ${strategy.color}`}>{home.matchScore}%</span>
+            <span className={`text-2xl font-bold ${strategy.colour}`}>{home.matchScore}%</span>
           </div>
           <div className="h-3 bg-muted rounded-full overflow-hidden">
             <div
@@ -159,7 +159,7 @@ function HomeCard({ home, rank, priorityText }: { home: HomeRecommendation; rank
         <div className="mb-4">
           <button
             onClick={() => setShowWhyMatch(!showWhyMatch)}
-            className="flex items-center justify-between w-full p-4 bg-muted/30 rounded-xl hover:bg-muted/50 transition-colors"
+            className="flex items-center justify-between w-full p-4 bg-muted/30 rounded-xl hover:bg-muted/50 transition-colours"
             aria-expanded={showWhyMatch}
           >
             <div className="flex items-center gap-2">
@@ -178,7 +178,7 @@ function HomeCard({ home, rank, priorityText }: { home: HomeRecommendation; rank
               <ul className="space-y-2">
                 {home.whyThisMatch.map((reason, idx) => (
                   <li key={idx} className="flex items-start gap-2">
-                    <CheckCircle2 className={`flex-shrink-0 w-5 h-5 ${strategy.color} mt-0.5`} />
+                    <CheckCircle2 className={`flex-shrink-0 w-5 h-5 ${strategy.colour} mt-0.5`} />
                     <span className="text-base text-muted-foreground leading-relaxed">{reason}</span>
                   </li>
                 ))}
@@ -191,7 +191,7 @@ function HomeCard({ home, rank, priorityText }: { home: HomeRecommendation; rank
         <div className="mb-5">
           <button
             onClick={() => setShowVerify(!showVerify)}
-            className="flex items-center justify-between w-full p-4 bg-amber-50 dark:bg-amber-900/20 rounded-xl hover:bg-amber-100 dark:hover:bg-amber-900/30 transition-colors"
+            className="flex items-center justify-between w-full p-4 bg-amber-50 dark:bg-amber-900/20 rounded-xl hover:bg-amber-100 dark:hover:bg-amber-900/30 transition-colours"
             aria-expanded={showVerify}
           >
             <div className="flex items-center gap-2">
@@ -232,7 +232,7 @@ function HomeCard({ home, rank, priorityText }: { home: HomeRecommendation; rank
             Enquire by Email
           </a>
         </Button>
-        <p className="text-sm text-center text-muted-foreground mt-3">Ask about availability and arrange a visit</p>
+        <p className="text-sm text-centre text-muted-foreground mt-3">Ask about availability and arrange a visit</p>
       </div>
     </article>
   )
@@ -333,7 +333,7 @@ export function ReportHomeRecommendations({
     <section className="py-12 md:py-16 px-4 bg-gradient-to-b from-background to-muted/20 overflow-x-hidden">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
-        <div className="text-center mb-8 md:mb-12">
+        <div className="text-centre mb-8 md:mb-12">
           <Badge variant="secondary" className="mb-3 sm:mb-4 text-base px-5 py-2">
             Your Strategic Matches
           </Badge>
@@ -359,7 +359,7 @@ export function ReportHomeRecommendations({
         <div className="mt-10 md:mt-12 bg-gradient-to-br from-[#C88D79]/10 via-[#C88D79]/5 to-transparent rounded-2xl p-6 md:p-8 border border-[#C88D79]/30">
           <div className="flex flex-col lg:flex-row items-start lg:items-center gap-6">
             <div className="flex-shrink-0">
-              <div className="w-16 h-16 rounded-2xl bg-[#C88D79]/20 flex items-center justify-center">
+              <div className="w-16 h-16 rounded-2xl bg-[#C88D79]/20 flex items-center justify-centre">
                 <Lock className="w-8 h-8 text-[#C88D79]" />
               </div>
             </div>
@@ -404,7 +404,7 @@ export function ReportHomeRecommendations({
         </div>
 
         {/* Bottom Note */}
-        <div className="mt-6 sm:mt-8 text-center px-4">
+        <div className="mt-6 sm:mt-8 text-centre px-4">
           <p className="text-base text-muted-foreground leading-relaxed">
             All data verified from CQC and official sources • Updated {new Date().toLocaleDateString("en-GB")}
           </p>

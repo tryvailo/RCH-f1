@@ -23,16 +23,16 @@ interface DataPointCategory {
   icon: React.ElementType
   name: string
   count: number
-  color: string
+  colour: string
 }
 
 const dataCategories: DataPointCategory[] = [
-  { icon: Shield, name: "Safety & Compliance", count: 15, color: "#22c55e" },
-  { icon: Users, name: "Staff Quality", count: 15, color: "#3b82f6" },
-  { icon: Home, name: "Medical Care", count: 12, color: "#8b5cf6" },
-  { icon: PoundSterling, name: "Financial Analysis", count: 18, color: "#f59e0b" },
-  { icon: Sparkles, name: "Comfort & Environment", count: 20, color: "#ec4899" },
-  { icon: FileSearch, name: "Community Reputation", count: 12, color: "#06b6d4" },
+  { icon: Shield, name: "Safety & Compliance", count: 15, colour: "#22c55e" },
+  { icon: Users, name: "Staff Quality", count: 15, colour: "#3b82f6" },
+  { icon: Home, name: "Medical Care", count: 12, colour: "#8b5cf6" },
+  { icon: PoundSterling, name: "Financial Analysis", count: 18, colour: "#f59e0b" },
+  { icon: Sparkles, name: "Comfort & Environment", count: 20, colour: "#ec4899" },
+  { icon: FileSearch, name: "Community Reputation", count: 12, colour: "#06b6d4" },
 ]
 
 const processingSteps = [
@@ -92,8 +92,8 @@ export function ProOrderConfirmation() {
     <div className="min-h-screen bg-gradient-to-b from-[#FDFBF7] to-white py-12 md:py-20">
       <div className="container mx-auto px-4 max-w-4xl">
         {/* Success Header */}
-        <div className="text-center mb-12 md:mb-16">
-          <div className="inline-flex items-center justify-center w-20 h-20 md:w-24 md:h-24 rounded-full bg-[#4F6F52]/10 mb-6">
+        <div className="text-centre mb-12 md:mb-16">
+          <div className="inline-flex items-center justify-centre w-20 h-20 md:w-24 md:h-24 rounded-full bg-[#4F6F52]/10 mb-6">
             <CheckCircle2 className="w-10 h-10 md:w-12 md:h-12 text-[#4F6F52]" />
           </div>
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-[#1A231E] mb-4">
@@ -108,7 +108,7 @@ export function ProOrderConfirmation() {
         <div className="bg-white rounded-2xl p-6 md:p-8 border-2 border-[#4F6F52]/20 shadow-soft-lg mb-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="flex items-center gap-4">
-              <div className="w-14 h-14 rounded-2xl bg-[#4F6F52]/10 flex items-center justify-center">
+              <div className="w-14 h-14 rounded-2xl bg-[#4F6F52]/10 flex items-center justify-centre">
                 <Clock className="w-7 h-7 text-[#4F6F52]" />
               </div>
               <div>
@@ -125,7 +125,7 @@ export function ProOrderConfirmation() {
 
         {/* Data Volume Snapshot */}
         <div className="bg-white rounded-3xl p-6 md:p-10 border border-[#E8E5DF] shadow-soft-lg mb-8">
-          <div className="text-center mb-8">
+          <div className="text-centre mb-8">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#4F6F52]/10 rounded-full mb-4">
               <Database className="w-5 h-5 text-[#4F6F52]" />
               <span className="text-sm font-semibold text-[#4F6F52]">Data Being Processed</span>
@@ -134,7 +134,7 @@ export function ProOrderConfirmation() {
           </div>
 
           {/* Animated Total Counter */}
-          <div className="text-center mb-10">
+          <div className="text-centre mb-10">
             <div className="inline-flex flex-col items-center">
               <span className="text-6xl md:text-7xl lg:text-8xl font-bold text-[#4F6F52] tabular-nums">
                 {animatedTotal}
@@ -151,10 +151,10 @@ export function ProOrderConfirmation() {
                 className="relative p-5 md:p-6 rounded-2xl border border-[#E8E5DF] bg-[#FDFBF7]/50"
               >
                 <div
-                  className="w-12 h-12 rounded-xl flex items-center justify-center mb-3"
-                  style={{ backgroundColor: `${category.color}15` }}
+                  className="w-12 h-12 rounded-xl flex items-center justify-centre mb-3"
+                  style={{ backgroundColor: `${category.colour}15` }}
                 >
-                  <category.icon className="w-6 h-6" style={{ color: category.color }} />
+                  <category.icon className="w-6 h-6" style={{ colour: category.colour }} />
                 </div>
                 <div className="text-3xl md:text-4xl font-bold text-[#1A231E] tabular-nums mb-1">
                   {animatedCounts[index]}
@@ -166,12 +166,12 @@ export function ProOrderConfirmation() {
 
           {/* What's Being Processed */}
           <div className="mt-10 pt-8 border-t border-[#E8E5DF]">
-            <h3 className="text-lg font-semibold text-[#1A231E] mb-4 text-center">Currently Processing</h3>
+            <h3 className="text-lg font-semibold text-[#1A231E] mb-4 text-centre">Currently Processing</h3>
             <div className="relative h-16 overflow-hidden">
               {processingSteps.map((step, index) => (
                 <div
                   key={step}
-                  className={`absolute inset-0 flex items-center justify-center transition-all duration-500 ${
+                  className={`absolute inset-0 flex items-center justify-centre transition-all duration-500 ${
                     index === currentStep ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
                   }`}
                 >
@@ -233,11 +233,11 @@ export function ProOrderConfirmation() {
         </div>
 
         {/* CTA */}
-        <div className="text-center">
+        <div className="text-centre">
           <p className="text-base text-[#1A231E]/60 mb-4">
             While you wait, you can review your free report or return to the homepage.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-centre">
             <Button asChild variant="outline" size="lg" className="h-14 px-8 text-lg bg-transparent">
               <Link href="/">Return to Homepage</Link>
             </Button>

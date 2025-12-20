@@ -32,7 +32,7 @@ export function FairCostGapSection({ region }: FairCostGapSectionProps = {}) {
   return (
     <section className="py-16 sm:py-24 lg:py-32 bg-[#1A231E]">
       <div className="container mx-auto px-4 sm:px-6 overflow-x-hidden">
-        <div className="text-center max-w-3xl mx-auto mb-12 lg:mb-16 space-y-4">
+        <div className="text-centre max-w-3xl mx-auto mb-12 lg:mb-16 space-y-4">
           <Badge className="mb-4 px-4 py-2 text-sm sm:text-base bg-[#D17A6F] text-white border-0">
             FINANCIAL REALITY CHECK
           </Badge>
@@ -77,7 +77,7 @@ export function FairCostGapSection({ region }: FairCostGapSectionProps = {}) {
 
             <div className="mt-8 sm:mt-10 p-5 sm:p-6 bg-[#D17A6F]/20 border-2 border-[#D17A6F]/40 rounded-xl sm:rounded-2xl">
               <div className="flex flex-col sm:flex-row sm:items-start gap-4">
-                <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-[#D17A6F] flex items-center justify-center flex-shrink-0">
+                <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-[#D17A6F] flex items-center justify-centre flex-shrink-0">
                   <Pound className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                 </div>
                 <div className="flex-1">
@@ -104,8 +104,8 @@ export function FairCostGapSection({ region }: FairCostGapSectionProps = {}) {
           </Card>
 
           {/* Updated CTA */}
-          <div className="text-center mt-8">
-            <Button className="h-14 px-8 bg-[#C88D79] hover:bg-[#B87D69] text-white font-semibold text-lg rounded-xl shadow-md transition-colors">
+          <div className="text-centre mt-8">
+            <Button className="h-14 px-8 bg-[#C88D79] hover:bg-[#B87D69] text-white font-semibold text-lg rounded-xl shadow-md transition-colours">
               See Fair-Priced Homes
             </Button>
           </div>

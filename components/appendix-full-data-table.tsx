@@ -372,13 +372,13 @@ export function AppendixFullDataTable({
                 <th className="px-3 py-3 text-sm font-bold text-[#1A231E] border-b-2 border-[#4F6F52]/20 whitespace-nowrap">
                   Metric
                 </th>
-                <th className="px-3 py-3 text-sm font-bold text-[#1A231E] border-b-2 border-[#4F6F52]/20 whitespace-nowrap text-center">
+                <th className="px-3 py-3 text-sm font-bold text-[#1A231E] border-b-2 border-[#4F6F52]/20 whitespace-nowrap text-centre">
                   Weight
                 </th>
                 {homeNames.map((name, idx) => (
                   <th
                     key={idx}
-                    className="px-3 py-3 text-sm font-bold text-[#1A231E] border-b-2 border-[#4F6F52]/20 whitespace-nowrap text-center"
+                    className="px-3 py-3 text-sm font-bold text-[#1A231E] border-b-2 border-[#4F6F52]/20 whitespace-nowrap text-centre"
                   >
                     {name}
                   </th>
@@ -396,22 +396,22 @@ export function AppendixFullDataTable({
                   </td>
                   <td className="px-3 py-2 text-sm text-[#5A6D7A] border-b border-[#E8E5DF]">{point.subcategory}</td>
                   <td className="px-3 py-2 text-sm text-[#1A231E] border-b border-[#E8E5DF]">{point.metric}</td>
-                  <td className="px-3 py-2 text-sm text-[#5A6D7A] border-b border-[#E8E5DF] text-center font-medium">
+                  <td className="px-3 py-2 text-sm text-[#5A6D7A] border-b border-[#E8E5DF] text-centre font-medium">
                     {point.weight}
                   </td>
-                  <td className="px-3 py-2 text-sm text-[#1A231E] border-b border-[#E8E5DF] text-center">
+                  <td className="px-3 py-2 text-sm text-[#1A231E] border-b border-[#E8E5DF] text-centre">
                     {point.home1}
                   </td>
-                  <td className="px-3 py-2 text-sm text-[#1A231E] border-b border-[#E8E5DF] text-center">
+                  <td className="px-3 py-2 text-sm text-[#1A231E] border-b border-[#E8E5DF] text-centre">
                     {point.home2}
                   </td>
-                  <td className="px-3 py-2 text-sm text-[#1A231E] border-b border-[#E8E5DF] text-center">
+                  <td className="px-3 py-2 text-sm text-[#1A231E] border-b border-[#E8E5DF] text-centre">
                     {point.home3}
                   </td>
-                  <td className="px-3 py-2 text-sm text-[#1A231E] border-b border-[#E8E5DF] text-center">
+                  <td className="px-3 py-2 text-sm text-[#1A231E] border-b border-[#E8E5DF] text-centre">
                     {point.home4}
                   </td>
-                  <td className="px-3 py-2 text-sm text-[#1A231E] border-b border-[#E8E5DF] text-center">
+                  <td className="px-3 py-2 text-sm text-[#1A231E] border-b border-[#E8E5DF] text-centre">
                     {point.home5}
                   </td>
                   <td className="px-3 py-2 text-sm text-[#4F6F52] border-b border-[#E8E5DF] whitespace-nowrap">

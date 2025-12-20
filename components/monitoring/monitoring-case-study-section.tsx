@@ -5,7 +5,7 @@ export function MonitoringCaseStudySection() {
   return (
     <section className="py-16 sm:py-20 lg:py-24 bg-white">
       <div className="container mx-auto px-4 sm:px-6">
-        <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+        <div className="text-centre max-w-3xl mx-auto mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-[#1A231E] mb-4 sm:mb-6 text-balance">
             Real Stories, <span className="text-[#4F6F52]">Real Prevention</span>
           </h2>
@@ -17,7 +17,7 @@ export function MonitoringCaseStudySection() {
         <div className="max-w-6xl mx-auto">
           {/* Timeline Visualization */}
           <div className="mb-12 bg-gradient-to-br from-[#FDFBF7] to-white rounded-2xl p-8 border border-[#E8E5DF] shadow-soft-lg">
-            <h3 className="text-2xl font-serif font-bold text-[#1A231E] mb-8 text-center">The Timeline That Saved £11,400</h3>
+            <h3 className="text-2xl font-serif font-bold text-[#1A231E] mb-8 text-centre">The Timeline That Saved £11,400</h3>
             <div className="relative">
               {/* Timeline Line */}
               <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#4F6F52] via-[#7FAD7E] to-[#4F6F52]"></div>
@@ -26,7 +26,7 @@ export function MonitoringCaseStudySection() {
               <div className="space-y-8">
                 {/* March */}
                 <div className="relative pl-20">
-                  <div className="absolute left-0 top-0 w-16 h-16 rounded-full bg-[#D17A6F] flex items-center justify-center border-4 border-white shadow-lg z-10">
+                  <div className="absolute left-0 top-0 w-16 h-16 rounded-full bg-[#D17A6F] flex items-center justify-centre border-4 border-white shadow-lg z-10">
                     <span className="text-white font-bold text-sm">Mar</span>
                   </div>
                   <div className="bg-white rounded-xl p-6 border-2 border-[#D17A6F]/20 shadow-sm">
@@ -43,7 +43,7 @@ export function MonitoringCaseStudySection() {
 
                 {/* April-May */}
                 <div className="relative pl-20">
-                  <div className="absolute left-0 top-0 w-16 h-16 rounded-full bg-[#7FAD7E] flex items-center justify-center border-4 border-white shadow-lg z-10">
+                  <div className="absolute left-0 top-0 w-16 h-16 rounded-full bg-[#7FAD7E] flex items-center justify-centre border-4 border-white shadow-lg z-10">
                     <span className="text-white font-bold text-xs">Apr-May</span>
                   </div>
                   <div className="bg-white rounded-xl p-6 border-2 border-[#7FAD7E]/20 shadow-sm">
@@ -60,7 +60,7 @@ export function MonitoringCaseStudySection() {
 
                 {/* June */}
                 <div className="relative pl-20">
-                  <div className="absolute left-0 top-0 w-16 h-16 rounded-full bg-[#4F6F52] flex items-center justify-center border-4 border-white shadow-lg z-10">
+                  <div className="absolute left-0 top-0 w-16 h-16 rounded-full bg-[#4F6F52] flex items-center justify-centre border-4 border-white shadow-lg z-10">
                     <span className="text-white font-bold text-sm">Jun</span>
                   </div>
                   <div className="bg-white rounded-xl p-6 border-2 border-[#4F6F52]/20 shadow-sm">
@@ -93,7 +93,7 @@ export function MonitoringCaseStudySection() {
 
                 <div className="space-y-6">
                   <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 rounded-full bg-red-100 flex items-center justify-center flex-shrink-0">
+                    <div className="w-8 h-8 rounded-full bg-red-100 flex items-center justify-centre flex-shrink-0">
                       <AlertTriangle className="w-5 h-5 text-red-600" />
                     </div>
                     <div>
@@ -106,7 +106,7 @@ export function MonitoringCaseStudySection() {
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
+                    <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-centre flex-shrink-0">
                       <TrendingUp className="w-5 h-5 text-blue-600" />
                     </div>
                     <div>
@@ -119,7 +119,7 @@ export function MonitoringCaseStudySection() {
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0">
+                    <div className="w-8 h-8 rounded-full bg-green-100 flex items-center justify-centre flex-shrink-0">
                       <Check className="w-5 h-5 text-green-600" />
                     </div>
                     <div>
@@ -143,7 +143,7 @@ export function MonitoringCaseStudySection() {
                 </div>
               </div>
 
-              <div className="bg-gradient-to-br from-[#4F6F52] to-[#3A5140] p-8 lg:p-10 text-white flex flex-col justify-center">
+              <div className="bg-gradient-to-br from-[#4F6F52] to-[#3A5140] p-8 lg:p-10 text-white flex flex-col justify-centre">
                 <h3 className="text-2xl font-serif font-bold mb-6">What Made The Difference</h3>
                 <ul className="space-y-4">
                   {[

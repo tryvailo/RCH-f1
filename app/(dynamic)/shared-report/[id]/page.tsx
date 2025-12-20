@@ -74,12 +74,12 @@ export default function SharedReportPage({ params }: PageProps) {
       },
     ],
     categoryScores: [
-      { name: "Safety & Compliance", score: 92, color: "#3B82F6" },
-      { name: "Medical Care", score: 88, color: "#EC4899" },
-      { name: "Staff Quality", score: 85, color: "#8B5CF6" },
-      { name: "Financial Stability", score: 90, color: "#10B981" },
-      { name: "Comfort & Lifestyle", score: 82, color: "#F59E0B" },
-      { name: "Community Reputation", score: 87, color: "#06B6D4" },
+      { name: "Safety & Compliance", score: 92, colour: "#3B82F6" },
+      { name: "Medical Care", score: 88, colour: "#EC4899" },
+      { name: "Staff Quality", score: 85, colour: "#8B5CF6" },
+      { name: "Financial Stability", score: 90, colour: "#10B981" },
+      { name: "Comfort & Lifestyle", score: 82, colour: "#F59E0B" },
+      { name: "Community Reputation", score: 87, colour: "#06B6D4" },
     ],
     keyFindings: [
       {
@@ -129,9 +129,9 @@ export default function SharedReportPage({ params }: PageProps) {
 
   if (isExpired) {
     return (
-      <div className="min-h-screen bg-[#F8F9FA] flex items-center justify-center p-6">
-        <div className="bg-white rounded-2xl p-8 max-w-md text-center shadow-lg border border-[#E8E5DF]">
-          <div className="w-16 h-16 rounded-full bg-[#EB5757]/10 flex items-center justify-center mx-auto mb-4">
+      <div className="min-h-screen bg-[#F8F9FA] flex items-center justify-centre p-6">
+        <div className="bg-white rounded-2xl p-8 max-w-md text-centre shadow-lg border border-[#E8E5DF]">
+          <div className="w-16 h-16 rounded-full bg-[#EB5757]/10 flex items-center justify-centre mx-auto mb-4">
             <Lock className="w-8 h-8 text-[#EB5757]" />
           </div>
           <h1 className="text-2xl font-bold text-[#1A231E] mb-2">Report Link Expired</h1>
@@ -187,7 +187,7 @@ export default function SharedReportPage({ params }: PageProps) {
         </div>
 
         {/* Header */}
-        <div className="text-center mb-10">
+        <div className="text-centre mb-10">
           <div className="inline-flex items-center gap-2 bg-[#4F6F52]/10 text-[#4F6F52] px-4 py-2 rounded-full text-sm font-semibold mb-4">
             <Heart className="w-4 h-4" />
             Care Home Research for {reportData.sharedFor}
@@ -224,7 +224,7 @@ export default function SharedReportPage({ params }: PageProps) {
                   {/* Score Circle */}
                   <div className="flex items-center gap-4 lg:gap-6">
                     <div
-                      className={`w-16 h-16 sm:w-20 sm:h-20 rounded-full ${getScoreBgColor(home.overallScore)} flex items-center justify-center flex-shrink-0`}
+                      className={`w-16 h-16 sm:w-20 sm:h-20 rounded-full ${getScoreBgColor(home.overallScore)} flex items-center justify-centre flex-shrink-0`}
                     >
                       <span className="text-white text-2xl sm:text-3xl font-bold">{home.overallScore}</span>
                     </div>
@@ -242,13 +242,13 @@ export default function SharedReportPage({ params }: PageProps) {
 
                   {/* Details */}
                   <div className="flex flex-wrap items-center gap-4 lg:gap-6 lg:ml-auto">
-                    <div className="text-center">
+                    <div className="text-centre">
                       <div className="text-xs text-[#5A6D7A] uppercase tracking-wider mb-1">Weekly Fee</div>
                       <div className="text-lg font-bold text-[#1A231E]">£{home.weeklyFee.toLocaleString()}</div>
                     </div>
 
                     {home.waitingList && (
-                      <div className="text-center">
+                      <div className="text-centre">
                         <div className="text-xs text-[#5A6D7A] uppercase tracking-wider mb-1">Availability</div>
                         <div className="text-sm font-semibold text-[#4F6F52]">{home.waitingList}</div>
                       </div>
@@ -257,7 +257,7 @@ export default function SharedReportPage({ params }: PageProps) {
                     {home.phoneNumber && (
                       <a
                         href={`tel:${home.phoneNumber.replace(/\s/g, "")}`}
-                        className="flex items-center gap-2 bg-[#4F6F52] text-white px-4 py-2 rounded-lg font-semibold hover:bg-[#3d5741] transition-colors min-h-[44px]"
+                        className="flex items-center gap-2 bg-[#4F6F52] text-white px-4 py-2 rounded-lg font-semibold hover:bg-[#3d5741] transition-colours min-h-[44px]"
                       >
                         <Phone className="w-4 h-4" />
                         <span className="hidden sm:inline">Call</span>
@@ -289,7 +289,7 @@ export default function SharedReportPage({ params }: PageProps) {
             {reportData.categoryScores.map((category) => (
               <div key={category.name} className="bg-[#F8F9FA] rounded-xl p-4 border border-[#E8E5DF]">
                 <div className="flex items-center gap-2 mb-2">
-                  <div className="w-3 h-3 rounded-full" style={{ backgroundColor: category.color }} />
+                  <div className="w-3 h-3 rounded-full" style={{ backgroundColor: category.colour }} />
                   <span className="text-sm font-medium text-[#5A6D7A]">{category.name}</span>
                 </div>
                 <div className={`text-2xl font-bold ${getScoreColor(category.score)}`}>{category.score}/100</div>
@@ -308,7 +308,7 @@ export default function SharedReportPage({ params }: PageProps) {
           <div className="space-y-4">
             {reportData.keyFindings.map((finding, index) => (
               <div key={index} className="flex items-start gap-4 p-4 bg-[#F8F9FA] rounded-xl border border-[#E8E5DF]">
-                <div className="w-10 h-10 rounded-full bg-[#4F6F52]/10 flex items-center justify-center flex-shrink-0">
+                <div className="w-10 h-10 rounded-full bg-[#4F6F52]/10 flex items-center justify-centre flex-shrink-0">
                   <finding.icon className="w-5 h-5 text-[#4F6F52]" />
                 </div>
                 <div>
@@ -325,14 +325,14 @@ export default function SharedReportPage({ params }: PageProps) {
         {/* Download PDF Summary */}
         <div className="bg-gradient-to-r from-[#4F6F52]/10 via-[#4F6F52]/5 to-[#4F6F52]/10 rounded-2xl p-6 sm:p-8 border border-[#4F6F52]/20 mb-10">
           <div className="flex flex-col sm:flex-row items-center gap-4">
-            <div className="w-14 h-14 rounded-full bg-[#4F6F52]/20 flex items-center justify-center flex-shrink-0">
+            <div className="w-14 h-14 rounded-full bg-[#4F6F52]/20 flex items-center justify-centre flex-shrink-0">
               <FileText className="w-7 h-7 text-[#4F6F52]" />
             </div>
-            <div className="flex-1 text-center sm:text-left">
+            <div className="flex-1 text-centre sm:text-left">
               <h3 className="text-lg font-bold text-[#1A231E] mb-1">Download PDF Summary</h3>
               <p className="text-sm text-[#5A6D7A]">A 4-page summary perfect for family discussions or printing</p>
             </div>
-            <button className="flex items-center gap-2 bg-[#4F6F52] text-white px-6 py-3 rounded-xl font-semibold hover:bg-[#3d5741] transition-colors min-h-[48px]">
+            <button className="flex items-center gap-2 bg-[#4F6F52] text-white px-6 py-3 rounded-xl font-semibold hover:bg-[#3d5741] transition-colours min-h-[48px]">
               <Download className="w-5 h-5" />
               Download PDF
             </button>
@@ -340,7 +340,7 @@ export default function SharedReportPage({ params }: PageProps) {
         </div>
 
         {/* Footer */}
-        <div className="text-center text-sm text-[#5A6D7A] border-t border-[#E8E5DF] pt-8">
+        <div className="text-centre text-sm text-[#5A6D7A] border-t border-[#E8E5DF] pt-8">
           <p className="mb-2">This report was prepared by RightCareHome for {reportData.sharedBy}</p>
           <p>
             Need your own personalised report?{" "}

@@ -105,7 +105,7 @@ export function PricingComparisonSection() {
   return (
     <section className="py-16 sm:py-24 lg:py-32 bg-gradient-to-b from-background to-muted/30 overflow-x-hidden">
       <div className="container mx-auto px-4 sm:px-6">
-        <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-16 space-y-3 sm:space-y-4">
+        <div className="text-centre max-w-3xl mx-auto mb-8 sm:mb-16 space-y-3 sm:space-y-4">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-foreground text-balance">
             Peace of Mind for Your Family
           </h2>
@@ -120,12 +120,12 @@ export function PricingComparisonSection() {
               <div className="col-span-5 bg-muted/50 p-6 border-b border-border">
                 <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground">FEATURES</span>
               </div>
-              <div className="col-span-3 bg-card p-6 text-center border-b border-l border-border">
+              <div className="col-span-3 bg-card p-6 text-centre border-b border-l border-border">
                 <div className="font-serif font-bold text-xl text-card-foreground mb-1">Free Shortlist</div>
                 <div className="text-3xl font-bold text-primary">£0</div>
                 <p className="text-xs sm:text-sm text-muted-foreground mt-1">Within 10 minutes</p>
               </div>
-              <div className="col-span-4 bg-primary/5 p-6 text-center border-b border-l border-border relative">
+              <div className="col-span-4 bg-primary/5 p-6 text-centre border-b border-l border-border relative">
                 <Badge className="absolute top-3 right-3 bg-accent text-accent-foreground border-0 text-[10px] px-2 py-0.5">
                   RECOMMENDED
                 </Badge>
@@ -149,7 +149,7 @@ export function PricingComparisonSection() {
                     )}
                   </div>
                   <div
-                    className="col-span-3 p-6 bg-card text-center border-b border-l border-border flex items-center justify-center"
+                    className="col-span-3 p-6 bg-card text-centre border-b border-l border-border flex items-center justify-centre"
                   >
                     {row.type === "text" && <span className="text-muted-foreground">{row.free}</span>}
                     {row.type === "icon" && row.free === "dash" && (
@@ -157,11 +157,11 @@ export function PricingComparisonSection() {
                     )}
                   </div>
                   <div
-                    className="col-span-4 p-6 bg-primary/5 text-center border-b border-l border-border flex items-center justify-center relative"
+                    className="col-span-4 p-6 bg-primary/5 text-centre border-b border-l border-border flex items-center justify-centre relative"
                   >
                     {row.type === "text" && <span className="font-bold text-primary">{row.pro}</span>}
                     {row.type === "icon" && row.pro === "check" && (
-                      <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
+                      <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-centre">
                         <Check className="w-5 h-5 text-primary-foreground stroke-[2.5]" />
                       </div>
                     )}
@@ -203,7 +203,7 @@ export function PricingComparisonSection() {
 
           <div className="lg:hidden space-y-4 sm:space-y-6">
             <Card className="p-4 sm:p-6 bg-card border-2 border-border rounded-2xl sm:rounded-3xl shadow-soft-md">
-              <div className="text-center mb-4 sm:mb-6">
+              <div className="text-centre mb-4 sm:mb-6">
                 <h3 className="text-xl sm:text-2xl font-serif font-bold text-foreground mb-2">Free Shortlist</h3>
                 <div className="text-3xl sm:text-4xl font-bold text-primary">£0</div>
                 <p className="text-xs sm:text-sm text-muted-foreground mt-1">Within 10 minutes</p>
@@ -242,7 +242,7 @@ export function PricingComparisonSection() {
               <Badge className="absolute top-3 sm:top-4 right-3 sm:right-4 bg-accent text-accent-foreground border-0 text-[10px] sm:text-xs">
                 RECOMMENDED
               </Badge>
-              <div className="text-center mb-4 sm:mb-6">
+              <div className="text-centre mb-4 sm:mb-6">
                 <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-foreground mb-2">
                   Professional Report
                 </h3>
@@ -267,7 +267,7 @@ export function PricingComparisonSection() {
                         {item.pro}
                       </span>
                     ) : (
-                      <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-primary flex items-center justify-center flex-shrink-0">
+                      <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-primary flex items-center justify-centre flex-shrink-0">
                         <Check className="w-3 h-3 sm:w-4 sm:h-4 text-primary-foreground" />
                       </div>
                     )}

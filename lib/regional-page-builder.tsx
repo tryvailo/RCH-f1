@@ -19,35 +19,31 @@ import { IntelligentMatchingSection } from "@/components/intelligent-matching-se
 import { FamilyVisitPatternsSection } from "@/components/family-visit-patterns-section"
 import { IndependenceComparisonSection } from "@/components/independence-comparison-section"
 import { HiddenCommissionModelSection } from "@/components/hidden-commission-model-section"
-import type { ReactNode } from "react"
+import { RegionalStatsSection } from "@/components/regional-stats-section"
+import { RegionalNeighbourhoodsSection } from "@/components/regional-neighbourhoods-section"
+import { RegionalTestimonialsSection } from "@/components/regional-testimonials-section"
+import { RegionalInsightsSection } from "@/components/regional-insights-section"
+import type { CityConfig } from "./data/city-config"
 
-interface RegionalPageConfig {
-  region: string
-  regionDisplay: string
-  statsSection: ReactNode
-  careHomesSection: ReactNode
-  testimonialsSection: ReactNode
+interface RegionalPageProps {
+  config: CityConfig
 }
 
-export function RegionalPageBuilder({
-  region,
-  regionDisplay,
-  statsSection,
-  careHomesSection,
-  testimonialsSection,
-}: RegionalPageConfig) {
+export function RegionalPageBuilder({ config }: RegionalPageProps) {
+  const { name, stats, neighbourhoods, testimonials, regionalInsights } = config
+
   return (
     <main className="min-h-screen bg-[#FDFBF7]">
       <Header />
       {/* PHASE 1: Hook & Free Value */}
-      <HeroSection region={regionDisplay} />
+      <HeroSection region={name} />
       <WhyStartSection />
       <HowItWorksSection />
 
       {/* PHASE 2: Problem Agitation */}
       <ProblemSolutionSection />
       <QuestionsFamiliesAsk />
-      <FairCostGapSection region={regionDisplay} />
+      <FairCostGapSection region={name} />
       <HiddenRisksSection />
 
       {/* PHASE 3: Product Demonstration */}
@@ -67,11 +63,14 @@ export function RegionalPageBuilder({
       <NHSFundingSection />
 
       {/* PHASE 7: Local Relevance - {region} Specific */}
-      {statsSection}
-      {careHomesSection}
+      <RegionalStatsSection region={name} stats={stats} />
+
+      {regionalInsights && <RegionalInsightsSection title={regionalInsights.title} items={regionalInsights.items} />}
+
+      <RegionalNeighbourhoodsSection region={name} neighbourhoods={neighbourhoods} totalHomes={stats.totalHomes} />
 
       {/* PHASE 8: Final Objection Handling */}
-      {testimonialsSection}
+      <RegionalTestimonialsSection region={name} testimonials={testimonials} />
       <WhyChooseSection />
       <FAQSection />
 

@@ -33,7 +33,7 @@ export function MonitoringObjectionsSection() {
   return (
     <section className="py-16 sm:py-20 lg:py-24 bg-gradient-to-br from-[#FDFBF7] to-white">
       <div className="container mx-auto px-4 sm:px-6">
-        <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+        <div className="text-centre max-w-3xl mx-auto mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-[#1A231E] mb-4 sm:mb-6 text-balance">
             Common Questions <span className="text-[#4F6F52]">Answered Honestly</span>
           </h2>
@@ -52,10 +52,10 @@ export function MonitoringObjectionsSection() {
               >
                 <AccordionTrigger className="text-left hover:no-underline py-6 group">
                   <div className="flex items-start gap-4 pr-4">
-                    <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#4F6F52] to-[#3A5140] flex items-center justify-center flex-shrink-0 mt-1 group-data-[state=open]:scale-110 transition-transform">
+                    <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#4F6F52] to-[#3A5140] flex items-center justify-centre flex-shrink-0 mt-1 group-data-[state=open]:scale-110 transition-transform">
                       <HelpCircle className="w-5 h-5 text-white" strokeWidth={2} />
                     </div>
-                    <span className="text-lg sm:text-xl font-semibold text-[#1A231E] group-hover:text-[#4F6F52] transition-colors">
+                    <span className="text-lg sm:text-xl font-semibold text-[#1A231E] group-hover:text-[#4F6F52] transition-colours">
                       {item.question}
                     </span>
                   </div>
@@ -67,12 +67,12 @@ export function MonitoringObjectionsSection() {
             ))}
           </Accordion>
 
-          <div className="mt-12 bg-gradient-to-r from-[#4F6F52] to-[#3A5140] rounded-2xl p-8 text-center shadow-soft-xl">
+          <div className="mt-12 bg-gradient-to-r from-[#4F6F52] to-[#3A5140] rounded-2xl p-8 text-centre shadow-soft-xl">
             <h3 className="text-2xl font-serif font-bold text-white mb-4">Still have questions?</h3>
             <p className="text-white/90 mb-6 text-lg">
               Try it risk-free for 30 days. If monitoring doesn't give you peace of mind, we'll refund every penny.
             </p>
-            <div className="flex items-center justify-center gap-3">
+            <div className="flex items-center justify-centre gap-3">
               <Check className="w-6 h-6 text-white" strokeWidth={2.5} />
               <span className="text-white font-semibold">30-day money-back guarantee • Cancel anytime</span>
             </div>

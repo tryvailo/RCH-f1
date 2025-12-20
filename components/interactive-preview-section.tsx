@@ -45,7 +45,7 @@ export function InteractivePreviewSection() {
             <div className="space-y-5 sm:space-y-6">
               {benefits.map((benefit) => (
                 <div key={benefit.number} className="flex gap-4 items-start">
-                  <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white border-2 border-primary shadow-sm flex items-center justify-center">
+                  <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white border-2 border-primary shadow-sm flex items-center justify-centre">
                     <span className="text-primary font-bold text-base sm:text-lg">{benefit.number}</span>
                   </div>
 
@@ -89,7 +89,7 @@ export function InteractivePreviewSection() {
                 </div>
 
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20">
-                  <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-primary/90 flex items-center justify-center shadow-lg">
+                  <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-primary/90 flex items-center justify-centre shadow-lg">
                     <Search className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
                   </div>
                 </div>
@@ -149,7 +149,7 @@ export function InteractivePreviewSection() {
                 </div>
               </div>
 
-              <div className="text-center mt-4 sm:mt-6">
+              <div className="text-centre mt-4 sm:mt-6">
                 <p className="text-xs sm:text-sm text-muted-foreground uppercase tracking-widest mb-4">
                   Sample of Professional Analysis Report
                 </p>

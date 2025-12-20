@@ -90,7 +90,7 @@ export function PrioritiesMatchMatrix({ userPriorities, homes }: PrioritiesMatch
       {/* Header */}
       <div className="space-y-4">
         <div className="flex items-center gap-3">
-          <div className="w-12 h-12 md:w-14 md:h-14 rounded-xl bg-primary/10 flex items-center justify-center">
+          <div className="w-12 h-12 md:w-14 md:h-14 rounded-xl bg-primary/10 flex items-center justify-centre">
             <Target className="w-7 h-7 md:w-8 md:h-8 text-primary" />
           </div>
           <div>
@@ -135,7 +135,7 @@ export function PrioritiesMatchMatrix({ userPriorities, homes }: PrioritiesMatch
           {/* Home Header */}
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 pb-4 border-b-2 border-border">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-primary/10 flex items-center justify-center text-lg md:text-xl font-bold text-primary">
+              <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-primary/10 flex items-center justify-centre text-lg md:text-xl font-bold text-primary">
                 {homeIdx + 1}
               </div>
               <div>
@@ -170,11 +170,11 @@ export function PrioritiesMatchMatrix({ userPriorities, homes }: PrioritiesMatch
                   {/* Status Icon */}
                   <div className="flex items-center gap-3 flex-shrink-0">
                     {meets_requirement ? (
-                      <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-green-600 flex items-center justify-center">
+                      <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-green-600 flex items-center justify-centre">
                         <Check className="w-6 h-6 md:w-7 md:h-7 text-white" strokeWidth={3} />
                       </div>
                     ) : (
-                      <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-red-600 flex items-center justify-center">
+                      <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-red-600 flex items-center justify-centre">
                         <X className="w-6 h-6 md:w-7 md:h-7 text-white" strokeWidth={3} />
                       </div>
                     )}

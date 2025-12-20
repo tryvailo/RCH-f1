@@ -107,7 +107,7 @@ export function formatScore(value: unknown, decimals = 1): string {
   return num.toFixed(decimals)
 }
 
-// Get score color based on value
+// Get score colour based on value
 export function getScoreColor(score: number | undefined | null): string {
   const s = score ?? 0
   if (s >= 8) return "text-[#27AE60]"
@@ -115,7 +115,7 @@ export function getScoreColor(score: number | undefined | null): string {
   return "text-[#EB5757]"
 }
 
-// Get score background color
+// Get score background colour
 export function getScoreBgColor(score: number | undefined | null): string {
   const s = score ?? 0
   if (s >= 8) return "bg-[#27AE60]"

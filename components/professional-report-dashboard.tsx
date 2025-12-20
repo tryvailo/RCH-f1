@@ -92,7 +92,7 @@ export function ProfessionalReportDashboard({
         {/* Main Content - 2 Column Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 mb-8 sm:mb-10">
           {/* [C] Overall Score Component */}
-          <div className="bg-white rounded-2xl p-6 sm:p-8 md:p-10 flex flex-col items-center justify-center border border-[#E8E5DF] shadow-soft-lg">
+          <div className="bg-white rounded-2xl p-6 sm:p-8 md:p-10 flex flex-col items-center justify-centre border border-[#E8E5DF] shadow-soft-lg">
             <div className="text-[14pt] sm:text-[16pt] font-bold text-[#5A6D7A] tracking-widest mb-4 sm:mb-6 uppercase">
               Overall Score
             </div>
@@ -100,7 +100,7 @@ export function ProfessionalReportDashboard({
               className="font-black leading-none mb-3 sm:mb-4"
               style={{
                 fontSize: "clamp(64pt, 15vw, 96pt)",
-                color: getScoreColor(overallScore),
+                colour: getScoreColor(overallScore),
               }}
             >
               {overallScore.toFixed(1)}
@@ -109,7 +109,7 @@ export function ProfessionalReportDashboard({
             <div
               className="text-[20pt] sm:text-[24pt] font-semibold"
               style={{
-                color: getScoreColor(overallScore),
+                colour: getScoreColor(overallScore),
               }}
             >
               {getOverallVerdict(overallScore)}
@@ -117,7 +117,7 @@ export function ProfessionalReportDashboard({
           </div>
 
           {/* [D] Traffic Light Summary */}
-          <div className="flex flex-col justify-center bg-white rounded-2xl p-6 sm:p-8 border border-[#E8E5DF] shadow-soft-lg">
+          <div className="flex flex-col justify-centre bg-white rounded-2xl p-6 sm:p-8 border border-[#E8E5DF] shadow-soft-lg">
             <div className="text-[14pt] sm:text-[16pt] font-bold text-[#1A231E] mb-4 sm:mb-5 uppercase tracking-wide">
               Category Scores
             </div>
@@ -135,7 +135,7 @@ export function ProfessionalReportDashboard({
                   />
                   <span
                     className="text-xs font-medium uppercase tracking-wide w-16 hidden sm:inline-block"
-                    style={{ color: getIndicatorColor(item.score) }}
+                    style={{ colour: getIndicatorColor(item.score) }}
                   >
                     {item.score >= 8.0 ? "Good" : item.score >= 6.0 ? "Fair" : "Low"}
                   </span>
@@ -147,7 +147,7 @@ export function ProfessionalReportDashboard({
                   </div>
                   <div
                     className="text-[14pt] sm:text-[16pt] font-bold text-right whitespace-nowrap hidden md:block"
-                    style={{ color: getScoreColor(item.score) }}
+                    style={{ colour: getScoreColor(item.score) }}
                   >
                     {item.verdict}
                   </div>
@@ -184,7 +184,7 @@ export function ProfessionalReportDashboard({
               </p>
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#4F6F52] to-[#3d5741] flex items-center justify-center text-white font-serif font-bold text-sm">
+                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#4F6F52] to-[#3d5741] flex items-center justify-centre text-white font-serif font-bold text-sm">
                     {testimonial.initials}
                   </div>
                   <div>
@@ -203,7 +203,7 @@ export function ProfessionalReportDashboard({
         </div>
 
         {/* [F] CTA Link */}
-        <div className="text-center">
+        <div className="text-centre">
           <a
             href="#full-analysis"
             className="inline-flex items-center gap-2 sm:gap-3 text-[16pt] sm:text-[18pt] font-bold text-[#4F6F52] hover:text-[#3d5741] hover:underline transition-all group min-h-[44px]"

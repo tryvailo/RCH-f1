@@ -14,7 +14,7 @@ export interface DSTDomain {
     description: string
     score: number // 0-20 scale
     level: "NO" | "LOW" | "MODERATE" | "HIGH" | "SEVERE" | "PRIORITY"
-    color: string // For visualization
+    colour: string // For visualization
     icon: string // lucide-react icon name
 }
 
@@ -26,7 +26,7 @@ export const DST_DOMAINS: DSTDomain[] = [
         description: "Respiratory function and oxygen support",
         score: 0,
         level: "NO",
-        color: "#4F6F52", // Green
+        colour: "#4F6F52", // Green
         icon: "Wind",
     },
     {
@@ -36,7 +36,7 @@ export const DST_DOMAINS: DSTDomain[] = [
         description: "Eating, drinking, and nutritional intake",
         score: 5,
         level: "LOW",
-        color: "#E8A87C", // Amber
+        colour: "#E8A87C", // Amber
         icon: "Apple",
     },
     {
@@ -46,7 +46,7 @@ export const DST_DOMAINS: DSTDomain[] = [
         description: "Bowel and urinary continence management",
         score: 5,
         level: "LOW",
-        color: "#E8A87C",
+        colour: "#E8A87C",
         icon: "Droplets",
     },
     {
@@ -56,7 +56,7 @@ export const DST_DOMAINS: DSTDomain[] = [
         description: "Skin integrity, wound care, pressure ulcers",
         score: 0,
         level: "NO",
-        color: "#4F6F52",
+        colour: "#4F6F52",
         icon: "Bandage",
     },
     {
@@ -66,7 +66,7 @@ export const DST_DOMAINS: DSTDomain[] = [
         description: "Movement and physical mobility support",
         score: 9,
         level: "HIGH",
-        color: "#D17A6F", // Red
+        colour: "#D17A6F", // Red
         icon: "Activity",
     },
     {
@@ -76,7 +76,7 @@ export const DST_DOMAINS: DSTDomain[] = [
         description: "Speech, hearing, and non-verbal communication",
         score: 5,
         level: "LOW",
-        color: "#E8A87C",
+        colour: "#E8A87C",
         icon: "MessageCircle",
     },
     {
@@ -86,7 +86,7 @@ export const DST_DOMAINS: DSTDomain[] = [
         description: "Mental health, emotional well-being, coping",
         score: 9,
         level: "HIGH",
-        color: "#D17A6F",
+        colour: "#D17A6F",
         icon: "Brain",
     },
     {
@@ -96,7 +96,7 @@ export const DST_DOMAINS: DSTDomain[] = [
         description: "Memory, understanding, decision-making (inc. dementia)",
         score: 20,
         level: "SEVERE",
-        color: "#8B0000", // Dark red
+        colour: "#8B0000", // Dark red
         icon: "Lightbulb",
     },
     {
@@ -106,7 +106,7 @@ export const DST_DOMAINS: DSTDomain[] = [
         description: "Challenging behaviours, agitation, aggression",
         score: 9,
         level: "HIGH",
-        color: "#D17A6F",
+        colour: "#D17A6F",
         icon: "AlertTriangle",
     },
     {
@@ -116,7 +116,7 @@ export const DST_DOMAINS: DSTDomain[] = [
         description: "Complex medication management and therapies",
         score: 5,
         level: "LOW",
-        color: "#E8A87C",
+        colour: "#E8A87C",
         icon: "Pill",
     },
     {
@@ -126,7 +126,7 @@ export const DST_DOMAINS: DSTDomain[] = [
         description: "Seizures, coma, unconsciousness management",
         score: 0,
         level: "NO",
-        color: "#4F6F52",
+        colour: "#4F6F52",
         icon: "Eye",
     },
     {
@@ -136,7 +136,7 @@ export const DST_DOMAINS: DSTDomain[] = [
         description: "Any other significant health/care requirements",
         score: 0,
         level: "NO",
-        color: "#4F6F52",
+        colour: "#4F6F52",
         icon: "MoreHorizontal",
     },
 ]

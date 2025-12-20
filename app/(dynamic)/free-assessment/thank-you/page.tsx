@@ -117,8 +117,8 @@ export default function ThankYouPage() {
   return (
     <Suspense
       fallback={
-        <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#FDFBF7] to-white">
-          <div className="text-center">
+        <div className="min-h-screen flex items-center justify-centre bg-gradient-to-br from-[#FDFBF7] to-white">
+          <div className="text-centre">
             <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#4F6F52] mx-auto mb-4"></div>
             <p className="text-[#1A231E]/70">Loading your personalised report...</p>
           </div>

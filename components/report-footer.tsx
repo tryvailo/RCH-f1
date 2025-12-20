@@ -100,31 +100,31 @@ export function ReportFooter({ reportId, generatedAt }: { reportId: string; gene
             <nav className="flex flex-col space-y-2 text-xs">
               <a
                 href="/service-legal/privacy-policy"
-                className="text-muted-foreground hover:text-foreground hover:underline transition-colors"
+                className="text-muted-foreground hover:text-foreground hover:underline transition-colours"
               >
                 Privacy Policy
               </a>
               <a
                 href="/service-legal/terms-of-service"
-                className="text-muted-foreground hover:text-foreground hover:underline transition-colors"
+                className="text-muted-foreground hover:text-foreground hover:underline transition-colours"
               >
                 Terms of Service
               </a>
               <a
                 href="/service-legal/cookie-policy"
-                className="text-muted-foreground hover:text-foreground hover:underline transition-colors"
+                className="text-muted-foreground hover:text-foreground hover:underline transition-colours"
               >
                 Cookie Policy
               </a>
               <a
                 href="/service-legal/refund-policy"
-                className="text-muted-foreground hover:text-foreground hover:underline transition-colors"
+                className="text-muted-foreground hover:text-foreground hover:underline transition-colours"
               >
                 Refund Policy
               </a>
               <a
                 href="/service-legal/accessibility"
-                className="text-muted-foreground hover:text-foreground hover:underline transition-colors"
+                className="text-muted-foreground hover:text-foreground hover:underline transition-colours"
               >
                 Accessibility
               </a>
@@ -133,7 +133,7 @@ export function ReportFooter({ reportId, generatedAt }: { reportId: string; gene
         </div>
 
         {/* Copyright - Full width bottom */}
-        <div className="mt-8 pt-6 border-t border-border/30 text-center space-y-1">
+        <div className="mt-8 pt-6 border-t border-border/30 text-centre space-y-1">
           <p className="text-[11px] text-muted-foreground/60">
             © 2025 RightCareHome Ltd. All rights reserved. Registered in England & Wales
           </p>

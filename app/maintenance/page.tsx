@@ -7,10 +7,10 @@ export const metadata = {
 
 export default function MaintenancePage() {
   return (
-    <main className="min-h-screen bg-[#FDFBF7] flex items-center justify-center px-4">
-      <div className="max-w-2xl text-center">
-        <div className="flex justify-center mb-8">
-          <div className="w-20 h-20 rounded-2xl bg-[#4F6F52] flex items-center justify-center shadow-xl">
+    <main className="min-h-screen bg-[#FDFBF7] flex items-center justify-centre px-4">
+      <div className="max-w-2xl text-centre">
+        <div className="flex justify-centre mb-8">
+          <div className="w-20 h-20 rounded-2xl bg-[#4F6F52] flex items-center justify-centre shadow-xl">
             <ShieldCheck className="w-12 h-12 text-white" strokeWidth={2.5} />
           </div>
         </div>

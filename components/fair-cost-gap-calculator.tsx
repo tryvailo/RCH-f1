@@ -237,7 +237,7 @@ export function FairCostGapCalculator({
         {/* Header */}
         <div className="mb-8 sm:mb-12 md:mb-16">
           <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-5 mb-4 sm:mb-6">
-            <div className="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 rounded-3xl bg-gradient-to-br from-[#4F6F52] to-[#3d5741] flex items-center justify-center shadow-soft-xl">
+            <div className="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 rounded-3xl bg-gradient-to-br from-[#4F6F52] to-[#3d5741] flex items-center justify-centre shadow-soft-xl">
               <Calculator className="w-9 h-9 sm:w-10 sm:h-10 md:w-11 md:h-11 text-white" strokeWidth={2.5} />
             </div>
             <div>
@@ -303,19 +303,19 @@ export function FairCostGapCalculator({
                   <th className="text-left py-3 sm:py-4 px-2 sm:px-4 text-sm sm:text-base font-bold text-[#1A231E]">
                     Care Home
                   </th>
-                  <th className="text-center py-3 sm:py-4 px-2 sm:px-4 text-sm sm:text-base font-bold text-[#1A231E]">
+                  <th className="text-centre py-3 sm:py-4 px-2 sm:px-4 text-sm sm:text-base font-bold text-[#1A231E]">
                     Quoted Fee
                   </th>
-                  <th className="text-center py-3 sm:py-4 px-2 sm:px-4 text-sm sm:text-base font-bold text-[#1A231E]">
+                  <th className="text-centre py-3 sm:py-4 px-2 sm:px-4 text-sm sm:text-base font-bold text-[#1A231E]">
                     Fair Rate
                   </th>
-                  <th className="text-center py-3 sm:py-4 px-2 sm:px-4 text-sm sm:text-base font-bold text-[#1A231E]">
+                  <th className="text-centre py-3 sm:py-4 px-2 sm:px-4 text-sm sm:text-base font-bold text-[#1A231E]">
                     Gap
                   </th>
-                  <th className="text-center py-3 sm:py-4 px-2 sm:px-4 text-sm sm:text-base font-bold text-[#1A231E]">
+                  <th className="text-centre py-3 sm:py-4 px-2 sm:px-4 text-sm sm:text-base font-bold text-[#1A231E]">
                     Negotiation
                   </th>
-                  <th className="text-center py-3 sm:py-4 px-2 sm:px-4 text-sm sm:text-base font-bold text-[#1A231E]">
+                  <th className="text-centre py-3 sm:py-4 px-2 sm:px-4 text-sm sm:text-base font-bold text-[#1A231E]">
                     Annual Savings
                   </th>
                 </tr>
@@ -326,24 +326,24 @@ export function FairCostGapCalculator({
                   return (
                     <tr
                       key={home.name}
-                      className={`border-b-2 border-[#4F6F52]/10 cursor-pointer transition-colors ${selectedHome?.name === home.name ? "bg-[#4F6F52]/10" : "hover:bg-[#4F6F52]/5"}`}
+                      className={`border-b-2 border-[#4F6F52]/10 cursor-pointer transition-colours ${selectedHome?.name === home.name ? "bg-[#4F6F52]/10" : "hover:bg-[#4F6F52]/5"}`}
                       onClick={() => setSelectedHome(home)}
                     >
                       <td className="py-3 sm:py-4 px-2 sm:px-4 text-sm sm:text-base font-semibold text-[#1A231E]">
                         {home.name}
                       </td>
-                      <td className="text-center py-3 sm:py-4 px-2 sm:px-4 text-sm sm:text-base font-bold text-[#1A231E]">
+                      <td className="text-centre py-3 sm:py-4 px-2 sm:px-4 text-sm sm:text-base font-bold text-[#1A231E]">
                         £{formatCurrency(home.weeklyFee)}
                       </td>
-                      <td className="text-center py-3 sm:py-4 px-2 sm:px-4 text-sm sm:text-base font-semibold text-[#4F6F52]">
+                      <td className="text-centre py-3 sm:py-4 px-2 sm:px-4 text-sm sm:text-base font-semibold text-[#4F6F52]">
                         £{formatCurrency(home.fairMarketRate)}
                       </td>
                       <td
-                        className={`text-center py-3 sm:py-4 px-2 sm:px-4 text-sm sm:text-base font-bold ${getGapColor(gap)}`}
+                        className={`text-centre py-3 sm:py-4 px-2 sm:px-4 text-sm sm:text-base font-bold ${getGapColor(gap)}`}
                       >
                         +£{gap}
                       </td>
-                      <td className="text-center py-3 sm:py-4 px-2 sm:px-4">
+                      <td className="text-centre py-3 sm:py-4 px-2 sm:px-4">
                         <span
                           className={`inline-block px-3 py-1 rounded-full text-xs sm:text-sm font-semibold ${getNegotiationColor(getNegotiationPotentialString(home.negotiationPotential))}`}
                         >
@@ -351,7 +351,7 @@ export function FairCostGapCalculator({
                             getNegotiationPotentialString(home.negotiationPotential).slice(1)}
                         </span>
                       </td>
-                      <td className="text-center py-3 sm:py-4 px-2 sm:px-4 text-sm sm:text-base font-bold text-[#22c55e]">
+                      <td className="text-centre py-3 sm:py-4 px-2 sm:px-4 text-sm sm:text-base font-bold text-[#22c55e]">
                         £{formatCurrency(home.savingsOpportunity)}
                       </td>
                     </tr>

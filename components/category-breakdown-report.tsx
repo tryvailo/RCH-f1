@@ -74,7 +74,7 @@ export function CategoryBreakdownReport({ category, icon, homes }: CategoryBreak
         {/* Category Header */}
         <div className="mb-8 sm:mb-12 md:mb-16">
           <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-5 mb-4 sm:mb-6">
-            <div className="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 rounded-3xl bg-gradient-to-br from-[#4F6F52] to-[#3d5741] flex items-center justify-center shadow-soft-xl">
+            <div className="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 rounded-3xl bg-gradient-to-br from-[#4F6F52] to-[#3d5741] flex items-center justify-centre shadow-soft-xl">
               <IconComponent className="w-9 h-9 sm:w-10 sm:h-10 md:w-11 md:h-11 text-white" strokeWidth={2.5} />
             </div>
             <div>
@@ -91,7 +91,7 @@ export function CategoryBreakdownReport({ category, icon, homes }: CategoryBreak
         {/* Winner Callout Box */}
         <Card className="bg-gradient-to-br from-[#FEF9C3] to-[#FEF08A] border-2 border-[#EAB308] p-6 sm:p-8 md:p-10 mb-8 sm:mb-12 md:mb-16 shadow-soft-xl rounded-3xl">
           <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-5">
-            <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-2xl bg-[#EAB308] flex items-center justify-center shadow-lg flex-shrink-0">
+            <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-2xl bg-[#EAB308] flex items-center justify-centre shadow-lg flex-shrink-0">
               <Trophy className="w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 text-white" strokeWidth={2.5} />
             </div>
             <div className="min-w-0">
@@ -122,7 +122,7 @@ export function CategoryBreakdownReport({ category, icon, homes }: CategoryBreak
               <div key={home.name} className="group">
                 <div className="flex items-center justify-between mb-2 sm:mb-3 gap-2">
                   <div className="flex items-center gap-2 sm:gap-3 md:gap-4 flex-1 min-w-0">
-                    <div className="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 rounded-xl bg-[#4F6F52]/10 flex items-center justify-center text-sm sm:text-base font-bold text-[#4F6F52] flex-shrink-0">
+                    <div className="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 rounded-xl bg-[#4F6F52]/10 flex items-center justify-centre text-sm sm:text-base font-bold text-[#4F6F52] flex-shrink-0">
                       {index + 1}
                     </div>
                     <span className="text-base sm:text-lg md:text-xl font-semibold text-[#1A231E] font-sans truncate">
@@ -164,7 +164,7 @@ export function CategoryBreakdownReport({ category, icon, homes }: CategoryBreak
                     {metricKeys.map((key) => (
                       <th
                         key={key}
-                        className="text-center py-3 sm:py-4 md:py-5 px-2 sm:px-3 md:px-5 text-base sm:text-lg md:text-xl font-bold text-[#1A231E] font-sans whitespace-nowrap"
+                        className="text-centre py-3 sm:py-4 md:py-5 px-2 sm:px-3 md:px-5 text-base sm:text-lg md:text-xl font-bold text-[#1A231E] font-sans whitespace-nowrap"
                       >
                         {formatMetricName(key)}
                       </th>
@@ -175,13 +175,13 @@ export function CategoryBreakdownReport({ category, icon, homes }: CategoryBreak
                   {homes.map((home, index) => (
                     <tr
                       key={home.name}
-                      className={`border-b-2 border-[#4F6F52]/10 ${index === 0 ? "bg-[#4F6F52]/5" : "hover:bg-[#4F6F52]/5"} transition-colors`}
+                      className={`border-b-2 border-[#4F6F52]/10 ${index === 0 ? "bg-[#4F6F52]/5" : "hover:bg-[#4F6F52]/5"} transition-colours`}
                     >
                       <td className="py-3 sm:py-4 md:py-5 px-2 sm:px-3 md:px-5 text-sm sm:text-base md:text-lg font-semibold text-[#1A231E] font-sans whitespace-nowrap">
                         {home.name}
                       </td>
                       {metricKeys.map((key) => (
-                        <td key={key} className="text-center py-3 sm:py-4 md:py-5 px-2 sm:px-3 md:px-5">
+                        <td key={key} className="text-centre py-3 sm:py-4 md:py-5 px-2 sm:px-3 md:px-5">
                           {formatMetricValue(key, home.metrics[key])}
                         </td>
                       ))}
@@ -196,7 +196,7 @@ export function CategoryBreakdownReport({ category, icon, homes }: CategoryBreak
         {/* Expert Insight Box */}
         <Card className="bg-gradient-to-br from-[#4F6F52] to-[#3d5741] border-none p-6 sm:p-8 md:p-10 shadow-soft-xl rounded-3xl">
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
-            <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-white/20 flex items-center justify-center flex-shrink-0">
+            <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-white/20 flex items-center justify-centre flex-shrink-0">
               <AlertCircle className="w-7 h-7 sm:w-8 sm:h-8 text-white" strokeWidth={2.5} />
             </div>
             <div className="min-w-0">

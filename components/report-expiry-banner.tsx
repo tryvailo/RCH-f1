@@ -83,7 +83,7 @@ export function ReportExpiryBanner({ onSaveClick, reportId }: ReportExpiryBanner
           <div className="flex items-center justify-between gap-4">
             <div className="flex items-center gap-3 flex-1 min-w-0">
               <div
-                className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 ${isUrgent ? "bg-[#C9A86C]/20" : "bg-[#4F6F52]/10"}`}
+                className={`w-8 h-8 rounded-full flex items-center justify-centre flex-shrink-0 ${isUrgent ? "bg-[#C9A86C]/20" : "bg-[#4F6F52]/10"}`}
               >
                 <Clock className={`w-4 h-4 ${isUrgent ? "text-[#C9A86C]" : "text-[#4F6F52]"}`} />
               </div>
@@ -116,7 +116,7 @@ export function ReportExpiryBanner({ onSaveClick, reportId }: ReportExpiryBanner
               </Button>
               <button
                 onClick={handleDismiss}
-                className="p-2 text-[#1A231E]/40 hover:text-[#1A231E]/70 transition-colors"
+                className="p-2 text-[#1A231E]/40 hover:text-[#1A231E]/70 transition-colours"
                 aria-label="Dismiss"
               >
                 <X className="w-4 h-4" />

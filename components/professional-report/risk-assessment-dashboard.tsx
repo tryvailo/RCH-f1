@@ -213,7 +213,7 @@ export function RiskAssessmentDashboard({ homes }: RiskAssessmentDashboardProps)
         <h1 className="text-3xl md:text-4xl font-bold text-foreground">Risk Assessment Dashboard</h1>
         <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
           This assessment evaluates potential risks across four critical categories for your top three care home
-          recommendations. We analyze regulatory compliance, financial stability, operational quality, and community
+          recommendations. We analyse regulatory compliance, financial stability, operational quality, and community
           reputation to help you make an informed decision.
         </p>
       </div>

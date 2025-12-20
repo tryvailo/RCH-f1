@@ -320,7 +320,7 @@ Best regards,
         <ul className="space-y-3">
           {contractRedFlags.map((flag, idx) => (
             <li key={idx} className="flex items-start gap-3 text-base md:text-lg">
-              <div className="bg-red-600 text-white rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-0.5 font-semibold">
+              <div className="bg-red-600 text-white rounded-full w-6 h-6 flex items-center justify-centre flex-shrink-0 mt-0.5 font-semibold">
                 !
               </div>
               <span className="text-foreground">{flag}</span>

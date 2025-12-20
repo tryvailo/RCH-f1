@@ -86,26 +86,26 @@ function getScoreLabel(score: number): string {
   return "Below Average"
 }
 
-function getNoiseLabel(dba: number): { label: string; color: string } {
-  if (dba <= 40) return { label: "Very Quiet", color: "#22c55e" }
-  if (dba <= 50) return { label: "Quiet", color: "#84cc16" }
-  if (dba <= 55) return { label: "Moderate", color: "#f59e0b" }
-  return { label: "Noisy", color: "#ef4444" }
+function getNoiseLabel(dba: number): { label: string; colour: string } {
+  if (dba <= 40) return { label: "Very Quiet", colour: "#22c55e" }
+  if (dba <= 50) return { label: "Quiet", colour: "#84cc16" }
+  if (dba <= 55) return { label: "Moderate", colour: "#f59e0b" }
+  return { label: "Noisy", colour: "#ef4444" }
 }
 
 function ScoreBar({ score, maxScore = 100 }: { score: number; maxScore?: number }) {
   const percentage = (score / maxScore) * 100
-  const color = getScoreColor(score)
+  const colour = getScoreColor(score)
 
   return (
     <div className="flex items-center gap-3">
       <div className="flex-1 h-2.5 bg-[#E8E5DF] rounded-full overflow-hidden">
         <div
           className="h-full rounded-full transition-all duration-500"
-          style={{ width: `${percentage}%`, backgroundColor: color }}
+          style={{ width: `${percentage}%`, backgroundColor: colour }}
         />
       </div>
-      <span className="text-sm font-bold tabular-nums w-8" style={{ color }}>
+      <span className="text-sm font-bold tabular-nums w-8" style={{ colour }}>
         {score}
       </span>
     </div>
@@ -125,7 +125,7 @@ export function ProWellbeingComparison({
     <section className="py-12 md:py-16 px-4 bg-gradient-to-br from-[#FDFBF7] via-white to-[#4F6F52]/5 print:py-8">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
-        <div className="text-center mb-10 md:mb-12">
+        <div className="text-centre mb-10 md:mb-12">
           <Badge variant="secondary" className="mb-4 text-base px-5 py-2 bg-[#4F6F52]/10 text-[#4F6F52] border-0">
             Location Quality Analysis
           </Badge>
@@ -142,7 +142,7 @@ export function ProWellbeingComparison({
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
           <Card className="p-6 bg-[#22c55e]/5 border-[#22c55e]/20">
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded-xl bg-[#22c55e]/20 flex items-center justify-center">
+              <div className="w-12 h-12 rounded-xl bg-[#22c55e]/20 flex items-center justify-centre">
                 <Sparkles className="w-6 h-6 text-[#22c55e]" />
               </div>
               <div>
@@ -154,7 +154,7 @@ export function ProWellbeingComparison({
           </Card>
           <Card className="p-6 bg-[#3b82f6]/5 border-[#3b82f6]/20">
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded-xl bg-[#3b82f6]/20 flex items-center justify-center">
+              <div className="w-12 h-12 rounded-xl bg-[#3b82f6]/20 flex items-center justify-centre">
                 <Volume2 className="w-6 h-6 text-[#3b82f6]" />
               </div>
               <div>
@@ -177,14 +177,14 @@ export function ProWellbeingComparison({
               return (
                 <div
                   key={home.name}
-                  className={`p-4 md:p-6 hover:bg-[#FDFBF7] transition-colors min-h-[80px] ${isBest ? "bg-[#22c55e]/5" : ""}`}
+                  className={`p-4 md:p-6 hover:bg-[#FDFBF7] transition-colours min-h-[80px] ${isBest ? "bg-[#22c55e]/5" : ""}`}
                 >
                   <div className="grid grid-cols-7 gap-4 items-center">
                     {/* Home Name */}
                     <div className="col-span-2">
                       <div className="flex items-start gap-3">
                         <div
-                          className="w-8 h-8 rounded-lg flex items-center justify-center text-sm font-bold text-white flex-shrink-0"
+                          className="w-8 h-8 rounded-lg flex items-center justify-centre text-sm font-bold text-white flex-shrink-0"
                           style={{ backgroundColor: getScoreColor(home.overallScore) }}
                         >
                           {index + 1}
@@ -207,37 +207,37 @@ export function ProWellbeingComparison({
                     </div>
 
                     {/* Scores - Desktop */}
-                    <div className="text-center hidden md:block">
-                      <span className="text-lg font-bold block" style={{ color: getScoreColor(home.seniorCommunity) }}>
+                    <div className="text-centre hidden md:block">
+                      <span className="text-lg font-bold block" style={{ colour: getScoreColor(home.seniorCommunity) }}>
                         {home.seniorCommunity}
                       </span>
                       <span className="text-sm text-[#1A231E]/50">{getScoreLabel(home.seniorCommunity)}</span>
                     </div>
-                    <div className="text-center hidden md:block">
-                      <span className="text-lg font-bold block" style={{ color: getScoreColor(home.greenSpaces) }}>
+                    <div className="text-centre hidden md:block">
+                      <span className="text-lg font-bold block" style={{ colour: getScoreColor(home.greenSpaces) }}>
                         {home.greenSpaces}
                       </span>
                       <span className="text-sm text-[#1A231E]/50">{getScoreLabel(home.greenSpaces)}</span>
                     </div>
-                    <div className="text-center hidden md:block">
-                      <span className="text-lg font-bold block" style={{ color: getScoreColor(home.walkability) }}>
+                    <div className="text-centre hidden md:block">
+                      <span className="text-lg font-bold block" style={{ colour: getScoreColor(home.walkability) }}>
                         {home.walkability}
                       </span>
                       <span className="text-sm text-[#1A231E]/50">{getScoreLabel(home.walkability)}</span>
                     </div>
-                    <div className="text-center hidden md:block">
-                      <span className="text-lg font-bold block" style={{ color: getScoreColor(home.transport) }}>
+                    <div className="text-centre hidden md:block">
+                      <span className="text-lg font-bold block" style={{ colour: getScoreColor(home.transport) }}>
                         {home.transport}
                       </span>
                       <span className="text-sm text-[#1A231E]/50">{getScoreLabel(home.transport)}</span>
                     </div>
 
                     {/* Overall Score */}
-                    <div className="text-center">
+                    <div className="text-centre">
                       <div className="inline-flex flex-col items-center">
                         <span
                           className="text-2xl md:text-3xl font-bold"
-                          style={{ color: getScoreColor(home.overallScore) }}
+                          style={{ colour: getScoreColor(home.overallScore) }}
                         >
                           {home.overallScore}
                         </span>
@@ -248,31 +248,31 @@ export function ProWellbeingComparison({
 
                   {/* Mobile Breakdown */}
                   <div className="md:hidden mt-4 pt-4 border-t border-[#E8E5DF]/50">
-                    <div className="grid grid-cols-4 gap-3 text-center">
-                      <div className="min-h-[48px] flex flex-col justify-center">
+                    <div className="grid grid-cols-4 gap-3 text-centre">
+                      <div className="min-h-[48px] flex flex-col justify-centre">
                         <Users className="w-4 h-4 mx-auto text-[#1A231E]/40 mb-1" />
-                        <span className="text-sm font-bold" style={{ color: getScoreColor(home.seniorCommunity) }}>
+                        <span className="text-sm font-bold" style={{ colour: getScoreColor(home.seniorCommunity) }}>
                           {home.seniorCommunity}
                         </span>
                         <span className="text-sm text-[#1A231E]/40">{getScoreLabel(home.seniorCommunity)}</span>
                       </div>
-                      <div className="min-h-[48px] flex flex-col justify-center">
+                      <div className="min-h-[48px] flex flex-col justify-centre">
                         <TreePine className="w-4 h-4 mx-auto text-[#1A231E]/40 mb-1" />
-                        <span className="text-sm font-bold" style={{ color: getScoreColor(home.greenSpaces) }}>
+                        <span className="text-sm font-bold" style={{ colour: getScoreColor(home.greenSpaces) }}>
                           {home.greenSpaces}
                         </span>
                         <span className="text-sm text-[#1A231E]/40">{getScoreLabel(home.greenSpaces)}</span>
                       </div>
-                      <div className="min-h-[48px] flex flex-col justify-center">
+                      <div className="min-h-[48px] flex flex-col justify-centre">
                         <Footprints className="w-4 h-4 mx-auto text-[#1A231E]/40 mb-1" />
-                        <span className="text-sm font-bold" style={{ color: getScoreColor(home.walkability) }}>
+                        <span className="text-sm font-bold" style={{ colour: getScoreColor(home.walkability) }}>
                           {home.walkability}
                         </span>
                         <span className="text-sm text-[#1A231E]/40">{getScoreLabel(home.walkability)}</span>
                       </div>
-                      <div className="min-h-[48px] flex flex-col justify-center">
+                      <div className="min-h-[48px] flex flex-col justify-centre">
                         <Bus className="w-4 h-4 mx-auto text-[#1A231E]/40 mb-1" />
-                        <span className="text-sm font-bold" style={{ color: getScoreColor(home.transport) }}>
+                        <span className="text-sm font-bold" style={{ colour: getScoreColor(home.transport) }}>
                           {home.transport}
                         </span>
                         <span className="text-sm text-[#1A231E]/40">{getScoreLabel(home.transport)}</span>
@@ -284,7 +284,7 @@ export function ProWellbeingComparison({
                   <div className="mt-3 flex items-center gap-2 text-sm">
                     <Volume2 className="w-4 h-4 text-[#1A231E]/40" />
                     <span className="text-sm text-[#1A231E]/60">Noise Level:</span>
-                    <span className="font-semibold" style={{ color: noise.color }}>
+                    <span className="font-semibold" style={{ colour: noise.colour }}>
                       {home.noiseLevel} dBA ({noise.label})
                     </span>
                   </div>
@@ -295,7 +295,7 @@ export function ProWellbeingComparison({
         </Card>
 
         {/* Legend */}
-        <div className="mt-6 flex flex-wrap items-center justify-center gap-4 text-sm text-[#1A231E]/60">
+        <div className="mt-6 flex flex-wrap items-center justify-centre gap-4 text-sm text-[#1A231E]/60">
           <div className="flex items-center gap-2 min-h-[44px] px-4 py-2 bg-[#22c55e]/10 rounded-lg">
             <div className="w-4 h-4 rounded-full bg-[#22c55e]" aria-hidden="true" />
             <span className="font-medium text-[#22c55e]">80+ Excellent</span>
@@ -311,7 +311,7 @@ export function ProWellbeingComparison({
         </div>
 
         {/* Data Source */}
-        <p className="mt-6 text-center text-sm text-[#1A231E]/50">
+        <p className="mt-6 text-centre text-sm text-[#1A231E]/50">
           Data sources: ONS Census 2021, OSM Green Spaces, UK Noise Map, Transport API • Calculated for each home's
           precise postcode
         </p>

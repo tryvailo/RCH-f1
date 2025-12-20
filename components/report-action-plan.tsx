@@ -116,7 +116,7 @@ export function ReportActionPlan() {
     <section className="bg-gradient-to-b from-background to-muted/20 py-14 md:py-20 px-4 sm:px-6 overflow-x-hidden">
       <div className="max-w-5xl mx-auto">
         {/* Section Title */}
-        <div className="text-center mb-10 sm:mb-14">
+        <div className="text-centre mb-10 sm:mb-14">
           <Badge variant="secondary" className="mb-4 text-base md:text-lg px-6 py-2.5">
             <Clock className="w-5 h-5 md:w-6 md:h-6 mr-2 inline" />
             Your 7-Day Action Plan
@@ -165,10 +165,10 @@ export function ReportActionPlan() {
               <button
                 key={item.id}
                 onClick={() => toggleChecklistItem(item.id)}
-                className="flex items-start gap-5 w-full text-left group hover:bg-muted/50 p-5 -mx-5 rounded-xl transition-colors min-h-[72px]"
+                className="flex items-start gap-5 w-full text-left group hover:bg-muted/50 p-5 -mx-5 rounded-xl transition-colours min-h-[72px]"
               >
                 <div className="flex items-center gap-4 flex-shrink-0">
-                  <span className="w-8 h-8 md:w-9 md:h-9 rounded-full bg-muted flex items-center justify-center text-base md:text-lg font-medium">
+                  <span className="w-8 h-8 md:w-9 md:h-9 rounded-full bg-muted flex items-center justify-centre text-base md:text-lg font-medium">
                     {index + 1}
                   </span>
                   <div
@@ -176,7 +176,7 @@ export function ReportActionPlan() {
                       item.checked
                         ? "bg-[#4F6F52] border-[#4F6F52]"
                         : "border-muted-foreground/30 group-hover:border-[#4F6F52]/50"
-                    } flex items-center justify-center`}
+                    } flex items-center justify-centre`}
                   >
                     {item.checked && (
                       <Check className="w-5 h-5 md:w-6 md:h-6 text-white animate-in zoom-in-50 duration-200" />
@@ -213,14 +213,14 @@ export function ReportActionPlan() {
               <button
                 key={item.id}
                 onClick={() => toggleEnquiryChecklistItem(item.id)}
-                className="flex items-start gap-5 w-full text-left group hover:bg-muted/50 p-5 -mx-5 rounded-xl transition-colors min-h-[64px]"
+                className="flex items-start gap-5 w-full text-left group hover:bg-muted/50 p-5 -mx-5 rounded-xl transition-colours min-h-[64px]"
               >
                 <div
                   className={`flex-shrink-0 w-8 h-8 md:w-9 md:h-9 rounded border-2 transition-all ${
                     item.checked
                       ? "bg-[#4F6F52] border-[#4F6F52]"
                       : "border-muted-foreground/30 group-hover:border-[#4F6F52]/50"
-                  } flex items-center justify-center`}
+                  } flex items-center justify-centre`}
                 >
                   {item.checked && (
                     <Check className="w-5 h-5 md:w-6 md:h-6 text-white animate-in zoom-in-50 duration-200" />
@@ -245,11 +245,11 @@ export function ReportActionPlan() {
           </div>
         </Card>
 
-        <h3 className="text-xl md:text-2xl lg:text-3xl font-bold mb-8 text-center">Your Roadmap</h3>
+        <h3 className="text-xl md:text-2xl lg:text-3xl font-bold mb-8 text-centre">Your Roadmap</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           <Card className="p-7 sm:p-9 bg-gradient-to-br from-blue-50 to-blue-100/50 border-blue-200">
             <div className="flex items-start justify-between mb-5">
-              <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-2xl md:text-3xl flex-shrink-0">
+              <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-blue-600 text-white flex items-center justify-centre font-bold text-2xl md:text-3xl flex-shrink-0">
                 1
               </div>
               <Phone className="w-8 h-8 md:w-9 md:h-9 text-blue-600 flex-shrink-0" />
@@ -284,7 +284,7 @@ export function ReportActionPlan() {
 
           <Card className="p-7 sm:p-9 bg-gradient-to-br from-amber-50 to-amber-100/50 border-amber-200">
             <div className="flex items-start justify-between mb-5">
-              <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-amber-600 text-white flex items-center justify-center font-bold text-2xl md:text-3xl flex-shrink-0">
+              <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-amber-600 text-white flex items-center justify-centre font-bold text-2xl md:text-3xl flex-shrink-0">
                 2
               </div>
               <FileText className="w-8 h-8 md:w-9 md:h-9 text-amber-600 flex-shrink-0" />
@@ -319,7 +319,7 @@ export function ReportActionPlan() {
 
           <Card className="p-7 sm:p-9 bg-gradient-to-br from-emerald-50 to-emerald-100/50 border-emerald-200 sm:col-span-2 lg:col-span-1">
             <div className="flex items-start justify-between mb-5">
-              <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-emerald-600 text-white flex items-center justify-center font-bold text-2xl md:text-3xl flex-shrink-0">
+              <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-emerald-600 text-white flex items-center justify-centre font-bold text-2xl md:text-3xl flex-shrink-0">
                 3
               </div>
               <Users className="w-8 h-8 md:w-9 md:h-9 text-emerald-600 flex-shrink-0" />
@@ -354,7 +354,7 @@ export function ReportActionPlan() {
         </div>
 
         {/* Encouraging Message */}
-        <div className="mt-10 sm:mt-14 text-center px-4">
+        <div className="mt-10 sm:mt-14 text-centre px-4">
           <p className="text-lg md:text-xl lg:text-2xl text-muted-foreground leading-relaxed">
             <strong className="text-foreground">You can do this.</strong> Take it one step at a time, and you'll find
             the right home.

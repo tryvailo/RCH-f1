@@ -37,7 +37,7 @@ export function MonitoringTestimonialsSection() {
     <section className="py-20 lg:py-32 bg-background border-y border-border">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-centre mb-16">
             <Badge className="mb-6 px-4 py-2 bg-primary/10 text-primary border-primary/20">Client Reviews</Badge>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-foreground mb-4 text-balance">
               Thousands of Families Already Trust Us with What Matters Most.
@@ -85,9 +85,9 @@ export function MonitoringTestimonialsSection() {
           </div>
 
           {/* Media mentions */}
-          <div className="mt-16 text-center">
+          <div className="mt-16 text-centre">
             <p className="text-sm text-muted-foreground mb-6">As Featured In</p>
-            <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
+            <div className="flex flex-wrap justify-centre items-center gap-8 opacity-60">
               <div className="text-2xl font-serif font-bold text-foreground">BBC</div>
               <div className="text-2xl font-serif font-bold text-foreground">The Guardian</div>
               <div className="text-2xl font-serif font-bold text-foreground">Forbes</div>

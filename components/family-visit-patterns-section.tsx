@@ -6,7 +6,7 @@ export function FamilyVisitPatternsSection() {
   return (
     <section className="py-16 lg:py-32 bg-[#FDFBF7]">
       <div className="container mx-auto px-3 sm:px-4 overflow-x-hidden">
-        <div className="text-center max-w-4xl mx-auto mb-12 lg:mb-16 space-y-4 sm:space-y-6">
+        <div className="text-centre max-w-4xl mx-auto mb-12 lg:mb-16 space-y-4 sm:space-y-6">
           <Badge className="px-3 sm:px-6 py-2 sm:py-3 text-xs sm:text-base bg-[#C88D79] text-white border-0 shadow-soft-md whitespace-normal max-w-[90%] mx-auto">
             UNIQUE INSIGHT YOU WON'T FIND ELSEWHERE
           </Badge>
@@ -24,7 +24,7 @@ export function FamilyVisitPatternsSection() {
           {/* Home A - Good */}
           <Card className="p-4 sm:p-8 bg-white border-2 border-[#4F6F52] rounded-2xl sm:rounded-3xl shadow-soft-lg">
             <div className="flex items-start gap-3 sm:gap-4 mb-4 sm:mb-6">
-              <div className="w-10 h-10 sm:w-14 sm:h-14 rounded-lg sm:rounded-xl bg-[#4F6F52]/10 flex items-center justify-center flex-shrink-0">
+              <div className="w-10 h-10 sm:w-14 sm:h-14 rounded-lg sm:rounded-xl bg-[#4F6F52]/10 flex items-center justify-centre flex-shrink-0">
                 <CheckCircle2 className="w-5 h-5 sm:w-8 sm:h-8 text-[#4F6F52]" strokeWidth={2.5} />
               </div>
               <div>
@@ -64,7 +64,7 @@ export function FamilyVisitPatternsSection() {
           {/* Home B - Poor */}
           <Card className="p-4 sm:p-8 bg-white border-2 border-[#D17A6F] rounded-2xl sm:rounded-3xl shadow-soft-lg">
             <div className="flex items-start gap-3 sm:gap-4 mb-4 sm:mb-6">
-              <div className="w-10 h-10 sm:w-14 sm:h-14 rounded-lg sm:rounded-xl bg-[#D17A6F]/10 flex items-center justify-center flex-shrink-0">
+              <div className="w-10 h-10 sm:w-14 sm:h-14 rounded-lg sm:rounded-xl bg-[#D17A6F]/10 flex items-center justify-centre flex-shrink-0">
                 <AlertTriangle className="w-5 h-5 sm:w-8 sm:h-8 text-[#D17A6F]" strokeWidth={2.5} />
               </div>
               <div>
@@ -105,13 +105,13 @@ export function FamilyVisitPatternsSection() {
         {/* Why This Matters */}
         <div className="max-w-4xl mx-auto space-y-8 sm:space-y-12">
           <div>
-            <h3 className="text-2xl sm:text-3xl font-serif font-bold text-[#1A231E] mb-4 sm:mb-6 text-center">
+            <h3 className="text-2xl sm:text-3xl font-serif font-bold text-[#1A231E] mb-4 sm:mb-6 text-centre">
               Why This Matters
             </h3>
             <div className="grid md:grid-cols-2 gap-4 sm:gap-6">
               <Card className="p-4 sm:p-6 bg-white border border-[#E8E5DF] rounded-xl sm:rounded-2xl shadow-soft-md">
                 <div className="flex items-start gap-3">
-                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-[#4F6F52]/10 flex items-center justify-center flex-shrink-0">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-[#4F6F52]/10 flex items-center justify-centre flex-shrink-0">
                     <Eye className="w-4 h-4 sm:w-5 sm:h-5 text-[#4F6F52]" />
                   </div>
                   <div>
@@ -128,7 +128,7 @@ export function FamilyVisitPatternsSection() {
 
               <Card className="p-4 sm:p-6 bg-white border border-[#E8E5DF] rounded-xl sm:rounded-2xl shadow-soft-md">
                 <div className="flex items-start gap-3">
-                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-[#4F6F52]/10 flex items-center justify-center flex-shrink-0">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-[#4F6F52]/10 flex items-center justify-centre flex-shrink-0">
                     <Users className="w-4 h-4 sm:w-5 sm:h-5 text-[#4F6F52]" />
                   </div>
                   <div>
@@ -145,7 +145,7 @@ export function FamilyVisitPatternsSection() {
           </div>
 
           {/* How We Use This Intelligence */}
-          <div className="bg-[#4F6F52] p-6 sm:p-8 md:p-10 rounded-2xl sm:rounded-3xl text-center">
+          <div className="bg-[#4F6F52] p-6 sm:p-8 md:p-10 rounded-2xl sm:rounded-3xl text-centre">
             <h3 className="text-xl sm:text-3xl font-serif font-bold text-white mb-3 sm:mb-4">
               How We Use This Intelligence
             </h3>

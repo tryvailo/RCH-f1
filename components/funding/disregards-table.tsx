@@ -47,7 +47,7 @@ export function DisregardsTable({
                 {/* Summary */}
                 <div className="flex items-center justify-between p-4 rounded-lg bg-[#FDFBF7] border border-[#E8E5DF]">
                     <div className="flex items-center gap-3">
-                        <div className="w-10 h-10 rounded-lg bg-[#4F6F52] text-white flex items-center justify-center font-bold">
+                        <div className="w-10 h-10 rounded-lg bg-[#4F6F52] text-white flex items-center justify-centre font-bold">
                             ✓
                         </div>
                         <div>
@@ -87,12 +87,12 @@ export function DisregardsTable({
                                     onClick={() =>
                                         setExpandedItem(isExpanded ? null : item.id)
                                     }
-                                    className={`w-full flex items-center gap-3 p-4 hover:bg-opacity-50 transition-colors ${isApplicable ? "hover:bg-[#FDFBF7]" : "cursor-default"
+                                    className={`w-full flex items-center gap-3 p-4 hover:bg-opacity-50 transition-colours ${isApplicable ? "hover:bg-[#FDFBF7]" : "cursor-default"
                                         }`}
                                 >
                                     {/* Checkbox */}
                                     <div
-                                        className={`w-5 h-5 rounded border-2 flex items-center justify-center flex-shrink-0 ${isApplicable
+                                        className={`w-5 h-5 rounded border-2 flex items-center justify-centre flex-shrink-0 ${isApplicable
                                                 ? "border-[#4F6F52] bg-[#4F6F52]/10 cursor-pointer"
                                                 : "border-[#E8E5DF] bg-white"
                                             }`}
@@ -130,7 +130,7 @@ export function DisregardsTable({
                                     <div className="border-t-2 border-[#E8E5DF] p-4 space-y-3 bg-[#FDFBF7]">
                                         <div className="flex gap-3">
                                             <div
-                                                className="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0"
+                                                className="w-8 h-8 rounded-lg flex items-center justify-centre flex-shrink-0"
                                                 style={{ backgroundColor: "#4F6F5220" }}
                                             >
                                                 {getIconComponent(item.icon)}
@@ -201,7 +201,7 @@ export function DisregardsTable({
                                 setActiveTab(tab as "income" | "assets")
                                 setExpandedItem(null)
                             }}
-                            className={`px-4 py-3 font-semibold text-sm uppercase tracking-wide transition-colors border-b-2 -mb-0.5 ${activeTab === tab
+                            className={`px-4 py-3 font-semibold text-sm uppercase tracking-wide transition-colours border-b-2 -mb-0.5 ${activeTab === tab
                                     ? "border-[#8B7355] text-[#8B7355]"
                                     : "border-transparent text-[#1A231E]/50 hover:text-[#1A231E]"
                                 }`}
@@ -216,7 +216,7 @@ export function DisregardsTable({
 
                 {/* Footer Note */}
                 <div className="mt-8 pt-6 border-t-2 border-[#E8E5DF]">
-                    <p className="text-xs text-[#1A231E]/60 text-center">
+                    <p className="text-xs text-[#1A231E]/60 text-centre">
                         These are {activeTab === "income" ? "income" : "asset"} disregards under the Care Act
                         2014. Always verify with your Local Authority before formally applying.{" "}
                         <a href="#" className="text-[#4F6F52] font-semibold hover:underline">

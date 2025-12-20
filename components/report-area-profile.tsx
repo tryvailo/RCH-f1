@@ -87,7 +87,7 @@ export function ReportAreaProfile({
     <section className="py-12 md:py-16 px-4 bg-gradient-to-br from-[#FDFBF7] via-white to-[#4F6F52]/5">
       <div className="max-w-4xl mx-auto">
         {/* Section Header */}
-        <div className="text-center mb-10 md:mb-12">
+        <div className="text-centre mb-10 md:mb-12">
           <Badge variant="secondary" className="mb-4 text-base px-5 py-2 bg-[#4F6F52]/10 text-[#4F6F52] border-0">
             Page 3 of 10
           </Badge>
@@ -120,9 +120,9 @@ export function ReportAreaProfile({
                   className="transition-all duration-1000"
                 />
               </svg>
-              {/* Score in center */}
-              <div className="absolute inset-0 flex flex-col items-center justify-center">
-                <span className="text-5xl md:text-6xl font-bold" style={{ color: scoreColor }}>
+              {/* Score in centre */}
+              <div className="absolute inset-0 flex flex-col items-center justify-centre">
+                <span className="text-5xl md:text-6xl font-bold" style={{ colour: scoreColor }}>
                   {wellbeingData.overallScore}
                 </span>
                 <span className="text-base md:text-lg text-[#1A231E]/60 font-medium">out of 100</span>
@@ -130,12 +130,12 @@ export function ReportAreaProfile({
             </div>
 
             {/* Index Description and Breakdown */}
-            <div className="flex-1 text-center lg:text-left">
-              <div className="flex items-center justify-center lg:justify-start gap-3 mb-3">
+            <div className="flex-1 text-centre lg:text-left">
+              <div className="flex items-center justify-centre lg:justify-start gap-3 mb-3">
                 <Sparkles className="w-6 h-6 text-[#4F6F52]" />
                 <h3 className="text-2xl md:text-3xl font-serif font-semibold text-[#1A231E]">Well-being Index</h3>
               </div>
-              <p className="text-xl md:text-2xl font-semibold mb-4" style={{ color: scoreColor }}>
+              <p className="text-xl md:text-2xl font-semibold mb-4" style={{ colour: scoreColor }}>
                 {scoreLabel} for Senior Living
               </p>
               <p className="text-base md:text-lg text-[#1A231E]/70 leading-relaxed mb-6">
@@ -152,7 +152,7 @@ export function ReportAreaProfile({
                   </div>
                   <span
                     className="text-xl md:text-2xl font-bold"
-                    style={{ color: getScoreColor(wellbeingData.seniorPopulationScore) }}
+                    style={{ colour: getScoreColor(wellbeingData.seniorPopulationScore) }}
                   >
                     {wellbeingData.seniorPopulationScore}/100
                   </span>
@@ -164,7 +164,7 @@ export function ReportAreaProfile({
                   </div>
                   <span
                     className="text-xl md:text-2xl font-bold"
-                    style={{ color: getScoreColor(wellbeingData.greenSpaceScore) }}
+                    style={{ colour: getScoreColor(wellbeingData.greenSpaceScore) }}
                   >
                     {wellbeingData.greenSpaceScore}/100
                   </span>
@@ -176,7 +176,7 @@ export function ReportAreaProfile({
                   </div>
                   <span
                     className="text-xl md:text-2xl font-bold"
-                    style={{ color: getScoreColor(wellbeingData.walkabilityScore) }}
+                    style={{ colour: getScoreColor(wellbeingData.walkabilityScore) }}
                   >
                     {wellbeingData.walkabilityScore}/100
                   </span>
@@ -188,7 +188,7 @@ export function ReportAreaProfile({
                   </div>
                   <span
                     className="text-xl md:text-2xl font-bold"
-                    style={{ color: getScoreColor(wellbeingData.transportScore) }}
+                    style={{ colour: getScoreColor(wellbeingData.transportScore) }}
                   >
                     {wellbeingData.transportScore}/100
                   </span>
@@ -203,13 +203,13 @@ export function ReportAreaProfile({
           {/* 65+ Population Card */}
           <div className="bg-white rounded-2xl p-6 md:p-8 border border-[#E8E5DF] shadow-soft-md hover:shadow-soft-lg transition-shadow">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-14 h-14 rounded-2xl bg-[#4F6F52]/10 flex items-center justify-center">
+              <div className="w-14 h-14 rounded-2xl bg-[#4F6F52]/10 flex items-center justify-centre">
                 <Users className="w-7 h-7 text-[#4F6F52]" />
               </div>
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger>
-                    <Info className="w-4 h-4 text-[#1A231E]/40 hover:text-[#1A231E]/60 transition-colors" />
+                    <Info className="w-4 h-4 text-[#1A231E]/40 hover:text-[#1A231E]/60 transition-colours" />
                   </TooltipTrigger>
                   <TooltipContent className="max-w-xs">
                     <p className="text-sm">
@@ -234,13 +234,13 @@ export function ReportAreaProfile({
           {/* Self-Funders Card */}
           <div className="bg-white rounded-2xl p-6 md:p-8 border border-[#E8E5DF] shadow-soft-md hover:shadow-soft-lg transition-shadow">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-14 h-14 rounded-2xl bg-[#C88D79]/10 flex items-center justify-center">
+              <div className="w-14 h-14 rounded-2xl bg-[#C88D79]/10 flex items-center justify-centre">
                 <Percent className="w-7 h-7 text-[#C88D79]" />
               </div>
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger>
-                    <Info className="w-4 h-4 text-[#1A231E]/40 hover:text-[#1A231E]/60 transition-colors" />
+                    <Info className="w-4 h-4 text-[#1A231E]/40 hover:text-[#1A231E]/60 transition-colours" />
                   </TooltipTrigger>
                   <TooltipContent className="max-w-xs">
                     <p className="text-sm">
@@ -260,13 +260,13 @@ export function ReportAreaProfile({
           {/* Average Care Cost Card */}
           <div className="bg-white rounded-2xl p-6 md:p-8 border border-[#E8E5DF] shadow-soft-md hover:shadow-soft-lg transition-shadow">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-14 h-14 rounded-2xl bg-[#4F6F52]/10 flex items-center justify-center">
+              <div className="w-14 h-14 rounded-2xl bg-[#4F6F52]/10 flex items-center justify-centre">
                 <PoundSterling className="w-7 h-7 text-[#4F6F52]" />
               </div>
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger>
-                    <Info className="w-4 h-4 text-[#1A231E]/40 hover:text-[#1A231E]/60 transition-colors" />
+                    <Info className="w-4 h-4 text-[#1A231E]/40 hover:text-[#1A231E]/60 transition-colours" />
                   </TooltipTrigger>
                   <TooltipContent className="max-w-xs">
                     <p className="text-sm">
@@ -355,7 +355,7 @@ export function ReportAreaProfile({
               <p className="text-lg text-[#1A231E]/70 mb-1">Care homes within 10 miles of {areaData.postcode}</p>
               <p className="text-4xl md:text-5xl font-bold text-[#4F6F52]">{areaData.careHomesInArea} homes</p>
             </div>
-            <div className="text-center md:text-right">
+            <div className="text-centre md:text-right">
               <p className="text-base text-[#1A231E]/60">We've analysed all of them</p>
               <p className="text-base text-[#1A231E]/60">to find your best matches</p>
             </div>
@@ -387,7 +387,7 @@ export function ReportAreaProfile({
         </div>
 
         {/* Data Source Footer */}
-        <p className="mt-6 text-center text-sm text-[#1A231E]/50">
+        <p className="mt-6 text-centre text-sm text-[#1A231E]/50">
           Data sources: ONS Census 2021, OSM Green Spaces, Transport for West Midlands, LaingBuisson Care Markets 2024 •
           Last updated: {new Date().toLocaleDateString("en-GB")}
         </p>

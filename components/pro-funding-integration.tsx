@@ -195,10 +195,10 @@ const DEFAULT_LOCAL_AUTHORITY: LocalAuthority = {
 }
 
 const getProbabilityLevel = (prob: number) => {
-  if (prob >= 80) return { label: "Very High", color: "bg-emerald-500 text-white", textColor: "text-emerald-600" }
-  if (prob >= 65) return { label: "High", color: "bg-green-500 text-white", textColor: "text-green-600" }
-  if (prob >= 45) return { label: "Moderate", color: "bg-amber-500 text-white", textColor: "text-amber-600" }
-  return { label: "Low", color: "bg-gray-400 text-white", textColor: "text-gray-500" }
+  if (prob >= 80) return { label: "Very High", colour: "bg-emerald-500 text-white", textColor: "text-emerald-600" }
+  if (prob >= 65) return { label: "High", colour: "bg-green-500 text-white", textColor: "text-green-600" }
+  if (prob >= 45) return { label: "Moderate", colour: "bg-amber-500 text-white", textColor: "text-amber-600" }
+  return { label: "Low", colour: "bg-gray-400 text-white", textColor: "text-gray-500" }
 }
 
 const getFundingTypeInfo = (type: string) => {
@@ -209,7 +209,7 @@ const getFundingTypeInfo = (type: string) => {
         shortTitle: "NHS CHC",
         icon: Heart,
         description: "100% NHS funded care for complex health needs",
-        color: "blue",
+        colour: "blue",
         bgLight: "bg-blue-50",
         borderColor: "border-blue-200",
         textColor: "text-blue-700",
@@ -220,7 +220,7 @@ const getFundingTypeInfo = (type: string) => {
         shortTitle: "Council",
         icon: Building2,
         description: "Means-tested support from local authority",
-        color: "teal",
+        colour: "teal",
         bgLight: "bg-teal-50",
         borderColor: "border-teal-200",
         textColor: "text-teal-700",
@@ -231,7 +231,7 @@ const getFundingTypeInfo = (type: string) => {
         shortTitle: "DPA",
         icon: Calendar,
         description: "Delay payment until property sale",
-        color: "purple",
+        colour: "purple",
         bgLight: "bg-purple-50",
         borderColor: "border-purple-200",
         textColor: "text-purple-700",
@@ -242,7 +242,7 @@ const getFundingTypeInfo = (type: string) => {
         shortTitle: "N/A",
         icon: Info,
         description: "",
-        color: "gray",
+        colour: "gray",
         bgLight: "bg-gray-50",
         borderColor: "border-gray-200",
         textColor: "text-gray-700",
@@ -278,7 +278,7 @@ export function ProFundingIntegration({
         {/* Header */}
         <div className="mb-8 sm:mb-12">
           <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-5 mb-4 sm:mb-6">
-            <div className="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 rounded-3xl bg-gradient-to-br from-[#4F6F52] to-[#3d5741] flex items-center justify-center shadow-soft-xl">
+            <div className="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 rounded-3xl bg-gradient-to-br from-[#4F6F52] to-[#3d5741] flex items-center justify-centre shadow-soft-xl">
               <Building2 className="w-9 h-9 sm:w-10 sm:h-10 md:w-11 md:h-11 text-white" strokeWidth={2.5} />
             </div>
             <div>
@@ -294,7 +294,7 @@ export function ProFundingIntegration({
 
         <div className="bg-white border border-[#4F6F52]/30 rounded-2xl p-5 sm:p-6 mb-8 shadow-soft-lg">
           <div className="flex items-start gap-4">
-            <div className="w-12 h-12 rounded-xl bg-[#4F6F52]/10 flex items-center justify-center flex-shrink-0">
+            <div className="w-12 h-12 rounded-xl bg-[#4F6F52]/10 flex items-center justify-centre flex-shrink-0">
               <MapPin className="w-6 h-6 text-[#4F6F52]" />
             </div>
             <div className="flex-1">
@@ -352,20 +352,20 @@ export function ProFundingIntegration({
         <div className="bg-white border border-[#E8E5DF] rounded-2xl p-6 sm:p-8 mb-8 shadow-soft-lg">
           <h2 className="text-xl font-bold text-[#1A231E] mb-6 font-serif">Your Cost Context</h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <div className="p-4 bg-[#FDFBF7] rounded-2xl text-center">
+            <div className="p-4 bg-[#FDFBF7] rounded-2xl text-centre">
               <p className="text-sm font-semibold text-[#1A231E]/60 mb-1">Weekly Care Cost</p>
               <p className="text-3xl font-bold text-[#1A231E]">{formatCurrency(safeWeeklyCost)}</p>
             </div>
-            <div className="p-4 bg-[#FDFBF7] rounded-2xl text-center">
+            <div className="p-4 bg-[#FDFBF7] rounded-2xl text-centre">
               <p className="text-sm font-semibold text-[#1A231E]/60 mb-1">Annual Cost</p>
               <p className="text-3xl font-bold text-[#1A231E]">{formatCurrency(annualCareCost)}</p>
             </div>
-            <div className="p-4 bg-[#FDFBF7] rounded-2xl text-center">
+            <div className="p-4 bg-[#FDFBF7] rounded-2xl text-centre">
               <p className="text-sm font-semibold text-[#1A231E]/60 mb-1">5-Year Cost</p>
               <p className="text-3xl font-bold text-[#C88D79]">{formatCurrency(fiveYearCost)}</p>
             </div>
           </div>
-          <p className="text-sm text-[#5A6D7A] text-center mt-4">
+          <p className="text-sm text-[#5A6D7A] text-centre mt-4">
             These figures can feel overwhelming. The funding options below may help reduce this burden significantly.
           </p>
         </div>
@@ -387,10 +387,10 @@ export function ProFundingIntegration({
                   {/* Header */}
                   <button
                     onClick={() => setExpandedOption(isExpanded ? null : option.type)}
-                    className="w-full p-6 sm:p-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4 hover:bg-[#FDFBF7] transition-colors min-h-[56px]"
+                    className="w-full p-6 sm:p-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4 hover:bg-[#FDFBF7] transition-colours min-h-[56px]"
                   >
                     <div className="flex items-center gap-4">
-                      <div className={`w-14 h-14 rounded-2xl ${typeInfo.bgLight} flex items-center justify-center`}>
+                      <div className={`w-14 h-14 rounded-2xl ${typeInfo.bgLight} flex items-center justify-centre`}>
                         <Icon className={`w-7 h-7 ${typeInfo.textColor}`} />
                       </div>
                       <div className="text-left">
@@ -400,7 +400,7 @@ export function ProFundingIntegration({
                     </div>
                     <div className="flex items-center gap-4">
                       <div className="text-right">
-                        <Badge className={`${probLevel.color} text-sm px-3 py-1`}>
+                        <Badge className={`${probLevel.colour} text-sm px-3 py-1`}>
                           {option.probability}% {probLevel.label}
                         </Badge>
                         {(option.potentialSavings ?? 0) > 0 && (
@@ -448,7 +448,7 @@ export function ProFundingIntegration({
                           <ol className="space-y-2">
                             {option.nextSteps.map((step, idx) => (
                               <li key={idx} className="flex items-start gap-3 text-sm text-[#1A231E]/80">
-                                <span className="w-6 h-6 rounded-full bg-[#4F6F52]/10 flex items-center justify-center text-sm font-bold text-[#4F6F52] flex-shrink-0">
+                                <span className="w-6 h-6 rounded-full bg-[#4F6F52]/10 flex items-center justify-centre text-sm font-bold text-[#4F6F52] flex-shrink-0">
                                   {idx + 1}
                                 </span>
                                 {step}

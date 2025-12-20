@@ -7,7 +7,7 @@ import { Eye, EyeOff } from "lucide-react"
 
 interface HomeData {
   name: string
-  color: string
+  colour: string
   scores: {
     safety: number
     medicalCare: number
@@ -27,7 +27,7 @@ interface RadarComparisonChartProps {
 const DEFAULT_HOMES: HomeData[] = [
   {
     name: "Greenfield Manor",
-    color: "#22c55e",
+    colour: "#22c55e",
     scores: {
       safety: 9.5,
       medicalCare: 9.0,
@@ -39,7 +39,7 @@ const DEFAULT_HOMES: HomeData[] = [
   },
   {
     name: "Oakwood Lodge",
-    color: "#3b82f6",
+    colour: "#3b82f6",
     scores: {
       safety: 8.9,
       medicalCare: 8.5,
@@ -51,7 +51,7 @@ const DEFAULT_HOMES: HomeData[] = [
   },
   {
     name: "Riverside Care",
-    color: "#eab308",
+    colour: "#eab308",
     scores: {
       safety: 8.1,
       medicalCare: 7.8,
@@ -63,7 +63,7 @@ const DEFAULT_HOMES: HomeData[] = [
   },
   {
     name: "Meadowbrook House",
-    color: "#f97316",
+    colour: "#f97316",
     scores: {
       safety: 7.0,
       medicalCare: 7.2,
@@ -75,7 +75,7 @@ const DEFAULT_HOMES: HomeData[] = [
   },
   {
     name: "Sunnydale Residence",
-    color: "#ef4444",
+    colour: "#ef4444",
     scores: {
       safety: 6.5,
       medicalCare: 6.8,
@@ -146,10 +146,10 @@ export function RadarComparisonChart({
                 isVisible ? "border-transparent shadow-soft-md" : "border-[#E8E5DF] opacity-50"
               }`}
               style={{
-                backgroundColor: isVisible ? `${home.color}15` : "transparent",
+                backgroundColor: isVisible ? `${home.colour}15` : "transparent",
               }}
             >
-              <div className="w-3 h-3 rounded-full" style={{ backgroundColor: home.color }} />
+              <div className="w-3 h-3 rounded-full" style={{ backgroundColor: home.colour }} />
               <span className="text-sm sm:text-base font-medium text-[#1A231E]">{home.name}</span>
               {isVisible ? (
                 <Eye className="w-4 h-4 text-[#1A231E]/60" />
@@ -192,13 +192,13 @@ export function RadarComparisonChart({
                     key={home.name}
                     name={home.name}
                     dataKey={home.name}
-                    stroke={home.color}
-                    fill={home.color}
+                    stroke={home.colour}
+                    fill={home.colour}
                     fillOpacity={0.15}
                     strokeWidth={2}
                     dot={{
                       r: 4,
-                      fill: home.color,
+                      fill: home.colour,
                       strokeWidth: 0,
                     }}
                   />
@@ -212,7 +212,7 @@ export function RadarComparisonChart({
                       <p className="font-bold text-[#1A231E] mb-2">{label}</p>
                       {payload.map((entry, index) => (
                         <div key={index} className="flex items-center gap-2 text-sm">
-                          <div className="w-2 h-2 rounded-full" style={{ backgroundColor: entry.color }} />
+                          <div className="w-2 h-2 rounded-full" style={{ backgroundColor: entry.colour }} />
                           <span className="text-[#1A231E]/70">{entry.name}:</span>
                           <span className="font-bold text-[#1A231E]">
                             {typeof entry.value === "number" ? entry.value.toFixed(1) : entry.value}

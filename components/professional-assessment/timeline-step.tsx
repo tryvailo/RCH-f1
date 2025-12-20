@@ -56,7 +56,7 @@ export function TimelineStep({ data, errors, updateData }: TimelineStepProps) {
         <h3 className="font-semibold text-sm">What happens after submission?</h3>
         <ul className="text-sm text-muted-foreground space-y-1 list-disc list-inside">
           <li>Your comprehensive report will be ready within 3-5 business days</li>
-          <li>We'll analyze care homes matching your specific needs</li>
+          <li>We'll analyse care homes matching your specific needs</li>
           <li>You'll receive detailed insights on quality, safety, and value</li>
           <li>Our team will contact you to discuss the findings</li>
         </ul>

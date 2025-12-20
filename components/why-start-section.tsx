@@ -57,7 +57,7 @@ export function WhyStartSection() {
 
             <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-16 relative z-10 items-center">
               <div className="space-y-4 sm:space-y-6 lg:space-y-8">
-                <div className="space-y-2 sm:space-y-4 text-center lg:text-left">
+                <div className="space-y-2 sm:space-y-4 text-centre lg:text-left">
                   <div className="flex flex-col items-center lg:items-start gap-2">
                     <div className="flex items-center gap-2">
                       <span className="inline-flex items-center px-3 py-1 bg-[#4F6F52]/10 text-[#4F6F52] text-xs sm:text-sm font-semibold rounded-full">
@@ -83,7 +83,7 @@ export function WhyStartSection() {
                       key={index}
                       className="flex items-start gap-2 sm:gap-3 p-2.5 sm:p-3 lg:p-4 bg-white border border-[#E8E5DF] rounded-lg sm:rounded-xl shadow-sm"
                     >
-                      <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-[#4F6F52]/10 flex items-center justify-center flex-shrink-0">
+                      <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-[#4F6F52]/10 flex items-center justify-centre flex-shrink-0">
                         <item.icon className="w-4 h-4 sm:w-4.5 sm:h-4.5 text-[#4F6F52]" />
                       </div>
                       <div className="min-w-0">
@@ -98,7 +98,7 @@ export function WhyStartSection() {
                   ))}
                 </div>
 
-                <div className="flex items-center justify-center lg:justify-start gap-2 pt-2 flex-wrap">
+                <div className="flex items-center justify-centre lg:justify-start gap-2 pt-2 flex-wrap">
                   <div className="flex items-center gap-1.5 px-3 py-1.5 bg-[#4F6F52]/10 rounded-full">
                     <Check className="w-3.5 h-3.5 text-[#4F6F52] stroke-[3]" />
                     <span className="text-sm font-semibold text-[#4F6F52]">Zero Commissions</span>
@@ -115,7 +115,7 @@ export function WhyStartSection() {
               </div>
 
               <div className="relative">
-                <div className="bg-white p-4 sm:p-6 lg:p-8 rounded-xl sm:rounded-2xl lg:rounded-3xl shadow-soft-md border border-[#E8E5DF] text-center lg:text-left">
+                <div className="bg-white p-4 sm:p-6 lg:p-8 rounded-xl sm:rounded-2xl lg:rounded-3xl shadow-soft-md border border-[#E8E5DF] text-centre lg:text-left">
                   <h4 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#1A231E] mb-2">Ready to start?</h4>
                   <p className="text-[#1A231E]/70 mb-4 sm:mb-6 lg:mb-8 text-sm sm:text-base lg:text-lg">
                     It takes just 2 minutes to complete. Your shortlist arrives within 10 minutes.
@@ -131,14 +131,14 @@ export function WhyStartSection() {
                         <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
                       </Link>
                     </Button>
-                    <p className="text-center text-[10px] sm:text-xs font-bold text-[#C88D79] tracking-wide sm:tracking-widest uppercase">
+                    <p className="text-centre text-[10px] sm:text-xs font-bold text-[#C88D79] tracking-wide sm:tracking-widest uppercase">
                       NO CREDIT CARD REQUIRED
                     </p>
                   </div>
 
                   <div className="mt-6 pt-4 border-t border-[#E8E5DF]">
                     <p className="text-xs sm:text-sm text-[#1A231E]/60 mb-2">Need deeper analysis?</p>
-                    <div className="flex items-center justify-center gap-2 text-sm">
+                    <div className="flex items-center justify-centre gap-2 text-sm">
                       <Badge className="bg-[#C88D79]/10 text-[#C88D79] border-0 font-semibold">
                         +188 more data points
                       </Badge>

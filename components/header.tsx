@@ -39,7 +39,7 @@ export function Header() {
         <div className="flex h-16 lg:h-20 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-9 h-9 lg:w-10 lg:h-10 rounded-xl bg-primary flex items-center justify-center shadow-lg shadow-primary/20 group-hover:scale-105 transition-transform duration-200">
+            <div className="w-9 h-9 lg:w-10 lg:h-10 rounded-xl bg-primary flex items-center justify-centre shadow-lg shadow-primary/20 group-hover:scale-105 transition-transform duration-200">
               <ShieldCheck className="w-5 h-5 lg:w-6 lg:h-6 text-primary-foreground" strokeWidth={2.5} />
             </div>
             <span className="text-lg lg:text-xl font-serif font-bold text-foreground tracking-tight">
@@ -53,7 +53,7 @@ export function Header() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors duration-200"
+                className="text-sm font-medium text-foreground/80 hover:text-primary transition-colours duration-200"
               >
                 {link.label}
               </a>
@@ -83,7 +83,7 @@ export function Header() {
                     key={link.href}
                     href={link.href}
                     onClick={() => setIsOpen(false)}
-                    className="text-lg text-foreground/80 hover:text-primary transition-colors font-medium"
+                    className="text-lg text-foreground/80 hover:text-primary transition-colours font-medium"
                   >
                     {link.label}
                   </a>

@@ -43,11 +43,11 @@ export const metadata: Metadata = {
     icon: [
       {
         url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
+        media: "(prefers-colour-scheme: light)",
       },
       {
         url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
+        media: "(prefers-colour-scheme: dark)",
       },
       {
         url: "/icon.svg",
@@ -63,8 +63,8 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#FDFBF7" },
-    { media: "(prefers-color-scheme: dark)", color: "#1A231E" },
+    { media: "(prefers-colour-scheme: light)", colour: "#FDFBF7" },
+    { media: "(prefers-colour-scheme: dark)", colour: "#1A231E" },
   ],
 }
 

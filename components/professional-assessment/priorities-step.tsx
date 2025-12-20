@@ -146,14 +146,14 @@ export function PrioritiesStep({ onComplete }: PrioritiesStepProps) {
     <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-3xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-8 sm:mb-10">
+        <div className="text-centre mb-8 sm:mb-10">
           <h2 className="font-serif text-2xl sm:text-3xl lg:text-[32px] font-bold text-[#1A231E] mb-3">
             Rank Your Lifestyle Priorities
           </h2>
           <p className="text-lg sm:text-xl text-[#1A231E] mb-4">What matters most to your family?</p>
 
           {/* Visual flow diagram */}
-          <div className="flex flex-wrap items-center justify-center gap-2 mb-6 text-sm sm:text-base">
+          <div className="flex flex-wrap items-center justify-centre gap-2 mb-6 text-sm sm:text-base">
             <span className="font-medium text-[#1A231E]">📋 These 4 priorities</span>
             <span className="text-[#1A231E]/40">+</span>
             <span className="font-medium text-[#4A90A4]">🏥 Medical matching</span>
@@ -168,7 +168,7 @@ export function PrioritiesStep({ onComplete }: PrioritiesStepProps) {
               <div className="text-left">
                 <p className="font-medium text-[#4A90A4] text-sm sm:text-base mb-1">Medical Needs Handled Separately</p>
                 <p className="text-xs sm:text-sm text-[#4A90A4]/80">
-                  While you rank homes here by lifestyle fit (quality, cost, location, comfort), we analyze your medical
+                  While you rank homes here by lifestyle fit (quality, cost, location, comfort), we analyse your medical
                   conditions, mobility, and care requirements independently for accurate specialist matching.
                 </p>
               </div>
@@ -209,7 +209,7 @@ export function PrioritiesStep({ onComplete }: PrioritiesStepProps) {
               `}
             >
               {/* Position Number */}
-              <div className="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#4F6F52]/10 flex items-center justify-center">
+              <div className="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#4F6F52]/10 flex items-center justify-centre">
                 <span className="text-lg sm:text-xl font-bold text-[#4F6F52]">{index + 1}</span>
               </div>
 
@@ -221,7 +221,7 @@ export function PrioritiesStep({ onComplete }: PrioritiesStepProps) {
               )}
 
               {/* Icon */}
-              <div className="flex-shrink-0 w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-[#4F6F52]/5 flex items-center justify-center">
+              <div className="flex-shrink-0 w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-[#4F6F52]/5 flex items-center justify-centre">
                 {priority.icon}
               </div>
 
@@ -246,7 +246,7 @@ export function PrioritiesStep({ onComplete }: PrioritiesStepProps) {
                     disabled={index === 0}
                     aria-label={`Move ${priority.title} up`}
                     className={`
-                      p-2 rounded-lg transition-colors
+                      p-2 rounded-lg transition-colours
                       ${
                         index === 0
                           ? "text-[#1A231E]/20 cursor-not-allowed"
@@ -261,7 +261,7 @@ export function PrioritiesStep({ onComplete }: PrioritiesStepProps) {
                     disabled={index === priorities.length - 1}
                     aria-label={`Move ${priority.title} down`}
                     className={`
-                      p-2 rounded-lg transition-colors
+                      p-2 rounded-lg transition-colours
                       ${
                         index === priorities.length - 1
                           ? "text-[#1A231E]/20 cursor-not-allowed"
@@ -283,7 +283,7 @@ export function PrioritiesStep({ onComplete }: PrioritiesStepProps) {
           <ol className="space-y-2">
             {priorities.map((priority, index) => (
               <li key={priority.id} className="flex items-center gap-3">
-                <span className="w-6 h-6 rounded-full bg-[#4F6F52] text-white text-sm font-medium flex items-center justify-center">
+                <span className="w-6 h-6 rounded-full bg-[#4F6F52] text-white text-sm font-medium flex items-center justify-centre">
                   {index + 1}
                 </span>
                 <span className="text-base font-medium text-[#1A231E]">{priority.title}</span>
@@ -297,13 +297,13 @@ export function PrioritiesStep({ onComplete }: PrioritiesStepProps) {
         {!isConfirmed ? (
           <Button
             onClick={handleConfirm}
-            className="w-full sm:w-auto sm:min-w-[300px] mx-auto flex items-center justify-center gap-2 h-12 sm:h-14 px-8 bg-[#4F6F52] hover:bg-[#3d5a40] text-white text-base sm:text-lg font-semibold rounded-xl transition-all duration-200 focus:ring-2 focus:ring-[#4F6F52] focus:ring-offset-2"
+            className="w-full sm:w-auto sm:min-w-[300px] mx-auto flex items-center justify-centre gap-2 h-12 sm:h-14 px-8 bg-[#4F6F52] hover:bg-[#3d5a40] text-white text-base sm:text-lg font-semibold rounded-xl transition-all duration-200 focus:ring-2 focus:ring-[#4F6F52] focus:ring-offset-2"
           >
             Got it - Let's See Your Homes
             <ArrowRight className="w-5 h-5" />
           </Button>
         ) : (
-          <div className="flex items-center justify-center gap-2 text-[#4F6F52] animate-in fade-in duration-300">
+          <div className="flex items-center justify-centre gap-2 text-[#4F6F52] animate-in fade-in duration-300">
             <Check className="w-6 h-6" />
             <span className="text-lg font-medium">Preferences saved - Scroll down to see your personalised homes</span>
           </div>
@@ -311,7 +311,7 @@ export function PrioritiesStep({ onComplete }: PrioritiesStepProps) {
 
         {/* Keyboard Instructions (Desktop) */}
         {!isTouchDevice && (
-          <p className="text-center text-sm text-[#1A231E]/50 mt-4">
+          <p className="text-centre text-sm text-[#1A231E]/50 mt-4">
             Tip: Use arrow keys to reorder when a card is focused
           </p>
         )}

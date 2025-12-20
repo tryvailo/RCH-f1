@@ -101,8 +101,8 @@ export function LLMInsights({ recipientName, topHome, insights = DEFAULT_INSIGHT
     <div className="bg-gradient-to-br from-[#FDFBF7] to-[#4F6F52]/5 py-8 md:py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-5xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-8 md:mb-10">
-          <div className="inline-flex items-center justify-center w-16 h-16 md:w-20 md:h-20 rounded-full bg-gradient-to-br from-[#4F6F52] to-[#3d5741] mb-4 md:mb-6">
+        <div className="text-centre mb-8 md:mb-10">
+          <div className="inline-flex items-center justify-centre w-16 h-16 md:w-20 md:h-20 rounded-full bg-gradient-to-br from-[#4F6F52] to-[#3d5741] mb-4 md:mb-6">
             <Brain className="w-8 h-8 md:w-10 md:h-10 text-white" />
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground font-serif mb-4">AI-Powered Expert Insights</h2>
@@ -115,13 +115,13 @@ export function LLMInsights({ recipientName, topHome, insights = DEFAULT_INSIGHT
         {/* Confidence Note */}
         <div className="bg-white border-2 border-border rounded-xl md:rounded-2xl p-4 md:p-6 mb-6 md:mb-8">
           <div className="flex flex-col sm:flex-row sm:items-start gap-3 md:gap-4">
-            <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+            <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-primary/10 flex items-center justify-centre flex-shrink-0">
               <Sparkles className="w-5 h-5 md:w-6 md:h-6 text-primary" />
             </div>
             <div>
               <h3 className="text-base md:text-lg font-semibold text-foreground mb-2">How These Insights Work</h3>
               <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
-                Our AI analyzes your assessment responses, care home data, and industry research to generate
+                Our AI analyses your assessment responses, care home data, and industry research to generate
                 personalized recommendations. Each insight includes a confidence score based on data reliability and
                 relevance to your situation. These complement—but don't replace—your own judgment and visits.
               </p>
@@ -143,7 +143,7 @@ export function LLMInsights({ recipientName, topHome, insights = DEFAULT_INSIGHT
                 <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-4">
                   <div className="flex items-start gap-2 md:gap-3 flex-1">
                     <div
-                      className={`w-10 h-10 md:w-12 md:h-12 rounded-xl flex items-center justify-center flex-shrink-0 ${getCategoryColor(insight.category)}`}
+                      className={`w-10 h-10 md:w-12 md:h-12 rounded-xl flex items-center justify-centre flex-shrink-0 ${getCategoryColor(insight.category)}`}
                     >
                       <Icon className="w-5 h-5 md:w-6 md:h-6" />
                     </div>

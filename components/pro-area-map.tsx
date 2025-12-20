@@ -189,10 +189,10 @@ const amenityColors = {
 }
 
 const getWalkScoreLabel = (score: number) => {
-  if (score >= 90) return { label: "Walker's Paradise", color: "text-emerald-600 bg-emerald-50" }
-  if (score >= 70) return { label: "Very Walkable", color: "text-green-600 bg-green-50" }
-  if (score >= 50) return { label: "Somewhat Walkable", color: "text-amber-600 bg-amber-50" }
-  return { label: "Car-Dependent", color: "text-red-600 bg-red-50" }
+  if (score >= 90) return { label: "Walker's Paradise", colour: "text-emerald-600 bg-emerald-50" }
+  if (score >= 70) return { label: "Very Walkable", colour: "text-green-600 bg-green-50" }
+  if (score >= 50) return { label: "Somewhat Walkable", colour: "text-amber-600 bg-amber-50" }
+  return { label: "Car-Dependent", colour: "text-red-600 bg-red-50" }
 }
 
 const getNoiseLevelColor = (level: string) => {
@@ -255,7 +255,7 @@ function ProAreaMap({ homes = [] }: ProAreaMapProps) {
         {/* Header */}
         <div className="mb-8 sm:mb-12">
           <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-5 mb-4 sm:mb-6">
-            <div className="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 rounded-3xl bg-gradient-to-br from-[#4F6F52] to-[#3d5741] flex items-center justify-center shadow-soft-xl">
+            <div className="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 rounded-3xl bg-gradient-to-br from-[#4F6F52] to-[#3d5741] flex items-center justify-centre shadow-soft-xl">
               <MapPin className="w-9 h-9 sm:w-10 sm:h-10 md:w-11 md:h-11 text-white" strokeWidth={2.5} />
             </div>
             <div>
@@ -290,7 +290,7 @@ function ProAreaMap({ homes = [] }: ProAreaMapProps) {
                   {isBest && <Badge className="bg-[#4F6F52] text-white text-sm mb-2">Best Location</Badge>}
                   <h3 className="font-semibold text-[#1A231E] text-sm mb-2 line-clamp-1">{home.name}</h3>
                   <div className="text-3xl font-bold text-[#1A231E] mb-1">{home.walkScore}</div>
-                  <span className={`text-sm font-medium px-2 py-1 rounded-full ${scoreInfo.color}`}>
+                  <span className={`text-sm font-medium px-2 py-1 rounded-full ${scoreInfo.colour}`}>
                     {scoreInfo.label}
                   </span>
                 </button>
@@ -317,9 +317,9 @@ function ProAreaMap({ homes = [] }: ProAreaMapProps) {
               />
 
               {/* Central Care Home Marker */}
-              <div className="absolute inset-0 flex items-center justify-center">
+              <div className="absolute inset-0 flex items-center justify-centre">
                 <div className="relative">
-                  <div className="w-20 h-20 rounded-full bg-[#C88D79] flex items-center justify-center shadow-lg border-4 border-white">
+                  <div className="w-20 h-20 rounded-full bg-[#C88D79] flex items-center justify-centre shadow-lg border-4 border-white">
                     <Building2 className="w-10 h-10 text-white" />
                   </div>
                   <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 bg-white px-4 py-2 rounded-xl shadow-md whitespace-nowrap">
@@ -333,19 +333,19 @@ function ProAreaMap({ homes = [] }: ProAreaMapProps) {
                 <div className="absolute w-96 h-96 rounded-full border-2 border-dashed border-[#4F6F52]/10" />
 
                 {/* Amenity Markers */}
-                <div className="absolute top-16 left-1/4 w-10 h-10 rounded-full bg-emerald-500 flex items-center justify-center shadow-md">
+                <div className="absolute top-16 left-1/4 w-10 h-10 rounded-full bg-emerald-500 flex items-center justify-centre shadow-md">
                   <TreePine className="w-5 h-5 text-white" />
                 </div>
-                <div className="absolute top-24 right-1/4 w-10 h-10 rounded-full bg-teal-500 flex items-center justify-center shadow-md">
+                <div className="absolute top-24 right-1/4 w-10 h-10 rounded-full bg-teal-500 flex items-center justify-centre shadow-md">
                   <Stethoscope className="w-5 h-5 text-white" />
                 </div>
-                <div className="absolute bottom-24 left-1/3 w-10 h-10 rounded-full bg-amber-500 flex items-center justify-center shadow-md">
+                <div className="absolute bottom-24 left-1/3 w-10 h-10 rounded-full bg-amber-500 flex items-center justify-centre shadow-md">
                   <Bus className="w-5 h-5 text-white" />
                 </div>
-                <div className="absolute bottom-20 right-1/3 w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center shadow-md">
+                <div className="absolute bottom-20 right-1/3 w-10 h-10 rounded-full bg-blue-500 flex items-center justify-centre shadow-md">
                   <ShoppingBag className="w-5 h-5 text-white" />
                 </div>
-                <div className="absolute top-1/3 right-16 w-10 h-10 rounded-full bg-pink-500 flex items-center justify-center shadow-md">
+                <div className="absolute top-1/3 right-16 w-10 h-10 rounded-full bg-pink-500 flex items-center justify-centre shadow-md">
                   <Heart className="w-5 h-5 text-white" />
                 </div>
               </div>
@@ -398,7 +398,7 @@ function ProAreaMap({ homes = [] }: ProAreaMapProps) {
                   <span className="text-sm text-[#1A231E]/60">/100</span>
                 </div>
                 <span
-                  className={`text-sm font-medium px-2 py-1 rounded-full mt-2 inline-block ${getWalkScoreLabel(selectedHome.walkScore).color}`}
+                  className={`text-sm font-medium px-2 py-1 rounded-full mt-2 inline-block ${getWalkScoreLabel(selectedHome.walkScore).colour}`}
                 >
                   {getWalkScoreLabel(selectedHome.walkScore).label}
                 </span>
@@ -449,11 +449,11 @@ function ProAreaMap({ homes = [] }: ProAreaMapProps) {
                   <div key={category.key} className="border border-[#E8E5DF] rounded-xl overflow-hidden">
                     <button
                       onClick={() => setExpandedCategory(isExpanded ? null : category.key)}
-                      className="w-full flex items-center justify-between p-4 hover:bg-[#FDFBF7] transition-colors min-h-[56px]"
+                      className="w-full flex items-center justify-between p-4 hover:bg-[#FDFBF7] transition-colours min-h-[56px]"
                       aria-label={`${isExpanded ? "Collapse" : "Expand"} ${category.label}`}
                     >
                       <div className="flex items-center gap-3">
-                        <div className="w-10 h-10 rounded-xl bg-[#4F6F52]/10 flex items-center justify-center">
+                        <div className="w-10 h-10 rounded-xl bg-[#4F6F52]/10 flex items-center justify-centre">
                           <Icon className="w-5 h-5 text-[#4F6F52]" />
                         </div>
                         <span className="font-semibold text-[#1A231E]">{category.label}</span>
@@ -490,7 +490,7 @@ function ProAreaMap({ homes = [] }: ProAreaMapProps) {
         {/* Key Insight */}
         <div className="bg-gradient-to-br from-[#4F6F52] to-[#3d5741] rounded-3xl p-6 sm:p-8 text-white">
           <div className="flex items-start gap-4">
-            <div className="w-12 h-12 rounded-2xl bg-white/20 flex items-center justify-center flex-shrink-0">
+            <div className="w-12 h-12 rounded-2xl bg-white/20 flex items-center justify-centre flex-shrink-0">
               <MapPin className="w-6 h-6 text-white" />
             </div>
             <div>

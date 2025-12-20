@@ -28,7 +28,7 @@ export function FundingHowItWorksSection() {
   return (
     <section className="py-16 sm:py-20 lg:py-24 bg-gradient-to-br from-[#FDFBF7] to-[#F5F3EE]">
       <div className="container mx-auto px-4 sm:px-6">
-        <div className="max-w-4xl mx-auto text-center space-y-4 mb-12">
+        <div className="max-w-4xl mx-auto text-centre space-y-4 mb-12">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#7FAD7E]/10 text-[#4F6F52] text-sm font-semibold">
             <span>HOW IT WORKS</span>
           </div>
@@ -45,12 +45,12 @@ export function FundingHowItWorksSection() {
             <div key={index} className="relative">
               <div className="bg-white rounded-2xl p-8 border border-[#E8E5DF] shadow-soft-lg hover:shadow-soft-xl transition-all duration-300">
                 {/* Step Number */}
-                <div className="absolute -top-4 left-8 w-12 h-12 rounded-full bg-gradient-to-br from-[#4F6F52] to-[#3A5140] flex items-center justify-center text-white font-bold text-lg shadow-soft-md">
+                <div className="absolute -top-4 left-8 w-12 h-12 rounded-full bg-gradient-to-br from-[#4F6F52] to-[#3A5140] flex items-center justify-centre text-white font-bold text-lg shadow-soft-md">
                   {step.number}
                 </div>
 
                 <div className="mt-6 space-y-4">
-                  <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-[#7FAD7E] to-[#6B9D6A] flex items-center justify-center shadow-soft-md">
+                  <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-[#7FAD7E] to-[#6B9D6A] flex items-center justify-centre shadow-soft-md">
                     <step.icon className="w-8 h-8 text-white" strokeWidth={2} />
                   </div>
                   <h3 className="text-xl font-bold text-[#1A231E]">{step.title}</h3>

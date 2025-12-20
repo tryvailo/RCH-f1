@@ -24,8 +24,8 @@ export function MonitoringSuccessSection() {
     <section className="py-20 bg-accent/5 border-y border-border">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12">
-            <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-accent/20 mb-6">
+          <div className="text-centre mb-12">
+            <div className="inline-flex items-center justify-centre w-20 h-20 rounded-full bg-accent/20 mb-6">
               <CheckCircle2 className="w-12 h-12 text-accent" strokeWidth={2.5} />
             </div>
 
@@ -48,7 +48,7 @@ export function MonitoringSuccessSection() {
                 key={index}
                 className="bg-card rounded-xl p-6 border-2 border-border hover:border-accent/50 transition-all"
               >
-                <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center mb-4">
+                <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-centre mb-4">
                   <item.icon className="w-6 h-6 text-accent" strokeWidth={2} />
                 </div>
 
@@ -58,7 +58,7 @@ export function MonitoringSuccessSection() {
             ))}
           </div>
 
-          <div className="mt-12 p-6 bg-primary/5 rounded-xl border-2 border-primary/20 text-center">
+          <div className="mt-12 p-6 bg-primary/5 rounded-xl border-2 border-primary/20 text-centre">
             <p className="text-base text-foreground">
               <span className="font-semibold">No buyer's remorse guarantee:</span> If you're not completely satisfied
               within 30 days, we'll refund every penny. No questions asked.

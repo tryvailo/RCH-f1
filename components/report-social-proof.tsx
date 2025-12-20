@@ -3,7 +3,7 @@ export function ReportSocialProof() {
     <section className="py-12 md:py-16 bg-gradient-to-br from-[#FDFBF7] via-white to-[#F8F6F3]">
       <div className="container mx-auto px-4 max-w-5xl">
         {/* Section Header */}
-        <div className="text-center mb-12">
+        <div className="text-centre mb-12">
           <h2 className="font-serif text-3xl md:text-4xl font-bold text-[#1A231E] mb-3">
             Families Who've Been in Your Shoes
           </h2>
@@ -17,7 +17,7 @@ export function ReportSocialProof() {
           {/* Testimonial 1 */}
           <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-[#4F6F52]/10 shadow-lg hover:shadow-xl transition-shadow">
             <div className="flex items-start gap-4 mb-4">
-              <div className="w-14 h-14 rounded-full bg-gradient-to-br from-[#4F6F52] to-[#3d5941] flex items-center justify-center text-white font-serif text-xl flex-shrink-0">
+              <div className="w-14 h-14 rounded-full bg-gradient-to-br from-[#4F6F52] to-[#3d5941] flex items-center justify-centre text-white font-serif text-xl flex-shrink-0">
                 MR
               </div>
               <div>
@@ -45,7 +45,7 @@ export function ReportSocialProof() {
           {/* Testimonial 2 */}
           <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-[#4F6F52]/10 shadow-lg hover:shadow-xl transition-shadow">
             <div className="flex items-start gap-4 mb-4">
-              <div className="w-14 h-14 rounded-full bg-gradient-to-br from-[#C88D79] to-[#a67360] flex items-center justify-center text-white font-serif text-xl flex-shrink-0">
+              <div className="w-14 h-14 rounded-full bg-gradient-to-br from-[#C88D79] to-[#a67360] flex items-center justify-centre text-white font-serif text-xl flex-shrink-0">
                 JT
               </div>
               <div>
@@ -72,7 +72,7 @@ export function ReportSocialProof() {
 
         {/* Stats Bar */}
         <div className="bg-gradient-to-r from-[#4F6F52] to-[#3d5941] rounded-xl p-6 md:p-8 text-white">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-centre">
             <div>
               <div className="text-3xl md:text-4xl font-bold mb-1">4.8/5</div>
               <div className="text-sm text-white/80">Average rating from 200+ families</div>

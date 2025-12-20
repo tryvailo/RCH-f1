@@ -198,7 +198,7 @@ export function DSTDomainBreakdown({
                 {/* Expandable Detailed Breakdown */}
                 <button
                     onClick={() => setIsExpanded(!isExpanded)}
-                    className="w-full flex items-center justify-between p-4 rounded-xl hover:bg-muted/50 transition-colors border border-border"
+                    className="w-full flex items-center justify-between p-4 rounded-xl hover:bg-muted/50 transition-colours border border-border"
                 >
                     <span className="font-semibold text-foreground">
                         {isExpanded ? "Hide" : "View"} Detailed Domain Breakdown
@@ -216,15 +216,15 @@ export function DSTDomainBreakdown({
                         {Object.entries(domainsByLevel).map(([level, domainsInLevel]) => {
                             if (domainsInLevel.length === 0) return null
 
-                            const colors = levelColors[level]
+                            const colours = levelColors[level]
                             return (
                                 <div key={level} className="space-y-3">
                                     <div
                                         className="rounded-lg px-4 py-2 inline-block"
                                         style={{
-                                            backgroundColor: colors.bg,
-                                            color: colors.text,
-                                            border: `2px solid ${colors.border}`,
+                                            backgroundColor: colours.bg,
+                                            colour: colours.text,
+                                            border: `2px solid ${colours.border}`,
                                         }}
                                     >
                                         <span className="font-semibold text-sm">
@@ -243,8 +243,8 @@ export function DSTDomainBreakdown({
                                             >
                                                 <div className="flex items-start gap-3">
                                                     <div
-                                                        className="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0"
-                                                        style={{ backgroundColor: `${domain.color}20` }}
+                                                        className="w-8 h-8 rounded-lg flex items-center justify-centre flex-shrink-0"
+                                                        style={{ backgroundColor: `${domain.colour}20` }}
                                                     >
                                                         {getIconComponent(domain.icon)}
                                                     </div>
@@ -256,8 +256,8 @@ export function DSTDomainBreakdown({
                                                             <Badge
                                                                 className="text-xs flex-shrink-0"
                                                                 style={{
-                                                                    backgroundColor: domain.color,
-                                                                    color: "white",
+                                                                    backgroundColor: domain.colour,
+                                                                    colour: "white",
                                                                 }}
                                                             >
                                                                 {domain.score}

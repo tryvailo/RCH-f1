@@ -28,7 +28,7 @@ export function MonitoringLeadCapture() {
       <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-4xl mx-auto">
           <div className="bg-white rounded-2xl shadow-soft-xl border border-[#E8E5DF] overflow-hidden">
-            <div className="bg-gradient-to-r from-[#4F6F52] to-[#3A5140] px-6 py-5 text-white text-center">
+            <div className="bg-gradient-to-r from-[#4F6F52] to-[#3A5140] px-6 py-5 text-white text-centre">
               <h2 className="text-2xl sm:text-3xl font-serif font-bold">
                 Get Your Free Care Home Monitoring Checklist
               </h2>
@@ -36,19 +36,19 @@ export function MonitoringLeadCapture() {
             </div>
 
             <div className="p-6 sm:p-8 lg:p-10 space-y-6">
-              <div className="flex items-center justify-center gap-4 pb-6 border-b border-[#E8E5DF]">
+              <div className="flex items-center justify-centre gap-4 pb-6 border-b border-[#E8E5DF]">
                 <div className="flex -space-x-2">
-                  <div className="w-10 h-10 rounded-full bg-[#4F6F52] flex items-center justify-center text-white text-sm font-medium border-2 border-white">
+                  <div className="w-10 h-10 rounded-full bg-[#4F6F52] flex items-center justify-centre text-white text-sm font-medium border-2 border-white">
                     J
                   </div>
-                  <div className="w-10 h-10 rounded-full bg-[#C88D79] flex items-center justify-center text-white text-sm font-medium border-2 border-white">
+                  <div className="w-10 h-10 rounded-full bg-[#C88D79] flex items-center justify-centre text-white text-sm font-medium border-2 border-white">
                     S
                   </div>
-                  <div className="w-10 h-10 rounded-full bg-[#1A231E] flex items-center justify-center text-white text-sm font-medium border-2 border-white">
+                  <div className="w-10 h-10 rounded-full bg-[#1A231E] flex items-center justify-centre text-white text-sm font-medium border-2 border-white">
                     M
                   </div>
                 </div>
-                <div className="text-center">
+                <div className="text-centre">
                   <div className="flex items-center gap-1">
                     {[...Array(5)].map((_, i) => (
                       <svg key={i} className="w-5 h-5 fill-[#F59E0B]" viewBox="0 0 20 20">
@@ -68,7 +68,7 @@ export function MonitoringLeadCapture() {
                   "Quality indicators to watch",
                 ].map((text, i) => (
                   <div key={i} className="flex items-start gap-3">
-                    <div className="w-6 h-6 rounded-full bg-[#7FAD7E] flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <div className="w-6 h-6 rounded-full bg-[#7FAD7E] flex items-center justify-centre flex-shrink-0 mt-0.5">
                       <Check className="w-4 h-4 text-white" strokeWidth={3} />
                     </div>
                     <span className="text-base text-[#1A231E]">{text}</span>
@@ -99,12 +99,12 @@ export function MonitoringLeadCapture() {
                     </>
                   )}
                 </Button>
-                <p className="text-center text-sm text-[#1A231E]/60">
+                <p className="text-centre text-sm text-[#1A231E]/60">
                   Instant delivery • No spam • Unsubscribe anytime
                 </p>
               </form>
 
-              <div className="flex items-center justify-center gap-8 pt-4 border-t border-[#E8E5DF]">
+              <div className="flex items-center justify-centre gap-8 pt-4 border-t border-[#E8E5DF]">
                 <div className="flex items-center gap-2 text-sm text-[#1A231E]/70">
                   <ShieldCheck className="w-5 h-5 text-[#4F6F52]" />
                   <span>100% Free</span>

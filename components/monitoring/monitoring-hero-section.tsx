@@ -118,28 +118,28 @@ export function MonitoringHeroSection() {
             </p>
           </div>
 
-          <div className="lg:flex justify-center items-center hidden">
+          <div className="lg:flex justify-centre items-center hidden">
             <div className="max-w-md w-full">
               <div className="bg-white rounded-2xl shadow-soft-xl border border-[#E8E5DF] overflow-hidden">
-                <div className="bg-gradient-to-r from-[#4F6F52] to-[#3A5140] px-6 py-5 text-white text-center">
+                <div className="bg-gradient-to-r from-[#4F6F52] to-[#3A5140] px-6 py-5 text-white text-centre">
                   <h2 className="text-2xl font-serif font-bold">7 Early Warning Signs Your Care Home May Be in Trouble</h2>
                   <p className="mt-2 text-white/90 text-sm">Free guide: Spot problems 3-6 months before they escalate</p>
                 </div>
 
                 <div className="p-6 space-y-5">
-                  <div className="flex items-center justify-center gap-4 pb-5 border-b border-[#E8E5DF]">
+                  <div className="flex items-center justify-centre gap-4 pb-5 border-b border-[#E8E5DF]">
                     <div className="flex -space-x-2">
-                      <div className="w-9 h-9 rounded-full bg-[#4F6F52] flex items-center justify-center text-white text-sm font-medium border-2 border-white">
+                      <div className="w-9 h-9 rounded-full bg-[#4F6F52] flex items-center justify-centre text-white text-sm font-medium border-2 border-white">
                         J
                       </div>
-                      <div className="w-9 h-9 rounded-full bg-[#C88D79] flex items-center justify-center text-white text-sm font-medium border-2 border-white">
+                      <div className="w-9 h-9 rounded-full bg-[#C88D79] flex items-center justify-centre text-white text-sm font-medium border-2 border-white">
                         S
                       </div>
-                      <div className="w-9 h-9 rounded-full bg-[#1A231E] flex items-center justify-center text-white text-sm font-medium border-2 border-white">
+                      <div className="w-9 h-9 rounded-full bg-[#1A231E] flex items-center justify-centre text-white text-sm font-medium border-2 border-white">
                         M
                       </div>
                     </div>
-                    <div className="text-center">
+                    <div className="text-centre">
                       <div className="flex items-center gap-1">
                         {[...Array(5)].map((_, i) => (
                           <svg key={i} className="w-4 h-4 fill-[#F59E0B]" viewBox="0 0 20 20">
@@ -152,7 +152,7 @@ export function MonitoringHeroSection() {
                   </div>
 
                   <div className="space-y-3">
-                    <p className="text-sm text-[#1A231E]/80 text-center font-medium">
+                    <p className="text-sm text-[#1A231E]/80 text-centre font-medium">
                       Learn the warning signs our system detects:
                     </p>
                     <ul className="space-y-2.5">
@@ -166,7 +166,7 @@ export function MonitoringHeroSection() {
                         "Ownership structure risks",
                       ].map((text, i) => (
                         <li key={i} className="flex items-start gap-3">
-                          <div className="w-5 h-5 rounded-full bg-[#7FAD7E] flex items-center justify-center flex-shrink-0 mt-0.5">
+                          <div className="w-5 h-5 rounded-full bg-[#7FAD7E] flex items-center justify-centre flex-shrink-0 mt-0.5">
                             <Check className="w-3 h-3 text-white" strokeWidth={3} />
                           </div>
                           <span className="text-sm text-[#1A231E]">{text}</span>
@@ -198,12 +198,12 @@ export function MonitoringHeroSection() {
                         </>
                       )}
                     </Button>
-                    <p className="text-center text-xs text-[#1A231E]/60">
+                    <p className="text-centre text-xs text-[#1A231E]/60">
                       Instant delivery • No spam • Unsubscribe anytime
                     </p>
                   </form>
 
-                  <div className="flex items-center justify-center gap-6 pt-3 border-t border-[#E8E5DF]">
+                  <div className="flex items-center justify-centre gap-6 pt-3 border-t border-[#E8E5DF]">
                     <div className="flex items-center gap-1.5 text-xs text-[#1A231E]/70">
                       <ShieldCheck className="w-4 h-4 text-[#4F6F52]" />
                       <span>100% Free</span>

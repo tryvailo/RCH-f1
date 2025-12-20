@@ -17,7 +17,7 @@ export default function AboutPage() {
 
       {/* Hero Section */}
       <section className="pt-32 pb-16 px-4">
-        <div className="container mx-auto max-w-4xl text-center">
+        <div className="container mx-auto max-w-4xl text-centre">
           <h1 className="text-5xl md:text-6xl font-serif font-bold text-[#1A231E] mb-6 text-balance">
             We Built This Because
             <br />
@@ -51,7 +51,7 @@ export default function AboutPage() {
             <div className="bg-[#F5F1EB] p-8 rounded-2xl">
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-[#4F6F52] flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 rounded-xl bg-[#4F6F52] flex items-center justify-centre flex-shrink-0">
                     <ShieldCheck className="w-6 h-6 text-white" />
                   </div>
                   <div>
@@ -60,7 +60,7 @@ export default function AboutPage() {
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-[#4F6F52] flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 rounded-xl bg-[#4F6F52] flex items-center justify-centre flex-shrink-0">
                     <TrendingUp className="w-6 h-6 text-white" />
                   </div>
                   <div>
@@ -69,7 +69,7 @@ export default function AboutPage() {
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-[#4F6F52] flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 rounded-xl bg-[#4F6F52] flex items-center justify-centre flex-shrink-0">
                     <Heart className="w-6 h-6 text-white" />
                   </div>
                   <div>
@@ -86,10 +86,10 @@ export default function AboutPage() {
       {/* Why We're Different Section */}
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-4xl font-serif font-bold text-[#1A231E] mb-12 text-center">Why We're Different</h2>
+          <h2 className="text-4xl font-serif font-bold text-[#1A231E] mb-12 text-centre">Why We're Different</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-2xl border-2 border-[#E8E3DB]">
-              <div className="w-14 h-14 rounded-xl bg-[#C88D79] flex items-center justify-center mb-6">
+              <div className="w-14 h-14 rounded-xl bg-[#C88D79] flex items-center justify-centre mb-6">
                 <Ban className="w-7 h-7 text-white" />
               </div>
               <h3 className="text-xl font-bold text-[#1A231E] mb-4">No Hidden Commissions</h3>
@@ -99,7 +99,7 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="bg-white p-8 rounded-2xl border-2 border-[#E8E3DB]">
-              <div className="w-14 h-14 rounded-xl bg-[#7FAD7E] flex items-center justify-center mb-6">
+              <div className="w-14 h-14 rounded-xl bg-[#7FAD7E] flex items-center justify-centre mb-6">
                 <Award className="w-7 h-7 text-white" />
               </div>
               <h3 className="text-xl font-bold text-[#1A231E] mb-4">Real Data, Not Marketing</h3>
@@ -109,7 +109,7 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="bg-white p-8 rounded-2xl border-2 border-[#E8E3DB]">
-              <div className="w-14 h-14 rounded-xl bg-[#4F6F52] flex items-center justify-center mb-6">
+              <div className="w-14 h-14 rounded-xl bg-[#4F6F52] flex items-center justify-centre mb-6">
                 <Users className="w-7 h-7 text-white" />
               </div>
               <h3 className="text-xl font-bold text-[#1A231E] mb-4">Built for Families</h3>
@@ -124,7 +124,7 @@ export default function AboutPage() {
 
       {/* Values Section */}
       <section className="py-16 px-4 bg-[#F5F1EB]">
-        <div className="container mx-auto max-w-4xl text-center">
+        <div className="container mx-auto max-w-4xl text-centre">
           <h2 className="text-4xl font-serif font-bold text-[#1A231E] mb-6">Our Values</h2>
           <div className="space-y-6 text-left">
             <div className="bg-white p-6 rounded-xl">
@@ -154,12 +154,12 @@ export default function AboutPage() {
 
       {/* CTA Section */}
       <section className="py-20 px-4">
-        <div className="container mx-auto max-w-4xl text-center">
+        <div className="container mx-auto max-w-4xl text-centre">
           <h2 className="text-4xl font-serif font-bold text-[#1A231E] mb-6">Ready to Find the Right Care Home?</h2>
           <p className="text-xl text-[#5C6B5E] mb-8 max-w-2xl mx-auto">
             Start with our free assessment and get 3 personalised care home matches in 10 minutes.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-centre">
             <Button asChild size="lg" className="bg-[#4F6F52] hover:bg-[#3F5A42] text-white text-lg px-8 py-6">
               <Link href="/free-assessment">Start Free Assessment</Link>
             </Button>

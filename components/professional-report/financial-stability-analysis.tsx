@@ -138,7 +138,7 @@ export function FinancialStabilityAnalysis({
 
           <Card className="p-6">
             {/* Score display */}
-            <div className="text-center mb-6">
+            <div className="text-centre mb-6">
               <div className={`text-[36px] font-bold ${getZoneColor(altman_z_score.interpretation)}`}>
                 {altman_z_score.current.toFixed(2)}
               </div>
@@ -168,7 +168,7 @@ export function FinancialStabilityAnalysis({
             </div>
 
             {/* Legend */}
-            <div className="grid grid-cols-3 gap-4 text-center text-[14px]">
+            <div className="grid grid-cols-3 gap-4 text-centre text-[14px]">
               <div>
                 <div className="font-semibold text-red-700">&lt; 1.8</div>
                 <div className="text-muted-foreground">Distress Zone</div>

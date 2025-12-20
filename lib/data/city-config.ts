@@ -13,7 +13,7 @@ export interface PricingRange {
   description: string
 }
 
-export interface Neighborhood {
+export interface Neighbourhood {
   name: string
   description: string
   averagePrice: number
@@ -50,10 +50,18 @@ export interface CityConfig {
   comingSoon?: boolean
   stats: CityStats
   pricing: PricingRange
-  neighborhoods: Neighborhood[]
+  neighbourhoods: Neighbourhood[]
   testimonials: CityTestimonial[]
   faqs: CityFAQ[]
   hero: CityHeroContent
+  regionalInsights?: {
+    title: string
+    items: {
+      label: string
+      value: string
+      description: string
+    }[]
+  }
   metaDescription: string
   structuredData?: {
     areaServed: string

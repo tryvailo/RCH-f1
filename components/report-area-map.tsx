@@ -97,7 +97,7 @@ export function ReportAreaMap({ mapData = defaultMapData }: ReportAreaMapProps) 
     <section className="py-12 md:py-16 px-4 bg-gradient-to-br from-white via-[#FDFBF7] to-[#4F6F52]/5">
       <div className="max-w-4xl mx-auto">
         {/* Section Header */}
-        <div className="text-center mb-10 md:mb-12">
+        <div className="text-centre mb-10 md:mb-12">
           <Badge variant="secondary" className="mb-4 text-base px-5 py-2 bg-[#4F6F52]/10 text-[#4F6F52] border-0">
             Page 4 of 10
           </Badge>
@@ -115,7 +115,7 @@ export function ReportAreaMap({ mapData = defaultMapData }: ReportAreaMapProps) 
           {/* Map Container */}
           <div className="relative h-[300px] md:h-[400px] bg-[#E8E5DF]/30">
             {/* Visual Map Representation */}
-            <div className="absolute inset-0 flex items-center justify-center">
+            <div className="absolute inset-0 flex items-center justify-centre">
               {/* Grid Pattern for Map Feel */}
               <div
                 className="absolute inset-0 opacity-10"
@@ -130,7 +130,7 @@ export function ReportAreaMap({ mapData = defaultMapData }: ReportAreaMapProps) 
 
               {/* Central Postcode Marker */}
               <div className="relative z-10">
-                <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-[#4F6F52] flex items-center justify-center shadow-lg animate-pulse">
+                <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-[#4F6F52] flex items-center justify-centre shadow-lg animate-pulse">
                   <MapPin className="w-8 h-8 md:w-10 md:h-10 text-white" />
                 </div>
                 <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 bg-white px-3 py-1 rounded-full shadow-md whitespace-nowrap">
@@ -143,27 +143,27 @@ export function ReportAreaMap({ mapData = defaultMapData }: ReportAreaMapProps) 
               <div className="absolute w-72 h-72 md:w-96 md:h-96 rounded-full border-2 border-dashed border-[#4F6F52]/20" />
 
               {/* Scattered Amenity Markers */}
-              <div className="absolute top-12 left-1/4 w-8 h-8 md:w-10 md:h-10 rounded-full bg-emerald-500 flex items-center justify-center shadow-md">
+              <div className="absolute top-12 left-1/4 w-8 h-8 md:w-10 md:h-10 rounded-full bg-emerald-500 flex items-center justify-centre shadow-md">
                 <TreePine className="w-4 h-4 md:w-5 md:h-5 text-white" />
               </div>
-              <div className="absolute top-20 right-1/4 w-8 h-8 md:w-10 md:h-10 rounded-full bg-blue-500 flex items-center justify-center shadow-md">
+              <div className="absolute top-20 right-1/4 w-8 h-8 md:w-10 md:h-10 rounded-full bg-blue-500 flex items-center justify-centre shadow-md">
                 <ShoppingBag className="w-4 h-4 md:w-5 md:h-5 text-white" />
               </div>
-              <div className="absolute bottom-20 left-1/3 w-8 h-8 md:w-10 md:h-10 rounded-full bg-amber-500 flex items-center justify-center shadow-md">
+              <div className="absolute bottom-20 left-1/3 w-8 h-8 md:w-10 md:h-10 rounded-full bg-amber-500 flex items-center justify-centre shadow-md">
                 <Bus className="w-4 h-4 md:w-5 md:h-5 text-white" />
               </div>
-              <div className="absolute bottom-16 right-1/3 w-8 h-8 md:w-10 md:h-10 rounded-full bg-emerald-500 flex items-center justify-center shadow-md">
+              <div className="absolute bottom-16 right-1/3 w-8 h-8 md:w-10 md:h-10 rounded-full bg-emerald-500 flex items-center justify-centre shadow-md">
                 <TreePine className="w-4 h-4 md:w-5 md:h-5 text-white" />
               </div>
-              <div className="absolute top-1/3 right-16 w-8 h-8 md:w-10 md:h-10 rounded-full bg-amber-500 flex items-center justify-center shadow-md">
+              <div className="absolute top-1/3 right-16 w-8 h-8 md:w-10 md:h-10 rounded-full bg-amber-500 flex items-center justify-centre shadow-md">
                 <Bus className="w-4 h-4 md:w-5 md:h-5 text-white" />
               </div>
 
               {/* Care Home Markers */}
-              <div className="absolute top-1/4 left-16 w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#C88D79] flex items-center justify-center shadow-md border-2 border-white">
+              <div className="absolute top-1/4 left-16 w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#C88D79] flex items-center justify-centre shadow-md border-2 border-white">
                 <Building2 className="w-5 h-5 md:w-6 md:h-6 text-white" />
               </div>
-              <div className="absolute bottom-1/4 right-20 w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#C88D79] flex items-center justify-center shadow-md border-2 border-white">
+              <div className="absolute bottom-1/4 right-20 w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#C88D79] flex items-center justify-centre shadow-md border-2 border-white">
                 <Building2 className="w-5 h-5 md:w-6 md:h-6 text-white" />
               </div>
             </div>
@@ -209,7 +209,7 @@ export function ReportAreaMap({ mapData = defaultMapData }: ReportAreaMapProps) 
                 <button
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id)}
-                  className={`flex-1 flex items-center justify-center gap-2 px-4 py-4 md:py-5 text-base md:text-lg font-medium transition-colors min-h-[56px] ${
+                  className={`flex-1 flex items-center justify-centre gap-2 px-4 py-4 md:py-5 text-base md:text-lg font-medium transition-colours min-h-[56px] ${
                     isActive
                       ? "bg-[#4F6F52]/10 text-[#4F6F52] border-b-2 border-[#4F6F52]"
                       : "text-[#1A231E]/60 hover:bg-[#FDFBF7] hover:text-[#1A231E]"
@@ -234,14 +234,14 @@ export function ReportAreaMap({ mapData = defaultMapData }: ReportAreaMapProps) 
             <div className="space-y-3">
               {currentAmenities.map((amenity) => {
                 const Icon = amenityIcons[amenity.type]
-                const colors = amenityColors[amenity.type]
+                const colours = amenityColors[amenity.type]
                 return (
                   <div
                     key={amenity.id}
-                    className={`flex items-center gap-4 p-4 rounded-xl ${colors.bg} ${colors.border} border transition-transform hover:scale-[1.01]`}
+                    className={`flex items-center gap-4 p-4 rounded-xl ${colours.bg} ${colours.border} border transition-transform hover:scale-[1.01]`}
                   >
-                    <div className={`w-12 h-12 rounded-xl bg-white flex items-center justify-center flex-shrink-0`}>
-                      <Icon className={`w-6 h-6 ${colors.text}`} />
+                    <div className={`w-12 h-12 rounded-xl bg-white flex items-center justify-centre flex-shrink-0`}>
+                      <Icon className={`w-6 h-6 ${colours.text}`} />
                     </div>
                     <div className="flex-1 min-w-0">
                       <h4 className="text-lg font-semibold text-[#1A231E] truncate">{amenity.name}</h4>
@@ -261,7 +261,7 @@ export function ReportAreaMap({ mapData = defaultMapData }: ReportAreaMapProps) 
         {/* Care Homes in Area */}
         <div className="bg-gradient-to-br from-[#4F6F52]/5 to-[#4F6F52]/10 rounded-2xl p-6 md:p-8 border border-[#4F6F52]/20 mb-8">
           <div className="flex items-center gap-3 mb-6">
-            <div className="w-12 h-12 rounded-xl bg-[#4F6F52]/20 flex items-center justify-center">
+            <div className="w-12 h-12 rounded-xl bg-[#4F6F52]/20 flex items-center justify-centre">
               <Building2 className="w-6 h-6 text-[#4F6F52]" />
             </div>
             <div>
@@ -279,7 +279,7 @@ export function ReportAreaMap({ mapData = defaultMapData }: ReportAreaMapProps) 
                 className="flex items-center justify-between p-4 bg-white rounded-xl border border-[#E8E5DF]"
               >
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-[#C88D79]/20 flex items-center justify-center">
+                  <div className="w-10 h-10 rounded-full bg-[#C88D79]/20 flex items-center justify-centre">
                     <Building2 className="w-5 h-5 text-[#C88D79]" />
                   </div>
                   <div>
@@ -336,7 +336,7 @@ export function ReportAreaMap({ mapData = defaultMapData }: ReportAreaMapProps) 
         </div>
 
         {/* Data Source Footer */}
-        <p className="mt-6 text-center text-sm text-[#1A231E]/50">
+        <p className="mt-6 text-centre text-sm text-[#1A231E]/50">
           Data sources: OpenStreetMap, OS Open Data, Transport for West Midlands • Last updated:{" "}
           {new Date().toLocaleDateString("en-GB")}
         </p>

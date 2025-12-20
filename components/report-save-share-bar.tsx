@@ -88,8 +88,8 @@ export function ReportSaveShareBar({ reportId, recipientName, location }: Report
           </DialogHeader>
 
           {isSaved ? (
-            <div className="py-8 text-center">
-              <div className="w-12 h-12 bg-[#4F6F52]/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="py-8 text-centre">
+              <div className="w-12 h-12 bg-[#4F6F52]/10 rounded-full flex items-center justify-centre mx-auto mb-4">
                 <Check className="w-6 h-6 text-[#4F6F52]" />
               </div>
               <p className="text-[#1A231E] font-medium">Report saved successfully</p>
@@ -144,8 +144,8 @@ export function ReportSaveShareBar({ reportId, recipientName, location }: Report
           </DialogHeader>
 
           {isShared ? (
-            <div className="py-8 text-center">
-              <div className="w-12 h-12 bg-[#4F6F52]/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="py-8 text-centre">
+              <div className="w-12 h-12 bg-[#4F6F52]/10 rounded-full flex items-center justify-centre mx-auto mb-4">
                 <Check className="w-6 h-6 text-[#4F6F52]" />
               </div>
               <p className="text-[#1A231E] font-medium">Shared successfully</p>

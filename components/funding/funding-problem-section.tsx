@@ -25,7 +25,7 @@ export function FundingProblemSection() {
   return (
     <section className="py-16 sm:py-20 lg:py-24 bg-white">
       <div className="container mx-auto px-4 sm:px-6">
-        <div className="max-w-4xl mx-auto text-center space-y-4 mb-12">
+        <div className="max-w-4xl mx-auto text-centre space-y-4 mb-12">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#D17A6F]/10 text-[#D17A6F] text-sm font-semibold">
             <AlertCircle className="w-4 h-4" />
             <span>THE PROBLEM</span>
@@ -44,7 +44,7 @@ export function FundingProblemSection() {
               key={index}
               className="group relative bg-gradient-to-br from-white to-[#F5F3EE] rounded-2xl p-6 lg:p-8 border border-[#E8E5DF] shadow-soft-md hover:shadow-soft-xl transition-all duration-300"
             >
-              <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-[#D17A6F] to-[#C17A6E] flex items-center justify-center mb-5 shadow-soft-md group-hover:scale-110 transition-transform duration-300">
+              <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-[#D17A6F] to-[#C17A6E] flex items-center justify-centre mb-5 shadow-soft-md group-hover:scale-110 transition-transform duration-300">
                 <problem.icon className="w-7 h-7 text-white" strokeWidth={2} />
               </div>
               <h3 className="text-xl font-bold text-[#1A231E] mb-3">{problem.title}</h3>

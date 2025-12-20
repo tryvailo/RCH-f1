@@ -89,7 +89,7 @@ export function HeroSection({ region }: HeroSectionProps = {}) {
         <img
           src={heroImage.src || "/placeholder.svg"}
           alt={heroImage.alt}
-          className="w-full h-full object-cover object-center opacity-90"
+          className="w-full h-full object-cover object-centre opacity-90"
         />
       </div>
 
@@ -130,7 +130,7 @@ export function HeroSection({ region }: HeroSectionProps = {}) {
             <div className="flex flex-wrap gap-x-8 gap-y-4 pt-2">
               {benefits.map((benefit, i) => (
                 <div key={i} className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-white shadow-sm border border-border flex items-center justify-center text-primary">
+                  <div className="w-10 h-10 rounded-full bg-white shadow-sm border border-border flex items-center justify-centre text-primary">
                     <benefit.icon className="w-5 h-5" strokeWidth={2} />
                   </div>
                   <span className="text-base font-medium text-foreground">{benefit.text}</span>
@@ -152,21 +152,21 @@ export function HeroSection({ region }: HeroSectionProps = {}) {
           </div>
 
           {/* Right: RESTORED Lead Magnet Layout */}
-          <div className="hidden lg:flex justify-center items-center lg:col-span-5">
+          <div className="hidden lg:flex justify-centre items-center lg:col-span-5">
             <div className="max-w-md w-full relative">
               {/* Subtle glow behind */}
               <div className="absolute -inset-4 bg-primary/20 blur-2xl rounded-full opacity-0 hover:opacity-100 transition-opacity duration-500" />
 
               <div className="relative bg-white rounded-xl shadow-lg border border-border overflow-hidden">
                 {/* Header */}
-                <div className="bg-gradient-to-r from-primary to-primary h-16 flex items-center justify-center text-primary-foreground">
-                  <p className="text-2xl font-serif font-bold text-center">3 Recommended Homes — Free</p>
+                <div className="bg-gradient-to-r from-primary to-primary h-16 flex items-center justify-centre text-primary-foreground">
+                  <p className="text-2xl font-serif font-bold text-centre">3 Recommended Homes — Free</p>
                 </div>
 
                 {/* Card Body */}
                 <div className="p-6 space-y-5">
                   {/* Trust indicators */}
-                  <div className="flex items-center justify-center gap-3 pb-4 border-b border-border">
+                  <div className="flex items-center justify-centre gap-3 pb-4 border-b border-border">
                     <div className="flex items-center gap-1">
                       {[...Array(5)].map((_, i) => (
                         <svg key={i} className="w-4 h-4 text-[#F59E0B] fill-[#F59E0B]" viewBox="0 0 20 20">
@@ -182,7 +182,7 @@ export function HeroSection({ region }: HeroSectionProps = {}) {
                     <ul className="space-y-2.5">
                       {formBenefits.map((text, i) => (
                         <li key={i} className="flex items-start gap-3">
-                          <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                          <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-centre flex-shrink-0 mt-0.5">
                             <Check className="w-3 h-3 text-primary" strokeWidth={3} />
                           </div>
                           <span className="text-base text-foreground">{text}</span>
@@ -199,7 +199,7 @@ export function HeroSection({ region }: HeroSectionProps = {}) {
                       placeholder="Your postcode (e.g. B15 2TT)"
                       value={postcode}
                       onChange={(e) => setPostcode(e.target.value.toUpperCase())}
-                      className="h-14 text-lg text-center border-border focus:border-primary focus:ring-primary rounded-xl"
+                      className="h-14 text-lg text-centre border-border focus:border-primary focus:ring-primary rounded-xl"
                     />
                     <Button
                       type="submit"
@@ -215,17 +215,17 @@ export function HeroSection({ region }: HeroSectionProps = {}) {
                         </>
                       )}
                     </Button>
-                    <div className="flex items-center justify-center gap-2 pt-1">
+                    <div className="flex items-center justify-centre gap-2 pt-1">
                       <Database className="w-4 h-4 text-primary" />
                       <span className="text-sm font-medium text-primary">18 verified data points</span>
                     </div>
-                    <p className="text-center text-sm text-foreground/60">
+                    <p className="text-centre text-sm text-foreground/60">
                       One less thing to worry about. Delivered in 10 minutes.
                     </p>
                   </form>
 
                   {/* Footer */}
-                  <div className="flex items-center justify-center gap-6 pt-3 border-t border-border">
+                  <div className="flex items-center justify-centre gap-6 pt-3 border-t border-border">
                     <div className="flex items-center gap-1.5 text-sm text-foreground/70">
                       <ShieldCheck className="w-4 h-4 text-primary" />
                       <span>100% Free</span>

@@ -40,7 +40,7 @@ export function ReportFairCostGap({
   return (
     <section className="bg-background py-12 md:py-16 px-4">
       <div className="max-w-5xl mx-auto">
-        <div className="text-center mb-8 md:mb-12">
+        <div className="text-centre mb-8 md:mb-12">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold mb-4 text-charcoal">
             Understanding Care Home Costs
           </h2>
@@ -60,15 +60,15 @@ export function ReportFairCostGap({
             <thead>
               <tr className="border-b-2 border-muted">
                 <th className="text-left py-3 px-4 text-base md:text-lg font-semibold text-charcoal">Care Type</th>
-                <th className="text-center py-3 px-4 text-base md:text-lg font-semibold text-charcoal">
+                <th className="text-centre py-3 px-4 text-base md:text-lg font-semibold text-charcoal">
                   Council Rate
                   <div className="text-sm font-normal text-muted-foreground">per week</div>
                 </th>
-                <th className="text-center py-3 px-4 text-base md:text-lg font-semibold text-charcoal">
+                <th className="text-centre py-3 px-4 text-base md:text-lg font-semibold text-charcoal">
                   Market Average
                   <div className="text-sm font-normal text-muted-foreground">per week</div>
                 </th>
-                <th className="text-center py-3 px-4 text-base md:text-lg font-semibold text-primary">
+                <th className="text-centre py-3 px-4 text-base md:text-lg font-semibold text-primary">
                   The Gap
                   <div className="text-sm font-normal text-primary/70">per year</div>
                 </th>
@@ -86,13 +86,13 @@ export function ReportFairCostGap({
                     )}
                   </div>
                 </td>
-                <td className="text-center py-4 px-4 text-lg md:text-xl font-semibold">
+                <td className="text-centre py-4 px-4 text-lg md:text-xl font-semibold">
                   £{nursingFairCost.toLocaleString()}
                 </td>
-                <td className="text-center py-4 px-4 text-lg md:text-xl font-semibold">
+                <td className="text-centre py-4 px-4 text-lg md:text-xl font-semibold">
                   £{nursingMarketAverage.toLocaleString()}
                 </td>
-                <td className="text-center py-4 px-4 text-lg md:text-xl font-bold text-primary">
+                <td className="text-centre py-4 px-4 text-lg md:text-xl font-bold text-primary">
                   £{nursingYearlyGap.toLocaleString()}
                 </td>
               </tr>
@@ -107,13 +107,13 @@ export function ReportFairCostGap({
                     )}
                   </div>
                 </td>
-                <td className="text-center py-4 px-4 text-lg md:text-xl font-semibold">
+                <td className="text-centre py-4 px-4 text-lg md:text-xl font-semibold">
                   £{residentialFairCost.toLocaleString()}
                 </td>
-                <td className="text-center py-4 px-4 text-lg md:text-xl font-semibold">
+                <td className="text-centre py-4 px-4 text-lg md:text-xl font-semibold">
                   £{residentialMarketAverage.toLocaleString()}
                 </td>
-                <td className="text-center py-4 px-4 text-lg md:text-xl font-bold text-primary">
+                <td className="text-centre py-4 px-4 text-lg md:text-xl font-bold text-primary">
                   £{residentialYearlyGap.toLocaleString()}
                 </td>
               </tr>
@@ -137,15 +137,15 @@ export function ReportFairCostGap({
               for you:
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="text-center md:text-left">
+              <div className="text-centre md:text-left">
                 <div className="text-sm uppercase tracking-wide text-primary/80 mb-1">Weekly Difference</div>
                 <div className="text-4xl md:text-5xl font-bold text-primary">£{userWeeklyGap.toLocaleString()}</div>
               </div>
-              <div className="text-center md:text-left">
+              <div className="text-centre md:text-left">
                 <div className="text-sm uppercase tracking-wide text-primary/80 mb-1">Annual Difference</div>
                 <div className="text-4xl md:text-5xl font-bold text-primary">£{userYearlyGap.toLocaleString()}</div>
               </div>
-              <div className="text-center md:text-left">
+              <div className="text-centre md:text-left">
                 <div className="text-sm uppercase tracking-wide text-primary/80 mb-1">Over 5 Years</div>
                 <div className="text-4xl md:text-5xl font-bold text-primary">£{userFiveYearGap.toLocaleString()}</div>
               </div>
@@ -160,7 +160,7 @@ export function ReportFairCostGap({
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 md:gap-6">
             <div className="flex items-start gap-4">
-              <div className="flex-shrink-0 w-12 h-12 md:w-14 md:h-14 rounded-full bg-sage/10 flex items-center justify-center">
+              <div className="flex-shrink-0 w-12 h-12 md:w-14 md:h-14 rounded-full bg-sage/10 flex items-center justify-centre">
                 <Heart className="w-6 h-6 md:w-7 md:h-7 text-sage" />
               </div>
               <div>
@@ -174,7 +174,7 @@ export function ReportFairCostGap({
             </div>
 
             <div className="flex items-start gap-4">
-              <div className="flex-shrink-0 w-12 h-12 md:w-14 md:h-14 rounded-full bg-sage/10 flex items-center justify-center">
+              <div className="flex-shrink-0 w-12 h-12 md:w-14 md:h-14 rounded-full bg-sage/10 flex items-center justify-centre">
                 <GraduationCap className="w-6 h-6 md:w-7 md:h-7 text-sage" />
               </div>
               <div>
@@ -188,7 +188,7 @@ export function ReportFairCostGap({
             </div>
 
             <div className="flex items-start gap-4">
-              <div className="flex-shrink-0 w-12 h-12 md:w-14 md:h-14 rounded-full bg-sage/10 flex items-center justify-center">
+              <div className="flex-shrink-0 w-12 h-12 md:w-14 md:h-14 rounded-full bg-sage/10 flex items-center justify-centre">
                 <Users className="w-6 h-6 md:w-7 md:h-7 text-sage" />
               </div>
               <div>
@@ -200,7 +200,7 @@ export function ReportFairCostGap({
             </div>
 
             <div className="flex items-start gap-4">
-              <div className="flex-shrink-0 w-12 h-12 md:w-14 md:h-14 rounded-full bg-sage/10 flex items-center justify-center">
+              <div className="flex-shrink-0 w-12 h-12 md:w-14 md:h-14 rounded-full bg-sage/10 flex items-center justify-centre">
                 <Home className="w-6 h-6 md:w-7 md:h-7 text-sage" />
               </div>
               <div>
@@ -251,7 +251,7 @@ export function ReportFairCostGap({
                 },
               ].map((item, index) => (
                 <div key={index} className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-muted flex items-center justify-center text-base font-semibold">
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-muted flex items-center justify-centre text-base font-semibold">
                     {index + 1}
                   </div>
                   <div className="pt-0.5">
@@ -270,7 +270,7 @@ export function ReportFairCostGap({
             className="w-full flex items-center justify-between text-left"
           >
             <div className="flex items-center gap-3">
-              <div className="flex-shrink-0 w-12 h-12 md:w-14 md:h-14 rounded-full bg-sage/20 flex items-center justify-center">
+              <div className="flex-shrink-0 w-12 h-12 md:w-14 md:h-14 rounded-full bg-sage/20 flex items-center justify-centre">
                 <Check className="w-6 h-6 md:w-7 md:h-7 text-sage" />
               </div>
               <h3 className="text-xl md:text-2xl font-serif font-bold text-charcoal">What You Can Do About This</h3>
@@ -353,7 +353,7 @@ export function ReportFairCostGap({
 
         <Card className="p-6 md:p-8 bg-gradient-to-r from-sage/10 to-transparent border-l-4 border-sage">
           <div className="flex items-start gap-4">
-            <div className="flex-shrink-0 w-12 h-12 rounded-full bg-sage/20 flex items-center justify-center">
+            <div className="flex-shrink-0 w-12 h-12 rounded-full bg-sage/20 flex items-center justify-centre">
               <Lightbulb className="w-6 h-6 text-sage" />
             </div>
             <div>

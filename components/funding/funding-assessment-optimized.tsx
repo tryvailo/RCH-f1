@@ -489,7 +489,7 @@ export function FundingAssessmentOptimized() {
                           {question.options?.map((option) => (
                             <div
                               key={option.value}
-                              className="flex items-center space-x-3 p-3 rounded-lg hover:bg-muted transition-colors"
+                              className="flex items-center space-x-3 p-3 rounded-lg hover:bg-muted transition-colours"
                             >
                               <RadioGroupItem value={option.value} id={`${question.id}-${option.value}`} />
                               <Label
@@ -512,7 +512,7 @@ export function FundingAssessmentOptimized() {
                           return (
                             <div
                               key={option.value}
-                              className="flex items-center space-x-3 p-3 rounded-lg hover:bg-muted transition-colors"
+                              className="flex items-center space-x-3 p-3 rounded-lg hover:bg-muted transition-colours"
                             >
                               <Checkbox
                                 id={`${question.id}-${option.value}`}

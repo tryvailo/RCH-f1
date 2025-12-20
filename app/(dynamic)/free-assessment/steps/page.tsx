@@ -100,7 +100,7 @@ const careTypeOptions = [
     label: "Residential Care",
     description: "Help with daily living activities",
     icon: Home,
-    color: "text-[#4F6F52]",
+    colour: "text-[#4F6F52]",
     bgColor: "bg-[#4F6F52]/10",
   },
   {
@@ -108,7 +108,7 @@ const careTypeOptions = [
     label: "Dementia Care",
     description: "Specialist memory care support",
     icon: Brain,
-    color: "text-[#7C6A9A]",
+    colour: "text-[#7C6A9A]",
     bgColor: "bg-[#7C6A9A]/10",
   },
   {
@@ -116,7 +116,7 @@ const careTypeOptions = [
     label: "Nursing Care",
     description: "24/7 qualified nursing staff",
     icon: Stethoscope,
-    color: "text-[#3B82A0]",
+    colour: "text-[#3B82A0]",
     bgColor: "bg-[#3B82A0]/10",
   },
   {
@@ -124,7 +124,7 @@ const careTypeOptions = [
     label: "Nursing & Dementia",
     description: "Combined specialist care",
     icon: Building,
-    color: "text-[#C88D79]",
+    colour: "text-[#C88D79]",
     bgColor: "bg-[#C88D79]/10",
   },
   {
@@ -132,7 +132,7 @@ const careTypeOptions = [
     label: "I'm not sure yet",
     description: "We'll help you decide",
     icon: HelpCircle,
-    color: "text-muted-foreground",
+    colour: "text-muted-foreground",
     bgColor: "bg-muted",
   },
 ]
@@ -143,7 +143,7 @@ const budgetOptions = [
     label: "Up to £1,150/week",
     description: "Economy options available",
     icon: Coins,
-    color: "text-[#4F6F52]",
+    colour: "text-[#4F6F52]",
     bgColor: "bg-[#4F6F52]/10",
   },
   {
@@ -151,7 +151,7 @@ const budgetOptions = [
     label: "Up to £1,350/week",
     description: "Most popular range",
     icon: CreditCard,
-    color: "text-[#3B82A0]",
+    colour: "text-[#3B82A0]",
     bgColor: "bg-[#3B82A0]/10",
   },
   {
@@ -159,7 +159,7 @@ const budgetOptions = [
     label: "Show all options",
     description: "No budget limit",
     icon: CreditCard,
-    color: "text-[#C88D79]",
+    colour: "text-[#C88D79]",
     bgColor: "bg-[#C88D79]/10",
   },
   {
@@ -167,7 +167,7 @@ const budgetOptions = [
     label: "I'm not sure yet",
     description: "We'll help you understand costs",
     icon: HelpCircle,
-    color: "text-muted-foreground",
+    colour: "text-muted-foreground",
     bgColor: "bg-muted",
   },
 ]
@@ -178,7 +178,7 @@ const fundingOptions = [
     label: "Self-funded",
     description: "Paying privately",
     icon: User,
-    color: "text-[#4F6F52]",
+    colour: "text-[#4F6F52]",
     bgColor: "bg-[#4F6F52]/10",
   },
   {
@@ -186,7 +186,7 @@ const fundingOptions = [
     label: "Council funded",
     description: "Local Authority support",
     icon: Building2,
-    color: "text-[#3B82A0]",
+    colour: "text-[#3B82A0]",
     bgColor: "bg-[#3B82A0]/10",
   },
   {
@@ -194,7 +194,7 @@ const fundingOptions = [
     label: "NHS funded",
     description: "Continuing Healthcare",
     icon: Building,
-    color: "text-[#7C6A9A]",
+    colour: "text-[#7C6A9A]",
     bgColor: "bg-[#7C6A9A]/10",
   },
   {
@@ -202,7 +202,7 @@ const fundingOptions = [
     label: "Mixed funding",
     description: "Combined sources",
     icon: Calendar,
-    color: "text-[#C88D79]",
+    colour: "text-[#C88D79]",
     bgColor: "bg-[#C88D79]/10",
   },
   {
@@ -210,7 +210,7 @@ const fundingOptions = [
     label: "Not sure yet",
     description: "We'll help you explore options",
     icon: HelpCircle,
-    color: "text-muted-foreground",
+    colour: "text-muted-foreground",
     bgColor: "bg-muted",
   },
 ]
@@ -221,7 +221,7 @@ const durationOptions = [
     label: "Permanent",
     description: "Long-term care",
     icon: Home,
-    color: "text-[#4F6F52]",
+    colour: "text-[#4F6F52]",
     bgColor: "bg-[#4F6F52]/10",
   },
   {
@@ -229,7 +229,7 @@ const durationOptions = [
     label: "Respite care",
     description: "Short-term stay",
     icon: Clock,
-    color: "text-[#3B82A0]",
+    colour: "text-[#3B82A0]",
     bgColor: "bg-[#3B82A0]/10",
   },
   {
@@ -237,7 +237,7 @@ const durationOptions = [
     label: "Trial period",
     description: "Testing first",
     icon: ClipboardCheck,
-    color: "text-[#C88D79]",
+    colour: "text-[#C88D79]",
     bgColor: "bg-[#C88D79]/10",
   },
   {
@@ -245,7 +245,7 @@ const durationOptions = [
     label: "Not decided",
     description: "Flexible options",
     icon: HelpCircle,
-    color: "text-muted-foreground",
+    colour: "text-muted-foreground",
     bgColor: "bg-muted",
   },
 ]
@@ -587,7 +587,7 @@ export default function FreeAssessmentSteps() {
     label,
     description,
     icon: Icon,
-    color,
+    colour,
     bgColor,
     selected,
     onClick,
@@ -596,7 +596,7 @@ export default function FreeAssessmentSteps() {
     label: string
     description: string
     icon: React.ComponentType<{ className?: string }>
-    color: string
+    colour: string
     bgColor: string
     selected: boolean
     onClick: () => void
@@ -610,16 +610,16 @@ export default function FreeAssessmentSteps() {
     >
       <div className="flex items-center gap-4">
         <div
-          className={`w-12 h-12 rounded-xl ${selected ? "bg-primary/20" : bgColor} flex items-center justify-center flex-shrink-0`}
+          className={`w-12 h-12 rounded-xl ${selected ? "bg-primary/20" : bgColor} flex items-center justify-centre flex-shrink-0`}
         >
-          <Icon className={`w-6 h-6 ${selected ? "text-primary" : color}`} />
+          <Icon className={`w-6 h-6 ${selected ? "text-primary" : colour}`} />
         </div>
         <div className="flex-1 min-w-0">
           <div className="font-semibold text-lg text-foreground">{label}</div>
           <div className="text-base text-muted-foreground">{description}</div>
         </div>
         {selected && (
-          <div className="w-6 h-6 rounded-full bg-primary flex items-center justify-center flex-shrink-0">
+          <div className="w-6 h-6 rounded-full bg-primary flex items-center justify-centre flex-shrink-0">
             <Check className="w-4 h-4 text-primary-foreground" />
           </div>
         )}
@@ -659,7 +659,7 @@ export default function FreeAssessmentSteps() {
   const isStepValid = validateStep(currentStep) // Safe - no setState
 
   if (!mounted) {
-    return <div className="min-h-screen flex items-center justify-center">Loading...</div>
+    return <div className="min-h-screen flex items-center justify-centre">Loading...</div>
   }
 
   return (
@@ -697,7 +697,7 @@ export default function FreeAssessmentSteps() {
                       }`}
                     >
                       <div
-                        className={`w-9 h-9 md:w-11 md:h-11 rounded-full flex items-center justify-center mb-1 transition-all ${
+                        className={`w-9 h-9 md:w-11 md:h-11 rounded-full flex items-center justify-centre mb-1 transition-all ${
                           isActive
                             ? "bg-primary text-primary-foreground scale-110"
                             : isComplete
@@ -712,7 +712,7 @@ export default function FreeAssessmentSteps() {
                         )}
                       </div>
                       <span
-                        className={`text-[10px] md:text-xs font-medium text-center truncate w-full px-1 ${
+                        className={`text-[10px] md:text-xs font-medium text-centre truncate w-full px-1 ${
                           isActive ? "text-primary" : "text-muted-foreground"
                         }`}
                       >
@@ -731,9 +731,9 @@ export default function FreeAssessmentSteps() {
           </div>
 
           {showReinforcement && (
-            <div className="fixed inset-0 z-50 flex items-center justify-center bg-background/80 backdrop-blur-sm">
-              <div className="bg-card p-8 rounded-2xl shadow-xl border text-center max-w-md mx-4">
-                <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center">
+            <div className="fixed inset-0 z-50 flex items-center justify-centre bg-background/80 backdrop-blur-sm">
+              <div className="bg-card p-8 rounded-2xl shadow-xl border text-centre max-w-md mx-4">
+                <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-centre">
                   <Check className="w-8 h-8 md:w-5 md:h-5 text-primary" />
                 </div>
                 <p className="text-xl font-medium text-foreground">{STEPS[currentStep - 1]?.reinforcement}</p>
@@ -744,7 +744,7 @@ export default function FreeAssessmentSteps() {
           <Card className="p-6 sm:p-8 lg:p-10 shadow-sm">
             {currentStep === 1 && (
               <div className="space-y-6">
-                <div className="text-center mb-8">
+                <div className="text-centre mb-8">
                   <h2 className="text-2xl md:text-3xl font-serif font-bold mb-3">Where are you looking for care?</h2>
                   <p className="text-lg text-muted-foreground">
                     Enter the postcode where you'd like to find care homes
@@ -759,7 +759,7 @@ export default function FreeAssessmentSteps() {
                     placeholder="e.g. B15 2TT"
                     value={formData.location_postcode}
                     onChange={(e) => updateFormData({ location_postcode: e.target.value.toUpperCase() })}
-                    className={`w-full text-center text-2xl p-4 rounded-xl border-2 bg-background transition-all focus:outline-none focus:ring-2 focus:ring-primary/20 ${
+                    className={`w-full text-centre text-2xl p-4 rounded-xl border-2 bg-background transition-all focus:outline-none focus:ring-2 focus:ring-primary/20 ${
                       errors.location_postcode ? "border-amber-300" : "border-border focus:border-primary"
                     }`}
                     autoFocus
@@ -776,7 +776,7 @@ export default function FreeAssessmentSteps() {
 
             {currentStep === 2 && (
               <div className="space-y-6">
-                <div className="text-center mb-8">
+                <div className="text-centre mb-8">
                   <h2 className="text-2xl md:text-3xl font-serif font-bold mb-3">What type of care is needed?</h2>
                   <p className="text-lg text-muted-foreground">Select the option that best describes your needs</p>
                 </div>
@@ -789,20 +789,20 @@ export default function FreeAssessmentSteps() {
                       label={option.label}
                       description={option.description}
                       icon={option.icon}
-                      color={option.color}
+                      colour={option.colour}
                       bgColor={option.bgColor}
                       selected={formData.care_type === option.value}
                       onClick={() => handleOptionSelect("care_type", option.value)}
                     />
                   ))}
                 </div>
-                {errors.care_type && <p className="text-center text-sm text-destructive">{errors.care_type}</p>}
+                {errors.care_type && <p className="text-centre text-sm text-destructive">{errors.care_type}</p>}
               </div>
             )}
 
             {currentStep === 3 && (
               <div className="space-y-6">
-                <div className="text-center mb-8">
+                <div className="text-centre mb-8">
                   <h2 className="text-2xl md:text-3xl font-serif font-bold mb-3">What's your weekly budget?</h2>
                   <p className="text-lg text-muted-foreground">This helps us show you the most relevant options</p>
                 </div>
@@ -815,17 +815,17 @@ export default function FreeAssessmentSteps() {
                       label={option.label}
                       description={option.description}
                       icon={option.icon}
-                      color={option.color}
+                      colour={option.colour}
                       bgColor={option.bgColor}
                       selected={formData.budget_range === option.value}
                       onClick={() => handleOptionSelect("budget_range", option.value)}
                     />
                   ))}
                 </div>
-                {errors.budget_range && <p className="text-center text-sm text-destructive">{errors.budget_range}</p>}
+                {errors.budget_range && <p className="text-centre text-sm text-destructive">{errors.budget_range}</p>}
 
                 <div className="p-4 bg-primary/5 border border-primary/20 rounded-xl mt-6">
-                  <p className="text-base text-muted-foreground text-center">
+                  <p className="text-base text-muted-foreground text-centre">
                     <strong>Tip:</strong> The average cost in your area is around £1,200/week
                   </p>
                 </div>
@@ -834,7 +834,7 @@ export default function FreeAssessmentSteps() {
 
             {currentStep === 4 && (
               <div className="space-y-6">
-                <div className="text-center mb-8">
+                <div className="text-centre mb-8">
                   <h2 className="text-2xl md:text-3xl font-serif font-bold mb-3">How will the care be funded?</h2>
                   <p className="text-lg text-muted-foreground">We'll check what support may be available</p>
                 </div>
@@ -847,20 +847,20 @@ export default function FreeAssessmentSteps() {
                       label={option.label}
                       description={option.description}
                       icon={option.icon}
-                      color={option.color}
+                      colour={option.colour}
                       bgColor={option.bgColor}
                       selected={formData.funding_type === option.value}
                       onClick={() => handleOptionSelect("funding_type", option.value)}
                     />
                   ))}
                 </div>
-                {errors.funding_type && <p className="text-center text-sm text-destructive">{errors.funding_type}</p>}
+                {errors.funding_type && <p className="text-centre text-sm text-destructive">{errors.funding_type}</p>}
               </div>
             )}
 
             {currentStep === 5 && (
               <div className="space-y-6">
-                <div className="text-center mb-8">
+                <div className="text-centre mb-8">
                   <h2 className="text-2xl md:text-3xl font-serif font-bold mb-3">How long will care be needed?</h2>
                   <p className="text-lg text-muted-foreground">This helps us find the right type of placement</p>
                 </div>
@@ -873,20 +873,20 @@ export default function FreeAssessmentSteps() {
                       label={option.label}
                       description={option.description}
                       icon={option.icon}
-                      color={option.color}
+                      colour={option.colour}
                       bgColor={option.bgColor}
                       selected={formData.duration_type === option.value}
                       onClick={() => handleOptionSelect("duration_type", option.value)}
                     />
                   ))}
                 </div>
-                {errors.duration_type && <p className="text-center text-sm text-destructive">{errors.duration_type}</p>}
+                {errors.duration_type && <p className="text-centre text-sm text-destructive">{errors.duration_type}</p>}
               </div>
             )}
 
             {currentStep === 6 && (
               <div className="space-y-6">
-                <div className="text-center mb-8">
+                <div className="text-centre mb-8">
                   <h2 className="text-2xl md:text-3xl font-serif font-bold mb-3">Where should we send your report?</h2>
                   <p className="text-lg text-muted-foreground">
                     Your personalised shortlist will be ready in under 10 minutes
@@ -966,7 +966,7 @@ export default function FreeAssessmentSteps() {
 
                 {currentStep === 7 && (
                 <div className="space-y-6">
-                <div className="text-center mb-8">
+                <div className="text-centre mb-8">
                   <h2 className="font-serif text-2xl sm:text-3xl lg:text-[32px] font-bold text-[#1A231E] mb-3">
                     Let's Personalise This Report
                   </h2>
@@ -1001,7 +1001,7 @@ export default function FreeAssessmentSteps() {
                         ${!isTouchDevice ? "cursor-grab active:cursor-grabbing hover:shadow-lg hover:border-[#4F6F52]/50" : ""}
                       `}
                     >
-                      <div className="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#4F6F52]/10 flex items-center justify-center">
+                      <div className="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#4F6F52]/10 flex items-center justify-centre">
                         <span className="text-lg sm:text-xl font-bold text-[#4F6F52]">{index + 1}</span>
                       </div>
 
@@ -1011,7 +1011,7 @@ export default function FreeAssessmentSteps() {
                         </div>
                       )}
 
-                      <div className="flex-shrink-0 w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-[#4F6F52]/5 flex items-center justify-center">
+                      <div className="flex-shrink-0 w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-[#4F6F52]/5 flex items-center justify-centre">
                         {priority.icon}
                       </div>
 
@@ -1033,7 +1033,7 @@ export default function FreeAssessmentSteps() {
                             disabled={index === 0}
                             aria-label={`Move ${priority.title} up`}
                             className={`
-                              p-2 rounded-lg transition-colors
+                              p-2 rounded-lg transition-colours
                               ${
                                 index === 0
                                   ? "text-[#1A231E]/20 cursor-not-allowed"
@@ -1048,7 +1048,7 @@ export default function FreeAssessmentSteps() {
                             disabled={index === priorities.length - 1}
                             aria-label={`Move ${priority.title} down`}
                             className={`
-                              p-2 rounded-lg transition-colors
+                              p-2 rounded-lg transition-colours
                               ${
                                 index === priorities.length - 1
                                   ? "text-[#1A231E]/20 cursor-not-allowed"
@@ -1069,7 +1069,7 @@ export default function FreeAssessmentSteps() {
                   <ol className="space-y-2">
                     {priorities.map((priority, index) => (
                       <li key={priority.id} className="flex items-center gap-3">
-                        <span className="w-6 h-6 rounded-full bg-[#4F6F52] text-white text-sm font-medium flex items-center justify-center">
+                        <span className="w-6 h-6 rounded-full bg-[#4F6F52] text-white text-sm font-medium flex items-center justify-centre">
                           {index + 1}
                         </span>
                         <span className="text-base font-medium text-[#1A231E]">{priority.title}</span>

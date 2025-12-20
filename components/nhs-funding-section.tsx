@@ -24,7 +24,7 @@ export function NHSFundingSection() {
   return (
     <section className="py-20 lg:py-32 bg-[#E8F4FD]">
       <div className="container mx-auto px-4">
-        <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
+        <div className="text-centre max-w-3xl mx-auto mb-16 space-y-4">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#1A231E]">
             Could the NHS Pay for Everything?
           </h2>
@@ -40,9 +40,9 @@ export function NHSFundingSection() {
             return (
               <Card
                 key={index}
-                className="p-8 bg-white border-2 border-[#4F6F52]/10 rounded-3xl shadow-soft-md text-center"
+                className="p-8 bg-white border-2 border-[#4F6F52]/10 rounded-3xl shadow-soft-md text-centre"
               >
-                <div className="w-16 h-16 rounded-2xl bg-[#4F6F52]/10 flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 rounded-2xl bg-[#4F6F52]/10 flex items-center justify-centre mx-auto mb-4">
                   <Icon className="w-8 h-8 text-[#4F6F52]" />
                 </div>
                 <h3 className="text-xl font-serif font-bold text-[#1A231E] mb-2">{benefit.title}</h3>
@@ -52,7 +52,7 @@ export function NHSFundingSection() {
           })}
         </div>
 
-        <div className="text-center">
+        <div className="text-centre">
           <Button className="h-14 px-8 bg-[#4F6F52] hover:bg-[#3A5140] text-white font-semibold text-lg rounded-2xl shadow-soft-lg hover:shadow-soft-xl hover:scale-105 transition-all">
             See If You Qualify
           </Button>

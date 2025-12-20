@@ -52,7 +52,7 @@ export function FundingResultsScreen({ result }: FundingResultsScreenProps) {
         <section className="py-16 sm:py-20 lg:py-24 bg-gradient-to-b from-background to-muted/20">
             <div className="container mx-auto px-4 sm:px-6 max-w-5xl">
                 {/* Header */}
-                <div className="text-center mb-12 space-y-4">
+                <div className="text-centre mb-12 space-y-4">
                     <Badge className="inline-flex items-center gap-2 bg-primary text-primary-foreground">
                         <CheckCircle2 className="w-4 h-4" />
                         Assessment Complete
@@ -331,7 +331,7 @@ export function FundingResultsScreen({ result }: FundingResultsScreenProps) {
                                     },
                                 ].map((step, i) => (
                                     <div key={i} className="flex gap-4 pb-4 border-b border-border last:border-0 last:pb-0">
-                                        <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-sm">
+                                        <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-centre font-bold text-sm">
                                             {step.num}
                                         </div>
                                         <div>
@@ -352,13 +352,13 @@ export function FundingResultsScreen({ result }: FundingResultsScreenProps) {
                 </div>
 
                 {/* CTA Section */}
-                <div className="bg-gradient-to-r from-primary to-primary/80 rounded-2xl p-8 text-primary-foreground text-center space-y-6">
+                <div className="bg-gradient-to-r from-primary to-primary/80 rounded-2xl p-8 text-primary-foreground text-centre space-y-6">
                     <h3 className="text-2xl font-bold">Get Your Detailed Professional Report</h3>
                     <p className="text-lg opacity-90 max-w-2xl mx-auto">
                         Our £119 Professional Report includes personalized appeal guidance, council negotiation scripts, and
                         detailed breakdown of your eligibility scores.
                     </p>
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                    <div className="flex flex-col sm:flex-row gap-4 justify-centre">
                         <Button size="lg" className="bg-background text-primary hover:bg-background/90 font-semibold">
                             <Download className="w-5 h-5 mr-2" />
                             Download Summary PDF

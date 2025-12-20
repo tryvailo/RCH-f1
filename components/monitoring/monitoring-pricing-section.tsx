@@ -98,7 +98,7 @@ export function MonitoringPricingSection() {
       <div className="container mx-auto px-4">
         <div className="max-w-7xl mx-auto">
           {/* Cost Comparison - Enhanced */}
-          <div className="text-center max-w-4xl mx-auto mb-12">
+          <div className="text-centre max-w-4xl mx-auto mb-12">
             <Badge className="mb-6 px-4 py-2 bg-[#D17A6F]/10 text-[#D17A6F] border-[#D17A6F]/20">
               THE REAL COST COMPARISON
             </Badge>
@@ -136,7 +136,7 @@ export function MonitoringPricingSection() {
             </div>
           </div>
 
-          <div className="text-center mb-12">
+          <div className="text-centre mb-12">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-foreground mb-4 text-balance">
               Choose Your Plan. Invest in Peace of Mind.
             </h2>

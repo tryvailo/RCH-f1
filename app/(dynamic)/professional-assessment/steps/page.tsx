@@ -205,13 +205,13 @@ interface OptionCardProps {
   label: string
   description?: string
   icon: React.ElementType
-  color: string
+  colour: string
   bgColor: string
   selected: boolean
   onClick: () => void
 }
 
-function OptionCard({ value, label, description, icon: Icon, color, bgColor, selected, onClick }: OptionCardProps) {
+function OptionCard({ value, label, description, icon: Icon, colour, bgColor, selected, onClick }: OptionCardProps) {
   return (
     <button
       type="button"
@@ -224,14 +224,14 @@ function OptionCard({ value, label, description, icon: Icon, color, bgColor, sel
     >
       <div className="flex items-start gap-3">
         <div className={`p-2.5 rounded-xl ${selected ? "bg-[#4F6F52]/20" : bgColor}`}>
-          <Icon className={`w-5 h-5 ${selected ? "text-[#4F6F52]" : color}`} />
+          <Icon className={`w-5 h-5 ${selected ? "text-[#4F6F52]" : colour}`} />
         </div>
         <div className="flex-1 min-w-0">
           <p className={`font-medium ${selected ? "text-[#4F6F52]" : "text-foreground"}`}>{label}</p>
           {description && <p className="text-sm text-muted-foreground mt-0.5">{description}</p>}
         </div>
         {selected && (
-          <div className="w-6 h-6 rounded-full bg-[#4F6F52] flex items-center justify-center flex-shrink-0">
+          <div className="w-6 h-6 rounded-full bg-[#4F6F52] flex items-center justify-centre flex-shrink-0">
             <Check className="w-4 h-4 text-white" />
           </div>
         )}
@@ -245,7 +245,7 @@ interface CheckboxOptionProps {
   label: string
   description?: string
   icon: React.ElementType
-  color: string
+  colour: string
   bgColor: string
   checked: boolean
   onChange: (checked: boolean) => void
@@ -256,7 +256,7 @@ function CheckboxOption({
   label,
   description,
   icon: Icon,
-  color,
+  colour,
   bgColor,
   checked,
   onChange,
@@ -270,7 +270,7 @@ function CheckboxOption({
       }`}
     >
       <div className={`p-2 rounded-xl ${checked ? "bg-[#4F6F52]/20" : bgColor}`}>
-        <Icon className={`w-5 h-5 ${checked ? "text-[#4F6F52]" : color}`} />
+        <Icon className={`w-5 h-5 ${checked ? "text-[#4F6F52]" : colour}`} />
       </div>
       <div className="flex-1 min-w-0">
         <p className={`font-medium ${checked ? "text-[#4F6F52]" : "text-foreground"}`}>{label}</p>
@@ -288,7 +288,7 @@ const careTypeOptions = [
     label: "Residential Care",
     description: "Help with daily living activities",
     icon: Home,
-    color: "text-[#4F6F52]",
+    colour: "text-[#4F6F52]",
     bgColor: "bg-[#4F6F52]/10",
   },
   {
@@ -296,7 +296,7 @@ const careTypeOptions = [
     label: "Dementia Care",
     description: "Specialist memory care support",
     icon: Brain,
-    color: "text-[#7C6A9A]",
+    colour: "text-[#7C6A9A]",
     bgColor: "bg-[#7C6A9A]/10",
   },
   {
@@ -304,7 +304,7 @@ const careTypeOptions = [
     label: "Nursing Care",
     description: "24-hour nursing support",
     icon: Stethoscope,
-    color: "text-[#4A90A4]",
+    colour: "text-[#4A90A4]",
     bgColor: "bg-[#4A90A4]/10",
   },
   {
@@ -312,7 +312,7 @@ const careTypeOptions = [
     label: "Palliative Care",
     description: "End-of-life comfort care",
     icon: HeartPulse,
-    color: "text-[#C7A17A]",
+    colour: "text-[#C7A17A]",
     bgColor: "bg-[#C7A17A]/10",
   },
   {
@@ -320,7 +320,7 @@ const careTypeOptions = [
     label: "Respite Care",
     description: "Short-term care breaks",
     icon: Calendar,
-    color: "text-[#6B8E6B]",
+    colour: "text-[#6B8E6B]",
     bgColor: "bg-[#6B8E6B]/10",
   },
 ]
@@ -331,23 +331,23 @@ const medicalConditionsOptions = [
     value: "dementia",
     label: "Dementia / Alzheimer's",
     icon: Brain,
-    color: "text-[#7C6A9A]",
+    colour: "text-[#7C6A9A]",
     bgColor: "bg-[#7C6A9A]/10",
   },
   {
     value: "parkinsons",
     label: "Parkinson's Disease",
     icon: Activity,
-    color: "text-[#4A90A4]",
+    colour: "text-[#4A90A4]",
     bgColor: "bg-[#4A90A4]/10",
   },
-  { value: "stroke", label: "Stroke Recovery", icon: HeartPulse, color: "text-[#C7A17A]", bgColor: "bg-[#C7A17A]/10" },
-  { value: "heart", label: "Heart Conditions", icon: Heart, color: "text-red-500", bgColor: "bg-red-500/10" },
-  { value: "diabetes", label: "Diabetes", icon: Activity, color: "text-[#4F6F52]", bgColor: "bg-[#4F6F52]/10" },
-  { value: "arthritis", label: "Arthritis", icon: Accessibility, color: "text-[#6B8E6B]", bgColor: "bg-[#6B8E6B]/10" },
-  { value: "vision", label: "Visual Impairment", icon: Eye, color: "text-[#4A90A4]", bgColor: "bg-[#4A90A4]/10" },
-  { value: "hearing", label: "Hearing Impairment", icon: Ear, color: "text-[#7C6A9A]", bgColor: "bg-[#7C6A9A]/10" },
-  { value: "none", label: "None of the above", icon: CircleOff, color: "text-muted-foreground", bgColor: "bg-muted" },
+  { value: "stroke", label: "Stroke Recovery", icon: HeartPulse, colour: "text-[#C7A17A]", bgColor: "bg-[#C7A17A]/10" },
+  { value: "heart", label: "Heart Conditions", icon: Heart, colour: "text-red-500", bgColor: "bg-red-500/10" },
+  { value: "diabetes", label: "Diabetes", icon: Activity, colour: "text-[#4F6F52]", bgColor: "bg-[#4F6F52]/10" },
+  { value: "arthritis", label: "Arthritis", icon: Accessibility, colour: "text-[#6B8E6B]", bgColor: "bg-[#6B8E6B]/10" },
+  { value: "vision", label: "Visual Impairment", icon: Eye, colour: "text-[#4A90A4]", bgColor: "bg-[#4A90A4]/10" },
+  { value: "hearing", label: "Hearing Impairment", icon: Ear, colour: "text-[#7C6A9A]", bgColor: "bg-[#7C6A9A]/10" },
+  { value: "none", label: "None of the above", icon: CircleOff, colour: "text-muted-foreground", bgColor: "bg-muted" },
 ]
 
 // Mobility options
@@ -357,7 +357,7 @@ const mobilityOptions = [
     label: "Fully Independent",
     description: "Walks without assistance",
     icon: User,
-    color: "text-[#4F6F52]",
+    colour: "text-[#4F6F52]",
     bgColor: "bg-[#4F6F52]/10",
   },
   {
@@ -365,7 +365,7 @@ const mobilityOptions = [
     label: "Uses Walking Aid",
     description: "Stick, frame, or walker",
     icon: Accessibility,
-    color: "text-[#6B8E6B]",
+    colour: "text-[#6B8E6B]",
     bgColor: "bg-[#6B8E6B]/10",
   },
   {
@@ -373,7 +373,7 @@ const mobilityOptions = [
     label: "Wheelchair User",
     description: "Requires wheelchair most of the time",
     icon: Accessibility,
-    color: "text-[#4A90A4]",
+    colour: "text-[#4A90A4]",
     bgColor: "bg-[#4A90A4]/10",
   },
   {
@@ -381,7 +381,7 @@ const mobilityOptions = [
     label: "Bed Bound",
     description: "Limited to bed or chair",
     icon: Bed,
-    color: "text-[#C7A17A]",
+    colour: "text-[#C7A17A]",
     bgColor: "bg-[#C7A17A]/10",
   },
 ]
@@ -393,7 +393,7 @@ const medicationOptions = [
     label: "Self-Managed",
     description: "Can manage own medication",
     icon: User,
-    color: "text-[#4F6F52]",
+    colour: "text-[#4F6F52]",
     bgColor: "bg-[#4F6F52]/10",
   },
   {
@@ -401,7 +401,7 @@ const medicationOptions = [
     label: "Needs Reminders",
     description: "Reminders to take medication",
     icon: Clock,
-    color: "text-[#6B8E6B]",
+    colour: "text-[#6B8E6B]",
     bgColor: "bg-[#6B8E6B]/10",
   },
   {
@@ -409,7 +409,7 @@ const medicationOptions = [
     label: "Full Administration",
     description: "Staff to administer medication",
     icon: Pill,
-    color: "text-[#4A90A4]",
+    colour: "text-[#4A90A4]",
     bgColor: "bg-[#4A90A4]/10",
   },
   {
@@ -417,7 +417,7 @@ const medicationOptions = [
     label: "Complex Medication",
     description: "Injections or special handling",
     icon: Stethoscope,
-    color: "text-[#C7A17A]",
+    colour: "text-[#C7A17A]",
     bgColor: "bg-[#C7A17A]/10",
   },
 ]
@@ -428,23 +428,23 @@ const equipmentOptions = [
     value: "none",
     label: "No Special Equipment",
     icon: CircleOff,
-    color: "text-muted-foreground",
+    colour: "text-muted-foreground",
     bgColor: "bg-muted",
   },
   {
     value: "hospital_bed",
     label: "Hospital-Style Bed",
     icon: Bed,
-    color: "text-[#4A90A4]",
+    colour: "text-[#4A90A4]",
     bgColor: "bg-[#4A90A4]/10",
   },
-  { value: "hoist", label: "Hoist / Lift", icon: Accessibility, color: "text-[#6B8E6B]", bgColor: "bg-[#6B8E6B]/10" },
-  { value: "oxygen", label: "Oxygen Equipment", icon: Activity, color: "text-[#C7A17A]", bgColor: "bg-[#C7A17A]/10" },
+  { value: "hoist", label: "Hoist / Lift", icon: Accessibility, colour: "text-[#6B8E6B]", bgColor: "bg-[#6B8E6B]/10" },
+  { value: "oxygen", label: "Oxygen Equipment", icon: Activity, colour: "text-[#C7A17A]", bgColor: "bg-[#C7A17A]/10" },
   {
     value: "pressure_mattress",
     label: "Pressure Relief Mattress",
     icon: Bed,
-    color: "text-[#7C6A9A]",
+    colour: "text-[#7C6A9A]",
     bgColor: "bg-[#7C6A9A]/10",
   },
 ]
@@ -456,7 +456,7 @@ const fallHistoryOptions = [
     label: "No Falls",
     description: "No falls in the past year",
     icon: Check,
-    color: "text-[#4F6F52]",
+    colour: "text-[#4F6F52]",
     bgColor: "bg-[#4F6F52]/10",
   },
   {
@@ -464,7 +464,7 @@ const fallHistoryOptions = [
     label: "Occasional Falls",
     description: "1-2 falls in the past year",
     icon: AlertTriangle,
-    color: "text-[#C7A17A]",
+    colour: "text-[#C7A17A]",
     bgColor: "bg-[#C7A17A]/10",
   },
   {
@@ -472,7 +472,7 @@ const fallHistoryOptions = [
     label: "Frequent Falls",
     description: "3+ falls in the past year",
     icon: AlertTriangle,
-    color: "text-red-500",
+    colour: "text-red-500",
     bgColor: "bg-red-500/10",
   },
   {
@@ -480,42 +480,42 @@ const fallHistoryOptions = [
     label: "Recent Serious Fall",
     description: "Required hospital treatment",
     icon: Stethoscope,
-    color: "text-[#4A90A4]",
+    colour: "text-[#4A90A4]",
     bgColor: "bg-[#4A90A4]/10",
   },
 ]
 
 // Allergy options
 const allergyOptions = [
-  { value: "none", label: "No Known Allergies", icon: Check, color: "text-[#4F6F52]", bgColor: "bg-[#4F6F52]/10" },
+  { value: "none", label: "No Known Allergies", icon: Check, colour: "text-[#4F6F52]", bgColor: "bg-[#4F6F52]/10" },
   {
     value: "penicillin",
     label: "Penicillin / Antibiotics",
     icon: Pill,
-    color: "text-[#C7A17A]",
+    colour: "text-[#C7A17A]",
     bgColor: "bg-[#C7A17A]/10",
   },
-  { value: "latex", label: "Latex", icon: Shield, color: "text-[#4A90A4]", bgColor: "bg-[#4A90A4]/10" },
+  { value: "latex", label: "Latex", icon: Shield, colour: "text-[#4A90A4]", bgColor: "bg-[#4A90A4]/10" },
   {
     value: "food",
     label: "Food Allergies",
     icon: UtensilsCrossed,
-    color: "text-[#7C6A9A]",
+    colour: "text-[#7C6A9A]",
     bgColor: "bg-[#7C6A9A]/10",
   },
-  { value: "other", label: "Other Allergies", icon: AlertTriangle, color: "text-red-500", bgColor: "bg-red-500/10" },
+  { value: "other", label: "Other Allergies", icon: AlertTriangle, colour: "text-red-500", bgColor: "bg-red-500/10" },
 ]
 
 // Dietary options
 const dietaryOptions = [
-  { value: "none", label: "No Special Requirements", icon: Check, color: "text-[#4F6F52]", bgColor: "bg-[#4F6F52]/10" },
-  { value: "vegetarian", label: "Vegetarian", icon: Leaf, color: "text-[#6B8E6B]", bgColor: "bg-[#6B8E6B]/10" },
-  { value: "vegan", label: "Vegan", icon: Apple, color: "text-[#4F6F52]", bgColor: "bg-[#4F6F52]/10" },
-  { value: "halal", label: "Halal", icon: UtensilsCrossed, color: "text-[#C7A17A]", bgColor: "bg-[#C7A17A]/10" },
-  { value: "kosher", label: "Kosher", icon: UtensilsCrossed, color: "text-[#4A90A4]", bgColor: "bg-[#4A90A4]/10" },
-  { value: "diabetic", label: "Diabetic Diet", icon: Scale, color: "text-[#7C6A9A]", bgColor: "bg-[#7C6A9A]/10" },
-  { value: "soft", label: "Soft / Pureed Food", icon: Cookie, color: "text-[#6B8E6B]", bgColor: "bg-[#6B8E6B]/10" },
-  { value: "gluten_free", label: "Gluten Free", icon: Wheat, color: "text-[#C7A17A]", bgColor: "bg-[#C7A17A]/10" },
+  { value: "none", label: "No Special Requirements", icon: Check, colour: "text-[#4F6F52]", bgColor: "bg-[#4F6F52]/10" },
+  { value: "vegetarian", label: "Vegetarian", icon: Leaf, colour: "text-[#6B8E6B]", bgColor: "bg-[#6B8E6B]/10" },
+  { value: "vegan", label: "Vegan", icon: Apple, colour: "text-[#4F6F52]", bgColor: "bg-[#4F6F52]/10" },
+  { value: "halal", label: "Halal", icon: UtensilsCrossed, colour: "text-[#C7A17A]", bgColor: "bg-[#C7A17A]/10" },
+  { value: "kosher", label: "Kosher", icon: UtensilsCrossed, colour: "text-[#4A90A4]", bgColor: "bg-[#4A90A4]/10" },
+  { value: "diabetic", label: "Diabetic Diet", icon: Scale, colour: "text-[#7C6A9A]", bgColor: "bg-[#7C6A9A]/10" },
+  { value: "soft", label: "Soft / Pureed Food", icon: Cookie, colour: "text-[#6B8E6B]", bgColor: "bg-[#6B8E6B]/10" },
+  { value: "gluten_free", label: "Gluten Free", icon: Wheat, colour: "text-[#C7A17A]", bgColor: "bg-[#C7A17A]/10" },
 ]
 
 // Behavioral options
@@ -525,7 +525,7 @@ const behavioralOptions = [
     label: "No Concerns",
     description: "No behavioral issues",
     icon: Check,
-    color: "text-[#4F6F52]",
+    colour: "text-[#4F6F52]",
     bgColor: "bg-[#4F6F52]/10",
   },
   {
@@ -533,7 +533,7 @@ const behavioralOptions = [
     label: "Wandering Risk",
     description: "May wander or get lost",
     icon: MapPin,
-    color: "text-[#C7A17A]",
+    colour: "text-[#C7A17A]",
     bgColor: "bg-[#C7A17A]/10",
   },
   {
@@ -541,7 +541,7 @@ const behavioralOptions = [
     label: "Aggression Risk",
     description: "May become agitated",
     icon: AlertTriangle,
-    color: "text-red-500",
+    colour: "text-red-500",
     bgColor: "bg-red-500/10",
   },
   {
@@ -549,7 +549,7 @@ const behavioralOptions = [
     label: "Sundowning",
     description: "Evening confusion/agitation",
     icon: Moon,
-    color: "text-[#7C6A9A]",
+    colour: "text-[#7C6A9A]",
     bgColor: "bg-[#7C6A9A]/10",
   },
   {
@@ -557,7 +557,7 @@ const behavioralOptions = [
     label: "Depression / Anxiety",
     description: "Mental health support needed",
     icon: Heart,
-    color: "text-[#4A90A4]",
+    colour: "text-[#4A90A4]",
     bgColor: "bg-[#4A90A4]/10",
   },
 ]
@@ -569,7 +569,7 @@ const distanceOptions = [
     label: "Within 5 miles",
     description: "Very close to home",
     icon: Target,
-    color: "text-[#4F6F52]",
+    colour: "text-[#4F6F52]",
     bgColor: "bg-[#4F6F52]/10",
   },
   {
@@ -577,7 +577,7 @@ const distanceOptions = [
     label: "Within 10 miles",
     description: "Short drive away",
     icon: Car,
-    color: "text-[#6B8E6B]",
+    colour: "text-[#6B8E6B]",
     bgColor: "bg-[#6B8E6B]/10",
   },
   {
@@ -585,7 +585,7 @@ const distanceOptions = [
     label: "Within 25 miles",
     description: "Wider search area",
     icon: MapPin,
-    color: "text-[#4A90A4]",
+    colour: "text-[#4A90A4]",
     bgColor: "bg-[#4A90A4]/10",
   },
   {
@@ -593,7 +593,7 @@ const distanceOptions = [
     label: "Anywhere suitable",
     description: "Best match regardless of distance",
     icon: Target,
-    color: "text-[#C7A17A]",
+    colour: "text-[#C7A17A]",
     bgColor: "bg-[#C7A17A]/10",
   },
 ]
@@ -605,7 +605,7 @@ const timelineOptions = [
     label: "Urgent (Within 2 weeks)",
     description: "Immediate placement needed",
     icon: AlertTriangle,
-    color: "text-red-500",
+    colour: "text-red-500",
     bgColor: "bg-red-500/10",
   },
   {
@@ -613,7 +613,7 @@ const timelineOptions = [
     label: "Soon (1-2 months)",
     description: "Planning ahead",
     icon: Calendar,
-    color: "text-[#C7A17A]",
+    colour: "text-[#C7A17A]",
     bgColor: "bg-[#C7A17A]/10",
   },
   {
@@ -621,7 +621,7 @@ const timelineOptions = [
     label: "Planning (3-6 months)",
     description: "Researching options",
     icon: Clock,
-    color: "text-[#4F6F52]",
+    colour: "text-[#4F6F52]",
     bgColor: "bg-[#4F6F52]/10",
   },
   {
@@ -629,7 +629,7 @@ const timelineOptions = [
     label: "Future Planning",
     description: "6+ months away",
     icon: Calendar,
-    color: "text-[#6B8E6B]",
+    colour: "text-[#6B8E6B]",
     bgColor: "bg-[#6B8E6B]/10",
   },
 ]
@@ -641,7 +641,7 @@ const budgetOptions = [
     label: "Under £1,000/week",
     description: "Council-funded rate",
     icon: PoundSterling,
-    color: "text-[#6B8E6B]",
+    colour: "text-[#6B8E6B]",
     bgColor: "bg-[#6B8E6B]/10",
   },
   {
@@ -649,7 +649,7 @@ const budgetOptions = [
     label: "£1,000 - £1,500/week",
     description: "Standard private rate",
     icon: Coins,
-    color: "text-[#4F6F52]",
+    colour: "text-[#4F6F52]",
     bgColor: "bg-[#4F6F52]/10",
   },
   {
@@ -657,7 +657,7 @@ const budgetOptions = [
     label: "£1,500 - £2,000/week",
     description: "Premium care homes",
     icon: Building2,
-    color: "text-[#4A90A4]",
+    colour: "text-[#4A90A4]",
     bgColor: "bg-[#4A90A4]/10",
   },
   {
@@ -665,7 +665,7 @@ const budgetOptions = [
     label: "Over £2,000/week",
     description: "Luxury care homes",
     icon: Home,
-    color: "text-[#C7A17A]",
+    colour: "text-[#C7A17A]",
     bgColor: "bg-[#C7A17A]/10",
   },
   {
@@ -673,7 +673,7 @@ const budgetOptions = [
     label: "Not Sure Yet",
     description: "Help me understand costs",
     icon: HelpCircle,
-    color: "text-muted-foreground",
+    colour: "text-muted-foreground",
     bgColor: "bg-muted",
   },
 ]
@@ -1114,7 +1114,7 @@ export default function ProfessionalAssessmentStepsPage() {
                   value={option.value}
                   label={option.label}
                   icon={option.icon}
-                  color={option.color}
+                  colour={option.colour}
                   bgColor={option.bgColor}
                   checked={formData.medical_conditions.includes(option.value)}
                   onChange={(checked) => handleMultiSelect("medical_conditions", option.value, checked)}
@@ -1181,7 +1181,7 @@ export default function ProfessionalAssessmentStepsPage() {
                   value={option.value}
                   label={option.label}
                   icon={option.icon}
-                  color={option.color}
+                  colour={option.colour}
                   bgColor={option.bgColor}
                   checked={formData.special_equipment.includes(option.value)}
                   onChange={(checked) => handleMultiSelect("special_equipment", option.value, checked)}
@@ -1227,7 +1227,7 @@ export default function ProfessionalAssessmentStepsPage() {
                   value={option.value}
                   label={option.label}
                   icon={option.icon}
-                  color={option.color}
+                  colour={option.colour}
                   bgColor={option.bgColor}
                   checked={formData.major_allergies.includes(option.value)}
                   onChange={(checked) => handleMultiSelect("major_allergies", option.value, checked)}
@@ -1252,7 +1252,7 @@ export default function ProfessionalAssessmentStepsPage() {
                   value={option.value}
                   label={option.label}
                   icon={option.icon}
-                  color={option.color}
+                  colour={option.colour}
                   bgColor={option.bgColor}
                   checked={formData.dietary_requirements.includes(option.value)}
                   onChange={(checked) => handleMultiSelect("dietary_requirements", option.value, checked)}
@@ -1278,7 +1278,7 @@ export default function ProfessionalAssessmentStepsPage() {
                   label={option.label}
                   description={option.description}
                   icon={option.icon}
-                  color={option.color}
+                  colour={option.colour}
                   bgColor={option.bgColor}
                   checked={formData.behavioral_concerns.includes(option.value)}
                   onChange={(checked) => handleMultiSelect("behavioral_concerns", option.value, checked)}
@@ -1322,12 +1322,15 @@ export default function ProfessionalAssessmentStepsPage() {
             }
 
   // Check if current step has multi-select (needs Continue button)
-  const isMultiSelectStep = ["care_type", "conditions", "equipment", "allergies", "dietary", "behavioral"].includes(
-    STEPS[currentStep].id,
-  )
-  const isTextInputStep = ["name", "email", "phone", "emergency", "location"].includes(STEPS[currentStep].id)
-  const isPrioritiesStep = STEPS[currentStep].id === "priorities"
-  const needsContinueButton = (isMultiSelectStep || isTextInputStep || currentStep === TOTAL_STEPS - 1) && !isPrioritiesStep
+  const isMultiSelectStep = currentStepData ? ["care_type", "conditions", "equipment", "allergies", "dietary", "behavioral"].includes(
+    currentStepData.id,
+  ) : false
+  const isTextInputStep = currentStepData ? ["name", "email", "phone", "emergency", "location"].includes(currentStepData.id) : false
+  const isSingleSelectStep = currentStepData ? ["distance", "timeline", "mobility", "medication", "falls", "budget"].includes(
+    currentStepData.id,
+  ) : false
+  const isPrioritiesStep = currentStepData?.id === "priorities"
+  const needsContinueButton = (isMultiSelectStep || isTextInputStep || isSingleSelectStep) && !isPrioritiesStep
 
   return (
     <>
@@ -1335,7 +1338,7 @@ export default function ProfessionalAssessmentStepsPage() {
       <div className="min-h-screen bg-gradient-to-b from-[#4F6F52]/5 to-background">
         <div className="max-w-2xl mx-auto px-4 py-6 sm:py-8">
           {/* Header with price badge */}
-          <div className="text-center mb-6">
+          <div className="text-centre mb-6">
             <div className="inline-flex items-center gap-2 mb-2">
               <h1 className="text-xl sm:text-2xl font-serif font-bold text-foreground">Professional Assessment</h1>
               <span className="px-2 py-1 bg-[#4F6F52] text-white text-xs font-medium rounded">£119</span>
@@ -1364,7 +1367,7 @@ export default function ProfessionalAssessmentStepsPage() {
                 return (
                   <div key={category} className="flex-1 flex flex-col items-center">
                     <div
-                      className={`w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center transition-all ${
+                      className={`w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-centre transition-all ${
                         isCompleted
                           ? "bg-[#4F6F52] text-white"
                           : isActive
@@ -1394,7 +1397,7 @@ export default function ProfessionalAssessmentStepsPage() {
             </div>
 
             {/* Step counter */}
-            <div className="text-center">
+            <div className="text-centre">
               <span className="text-sm text-muted-foreground">
                 Question {currentStep + 1} of {TOTAL_STEPS}
               </span>
@@ -1402,7 +1405,7 @@ export default function ProfessionalAssessmentStepsPage() {
           </div>
 
           {showReinforcement && currentStepData.reinforcement && (
-            <div className="mb-6 p-4 bg-[#4F6F52]/10 border border-[#4F6F52]/20 rounded-xl text-center animate-in fade-in duration-300">
+            <div className="mb-6 p-4 bg-[#4F6F52]/10 border border-[#4F6F52]/20 rounded-xl text-centre animate-in fade-in duration-300">
               <p className="text-[#4F6F52] font-medium">{currentStepData.reinforcement}</p>
             </div>
           )}
@@ -1456,7 +1459,7 @@ export default function ProfessionalAssessmentStepsPage() {
           </div>
 
           {/* Trust signals */}
-          <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 text-sm text-muted-foreground">
+          <div className="mt-8 flex flex-col sm:flex-row items-center justify-centre gap-4 text-sm text-muted-foreground">
             <div className="flex items-center gap-2">
               <Shield className="w-4 h-4 text-[#4F6F52]" />
               <span>Your data is secure and confidential</span>

@@ -121,7 +121,7 @@ export function CQCDeepDive({
                 {/* Timeline node */}
                 <div className="flex flex-col items-center">
                   <div
-                    className={`w-10 h-10 rounded-full border-4 flex items-center justify-center font-bold text-[14px] ${getRatingColor(rating.overall_rating)}`}
+                    className={`w-10 h-10 rounded-full border-4 flex items-center justify-centre font-bold text-[14px] ${getRatingColor(rating.overall_rating)}`}
                   >
                     {index + 1}
                   </div>

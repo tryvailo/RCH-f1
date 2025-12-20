@@ -75,7 +75,7 @@ export function MonitoringFaqSection() {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-[#E8E5DF]/30 via-transparent to-transparent opacity-40" />
 
       <div className="container relative mx-auto px-4 max-w-5xl">
-        <div className="text-center mb-16 md:mb-20 space-y-5">
+        <div className="text-centre mb-16 md:mb-20 space-y-5">
           <Badge
             variant="outline"
             className="mx-auto text-xs font-semibold tracking-wide border-[#8B7355]/20 text-[#8B7355] bg-white/60 backdrop-blur-sm px-4 py-1.5 shadow-sm"
@@ -98,9 +98,9 @@ export function MonitoringFaqSection() {
                 value={`item-${index}`}
                 className="group bg-white/70 backdrop-blur-xl border border-[#E8E5DF]/60 hover:border-[#8B7355]/40 rounded-3xl overflow-hidden shadow-[0_2px_16px_-4px_rgba(0,0,0,0.06)] hover:shadow-[0_8px_32px_-8px_rgba(139,115,85,0.12)] transition-all duration-500 ease-out"
               >
-                <AccordionTrigger className="text-lg md:text-xl font-semibold text-[#1A231E] px-6 md:px-8 py-6 md:py-7 text-left hover:no-underline group-hover:text-[#8B7355] transition-colors duration-300 [&[data-state=open]]:text-[#8B7355]">
+                <AccordionTrigger className="text-lg md:text-xl font-semibold text-[#1A231E] px-6 md:px-8 py-6 md:py-7 text-left hover:no-underline group-hover:text-[#8B7355] transition-colours duration-300 [&[data-state=open]]:text-[#8B7355]">
                   <div className="flex items-start gap-4 pr-4">
-                    <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#8B7355] to-[#6F5D47] flex items-center justify-center flex-shrink-0 mt-1 group-data-[state=open]:scale-110 transition-transform">
+                    <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#8B7355] to-[#6F5D47] flex items-center justify-centre flex-shrink-0 mt-1 group-data-[state=open]:scale-110 transition-transform">
                       <HelpCircle className="w-5 h-5 text-white" strokeWidth={2} />
                     </div>
                     <span className="flex-1">{faq.question}</span>
@@ -114,12 +114,12 @@ export function MonitoringFaqSection() {
           </Accordion>
         </div>
 
-        <div className="mt-16 md:mt-20 bg-gradient-to-r from-[#4F6F52] to-[#3A5140] rounded-3xl p-8 md:p-10 text-center shadow-soft-xl max-w-2xl mx-auto">
+        <div className="mt-16 md:mt-20 bg-gradient-to-r from-[#4F6F52] to-[#3A5140] rounded-3xl p-8 md:p-10 text-centre shadow-soft-xl max-w-2xl mx-auto">
           <h3 className="text-2xl md:text-3xl font-serif font-bold text-white mb-4">Still have questions?</h3>
           <p className="text-white/90 mb-6 text-lg leading-relaxed">
             Try it risk-free for 30 days. If our monitoring service doesn't provide the peace of mind you're looking for, we'll provide a full refund.
           </p>
-          <div className="flex items-center justify-center gap-3 mb-6">
+          <div className="flex items-center justify-centre gap-3 mb-6">
             <Check className="w-6 h-6 text-white flex-shrink-0" strokeWidth={2.5} />
             <span className="text-white font-semibold">30-day money-back guarantee • Cancel anytime</span>
           </div>

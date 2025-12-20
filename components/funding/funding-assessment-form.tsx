@@ -333,7 +333,7 @@ export function FundingAssessmentForm() {
 
             {/* Trust Signals */}
             {isLastQuestion && (
-              <div className="flex items-center justify-center gap-6 pt-4 text-sm text-[#1A231E]/60">
+              <div className="flex items-center justify-centre gap-6 pt-4 text-sm text-[#1A231E]/60">
                 <div className="flex items-center gap-2">
                   <Shield className="w-4 h-4 text-[#4F6F52]" />
                   <span>Secure Payment</span>

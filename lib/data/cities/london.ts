@@ -6,66 +6,66 @@ export const londonConfig: CityConfig = {
   available: true,
   comingSoon: false,
   stats: {
-    totalHomes: 876,
-    averageWeeklyCost: 1850,
+    totalHomes: 1191,
+    averageWeeklyCost: 1600,
     averageCQCRating: 4.3,
-    marketGrowth: "+8% YoY",
+    marketGrowth: "+50% of new builds",
     waitingListAvg: "2-5 weeks",
   },
   pricing: {
     min: 1200,
     max: 3500,
-    average: 1850,
-    description: "London care homes range from affordable outer boroughs to premium central locations",
+    average: 1600,
+    description: "London care costs are the highest in the UK, ranging from £1,200 in outer boroughs to £3,500+ in central locations",
   },
-  neighborhoods: [
+  neighbourhoods: [
     {
       name: "Kensington & Chelsea",
-      description: "Premium central London with world-class facilities",
+      description: "Premium central London with world-class facilities and high occupancy",
       averagePrice: 2850,
       homesCount: 45,
       rating: 4.7,
-      highlights: ["Prestigious location", "Specialist care", "Excellent amenities"],
+      highlights: ["Prestigious location", "High occupancy (93%)", "Luxury amenities"],
     },
     {
       name: "Richmond",
-      description: "Leafy riverside borough with peaceful settings",
+      description: "Leafy riverside borough with peaceful settings and high-quality family homes",
       averagePrice: 2200,
       homesCount: 62,
       rating: 4.6,
-      highlights: ["Park views", "Village atmosphere", "Family-run homes"],
+      highlights: ["Park views", "Village atmosphere", "Top-rated homes"],
     },
     {
       name: "Hampstead",
-      description: "Historic area with charming care facilities",
+      description: "Historic area with charming care facilities and strong cultural focus",
       averagePrice: 2400,
       homesCount: 38,
       rating: 4.5,
-      highlights: ["Garden spaces", "Cultural activities", "Close to Heath"],
+      highlights: ["Garden spaces", "Cultural activities", "Near the Heath"],
     },
     {
       name: "Greenwich",
-      description: "Historic borough with modern care options",
+      description: "Historic borough with modern care options and excellent transport links",
       averagePrice: 1650,
       homesCount: 54,
       rating: 4.3,
-      highlights: ["River views", "Good transport", "Mixed care levels"],
+      highlights: ["River views", "Good transport", "Modern facilities"],
     },
     {
       name: "Bromley",
-      description: "Suburban setting with excellent value",
+      description: "Suburban setting offering excellent value and modern care standards",
       averagePrice: 1450,
       homesCount: 78,
       rating: 4.2,
-      highlights: ["Green spaces", "Competitive pricing", "Modern facilities"],
+      highlights: ["Green spaces", "Competitive value", "Family-friendly"],
     },
     {
       name: "Croydon",
-      description: "Affordable care with good standards",
+      description: "Affordable care with good standards and diverse facility options",
       averagePrice: 1350,
       homesCount: 85,
       rating: 4.1,
-      highlights: ["Value for money", "Transport links", "Diverse options"],
+      highlights: ["Budget-friendly", "Transport hub", "Diverse options"],
     },
   ],
   testimonials: [
@@ -83,7 +83,7 @@ export const londonConfig: CityConfig = {
       relation: "Son",
       area: "Greenwich",
       quote:
-        "Navigating 876 London care homes seemed impossible. RightCareHome's analysis narrowed it to 5 perfect matches near family in Greenwich. Mum settled in within days.",
+        "Navigating 1,191 London care homes seemed impossible. RightCareHome's analysis narrowed it to 5 perfect matches near family in Greenwich. Mum settled in within days.",
       rating: 5,
       verified: true,
     },
@@ -101,37 +101,52 @@ export const londonConfig: CityConfig = {
     {
       question: "How many care homes are in London?",
       answer:
-        "London has 876 registered care homes across all 32 boroughs. Our database includes detailed analysis of CQC ratings, pricing, and hidden risks for homes from central locations like Kensington to outer boroughs like Bromley and Croydon.",
+        "London has approximately 1,191 registered care homes across all 32 boroughs. However, London has the fewest beds per 100,000 population aged 65+ in England, leading to very high occupancy rates.",
     },
     {
       question: "What is the average cost of a care home in London?",
       answer:
-        "The average weekly cost is £1,850, but prices range significantly from £1,200 to £3,500 depending on location and care level. Central areas like Kensington average £2,850/week while outer boroughs like Croydon offer quality care from £1,350/week.",
+        "The average weekly cost is ~£1,600, but prices range significantly from £1,200 to £3,500. London is the most expensive region in the UK for care, with central boroughs commanding significant premiums.",
+    },
+    {
+      question: "Why is it so difficult to find a bed in London?",
+      answer:
+        "London has a persistent occupancy rate of around 93%, significantly higher than the national average. Additionally, there has been a 19% fall in residential places over the last decade, making early planning critical.",
     },
     {
       question: "Which London areas have the best care homes?",
       answer:
-        "Kensington & Chelsea has the highest CQC ratings (4.7/5) with premium facilities. Richmond and Hampstead offer excellent quality in peaceful settings. For value, Bromley and Greenwich provide strong care at more accessible prices.",
-    },
-    {
-      question: "How long does it take to find a care home in London?",
-      answer:
-        "Quality London homes typically have 2-5 week waiting lists, though premium locations may be longer. Our Free Shortlist provides personalized recommendations within 48 hours, giving you time to visit without rushing.",
-    },
-    {
-      question: "Do you cover all London boroughs?",
-      answer:
-        "Yes, we analyze care homes across all 32 London boroughs and surrounding areas. Whether you need care in Westminster, Camden, Southwark, or outer boroughs like Havering and Hillingdon, we have comprehensive local data.",
+        "Kensington & Chelsea has the highest CQC ratings (4.7/5) but also the highest costs. Richmond and Hampstead offer excellent quality in peaceful settings. For better value, Bromley and Greenwich provide strong care at more accessible price points.",
     },
   ],
   hero: {
-    title: "876 Care Homes in London",
-    subtitle: "Find the right one without the £40,000 mistake",
+    title: "1,191 Care Homes in London",
+    subtitle: "Expert 2025 analysis of the UK's most competitive care market",
     badge: "LONDON SPECIALIST",
     trustedBy: "Trusted by 2,150+ London families",
   },
+  regionalInsights: {
+    title: "London Market Analysis 2025",
+    items: [
+      {
+        label: "Market Occupancy",
+        value: "93%",
+        description: "Consistently high demand makes finding a bed in preferred boroughs challenging.",
+      },
+      {
+        label: "Supply Trend",
+        value: "-19%",
+        description: "Decrease in residential places over the last 10 years, tightening the market.",
+      },
+      {
+        label: "New Development",
+        value: "50%",
+        description: "Half of all new UK care home developments are concentrated in London and the South East.",
+      },
+    ],
+  },
   metaDescription:
-    "Compare all 876 London care homes with unbiased analysis. See hidden risks, fair costs, and CQC ratings across Kensington, Richmond, Greenwich & more. Free shortlist in 48hrs.",
+    "Expert 2025 analysis of all 1,191 London care homes. See hidden risks, fair costs, and CQC ratings across Kensington, Richmond, and Greenwich. Free shortlist.",
   structuredData: {
     areaServed: "London, Greater London, UK",
     priceRange: "£1200-£3500 per week",

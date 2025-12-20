@@ -89,7 +89,7 @@ export function ReportNavigation() {
             <button
               key={section.id}
               onClick={() => scrollToSection(section.id)}
-              className={`w-full text-left px-2 xl:px-3 py-2 rounded-lg text-xs xl:text-sm transition-colors ${
+              className={`w-full text-left px-2 xl:px-3 py-2 rounded-lg text-xs xl:text-sm transition-colours ${
                 activeSection === section.id
                   ? "bg-primary text-primary-foreground font-semibold"
                   : "text-muted-foreground hover:bg-muted hover:text-foreground"
@@ -122,7 +122,7 @@ export function ReportNavigation() {
                 <button
                   key={section.id}
                   onClick={() => scrollToSection(section.id)}
-                  className={`w-full text-left px-4 py-3 rounded-xl transition-colors ${
+                  className={`w-full text-left px-4 py-3 rounded-xl transition-colours ${
                     activeSection === section.id
                       ? "bg-primary text-primary-foreground font-semibold"
                       : "bg-white text-foreground hover:bg-muted border border-border"

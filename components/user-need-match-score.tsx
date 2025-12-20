@@ -203,11 +203,11 @@ const getOverallMatchBg = (score: number) => {
 const getImportanceBadge = (importance: "critical" | "important" | "nice-to-have") => {
   switch (importance) {
     case "critical":
-      return { text: "Critical", color: "bg-[#ef4444] text-white" }
+      return { text: "Critical", colour: "bg-[#ef4444] text-white" }
     case "important":
-      return { text: "Important", color: "bg-[#eab308] text-white" }
+      return { text: "Important", colour: "bg-[#eab308] text-white" }
     case "nice-to-have":
-      return { text: "Nice to Have", color: "bg-[#4F6F52] text-white" }
+      return { text: "Nice to Have", colour: "bg-[#4F6F52] text-white" }
   }
 }
 
@@ -287,7 +287,7 @@ export function UserNeedMatchScore({
         {/* Header */}
         <div className="mb-8 sm:mb-12 md:mb-16">
           <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-5 mb-4 sm:mb-6">
-            <div className="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 rounded-3xl bg-gradient-to-br from-[#4F6F52] to-[#3d5741] flex items-center justify-center shadow-soft-xl">
+            <div className="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 rounded-3xl bg-gradient-to-br from-[#4F6F52] to-[#3d5741] flex items-center justify-centre shadow-soft-xl">
               <Target className="w-9 h-9 sm:w-10 sm:h-10 md:w-11 md:h-11 text-white" strokeWidth={2.5} />
             </div>
             <div>
@@ -315,7 +315,7 @@ export function UserNeedMatchScore({
                   key={priority.category}
                   className="flex items-center gap-2 bg-[#FDFBF7] rounded-xl px-3 sm:px-4 py-2 border border-[#E8E5DF]"
                 >
-                  <span className={`px-2 py-0.5 rounded-md text-xs font-semibold ${badge.color}`}>{badge.text}</span>
+                  <span className={`px-2 py-0.5 rounded-md text-xs font-semibold ${badge.colour}`}>{badge.text}</span>
                   <span className="text-sm sm:text-base font-medium text-[#1A231E]">{priority.category}</span>
                   <span className="text-xs sm:text-sm text-[#1A231E]/60">({priority.weight}%)</span>
                 </div>
@@ -334,7 +334,7 @@ export function UserNeedMatchScore({
               {/* Home Header */}
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6 sm:mb-8 pb-6 border-b border-[#E8E5DF]">
                 <div className="flex items-center gap-3 sm:gap-4">
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-[#4F6F52]/10 flex items-center justify-center text-lg sm:text-xl font-bold text-[#4F6F52]">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-[#4F6F52]/10 flex items-center justify-centre text-lg sm:text-xl font-bold text-[#4F6F52]">
                     {index + 1}
                   </div>
                   <div>
@@ -352,7 +352,7 @@ export function UserNeedMatchScore({
                     </div>
                   </div>
                   <div
-                    className={`w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-gradient-to-br ${getOverallMatchBg(home.overallMatchScore)} flex items-center justify-center`}
+                    className={`w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-gradient-to-br ${getOverallMatchBg(home.overallMatchScore)} flex items-center justify-centre`}
                   >
                     <Target className="w-8 h-8 sm:w-10 sm:h-10 text-white" strokeWidth={2} />
                   </div>
@@ -426,7 +426,7 @@ export function UserNeedMatchScore({
         {/* Expert Note */}
         <Card className="bg-gradient-to-br from-[#4F6F52] to-[#3d5741] border-none p-6 sm:p-8 md:p-10 shadow-soft-xl rounded-3xl">
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
-            <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-white/20 flex items-center justify-center flex-shrink-0">
+            <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-white/20 flex items-center justify-centre flex-shrink-0">
               <Target className="w-7 h-7 sm:w-8 sm:h-8 text-white" strokeWidth={2.5} />
             </div>
             <div className="min-w-0">

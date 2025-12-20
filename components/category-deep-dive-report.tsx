@@ -66,11 +66,11 @@ const getStatusColor = (status: "excellent" | "good" | "concern") => {
 const getStatusBadge = (status: "excellent" | "good" | "concern") => {
   switch (status) {
     case "excellent":
-      return { text: "Excellent", color: "bg-[#22c55e] text-white" }
+      return { text: "Excellent", colour: "bg-[#22c55e] text-white" }
     case "good":
-      return { text: "Good", color: "bg-[#eab308] text-white" }
+      return { text: "Good", colour: "bg-[#eab308] text-white" }
     case "concern":
-      return { text: "Concern", color: "bg-[#ef4444] text-white" }
+      return { text: "Concern", colour: "bg-[#ef4444] text-white" }
   }
 }
 
@@ -153,7 +153,7 @@ export function CategoryDeepDiveReport({
         {/* Header */}
         <div className="mb-8 sm:mb-12 md:mb-16">
           <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-5 mb-4 sm:mb-6">
-            <div className="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 rounded-3xl bg-gradient-to-br from-[#4F6F52] to-[#3d5741] flex items-center justify-center shadow-soft-xl">
+            <div className="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 rounded-3xl bg-gradient-to-br from-[#4F6F52] to-[#3d5741] flex items-center justify-centre shadow-soft-xl">
               <IconComponent className="w-9 h-9 sm:w-10 sm:h-10 md:w-11 md:h-11 text-white" strokeWidth={2.5} />
             </div>
             <div>
@@ -210,7 +210,7 @@ export function CategoryDeepDiveReport({
                     </div>
                     <div className="flex items-center gap-3">
                       <span className="text-2xl sm:text-3xl font-bold text-[#1A231E]">{metric.value}</span>
-                      <span className={`px-3 py-1 rounded-full text-sm font-semibold ${badge.color}`}>
+                      <span className={`px-3 py-1 rounded-full text-sm font-semibold ${badge.colour}`}>
                         {badge.text}
                       </span>
                     </div>
@@ -270,7 +270,7 @@ export function CategoryDeepDiveReport({
             {home.verificationItems.map((item, index) => (
               <div key={index} className="border-b-2 border-[#E8E5DF] pb-6 last:border-0 last:pb-0">
                 <div className="flex items-start gap-3 mb-3">
-                  <div className="w-8 h-8 rounded-full bg-[#4F6F52] flex items-center justify-center text-white font-bold text-sm flex-shrink-0">
+                  <div className="w-8 h-8 rounded-full bg-[#4F6F52] flex items-center justify-centre text-white font-bold text-sm flex-shrink-0">
                     {index + 1}
                   </div>
                   <h3 className="text-lg sm:text-xl font-bold text-[#1A231E]">"{item.question}"</h3>
@@ -297,7 +297,7 @@ export function CategoryDeepDiveReport({
         {/* Expert Note */}
         <Card className="bg-gradient-to-br from-[#4F6F52] to-[#3d5741] border-none p-6 sm:p-8 md:p-10 shadow-soft-xl rounded-3xl">
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
-            <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-white/20 flex items-center justify-center flex-shrink-0">
+            <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-white/20 flex items-center justify-centre flex-shrink-0">
               <IconComponent className="w-7 h-7 sm:w-8 sm:h-8 text-white" strokeWidth={2.5} />
             </div>
             <div className="min-w-0">

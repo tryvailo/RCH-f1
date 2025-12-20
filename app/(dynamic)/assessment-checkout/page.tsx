@@ -17,7 +17,7 @@ export default function AssessmentCheckoutPage() {
     <div className="min-h-screen bg-background py-16">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-serif font-bold text-foreground mb-8 text-center">
+          <h1 className="text-4xl md:text-5xl font-serif font-bold text-foreground mb-8 text-centre">
             Complete Your Purchase
           </h1>
 

@@ -32,10 +32,10 @@ export function ReportFundingEligibility({
   const fiveYearSavings = Math.round(weeklyMarketCost * 52 * 5)
 
   const getProbabilityLevel = (prob: number) => {
-    if (prob >= 80) return { label: "VERY HIGH", color: "bg-green-600", textColor: "text-green-700" }
-    if (prob >= 65) return { label: "HIGH", color: "bg-green-500", textColor: "text-green-600" }
-    if (prob >= 45) return { label: "MODERATE", color: "bg-amber-500", textColor: "text-amber-600" }
-    return { label: "LOW", color: "bg-gray-400", textColor: "text-gray-500" }
+    if (prob >= 80) return { label: "VERY HIGH", colour: "bg-green-600", textColor: "text-green-700" }
+    if (prob >= 65) return { label: "HIGH", colour: "bg-green-500", textColor: "text-green-600" }
+    if (prob >= 45) return { label: "MODERATE", colour: "bg-amber-500", textColor: "text-amber-600" }
+    return { label: "LOW", colour: "bg-gray-400", textColor: "text-gray-500" }
   }
 
   const nhcLevel = getProbabilityLevel(nhcProbability)
@@ -46,7 +46,7 @@ export function ReportFundingEligibility({
     <section className="py-12 md:py-16 px-4 bg-gradient-to-br from-[#FDFBF7] via-white to-[#F8F6F3]">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
-        <div className="text-center mb-8 md:mb-12">
+        <div className="text-centre mb-8 md:mb-12">
           <h2 className="font-serif text-3xl md:text-4xl font-bold mb-3 text-[#1A231E] text-balance">
             Could the NHS or Council Help Pay?
           </h2>
@@ -77,7 +77,7 @@ export function ReportFundingEligibility({
 
             <div className="mb-4 pb-4 border-b border-[#4F6F52]/10">
               <div className="flex items-center gap-2 mb-2">
-                <Badge className={`${nhcLevel.color} text-white text-sm px-3 py-1`}>{nhcLevel.label}</Badge>
+                <Badge className={`${nhcLevel.colour} text-white text-sm px-3 py-1`}>{nhcLevel.label}</Badge>
                 <span className={`text-lg font-bold ${nhcLevel.textColor}`}>{nhcProbability}%</span>
               </div>
               <p className="text-sm text-[#1A231E]/70 mt-2">
@@ -108,7 +108,7 @@ export function ReportFundingEligibility({
 
             <button
               onClick={() => setExpandedNHC(!expandedNHC)}
-              className="flex items-center justify-between w-full p-3 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors text-sm"
+              className="flex items-center justify-between w-full p-3 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colours text-sm"
             >
               <div className="flex items-center gap-2">
                 <Info className="w-4 h-4 text-blue-600" />
@@ -149,7 +149,7 @@ export function ReportFundingEligibility({
 
             <div className="mb-4 pb-4 border-b border-[#4F6F52]/10">
               <div className="flex items-center gap-2 mb-2">
-                <Badge className={`${councilLevel.color} text-white text-sm px-3 py-1`}>{councilLevel.label}</Badge>
+                <Badge className={`${councilLevel.colour} text-white text-sm px-3 py-1`}>{councilLevel.label}</Badge>
                 <span className={`text-lg font-bold ${councilLevel.textColor}`}>{councilProbability}%</span>
               </div>
               <p className="text-sm text-[#1A231E]/70 mt-2">Based on your financial situation and care needs</p>
@@ -176,7 +176,7 @@ export function ReportFundingEligibility({
 
             <button
               onClick={() => setExpandedCouncil(!expandedCouncil)}
-              className="flex items-center justify-between w-full p-3 bg-teal-50 rounded-lg hover:bg-teal-100 transition-colors text-sm"
+              className="flex items-center justify-between w-full p-3 bg-teal-50 rounded-lg hover:bg-teal-100 transition-colours text-sm"
             >
               <div className="flex items-center gap-2">
                 <Info className="w-4 h-4 text-teal-600" />
@@ -216,7 +216,7 @@ export function ReportFundingEligibility({
 
             <div className="mb-4 pb-4 border-b border-[#4F6F52]/10">
               <div className="flex items-center gap-2 mb-2">
-                <Badge className={`${deferredLevel.color} text-white text-sm px-3 py-1`}>{deferredLevel.label}</Badge>
+                <Badge className={`${deferredLevel.colour} text-white text-sm px-3 py-1`}>{deferredLevel.label}</Badge>
                 <span className={`text-lg font-bold ${deferredLevel.textColor}`}>{deferredProbability}%</span>
               </div>
               <p className="text-sm text-[#1A231E]/70 mt-2">If you own your home and meet asset thresholds</p>
@@ -247,7 +247,7 @@ export function ReportFundingEligibility({
 
             <button
               onClick={() => setExpandedDeferred(!expandedDeferred)}
-              className="flex items-center justify-between w-full p-3 bg-purple-50 rounded-lg hover:bg-purple-100 transition-colors text-sm"
+              className="flex items-center justify-between w-full p-3 bg-purple-50 rounded-lg hover:bg-purple-100 transition-colours text-sm"
             >
               <div className="flex items-center gap-2">
                 <Info className="w-4 h-4 text-purple-600" />
@@ -290,10 +290,10 @@ export function ReportFundingEligibility({
         </div>
 
         {/* Subtle Professional CTA */}
-        <div className="text-center">
+        <div className="text-centre">
           <Link
             href="/professional-assessment"
-            className="inline-flex items-center text-sm text-[#4F6F52] hover:text-[#3d5941] transition-colors font-medium"
+            className="inline-flex items-center text-sm text-[#4F6F52] hover:text-[#3d5941] transition-colours font-medium"
           >
             Get detailed funding analysis in Professional Report →
           </Link>

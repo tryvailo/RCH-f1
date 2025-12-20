@@ -6,8 +6,8 @@ export function FinalCTASection() {
   return (
     <section className="py-20 lg:py-32 bg-[#1A231E] relative overflow-hidden">
       <div className="container mx-auto px-3 sm:px-4 relative z-10 overflow-x-hidden">
-        <div className="max-w-4xl mx-auto text-center space-y-6 sm:space-y-8">
-          <div className="inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 rounded-xl sm:rounded-2xl bg-[#4F6F52]/20 mb-2 sm:mb-4">
+        <div className="max-w-4xl mx-auto text-centre space-y-6 sm:space-y-8">
+          <div className="inline-flex items-center justify-centre w-12 h-12 sm:w-16 sm:h-16 rounded-xl sm:rounded-2xl bg-[#4F6F52]/20 mb-2 sm:mb-4">
             <Heart className="w-6 h-6 sm:w-8 sm:h-8 text-[#4F6F52]" />
           </div>
 
@@ -20,7 +20,7 @@ export function FinalCTASection() {
             with your loved one.
           </p>
 
-          <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 text-white/60 text-sm">
+          <div className="flex flex-wrap items-center justify-centre gap-4 sm:gap-6 text-white/60 text-sm">
             <span className="flex items-center gap-2">
               <ShieldCheck className="w-4 h-4 text-[#4F6F52]" />
               100% Independent
@@ -35,7 +35,7 @@ export function FinalCTASection() {
             </span>
           </div>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 pt-4 sm:pt-8">
+          <div className="flex flex-col sm:flex-row items-center justify-centre gap-3 sm:gap-4 pt-4 sm:pt-8">
             <Button
               size="lg"
               asChild

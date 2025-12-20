@@ -12,8 +12,8 @@ export default function CheckoutFailedPage() {
   return (
     <div className="min-h-screen bg-background py-16">
       <div className="container mx-auto px-4">
-        <div className="max-w-2xl mx-auto text-center space-y-8">
-          <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-destructive/10 mb-4">
+        <div className="max-w-2xl mx-auto text-centre space-y-8">
+          <div className="inline-flex items-center justify-centre w-20 h-20 rounded-full bg-destructive/10 mb-4">
             <XCircle className="w-12 h-12 text-destructive" />
           </div>
 
@@ -33,7 +33,7 @@ export default function CheckoutFailedPage() {
             </ul>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+          <div className="flex flex-col sm:flex-row gap-4 justify-centre mt-8">
             <Button asChild size="lg" variant="default">
               <Link href="/assessment-checkout">Try Again</Link>
             </Button>

@@ -202,7 +202,7 @@ export function EnhancedActionPlan({ topChoice, allHomes }: EnhancedActionPlanPr
     <section className="w-full px-4 md:px-6 lg:px-8 bg-gradient-to-b from-background to-muted/30 font-sans print:py-8">
       <div className="max-w-6xl mx-auto">
         {/* Section Title */}
-        <div className="text-center mb-8 md:mb-10">
+        <div className="text-centre mb-8 md:mb-10">
           <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-semibold mb-4">
             <Clock className="w-4 h-4" />
             Your Enhanced 14-Day Action Plan
@@ -251,7 +251,7 @@ export function EnhancedActionPlan({ topChoice, allHomes }: EnhancedActionPlanPr
         <Card className="p-8 mb-6 bg-card border-border">
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-xl">
+              <div className="w-12 h-12 rounded-full bg-blue-600 text-white flex items-center justify-centre font-bold text-xl">
                 1
               </div>
               <div>
@@ -269,12 +269,12 @@ export function EnhancedActionPlan({ topChoice, allHomes }: EnhancedActionPlanPr
               <button
                 key={item.id}
                 onClick={() => toggleItem(item.id)}
-                className="flex items-start gap-4 w-full text-left group hover:bg-muted/50 p-4 rounded-xl transition-colors min-h-[56px]"
+                className="flex items-start gap-4 w-full text-left group hover:bg-muted/50 p-4 rounded-xl transition-colours min-h-[56px]"
               >
                 <div
                   className={`flex-shrink-0 w-8 h-8 rounded-lg border-2 transition-all ${
                     item.checked ? "bg-primary border-primary" : "border-border group-hover:border-primary/50"
-                  } flex items-center justify-center`}
+                  } flex items-center justify-centre`}
                   aria-hidden="true"
                 >
                   {item.checked && <Check className="w-5 h-5 text-primary-foreground" />}
@@ -314,7 +314,7 @@ export function EnhancedActionPlan({ topChoice, allHomes }: EnhancedActionPlanPr
         <Card className="p-8 mb-8 bg-card border-border">
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-full bg-emerald-600 text-white flex items-center justify-center font-bold text-xl">
+              <div className="w-12 h-12 rounded-full bg-emerald-600 text-white flex items-center justify-centre font-bold text-xl">
                 2
               </div>
               <div>
@@ -332,12 +332,12 @@ export function EnhancedActionPlan({ topChoice, allHomes }: EnhancedActionPlanPr
               <button
                 key={item.id}
                 onClick={() => toggleItem(item.id)}
-                className="flex items-start gap-4 w-full text-left group hover:bg-muted/50 p-4 rounded-xl transition-colors min-h-[56px]"
+                className="flex items-start gap-4 w-full text-left group hover:bg-muted/50 p-4 rounded-xl transition-colours min-h-[56px]"
               >
                 <div
                   className={`flex-shrink-0 w-8 h-8 rounded-lg border-2 transition-all ${
                     item.checked ? "bg-primary border-primary" : "border-border group-hover:border-primary/50"
-                  } flex items-center justify-center`}
+                  } flex items-center justify-centre`}
                   aria-hidden="true"
                 >
                   {item.checked && <Check className="w-5 h-5 text-primary-foreground" />}
@@ -468,7 +468,7 @@ export function EnhancedActionPlan({ topChoice, allHomes }: EnhancedActionPlanPr
         </Card>
 
         {/* Encouragement */}
-        <div className="text-center px-4 mt-8">
+        <div className="text-centre px-4 mt-8">
           <p className="text-xl text-muted-foreground leading-relaxed">
             <strong className="text-foreground">You have everything you need.</strong> This £119 Professional Report,
             combined with your visits, will give you the confidence to make the right choice for your family.

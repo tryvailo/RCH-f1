@@ -128,12 +128,12 @@ export function ProShareWithFamily({
 
       {/* Modal Overlay */}
       {isOpen && (
-        <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
+        <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-centre p-4">
           <div className="bg-white rounded-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto shadow-2xl">
             {/* Modal Header */}
             <div className="sticky top-0 bg-white border-b border-[#E8E5DF] p-5 sm:p-6 flex items-center justify-between z-10">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-[#4F6F52]/10 flex items-center justify-center">
+                <div className="w-10 h-10 rounded-full bg-[#4F6F52]/10 flex items-center justify-centre">
                   <Users className="w-5 h-5 text-[#4F6F52]" />
                 </div>
                 <div>
@@ -146,7 +146,7 @@ export function ProShareWithFamily({
                   setIsOpen(false)
                   setStep("add")
                 }}
-                className="w-10 h-10 rounded-full hover:bg-[#F8F9FA] flex items-center justify-center transition-colors"
+                className="w-10 h-10 rounded-full hover:bg-[#F8F9FA] flex items-center justify-centre transition-colours"
               >
                 <X className="w-5 h-5 text-[#5A6D7A]" />
               </button>
@@ -161,7 +161,7 @@ export function ProShareWithFamily({
                     <h3 className="font-semibold text-[#1A231E] mb-3">What they'll receive:</h3>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                       <div className="flex items-start gap-3">
-                        <div className="w-8 h-8 rounded-lg bg-white flex items-center justify-center flex-shrink-0">
+                        <div className="w-8 h-8 rounded-lg bg-white flex items-center justify-centre flex-shrink-0">
                           <Link2 className="w-4 h-4 text-[#4F6F52]" />
                         </div>
                         <div>
@@ -170,7 +170,7 @@ export function ProShareWithFamily({
                         </div>
                       </div>
                       <div className="flex items-start gap-3">
-                        <div className="w-8 h-8 rounded-lg bg-white flex items-center justify-center flex-shrink-0">
+                        <div className="w-8 h-8 rounded-lg bg-white flex items-center justify-centre flex-shrink-0">
                           <FileText className="w-4 h-4 text-[#4F6F52]" />
                         </div>
                         <div>
@@ -179,7 +179,7 @@ export function ProShareWithFamily({
                         </div>
                       </div>
                       <div className="flex items-start gap-3">
-                        <div className="w-8 h-8 rounded-lg bg-white flex items-center justify-center flex-shrink-0">
+                        <div className="w-8 h-8 rounded-lg bg-white flex items-center justify-centre flex-shrink-0">
                           <Clock className="w-4 h-4 text-[#4F6F52]" />
                         </div>
                         <div>
@@ -188,7 +188,7 @@ export function ProShareWithFamily({
                         </div>
                       </div>
                       <div className="flex items-start gap-3">
-                        <div className="w-8 h-8 rounded-lg bg-white flex items-center justify-center flex-shrink-0">
+                        <div className="w-8 h-8 rounded-lg bg-white flex items-center justify-centre flex-shrink-0">
                           <Shield className="w-4 h-4 text-[#4F6F52]" />
                         </div>
                         <div>
@@ -256,7 +256,7 @@ export function ProShareWithFamily({
                     {familyMembers.length < 5 && (
                       <button
                         onClick={addFamilyMember}
-                        className="w-full flex items-center justify-center gap-2 py-3 border-2 border-dashed border-[#E8E5DF] rounded-xl text-[#5A6D7A] hover:border-[#4F6F52] hover:text-[#4F6F52] transition-colors"
+                        className="w-full flex items-center justify-centre gap-2 py-3 border-2 border-dashed border-[#E8E5DF] rounded-xl text-[#5A6D7A] hover:border-[#4F6F52] hover:text-[#4F6F52] transition-colours"
                       >
                         <Plus className="w-4 h-4" />
                         Add another family member
@@ -276,7 +276,7 @@ export function ProShareWithFamily({
                       />
                       <button
                         onClick={handleCopyLink}
-                        className={`px-4 py-3 rounded-lg font-semibold transition-all flex items-center gap-2 min-w-[120px] justify-center ${
+                        className={`px-4 py-3 rounded-lg font-semibold transition-all flex items-center gap-2 min-w-[120px] justify-centre ${
                           linkCopied
                             ? "bg-[#27AE60] text-white"
                             : "bg-[#F8F9FA] border border-[#E8E5DF] text-[#1A231E] hover:border-[#4F6F52]"
@@ -301,14 +301,14 @@ export function ProShareWithFamily({
                   <div className="flex flex-col sm:flex-row gap-3">
                     <button
                       onClick={() => setIsOpen(false)}
-                      className="flex-1 px-6 py-3 rounded-xl border border-[#E8E5DF] text-[#5A6D7A] font-semibold hover:bg-[#F8F9FA] transition-colors min-h-[48px]"
+                      className="flex-1 px-6 py-3 rounded-xl border border-[#E8E5DF] text-[#5A6D7A] font-semibold hover:bg-[#F8F9FA] transition-colours min-h-[48px]"
                     >
                       Cancel
                     </button>
                     <button
                       onClick={() => setStep("preview")}
                       disabled={!canProceed}
-                      className={`flex-1 px-6 py-3 rounded-xl font-semibold transition-all flex items-center justify-center gap-2 min-h-[48px] ${
+                      className={`flex-1 px-6 py-3 rounded-xl font-semibold transition-all flex items-center justify-centre gap-2 min-h-[48px] ${
                         canProceed
                           ? "bg-[#4F6F52] text-white hover:bg-[#3d5741]"
                           : "bg-[#E8E5DF] text-[#5A6D7A] cursor-not-allowed"
@@ -364,7 +364,7 @@ export function ProShareWithFamily({
                           below. The link will remain active for 30 days.
                         </p>
 
-                        <div className="bg-[#F8F9FA] rounded-xl p-4 text-center">
+                        <div className="bg-[#F8F9FA] rounded-xl p-4 text-centre">
                           <a href="#" className="text-[#4F6F52] font-semibold hover:underline">
                             View Full Report
                           </a>
@@ -412,14 +412,14 @@ export function ProShareWithFamily({
                   <div className="flex flex-col sm:flex-row gap-3">
                     <button
                       onClick={() => setStep("add")}
-                      className="flex-1 px-6 py-3 rounded-xl border border-[#E8E5DF] text-[#5A6D7A] font-semibold hover:bg-[#F8F9FA] transition-colors min-h-[48px]"
+                      className="flex-1 px-6 py-3 rounded-xl border border-[#E8E5DF] text-[#5A6D7A] font-semibold hover:bg-[#F8F9FA] transition-colours min-h-[48px]"
                     >
                       Edit Recipients
                     </button>
                     <button
                       onClick={handleSend}
                       disabled={isSending}
-                      className="flex-1 px-6 py-3 rounded-xl bg-[#4F6F52] text-white font-semibold hover:bg-[#3d5741] transition-all flex items-center justify-center gap-2 min-h-[48px] disabled:opacity-70"
+                      className="flex-1 px-6 py-3 rounded-xl bg-[#4F6F52] text-white font-semibold hover:bg-[#3d5741] transition-all flex items-center justify-centre gap-2 min-h-[48px] disabled:opacity-70"
                     >
                       {isSending ? (
                         <>
@@ -438,8 +438,8 @@ export function ProShareWithFamily({
               )}
 
               {step === "success" && (
-                <div className="text-center py-8">
-                  <div className="w-16 h-16 rounded-full bg-[#27AE60]/10 flex items-center justify-center mx-auto mb-4">
+                <div className="text-centre py-8">
+                  <div className="w-16 h-16 rounded-full bg-[#27AE60]/10 flex items-center justify-centre mx-auto mb-4">
                     <CheckCircle className="w-8 h-8 text-[#27AE60]" />
                   </div>
                   <h3 className="text-2xl font-bold text-[#1A231E] mb-2">Report Shared</h3>
@@ -484,7 +484,7 @@ export function ProShareWithFamily({
                       className="flex items-center justify-between bg-white rounded-lg p-3 border border-[#E8E5DF]"
                     >
                       <div className="flex items-center gap-3">
-                        <div className="w-8 h-8 rounded-full bg-[#4F6F52]/10 flex items-center justify-center">
+                        <div className="w-8 h-8 rounded-full bg-[#4F6F52]/10 flex items-center justify-centre">
                           <Users className="w-4 h-4 text-[#4F6F52]" />
                         </div>
                         <div>

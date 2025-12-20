@@ -12,7 +12,7 @@ export function FundingFinalCtaSection() {
             <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full blur-3xl" />
             <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/5 rounded-full blur-3xl" />
 
-            <div className="relative z-10 text-center space-y-6">
+            <div className="relative z-10 text-centre space-y-6">
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-balance">
                 Stop Guessing. Get Answers in 10 Minutes.
               </h2>
@@ -21,7 +21,7 @@ export function FundingFinalCtaSection() {
                 Backed by analysis of 50,000+ real funding assessments
               </p>
 
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+              <div className="flex flex-col sm:flex-row items-center justify-centre gap-4 pt-4">
                 <ul className="space-y-2 text-left">
                   {[
                     "89.7% accuracy guarantee",

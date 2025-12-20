@@ -97,7 +97,7 @@ export function ReportHeader({
               {/* Criteria grid */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
                 <div className="flex items-start gap-3 p-4 sm:p-5 rounded-xl bg-white/80 border border-[#E8E5DF] min-h-[70px]">
-                  <div className="flex-shrink-0 w-7 h-7 rounded-full bg-[#4F6F52]/15 flex items-center justify-center mt-0.5">
+                  <div className="flex-shrink-0 w-7 h-7 rounded-full bg-[#4F6F52]/15 flex items-center justify-centre mt-0.5">
                     <Check className="w-4 h-4 text-[#4F6F52]" />
                   </div>
                   <div className="flex-1 min-w-0">
@@ -107,7 +107,7 @@ export function ReportHeader({
                 </div>
 
                 <div className="flex items-start gap-3 p-4 sm:p-5 rounded-xl bg-white/80 border border-[#E8E5DF] min-h-[70px]">
-                  <div className="flex-shrink-0 w-7 h-7 rounded-full bg-[#4F6F52]/15 flex items-center justify-center mt-0.5">
+                  <div className="flex-shrink-0 w-7 h-7 rounded-full bg-[#4F6F52]/15 flex items-center justify-centre mt-0.5">
                     <Check className="w-4 h-4 text-[#4F6F52]" />
                   </div>
                   <div className="flex-1 min-w-0">
@@ -117,7 +117,7 @@ export function ReportHeader({
                 </div>
 
                 <div className="flex items-start gap-3 p-4 sm:p-5 rounded-xl bg-white/80 border border-[#E8E5DF] min-h-[70px]">
-                  <div className="flex-shrink-0 w-7 h-7 rounded-full bg-[#4F6F52]/15 flex items-center justify-center mt-0.5">
+                  <div className="flex-shrink-0 w-7 h-7 rounded-full bg-[#4F6F52]/15 flex items-center justify-centre mt-0.5">
                     <Check className="w-4 h-4 text-[#4F6F52]" />
                   </div>
                   <div className="flex-1 min-w-0">
@@ -127,7 +127,7 @@ export function ReportHeader({
                 </div>
 
                 <div className="flex items-start gap-3 p-4 sm:p-5 rounded-xl bg-white/80 border border-[#E8E5DF] min-h-[70px]">
-                  <div className="flex-shrink-0 w-7 h-7 rounded-full bg-[#4F6F52]/15 flex items-center justify-center mt-0.5">
+                  <div className="flex-shrink-0 w-7 h-7 rounded-full bg-[#4F6F52]/15 flex items-center justify-centre mt-0.5">
                     <Check className="w-4 h-4 text-[#4F6F52]" />
                   </div>
                   <div className="flex-1 min-w-0">

@@ -82,7 +82,7 @@ export function ReportProgressBar({ currentPage, totalPages, sections = DEFAULT_
               return (
                 <div key={index} className="flex items-center gap-1">
                   <div
-                    className={`w-2 h-2 rounded-full transition-colors ${
+                    className={`w-2 h-2 rounded-full transition-colours ${
                       isActive ? "bg-[#4F6F52]" : isCompleted ? "bg-[#4F6F52]/50" : "bg-[#E8E5DF]"
                     }`}
                     title={section.name}

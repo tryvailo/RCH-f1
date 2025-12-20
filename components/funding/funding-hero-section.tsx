@@ -13,7 +13,7 @@ export function FundingHeroSection() {
       <div className="absolute bottom-20 left-10 w-96 h-96 bg-[#C88D79]/10 rounded-full blur-3xl" />
 
       <div className="relative z-10 container mx-auto px-4 sm:px-6">
-        <div className="max-w-4xl mx-auto text-center space-y-6 sm:space-y-8">
+        <div className="max-w-4xl mx-auto text-centre space-y-6 sm:space-y-8">
           {/* Trust Badge */}
           <Badge
             variant="outline"
@@ -35,7 +35,7 @@ export function FundingHeroSection() {
           </p>
 
           {/* Value Props */}
-          <div className="flex flex-wrap justify-center gap-4 sm:gap-6 pt-2">
+          <div className="flex flex-wrap justify-centre gap-4 sm:gap-6 pt-2">
             {[
               { icon: Clock, text: "10-minute assessment" },
               { icon: CheckCircle2, text: "89.7% accuracy" },
@@ -68,7 +68,7 @@ export function FundingHeroSection() {
           </div>
 
           {/* Trust Signals */}
-          <div className="pt-6 flex flex-wrap justify-center gap-6 sm:gap-8 border-t border-[#E8E5DF]">
+          <div className="pt-6 flex flex-wrap justify-centre gap-6 sm:gap-8 border-t border-[#E8E5DF]">
             <div className="flex items-center gap-2 text-sm text-[#1A231E]/70">
               <Shield className="w-4 h-4 text-[#7FAD7E]" />
               <span>256-bit encryption</span>

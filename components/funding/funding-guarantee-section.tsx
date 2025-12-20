@@ -8,8 +8,8 @@ export function FundingGuaranteeSection() {
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-white/5 rounded-full blur-3xl" />
 
       <div className="relative z-10 container mx-auto px-4 sm:px-6">
-        <div className="max-w-4xl mx-auto text-center space-y-6">
-          <div className="w-20 h-20 mx-auto rounded-2xl bg-white/10 backdrop-blur-sm flex items-center justify-center shadow-soft-xl">
+        <div className="max-w-4xl mx-auto text-centre space-y-6">
+          <div className="w-20 h-20 mx-auto rounded-2xl bg-white/10 backdrop-blur-sm flex items-center justify-centre shadow-soft-xl">
             <Shield className="w-10 h-10 text-white" strokeWidth={2} />
           </div>
 
@@ -38,8 +38,8 @@ export function FundingGuaranteeSection() {
                 description: "PDF in your inbox within 60 seconds",
               },
             ].map((item, i) => (
-              <div key={i} className="text-center space-y-3">
-                <div className="w-14 h-14 mx-auto rounded-xl bg-white/10 backdrop-blur-sm flex items-center justify-center">
+              <div key={i} className="text-centre space-y-3">
+                <div className="w-14 h-14 mx-auto rounded-xl bg-white/10 backdrop-blur-sm flex items-center justify-centre">
                   <item.icon className="w-7 h-7 text-white" strokeWidth={2} />
                 </div>
                 <h3 className="font-bold text-lg">{item.title}</h3>

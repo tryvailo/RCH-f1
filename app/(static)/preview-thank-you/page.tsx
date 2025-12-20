@@ -21,15 +21,15 @@ export default function PreviewThankYou() {
       <div className="min-h-screen bg-gradient-to-br from-[#FDFBF7] via-white to-[#4F6F52]/5 py-8 sm:py-12 lg:py-16 px-4">
         <div className="max-w-3xl mx-auto">
           {/* Preview Badge */}
-          <div className="bg-amber-100 border border-amber-300 rounded-lg p-3 mb-6 text-center">
+          <div className="bg-amber-100 border border-amber-300 rounded-lg p-3 mb-6 text-centre">
             <p className="text-sm font-medium text-amber-900">
               Preview Mode - This is how the professional thank you page looks
             </p>
           </div>
 
           {/* Success Icon */}
-          <div className="text-center mb-6 sm:mb-8">
-            <div className="inline-flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-[#7FAD7E]/20 mb-4 sm:mb-6">
+          <div className="text-centre mb-6 sm:mb-8">
+            <div className="inline-flex items-center justify-centre w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-[#7FAD7E]/20 mb-4 sm:mb-6">
               <CheckCircle2 className="w-8 h-8 sm:w-10 sm:h-10 text-[#7FAD7E]" />
             </div>
 
@@ -42,7 +42,7 @@ export default function PreviewThankYou() {
           </div>
 
           {/* Reference Number */}
-          <div className="bg-[#4F6F52]/10 rounded-2xl p-4 sm:p-6 mb-6 sm:mb-8 text-center border border-[#4F6F52]/20">
+          <div className="bg-[#4F6F52]/10 rounded-2xl p-4 sm:p-6 mb-6 sm:mb-8 text-centre border border-[#4F6F52]/20">
             <p className="text-sm sm:text-base text-[#1A231E]/60 mb-1 sm:mb-2">Your Reference Number</p>
             <p className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#4F6F52] font-mono">{reference}</p>
             <p className="text-sm text-[#1A231E]/50 mt-2">Please save this for your records</p>
@@ -106,7 +106,7 @@ export default function PreviewThankYou() {
                 },
               ].map((step, idx) => (
                 <div key={idx} className="flex items-start gap-3 sm:gap-4">
-                  <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-[#4F6F52]/10 flex items-center justify-center">
+                  <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-[#4F6F52]/10 flex items-center justify-centre">
                     <step.icon className="w-5 h-5 sm:w-6 sm:h-6 text-[#4F6F52]" />
                   </div>
                   <div className="flex-1 min-w-0 pt-1">
@@ -143,7 +143,7 @@ export default function PreviewThankYou() {
           </div>
 
           {/* CTA */}
-          <div className="text-center">
+          <div className="text-centre">
             <Button
               asChild
               size="lg"

@@ -20,8 +20,8 @@ export function MonitoringFinalCTASection() {
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-4xl mx-auto text-center">
-          <div className="flex justify-center mb-6 -space-x-4">
+        <div className="max-w-4xl mx-auto text-centre">
+          <div className="flex justify-centre mb-6 -space-x-4">
             {familyAvatars.map((avatar, i) => (
               <Image
                 key={i}
@@ -51,7 +51,7 @@ export function MonitoringFinalCTASection() {
             <Link href="#pricing">Get 30 Days of Peace Free</Link>
           </Button>
 
-          <div className="flex items-center justify-center gap-3 text-sm opacity-90">
+          <div className="flex items-center justify-centre gap-3 text-sm opacity-90">
             <Shield className="w-5 h-5" />
             <span>30-day peace of mind guarantee. 100% free. Cancel anytime.</span>
           </div>

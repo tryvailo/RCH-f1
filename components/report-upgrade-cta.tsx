@@ -22,14 +22,14 @@ export function ReportUpgradeCTA() {
     <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-gradient-to-br from-[#FDFBF7] via-[#FDFBF7] to-[#4F6F52]/5 overflow-hidden">
       <div className="max-w-[1100px] mx-auto">
         <Card className="p-6 sm:p-9 md:p-12 glass border-[#E8E5DF] shadow-soft-xl rounded-2xl sm:rounded-3xl">
-          <div className="text-center mb-8 sm:mb-10">
+          <div className="text-centre mb-8 sm:mb-10">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-[#1A231E] mb-3 sm:mb-4 leading-tight px-2">
               Complete Peace of Mind
             </h2>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-[#1A231E]/70 max-w-2xl mx-auto leading-relaxed px-2">
               For £119, receive comprehensive analysis with data you simply cannot find anywhere else
             </p>
-            <div className="mt-4 flex items-center justify-center gap-3 flex-wrap">
+            <div className="mt-4 flex items-center justify-centre gap-3 flex-wrap">
               <Badge className="bg-[#E8E5DF] text-[#1A231E]/70 border-0 px-3 py-1.5 text-sm">
                 Free: 18 data points
               </Badge>
@@ -43,19 +43,19 @@ export function ReportUpgradeCTA() {
           <div className="mb-8 sm:mb-10">
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 mb-5 sm:mb-7">
               {/* Cost */}
-              <div className="bg-gradient-to-br from-[#4F6F52]/10 to-[#4F6F52]/5 rounded-xl sm:rounded-2xl p-5 sm:p-7 border border-[#4F6F52]/20 text-center">
+              <div className="bg-gradient-to-br from-[#4F6F52]/10 to-[#4F6F52]/5 rounded-xl sm:rounded-2xl p-5 sm:p-7 border border-[#4F6F52]/20 text-centre">
                 <div className="text-sm sm:text-base text-[#1A231E]/60 mb-2">Investment</div>
                 <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#4F6F52] mb-1">£119</div>
                 <div className="text-sm sm:text-base text-[#1A231E]/50">One-time payment</div>
               </div>
 
-              <div className="bg-gradient-to-br from-[#7FAD7E]/15 to-[#7FAD7E]/5 rounded-xl sm:rounded-2xl p-5 sm:p-7 border border-[#7FAD7E] text-center">
+              <div className="bg-gradient-to-br from-[#7FAD7E]/15 to-[#7FAD7E]/5 rounded-xl sm:rounded-2xl p-5 sm:p-7 border border-[#7FAD7E] text-centre">
                 <div className="text-sm sm:text-base text-[#1A231E]/60 mb-2">Typical Annual Saving</div>
                 <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#7FAD7E] mb-1">£5,000+</div>
                 <div className="text-sm sm:text-base text-[#1A231E]/50">From fee negotiation</div>
               </div>
 
-              <div className="bg-gradient-to-br from-[#C88D79]/10 to-[#C88D79]/5 rounded-xl sm:rounded-2xl p-5 sm:p-7 border border-[#C88D79]/20 text-center">
+              <div className="bg-gradient-to-br from-[#C88D79]/10 to-[#C88D79]/5 rounded-xl sm:rounded-2xl p-5 sm:p-7 border border-[#C88D79]/20 text-centre">
                 <div className="text-sm sm:text-base text-[#1A231E]/60 mb-2">Return</div>
                 <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#C88D79] mb-1">42x</div>
                 <div className="text-sm sm:text-base text-[#1A231E]/50">Typical first-year return</div>
@@ -63,7 +63,7 @@ export function ReportUpgradeCTA() {
             </div>
 
             <div className="bg-[#7FAD7E]/10 rounded-xl sm:rounded-2xl p-4 sm:p-5 border border-[#7FAD7E]/30">
-              <p className="text-sm sm:text-base md:text-lg text-[#1A231E] text-center flex items-center justify-center gap-3 flex-wrap leading-relaxed">
+              <p className="text-sm sm:text-base md:text-lg text-[#1A231E] text-centre flex items-center justify-centre gap-3 flex-wrap leading-relaxed">
                 <TrendingUp className="w-5 h-5 md:w-6 md:h-6 text-[#7FAD7E] flex-shrink-0" />
                 <span>Most clients identify savings within a fortnight through our negotiation guidance</span>
               </p>
@@ -118,7 +118,7 @@ export function ReportUpgradeCTA() {
             {/* Case Study */}
             <div className="bg-[#FDFBF7] rounded-xl p-5 sm:p-7 border border-[#E8E5DF]">
               <div className="text-base sm:text-lg md:text-xl font-bold text-[#1A231E] mb-3 flex items-center gap-3">
-                <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#4F6F52]/10 flex items-center justify-center text-lg sm:text-xl">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#4F6F52]/10 flex items-center justify-centre text-lg sm:text-xl">
                   📊
                 </div>
                 Real Client Example
@@ -146,33 +146,33 @@ export function ReportUpgradeCTA() {
           </div>
 
           <div className="mb-8 sm:mb-10 p-5 sm:p-6 bg-gradient-to-r from-[#C88D79]/10 to-[#4F6F52]/10 rounded-xl border border-[#C88D79]/20">
-            <h4 className="text-base sm:text-lg font-bold text-[#1A231E] mb-4 text-center">
+            <h4 className="text-base sm:text-lg font-bold text-[#1A231E] mb-4 text-centre">
               Data You Won't Find Anywhere Else in the UK
             </h4>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              <div className="text-center">
-                <div className="w-10 h-10 mx-auto mb-2 rounded-full bg-[#C88D79]/20 flex items-center justify-center">
+              <div className="text-centre">
+                <div className="w-10 h-10 mx-auto mb-2 rounded-full bg-[#C88D79]/20 flex items-center justify-centre">
                   <UtensilsCrossed className="w-5 h-5 text-[#C88D79]" />
                 </div>
                 <div className="text-sm font-semibold text-[#1A231E]">FSA Food Safety</div>
                 <div className="text-xs text-[#1A231E]/60">Kitchen hygiene scores</div>
               </div>
-              <div className="text-center">
-                <div className="w-10 h-10 mx-auto mb-2 rounded-full bg-[#4F6F52]/20 flex items-center justify-center">
+              <div className="text-centre">
+                <div className="w-10 h-10 mx-auto mb-2 rounded-full bg-[#4F6F52]/20 flex items-center justify-centre">
                   <Users className="w-5 h-5 text-[#4F6F52]" />
                 </div>
                 <div className="text-sm font-semibold text-[#1A231E]">Family Engagement</div>
                 <div className="text-xs text-[#1A231E]/60">Real visit patterns</div>
               </div>
-              <div className="text-center">
-                <div className="w-10 h-10 mx-auto mb-2 rounded-full bg-[#7FAD7E]/20 flex items-center justify-center">
+              <div className="text-centre">
+                <div className="w-10 h-10 mx-auto mb-2 rounded-full bg-[#7FAD7E]/20 flex items-center justify-centre">
                   <Share2 className="w-5 h-5 text-[#7FAD7E]" />
                 </div>
                 <div className="text-sm font-semibold text-[#1A231E]">Family Sharing</div>
                 <div className="text-xs text-[#1A231E]/60">Up to 5 members</div>
               </div>
-              <div className="text-center">
-                <div className="w-10 h-10 mx-auto mb-2 rounded-full bg-[#2D5A4A]/20 flex items-center justify-center">
+              <div className="text-centre">
+                <div className="w-10 h-10 mx-auto mb-2 rounded-full bg-[#2D5A4A]/20 flex items-center justify-centre">
                   <MapPin className="w-5 h-5 text-[#2D5A4A]" />
                 </div>
                 <div className="text-sm font-semibold text-[#1A231E]">152 Councils</div>
@@ -181,7 +181,7 @@ export function ReportUpgradeCTA() {
             </div>
           </div>
 
-          <div className="text-center mb-5 sm:mb-7">
+          <div className="text-centre mb-5 sm:mb-7">
             <Link href="/professional-assessment">
               <Button
                 size="lg"
@@ -193,7 +193,7 @@ export function ReportUpgradeCTA() {
             </Link>
           </div>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 text-sm sm:text-base md:text-lg text-[#1A231E]/60 mb-6 sm:mb-8">
+          <div className="flex flex-col sm:flex-row items-center justify-centre gap-4 sm:gap-6 text-sm sm:text-base md:text-lg text-[#1A231E]/60 mb-6 sm:mb-8">
             <div className="flex items-center gap-2">
               <Shield className="w-4 h-4 sm:w-5 sm:h-5 text-[#7FAD7E]" />
               <span>30-day money-back guarantee</span>
@@ -210,7 +210,7 @@ export function ReportUpgradeCTA() {
 
           {/* Comparison table - Updated with exclusive features */}
           <div>
-            <h3 className="text-base sm:text-lg md:text-xl font-bold text-[#1A231E] mb-4 sm:mb-5 text-center">
+            <h3 className="text-base sm:text-lg md:text-xl font-bold text-[#1A231E] mb-4 sm:mb-5 text-centre">
               Free vs Professional
             </h3>
             <div className="overflow-x-auto -mx-2 px-2">
@@ -218,8 +218,8 @@ export function ReportUpgradeCTA() {
                 <thead>
                   <tr className="border-b border-[#E8E5DF]">
                     <th className="py-3 px-3 sm:px-4 font-semibold text-[#1A231E]">Feature</th>
-                    <th className="py-3 px-3 sm:px-4 font-semibold text-[#1A231E] text-center">Free</th>
-                    <th className="py-3 px-3 sm:px-4 font-semibold text-[#4F6F52] text-center bg-[#4F6F52]/5">
+                    <th className="py-3 px-3 sm:px-4 font-semibold text-[#1A231E] text-centre">Free</th>
+                    <th className="py-3 px-3 sm:px-4 font-semibold text-[#4F6F52] text-centre bg-[#4F6F52]/5">
                       Professional
                     </th>
                   </tr>
@@ -256,8 +256,8 @@ export function ReportUpgradeCTA() {
                           </Badge>
                         )}
                       </td>
-                      <td className="py-3 px-3 sm:px-4 text-center text-[#1A231E]/60">{row.free}</td>
-                      <td className="py-3 px-3 sm:px-4 text-center text-[#4F6F52] font-medium bg-[#4F6F52]/5">
+                      <td className="py-3 px-3 sm:px-4 text-centre text-[#1A231E]/60">{row.free}</td>
+                      <td className="py-3 px-3 sm:px-4 text-centre text-[#4F6F52] font-medium bg-[#4F6F52]/5">
                         {row.pro}
                       </td>
                     </tr>
@@ -267,7 +267,7 @@ export function ReportUpgradeCTA() {
             </div>
           </div>
 
-          <div className="text-center mt-5 sm:mt-7">
+          <div className="text-centre mt-5 sm:mt-7">
             <p className="text-sm sm:text-base md:text-lg text-[#1A231E]/50">
               Or continue with your free report • No obligation
             </p>

@@ -55,7 +55,7 @@ export function FundingFaqSection() {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-[#E8E5DF]/30 via-transparent to-transparent opacity-40" />
 
       <div className="container relative mx-auto px-4 max-w-5xl">
-        <div className="text-center mb-16 md:mb-20 space-y-5">
+        <div className="text-centre mb-16 md:mb-20 space-y-5">
           <Badge
             variant="outline"
             className="mx-auto text-xs font-semibold tracking-wide border-[#8B7355]/20 text-[#8B7355] bg-white/60 backdrop-blur-sm px-4 py-1.5 shadow-sm"
@@ -80,9 +80,9 @@ export function FundingFaqSection() {
                 value={`item-${index}`}
                 className="group bg-white/70 backdrop-blur-xl border border-[#E8E5DF]/60 hover:border-[#8B7355]/40 rounded-3xl overflow-hidden shadow-[0_2px_16px_-4px_rgba(0,0,0,0.06)] hover:shadow-[0_8px_32px_-8px_rgba(139,115,85,0.12)] transition-all duration-500 ease-out"
               >
-                <AccordionTrigger className="text-lg md:text-xl font-semibold text-[#1A231E] px-6 md:px-8 py-6 md:py-7 text-left hover:no-underline group-hover:text-[#8B7355] transition-colors duration-300 [&[data-state=open]]:text-[#8B7355]">
+                <AccordionTrigger className="text-lg md:text-xl font-semibold text-[#1A231E] px-6 md:px-8 py-6 md:py-7 text-left hover:no-underline group-hover:text-[#8B7355] transition-colours duration-300 [&[data-state=open]]:text-[#8B7355]">
                   <div className="flex items-start gap-4 pr-4">
-                    <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#8B7355] to-[#6F5D47] flex items-center justify-center flex-shrink-0 mt-1 group-data-[state=open]:scale-110 transition-transform">
+                    <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#8B7355] to-[#6F5D47] flex items-center justify-centre flex-shrink-0 mt-1 group-data-[state=open]:scale-110 transition-transform">
                       <HelpCircle className="w-5 h-5 text-white" strokeWidth={2} />
                     </div>
                     <span className="flex-1">{faq.question}</span>
@@ -96,7 +96,7 @@ export function FundingFaqSection() {
           </Accordion>
         </div>
 
-        <div className="text-center mt-16 md:mt-20 p-8 md:p-10 bg-white/50 backdrop-blur-sm rounded-3xl border border-[#E8E5DF]/40 shadow-sm max-w-2xl mx-auto">
+        <div className="text-centre mt-16 md:mt-20 p-8 md:p-10 bg-white/50 backdrop-blur-sm rounded-3xl border border-[#E8E5DF]/40 shadow-sm max-w-2xl mx-auto">
           <p className="text-base md:text-lg text-[#1A231E]/70 font-light mb-3">Still have questions?</p>
           <a
             href="mailto:support@rightcarehome.co.uk"

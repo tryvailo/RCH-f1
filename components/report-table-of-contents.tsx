@@ -111,7 +111,7 @@ export function ReportTableOfContents({ totalPages, onNavigate }: TableOfContent
     <div className="min-h-screen bg-[#FDFBF7] py-8 sm:py-12 px-4 sm:px-6">
       <div className="max-w-4xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-8">
+        <div className="text-centre mb-8">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#4F6F52]/10 rounded-full mb-4">
             <BookOpen className="w-4 h-4 text-[#4F6F52]" />
             <span className="text-sm font-semibold text-[#4F6F52]">Navigation Guide</span>
@@ -134,7 +134,7 @@ export function ReportTableOfContents({ totalPages, onNavigate }: TableOfContent
                 {/* Group Header */}
                 <div className="px-5 py-4 flex items-center gap-3" style={{ backgroundColor: `${group.groupColor}10` }}>
                   <div
-                    className="w-10 h-10 rounded-xl flex items-center justify-center"
+                    className="w-10 h-10 rounded-xl flex items-center justify-centre"
                     style={{ backgroundColor: group.groupColor }}
                   >
                     <GroupIcon className="w-5 h-5 text-white" strokeWidth={2} />
@@ -155,19 +155,19 @@ export function ReportTableOfContents({ totalPages, onNavigate }: TableOfContent
                     return (
                       <button
                         key={section.page}
-                        className="w-full px-5 py-3 flex items-center gap-3 hover:bg-[#F8F6F3] transition-colors text-left group"
+                        className="w-full px-5 py-3 flex items-center gap-3 hover:bg-[#F8F6F3] transition-colours text-left group"
                         onClick={() => onNavigate?.(section.page)}
                       >
                         {/* Page Number */}
                         <div
-                          className="w-7 h-7 rounded-lg flex items-center justify-center text-white font-bold text-sm flex-shrink-0"
+                          className="w-7 h-7 rounded-lg flex items-center justify-centre text-white font-bold text-sm flex-shrink-0"
                           style={{ backgroundColor: group.groupColor }}
                         >
                           {section.page}
                         </div>
 
                         {/* Icon */}
-                        <Icon className="w-4 h-4 flex-shrink-0" style={{ color: group.groupColor }} strokeWidth={2} />
+                        <Icon className="w-4 h-4 flex-shrink-0" style={{ colour: group.groupColor }} strokeWidth={2} />
 
                         {/* Content */}
                         <div className="flex-1 min-w-0">
@@ -176,7 +176,7 @@ export function ReportTableOfContents({ totalPages, onNavigate }: TableOfContent
                         </div>
 
                         {/* Arrow */}
-                        <ChevronRight className="w-4 h-4 text-[#1A231E]/30 group-hover:text-[#1A231E]/60 transition-colors flex-shrink-0" />
+                        <ChevronRight className="w-4 h-4 text-[#1A231E]/30 group-hover:text-[#1A231E]/60 transition-colours flex-shrink-0" />
                       </button>
                     )
                   })}
@@ -188,8 +188,8 @@ export function ReportTableOfContents({ totalPages, onNavigate }: TableOfContent
 
         {/* Quick Stats */}
         <Card className="mt-8 bg-gradient-to-br from-[#4F6F52]/5 to-[#4F6F52]/10 border border-[#4F6F52]/20 p-6 rounded-2xl">
-          <h3 className="text-lg font-bold text-[#1A231E] font-serif mb-4 text-center">What's Inside Your Report</h3>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
+          <h3 className="text-lg font-bold text-[#1A231E] font-serif mb-4 text-centre">What's Inside Your Report</h3>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-centre">
             <div>
               <div className="text-2xl font-bold text-[#4F6F52]">22</div>
               <div className="text-xs text-[#1A231E]/60">Pages</div>
@@ -210,7 +210,7 @@ export function ReportTableOfContents({ totalPages, onNavigate }: TableOfContent
         </Card>
 
         {/* Print Hint */}
-        <p className="text-center text-xs text-[#1A231E]/50 mt-6 no-print">
+        <p className="text-centre text-xs text-[#1A231E]/50 mt-6 no-print">
           Tip: Use Ctrl+P (or Cmd+P) to print this report for offline reference
         </p>
       </div>

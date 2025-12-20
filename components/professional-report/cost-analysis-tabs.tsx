@@ -338,7 +338,7 @@ export function CostAnalysisTabs({ homes = DEFAULT_HOMES }: CostAnalysisTabsProp
                   </div>
 
                   <div className="mt-6 pt-6 border-t border-border">
-                    <div className="grid grid-cols-3 gap-2 md:gap-4 text-center">
+                    <div className="grid grid-cols-3 gap-2 md:gap-4 text-centre">
                       <div>
                         <p className="text-sm md:text-base text-muted-foreground mb-1">Base Fee</p>
                         <p className="text-xl md:text-2xl font-bold text-foreground">£{home.weeklyFee}</p>
@@ -436,7 +436,7 @@ export function CostAnalysisTabs({ homes = DEFAULT_HOMES }: CostAnalysisTabsProp
                       </tbody>
                     </table>
                   </div>
-                  <div className="md:hidden bg-muted p-2 mt-2 text-center text-xs text-muted-foreground rounded">
+                  <div className="md:hidden bg-muted p-2 mt-2 text-centre text-xs text-muted-foreground rounded">
                     Scroll horizontally to see all columns →
                   </div>
 

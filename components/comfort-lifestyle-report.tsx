@@ -122,11 +122,11 @@ const SAMPLE_HOMES: HomeLifestyle[] = [
 ]
 
 const getWalkScoreLabel = (score: number) => {
-  if (score >= 90) return { label: "Walker's Paradise", color: "text-[#22c55e]" }
-  if (score >= 70) return { label: "Very Walkable", color: "text-[#22c55e]" }
-  if (score >= 50) return { label: "Somewhat Walkable", color: "text-[#eab308]" }
-  if (score >= 25) return { label: "Car-Dependent", color: "text-[#f97316]" }
-  return { label: "Almost All Errands Require a Car", color: "text-[#ef4444]" }
+  if (score >= 90) return { label: "Walker's Paradise", colour: "text-[#22c55e]" }
+  if (score >= 70) return { label: "Very Walkable", colour: "text-[#22c55e]" }
+  if (score >= 50) return { label: "Somewhat Walkable", colour: "text-[#eab308]" }
+  if (score >= 25) return { label: "Car-Dependent", colour: "text-[#f97316]" }
+  return { label: "Almost All Errands Require a Car", colour: "text-[#ef4444]" }
 }
 
 const getNoiseColor = (level: "quiet" | "moderate" | "busy") => {
@@ -174,7 +174,7 @@ export function ComfortLifestyleReport({ homes = SAMPLE_HOMES }: ComfortLifestyl
         {/* Header */}
         <div className="mb-8 sm:mb-12 md:mb-16">
           <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-5 mb-4 sm:mb-6">
-            <div className="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 rounded-3xl bg-gradient-to-br from-[#4F6F52] to-[#3d5741] flex items-center justify-center shadow-soft-xl">
+            <div className="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 rounded-3xl bg-gradient-to-br from-[#4F6F52] to-[#3d5741] flex items-center justify-centre shadow-soft-xl">
               <Home className="w-9 h-9 sm:w-10 sm:h-10 md:w-11 md:h-11 text-white" strokeWidth={2.5} />
             </div>
             <div>
@@ -204,15 +204,15 @@ export function ComfortLifestyleReport({ homes = SAMPLE_HOMES }: ComfortLifestyl
               </p>
             </div>
             <div className="grid grid-cols-3 gap-4">
-              <div className="text-center">
+              <div className="text-centre">
                 <div className="text-3xl font-bold text-[#854D0E]">{leader?.lifestyle?.walkScore ?? 0}</div>
                 <div className="text-xs text-[#854D0E]/70">Walk Score</div>
               </div>
-              <div className="text-center">
+              <div className="text-centre">
                 <div className="text-3xl font-bold text-[#854D0E]">{leader?.lifestyle?.noiseDBA ?? 0}dB</div>
                 <div className="text-xs text-[#854D0E]/70">Noise Level</div>
               </div>
-              <div className="text-center">
+              <div className="text-centre">
                 <div className="text-3xl font-bold text-[#854D0E]">{leader?.lifestyle?.greenSpaceAccess ?? 0}%</div>
                 <div className="text-xs text-[#854D0E]/70">Green Access</div>
               </div>
@@ -234,13 +234,13 @@ export function ComfortLifestyleReport({ homes = SAMPLE_HOMES }: ComfortLifestyl
                 <div key={home?.name ?? index}>
                   <div className="flex items-center justify-between mb-2">
                     <div className="flex items-center gap-3">
-                      <div className="w-8 h-8 rounded-lg bg-[#4F6F52]/10 flex items-center justify-center text-sm font-bold text-[#4F6F52]">
+                      <div className="w-8 h-8 rounded-lg bg-[#4F6F52]/10 flex items-center justify-centre text-sm font-bold text-[#4F6F52]">
                         {index + 1}
                       </div>
                       <span className="font-semibold text-[#1A231E]">{home?.name ?? "Unknown"}</span>
                     </div>
                     <div className="flex items-center gap-3">
-                      <span className={`text-sm font-semibold ${walkLabel.color}`}>{walkLabel.label}</span>
+                      <span className={`text-sm font-semibold ${walkLabel.colour}`}>{walkLabel.label}</span>
                       <span className="text-2xl font-bold text-[#1A231E]">{home?.lifestyle?.walkScore ?? 0}</span>
                     </div>
                   </div>
@@ -346,25 +346,25 @@ export function ComfortLifestyleReport({ homes = SAMPLE_HOMES }: ComfortLifestyl
               <thead>
                 <tr className="border-b-2 border-[#4F6F52]/20">
                   <th className="text-left py-3 px-2 sm:px-4 text-sm font-bold text-[#1A231E]">Care Home</th>
-                  <th className="text-center py-3 px-2 sm:px-4 text-sm font-bold text-[#1A231E]">
+                  <th className="text-centre py-3 px-2 sm:px-4 text-sm font-bold text-[#1A231E]">
                     <div className="flex flex-col items-center gap-1">
                       <TreePine className="w-4 h-4 text-[#22c55e]" />
                       <span>Green Space</span>
                     </div>
                   </th>
-                  <th className="text-center py-3 px-2 sm:px-4 text-sm font-bold text-[#1A231E]">
+                  <th className="text-centre py-3 px-2 sm:px-4 text-sm font-bold text-[#1A231E]">
                     <div className="flex flex-col items-center gap-1">
                       <Bus className="w-4 h-4 text-[#3b82f6]" />
                       <span>Transport</span>
                     </div>
                   </th>
-                  <th className="text-center py-3 px-2 sm:px-4 text-sm font-bold text-[#1A231E]">
+                  <th className="text-centre py-3 px-2 sm:px-4 text-sm font-bold text-[#1A231E]">
                     <div className="flex flex-col items-center gap-1">
                       <ShoppingBag className="w-4 h-4 text-[#f97316]" />
                       <span>Shops</span>
                     </div>
                   </th>
-                  <th className="text-center py-3 px-2 sm:px-4 text-sm font-bold text-[#1A231E]">
+                  <th className="text-centre py-3 px-2 sm:px-4 text-sm font-bold text-[#1A231E]">
                     <div className="flex flex-col items-center gap-1">
                       <Building2 className="w-4 h-4 text-[#ef4444]" />
                       <span>Healthcare</span>
@@ -379,7 +379,7 @@ export function ComfortLifestyleReport({ homes = SAMPLE_HOMES }: ComfortLifestyl
                     className={`border-b-2 border-[#4F6F52]/10 ${index === 0 ? "bg-[#4F6F52]/5" : ""}`}
                   >
                     <td className="py-4 px-2 sm:px-4 font-semibold text-[#1A231E]">{home?.name ?? "Unknown"}</td>
-                    <td className="text-center py-4 px-2 sm:px-4">
+                    <td className="text-centre py-4 px-2 sm:px-4">
                       <div className="flex flex-col items-center">
                         <span className="text-lg font-bold text-[#22c55e]">
                           {home?.lifestyle?.greenSpaceAccess ?? 0}%
@@ -387,19 +387,19 @@ export function ComfortLifestyleReport({ homes = SAMPLE_HOMES }: ComfortLifestyl
                         <span className="text-xs text-[#1A231E]/60">access</span>
                       </div>
                     </td>
-                    <td className="text-center py-4 px-2 sm:px-4">
+                    <td className="text-centre py-4 px-2 sm:px-4">
                       <div className="flex flex-col items-center">
                         <span className="text-lg font-bold text-[#3b82f6]">{home?.lifestyle?.transportScore ?? 0}</span>
                         <span className="text-xs text-[#1A231E]/60">score</span>
                       </div>
                     </td>
-                    <td className="text-center py-4 px-2 sm:px-4">
+                    <td className="text-centre py-4 px-2 sm:px-4">
                       <div className="flex flex-col items-center">
                         <span className="text-lg font-bold text-[#f97316]">{home?.lifestyle?.shopsNearby ?? 0}</span>
                         <span className="text-xs text-[#1A231E]/60">nearby</span>
                       </div>
                     </td>
-                    <td className="text-center py-4 px-2 sm:px-4">
+                    <td className="text-centre py-4 px-2 sm:px-4">
                       <div className="flex flex-col items-center">
                         <span className="text-lg font-bold text-[#ef4444]">
                           {home?.lifestyle?.healthcareNearby ?? 0}

@@ -126,12 +126,12 @@ export function ReportLoadingAnimation({ onComplete }: ReportLoadingAnimationPro
   }, [currentStep, onComplete])
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#FDFBF7] via-white to-[#F5F3EF] px-4">
+    <div className="min-h-screen flex items-center justify-centre bg-gradient-to-br from-[#FDFBF7] via-white to-[#F5F3EF] px-4">
       <div className="w-full max-w-2xl">
         {/* Main Card */}
         <div className="bg-white/80 backdrop-blur-sm rounded-3xl shadow-soft p-6 sm:p-10 border border-[#E8E6E1]">
           {/* Logo/Brand */}
-          <div className="text-center mb-6">
+          <div className="text-centre mb-6">
             <h1 className="font-serif text-2xl sm:text-3xl font-bold text-[#1A231E] mb-2">RightCareHome</h1>
             <p className="text-sm text-[#4A5555]">Preparing your personalised analysis</p>
           </div>
@@ -177,7 +177,7 @@ export function ReportLoadingAnimation({ onComplete }: ReportLoadingAnimationPro
                 {/* Text */}
                 <div className="flex-1 min-w-0">
                   <p
-                    className={`text-sm sm:text-base font-medium transition-colors ${
+                    className={`text-sm sm:text-base font-medium transition-colours ${
                       index <= currentStep ? "text-[#1A231E]" : "text-[#8B9494]"
                     }`}
                   >
@@ -205,13 +205,13 @@ export function ReportLoadingAnimation({ onComplete }: ReportLoadingAnimationPro
             </p>
           </div>
 
-          <div className="mt-6 text-center">
+          <div className="mt-6 text-centre">
             <p className="text-sm text-[#6B7777]">Analysing 18 data points for your shortlist</p>
           </div>
         </div>
 
         {/* Trust indicator */}
-        <div className="mt-6 text-center">
+        <div className="mt-6 text-centre">
           <p className="text-xs text-[#8B9494]">Secure analysis | No spam | 100% independent</p>
         </div>
       </div>

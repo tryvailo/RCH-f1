@@ -57,7 +57,7 @@ export function IndependenceComparisonSection() {
 
       <div className="container relative mx-auto px-4 max-w-6xl">
         {/* Section Header */}
-        <div className="text-center mb-16 md:mb-20 space-y-5">
+        <div className="text-centre mb-16 md:mb-20 space-y-5">
           <Badge
             variant="outline"
             className="mx-auto text-xs font-semibold tracking-wide border-[#D17A6F]/30 text-[#D17A6F] bg-white/60 backdrop-blur-sm px-4 py-1.5 shadow-sm"
@@ -83,11 +83,11 @@ export function IndependenceComparisonSection() {
               <div className="col-span-12 md:col-span-5 p-6 md:p-8 bg-[#F5F3EF]/50">
                 <span className="text-sm font-bold uppercase tracking-wider text-[#1A231E]/60">Comparison</span>
               </div>
-              <div className="col-span-6 md:col-span-3 p-6 md:p-8 text-center border-l border-[#E8E5DF]/60 bg-[#FEF2F2]">
+              <div className="col-span-6 md:col-span-3 p-6 md:p-8 text-centre border-l border-[#E8E5DF]/60 bg-[#FEF2F2]">
                 <div className="font-serif font-bold text-lg md:text-xl text-[#1A231E] mb-1">'Free' Services</div>
                 <Badge className="bg-[#D17A6F] text-white border-0 text-xs">Commission-Based</Badge>
               </div>
-              <div className="col-span-6 md:col-span-4 p-6 md:p-8 text-center border-l border-[#E8E5DF]/60 bg-[#4F6F52]/5 relative">
+              <div className="col-span-6 md:col-span-4 p-6 md:p-8 text-centre border-l border-[#E8E5DF]/60 bg-[#4F6F52]/5 relative">
                 <Badge className="absolute top-3 right-3 bg-[#4F6F52] text-white border-0 text-xs px-2 py-1">
                   100% INDEPENDENT
                 </Badge>
@@ -109,19 +109,19 @@ export function IndependenceComparisonSection() {
                   }`}
                 >
                   <div className="col-span-12 md:col-span-5 p-4 md:p-6 flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-xl bg-[#F5F3EF] flex items-center justify-center flex-shrink-0">
+                    <div className="w-10 h-10 rounded-xl bg-[#F5F3EF] flex items-center justify-centre flex-shrink-0">
                       <Icon className="w-5 h-5 text-[#8B7355]" />
                     </div>
                     <span className="font-semibold text-sm md:text-base text-[#1A231E]">{row.category}</span>
                   </div>
-                  <div className="col-span-6 md:col-span-3 p-4 md:p-6 flex items-center justify-center text-center border-l border-[#E8E5DF]/60">
+                  <div className="col-span-6 md:col-span-3 p-4 md:p-6 flex items-center justify-centre text-centre border-l border-[#E8E5DF]/60">
                     {typeof row.free === "boolean" ? (
                       row.free ? (
-                        <div className="w-8 h-8 rounded-full bg-[#4F6F52] flex items-center justify-center">
+                        <div className="w-8 h-8 rounded-full bg-[#4F6F52] flex items-center justify-centre">
                           <Check className="w-5 h-5 text-white stroke-[2.5]" />
                         </div>
                       ) : (
-                        <div className="w-8 h-8 rounded-full bg-[#D17A6F] flex items-center justify-center">
+                        <div className="w-8 h-8 rounded-full bg-[#D17A6F] flex items-center justify-centre">
                           <X className="w-5 h-5 text-white stroke-[2.5]" />
                         </div>
                       )
@@ -129,14 +129,14 @@ export function IndependenceComparisonSection() {
                       <span className="text-sm md:text-base text-[#1A231E]/80">{row.free}</span>
                     )}
                   </div>
-                  <div className="col-span-6 md:col-span-4 p-4 md:p-6 flex items-center justify-center text-center border-l border-[#E8E5DF]/60 bg-[#4F6F52]/5">
+                  <div className="col-span-6 md:col-span-4 p-4 md:p-6 flex items-center justify-centre text-centre border-l border-[#E8E5DF]/60 bg-[#4F6F52]/5">
                     {typeof row.rightCareHome === "boolean" ? (
                       row.rightCareHome ? (
-                        <div className="w-8 h-8 rounded-full bg-[#4F6F52] flex items-center justify-center">
+                        <div className="w-8 h-8 rounded-full bg-[#4F6F52] flex items-center justify-centre">
                           <Check className="w-5 h-5 text-white stroke-[2.5]" />
                         </div>
                       ) : (
-                        <div className="w-8 h-8 rounded-full bg-[#D17A6F] flex items-center justify-center">
+                        <div className="w-8 h-8 rounded-full bg-[#D17A6F] flex items-center justify-centre">
                           <X className="w-5 h-5 text-white stroke-[2.5]" />
                         </div>
                       )
@@ -153,7 +153,7 @@ export function IndependenceComparisonSection() {
         {/* Car Salesman Analogy */}
         <div className="max-w-3xl mx-auto mb-16 p-8 md:p-10 bg-gradient-to-br from-[#FEF2F2] to-white rounded-3xl border-2 border-[#D17A6F]/20 shadow-soft-lg">
           <div className="flex items-start gap-4 mb-4">
-            <div className="w-12 h-12 rounded-xl bg-[#D17A6F]/10 flex items-center justify-center flex-shrink-0">
+            <div className="w-12 h-12 rounded-xl bg-[#D17A6F]/10 flex items-center justify-centre flex-shrink-0">
               <AlertCircle className="w-6 h-6 text-[#D17A6F]" />
             </div>
             <div>
@@ -169,7 +169,7 @@ export function IndependenceComparisonSection() {
         </div>
 
         {/* CTA */}
-        <div className="text-center">
+        <div className="text-centre">
           <div className="inline-flex flex-col sm:flex-row gap-4 items-center">
             <Button
               asChild

@@ -30,7 +30,7 @@ export function FundingTrustDifferentiators() {
   return (
     <section className="py-16 sm:py-20 lg:py-24 bg-gradient-to-br from-white to-[#FDFBF7]">
       <div className="container mx-auto px-4 sm:px-6">
-        <div className="max-w-4xl mx-auto text-center space-y-4 mb-12">
+        <div className="max-w-4xl mx-auto text-centre space-y-4 mb-12">
           <Badge variant="outline" className="bg-[#7FAD7E]/10 border-[#7FAD7E]/30 text-[#4F6F52] rounded-full">
             WHY RIGHTCAREHOME IS DIFFERENT
           </Badge>
@@ -49,7 +49,7 @@ export function FundingTrustDifferentiators() {
               className="relative rounded-2xl border border-[#E8E5DF] bg-white p-6 lg:p-8 shadow-soft-md hover:shadow-soft-lg transition-all duration-300"
             >
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#7FAD7E] to-[#4F6F52] flex items-center justify-center flex-shrink-0">
+                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#7FAD7E] to-[#4F6F52] flex items-center justify-centre flex-shrink-0">
                   <item.icon className="w-6 h-6 text-white" strokeWidth={2} />
                 </div>
                 <div className="space-y-2">

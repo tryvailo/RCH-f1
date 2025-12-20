@@ -10,7 +10,7 @@ export function HiddenCommissionModelSection() {
 
       <div className="container relative mx-auto px-4 max-w-6xl">
         {/* Section Header */}
-        <div className="text-center mb-16 md:mb-20 space-y-4">
+        <div className="text-centre mb-16 md:mb-20 space-y-4">
           <Badge
             variant="outline"
             className="mx-auto text-xs font-semibold tracking-wide border-[#D17A6F]/30 text-[#D17A6F] bg-white/60 backdrop-blur-sm px-4 py-1.5 shadow-sm"
@@ -42,7 +42,7 @@ export function HiddenCommissionModelSection() {
               <div className="space-y-6">
                 {/* Step 1: Care Home */}
                 <div className="flex items-center gap-4">
-                  <div className="w-14 h-14 rounded-2xl bg-[#D17A6F]/10 flex items-center justify-center flex-shrink-0">
+                  <div className="w-14 h-14 rounded-2xl bg-[#D17A6F]/10 flex items-center justify-centre flex-shrink-0">
                     <Building2 className="w-7 h-7 text-[#D17A6F]" />
                   </div>
                   <div className="flex-1">
@@ -52,15 +52,15 @@ export function HiddenCommissionModelSection() {
                 </div>
 
                 {/* Arrow Down */}
-                <div className="flex justify-center">
-                  <div className="w-12 h-12 rounded-full bg-[#D17A6F]/10 flex items-center justify-center">
+                <div className="flex justify-centre">
+                  <div className="w-12 h-12 rounded-full bg-[#D17A6F]/10 flex items-center justify-centre">
                     <ArrowRight className="w-6 h-6 text-[#D17A6F] rotate-90" />
                   </div>
                 </div>
 
                 {/* Step 2: Commission Amount */}
                 <div className="flex items-center gap-4">
-                  <div className="w-14 h-14 rounded-2xl bg-[#D17A6F]/10 flex items-center justify-center flex-shrink-0">
+                  <div className="w-14 h-14 rounded-2xl bg-[#D17A6F]/10 flex items-center justify-centre flex-shrink-0">
                     <PoundSterling className="w-7 h-7 text-[#D17A6F]" />
                   </div>
                   <div className="flex-1">
@@ -70,15 +70,15 @@ export function HiddenCommissionModelSection() {
                 </div>
 
                 {/* Arrow Down */}
-                <div className="flex justify-center">
-                  <div className="w-12 h-12 rounded-full bg-[#D17A6F]/10 flex items-center justify-center">
+                <div className="flex justify-centre">
+                  <div className="w-12 h-12 rounded-full bg-[#D17A6F]/10 flex items-center justify-centre">
                     <ArrowRight className="w-6 h-6 text-[#D17A6F] rotate-90" />
                   </div>
                 </div>
 
                 {/* Step 3: Consultant Gets Paid */}
                 <div className="flex items-center gap-4">
-                  <div className="w-14 h-14 rounded-2xl bg-[#D17A6F]/10 flex items-center justify-center flex-shrink-0">
+                  <div className="w-14 h-14 rounded-2xl bg-[#D17A6F]/10 flex items-center justify-centre flex-shrink-0">
                     <Users className="w-7 h-7 text-[#D17A6F]" />
                   </div>
                   <div className="flex-1">
@@ -90,7 +90,7 @@ export function HiddenCommissionModelSection() {
 
               {/* Warning Box */}
               <div className="mt-6 p-4 bg-[#D17A6F]/10 rounded-xl border border-[#D17A6F]/20">
-                <p className="text-sm font-semibold text-[#D17A6F] text-center">
+                <p className="text-sm font-semibold text-[#D17A6F] text-centre">
                   ⚠️ Their incentive: Highest-paying home, not best home
                 </p>
               </div>
@@ -112,7 +112,7 @@ export function HiddenCommissionModelSection() {
               <div className="space-y-6">
                 {/* Step 1: You Pay */}
                 <div className="flex items-center gap-4">
-                  <div className="w-14 h-14 rounded-2xl bg-[#4F6F52]/10 flex items-center justify-center flex-shrink-0">
+                  <div className="w-14 h-14 rounded-2xl bg-[#4F6F52]/10 flex items-center justify-centre flex-shrink-0">
                     <Users className="w-7 h-7 text-[#4F6F52]" />
                   </div>
                   <div className="flex-1">
@@ -122,15 +122,15 @@ export function HiddenCommissionModelSection() {
                 </div>
 
                 {/* Arrow Down */}
-                <div className="flex justify-center">
-                  <div className="w-12 h-12 rounded-full bg-[#4F6F52]/10 flex items-center justify-center">
+                <div className="flex justify-centre">
+                  <div className="w-12 h-12 rounded-full bg-[#4F6F52]/10 flex items-center justify-centre">
                     <ArrowRight className="w-6 h-6 text-[#4F6F52] rotate-90" />
                   </div>
                 </div>
 
                 {/* Step 2: Transparent Fee */}
                 <div className="flex items-center gap-4">
-                  <div className="w-14 h-14 rounded-2xl bg-[#4F6F52]/10 flex items-center justify-center flex-shrink-0">
+                  <div className="w-14 h-14 rounded-2xl bg-[#4F6F52]/10 flex items-center justify-centre flex-shrink-0">
                     <PoundSterling className="w-7 h-7 text-[#4F6F52]" />
                   </div>
                   <div className="flex-1">
@@ -140,15 +140,15 @@ export function HiddenCommissionModelSection() {
                 </div>
 
                 {/* Arrow Down */}
-                <div className="flex justify-center">
-                  <div className="w-12 h-12 rounded-full bg-[#4F6F52]/10 flex items-center justify-center">
+                <div className="flex justify-centre">
+                  <div className="w-12 h-12 rounded-full bg-[#4F6F52]/10 flex items-center justify-centre">
                     <ArrowRight className="w-6 h-6 text-[#4F6F52] rotate-90" />
                   </div>
                 </div>
 
                 {/* Step 3: Independent Analysis */}
                 <div className="flex items-center gap-4">
-                  <div className="w-14 h-14 rounded-2xl bg-[#4F6F52]/10 flex items-center justify-center flex-shrink-0">
+                  <div className="w-14 h-14 rounded-2xl bg-[#4F6F52]/10 flex items-center justify-centre flex-shrink-0">
                     <Building2 className="w-7 h-7 text-[#4F6F52]" />
                   </div>
                   <div className="flex-1">
@@ -160,7 +160,7 @@ export function HiddenCommissionModelSection() {
 
               {/* Trust Box */}
               <div className="mt-6 p-4 bg-[#4F6F52]/10 rounded-xl border border-[#4F6F52]/20">
-                <p className="text-sm font-semibold text-[#4F6F52] text-center">
+                <p className="text-sm font-semibold text-[#4F6F52] text-centre">
                   ✓ Our incentive: Find the safest, best-value home for you
                 </p>
               </div>
@@ -169,7 +169,7 @@ export function HiddenCommissionModelSection() {
         </div>
 
         {/* Bottom Insight */}
-        <div className="max-w-3xl mx-auto mt-16 text-center">
+        <div className="max-w-3xl mx-auto mt-16 text-centre">
           <p className="text-lg md:text-xl text-[#1A231E]/80 leading-relaxed">
             When you work with RightCareHome, you're our only client. We have{" "}
             <span className="font-bold text-[#4F6F52]">zero financial ties</span> to any care home, which means our
